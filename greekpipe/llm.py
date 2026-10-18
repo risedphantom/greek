@@ -10,6 +10,7 @@ import httpx
 
 REFERER = "https://github.com/risedphantom/greek"
 TITLE = "greek-course-companion"
+AUTH_CODES = (401, 402, 403)
 
 
 class LLMError(Exception):
@@ -18,6 +19,10 @@ class LLMError(Exception):
 
 class LLMTransient(LLMError):
     """Rate limit, 5xx, timeout or transport failure that persisted past all retries."""
+
+
+class LLMAuthError(LLMError):
+    """Bad key or no credits: systemic, callers should abort the run."""
 
 
 class LLMBadOutput(LLMError):
@@ -82,8 +87,13 @@ class LLMClient:
         self.last_cost += float(usage.get("cost") or 0.0)
         try:
             content = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as e:
+            raise LLMBadOutput(f"{schema_name}: malformed reply ({e!r})") from e
+        if not isinstance(content, str):
+            raise LLMBadOutput(f"{schema_name}: empty or non-text content")
+        try:
             parsed = json.loads(_strip_fences(content))
-        except (KeyError, IndexError, TypeError, json.JSONDecodeError) as e:
+        except json.JSONDecodeError as e:
             raise LLMBadOutput(f"{schema_name}: reply is not valid JSON ({e})") from e
         if not isinstance(parsed, dict):
             raise LLMBadOutput(f"{schema_name}: reply is not a JSON object")
@@ -104,20 +114,32 @@ class LLMClient:
             except (httpx.TimeoutException, httpx.TransportError) as e:
                 reason = f"{type(e).__name__}: {e}"
             else:
-                if resp.status_code == 429 or resp.status_code >= 500:
+                if resp.status_code in AUTH_CODES:
+                    raise LLMAuthError(f"{schema_name}: HTTP {resp.status_code}: {resp.text[:200]}")
+                if resp.status_code in (408, 425, 429) or resp.status_code >= 500:
                     reason = f"HTTP {resp.status_code}"
                     retry_after = _retry_after(resp)
                 elif resp.status_code >= 400:
                     raise LLMBadOutput(f"{schema_name}: HTTP {resp.status_code}: {resp.text[:200]}")
                 else:
-                    data = resp.json()
-                    err = data.get("error")
-                    if not err:
-                        return data
-                    code = err.get("code")
-                    if not (isinstance(code, int) and (code == 429 or code >= 500)):
-                        raise LLMBadOutput(f"{schema_name}: API error {code}: {err.get('message')}")
-                    reason = f"API error {code}"
+                    try:
+                        data = resp.json()
+                    except ValueError:
+                        data = None
+                    if not isinstance(data, dict):
+                        reason = "200 with non-JSON-object body"
+                    else:
+                        err = data.get("error")
+                        if not err:
+                            return data
+                        if not isinstance(err, dict):
+                            raise LLMBadOutput(f"{schema_name}: API error: {err!r}")
+                        code = err.get("code")
+                        if code in AUTH_CODES:
+                            raise LLMAuthError(f"{schema_name}: API error {code}: {err.get('message')}")
+                        if not (isinstance(code, int) and (code in (408, 425, 429) or code >= 500)):
+                            raise LLMBadOutput(f"{schema_name}: API error {code}: {err.get('message')}")
+                        reason = f"API error {code}"
             if attempt < self.max_retries:
                 self.sleep(max(2 ** (attempt + 1), retry_after))
         raise LLMTransient(f"{schema_name}: gave up after {self.max_retries + 1} attempts ({reason})")

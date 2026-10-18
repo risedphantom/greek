@@ -5,7 +5,7 @@ import httpx
 import pytest
 import respx
 
-from greekpipe.llm import LLMBadOutput, LLMClient, LLMTransient, image_part, text_part
+from greekpipe.llm import LLMAuthError, LLMBadOutput, LLMClient, LLMTransient, image_part, text_part
 
 BASE = "https://openrouter.ai/api/v1"
 
@@ -134,3 +134,57 @@ def test_image_part_is_data_url(tmp_path):
 
 def test_text_part():
     assert text_part("x") == {"type": "text", "text": "x"}
+
+
+@pytest.mark.parametrize("content", [None, ["x"]])
+@respx.mock(base_url=BASE)
+def test_null_content_is_bad_output(respx_mock, client, content):
+    respx_mock.post("/chat/completions").mock(return_value=ok(content))
+    with pytest.raises(LLMBadOutput, match="non-text"):
+        call(client)
+
+
+@respx.mock(base_url=BASE)
+def test_non_json_200_body_is_transient(respx_mock, client, sleeps):
+    route = respx_mock.post("/chat/completions").mock(
+        return_value=httpx.Response(200, text="<html>gateway</html>")
+    )
+    with pytest.raises(LLMTransient):
+        call(client)
+    assert route.call_count == 5
+    assert sleeps == [2, 4, 8, 16]
+
+
+@respx.mock(base_url=BASE)
+def test_non_dict_error_is_bad_output(respx_mock, client):
+    respx_mock.post("/chat/completions").mock(
+        return_value=httpx.Response(200, json={"error": "boom"})
+    )
+    with pytest.raises(LLMBadOutput):
+        call(client)
+
+
+@pytest.mark.parametrize("status", [401, 402, 403])
+@respx.mock(base_url=BASE)
+def test_401_raises_auth_error_without_retry(respx_mock, client, sleeps, status):
+    route = respx_mock.post("/chat/completions").mock(return_value=httpx.Response(status))
+    with pytest.raises(LLMAuthError):
+        call(client)
+    assert route.call_count == 1
+    assert sleeps == []
+
+
+@respx.mock(base_url=BASE)
+def test_200_body_402_is_auth_error(respx_mock, client):
+    respx_mock.post("/chat/completions").mock(
+        return_value=httpx.Response(200, json={"error": {"code": 402, "message": "credits"}})
+    )
+    with pytest.raises(LLMAuthError):
+        call(client)
+
+
+@respx.mock(base_url=BASE)
+def test_408_is_transient(respx_mock, client):
+    route = respx_mock.post("/chat/completions").mock(side_effect=[httpx.Response(408), ok("{}")])
+    assert call(client) == {}
+    assert route.call_count == 2
