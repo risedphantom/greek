@@ -303,7 +303,9 @@ table.dict { width: 100%; border-collapse: collapse; }
   box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
   font-size: 13px;
 }
-#hovercard.wide { width: 440px; }
+#hovercard.wide { width: 540px; padding: 10px 12px; }
+#hovercard.wide .hc-meta { margin-bottom: 4px; }
+#hovercard.wide .hc-ex, #hovercard.wide .hc-links { margin-top: 6px; }
 .hc-lemma { font-size: 17px; font-weight: 700; }
 .hc-tr { margin: 2px 0 6px; color: var(--accent); font-weight: 600; }
 .hc-meta { margin-bottom: 8px; color: #777; font-size: 11px; }
@@ -311,7 +313,10 @@ table.dict { width: 100%; border-collapse: collapse; }
 #hovercard th { color: #777; font-size: 11px; font-weight: 400; text-align: left; padding: 2px 6px; }
 #hovercard td { padding: 1px 6px; border-bottom: 1px solid #f0f0f0; }
 #hovercard td:first-child { width: 40%; color: #777; }
-.hc-tenses { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+.hc-tenses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px 12px; }
+.hc-tenses table { font-size: 12px; line-height: 1.3; }
+#hovercard .hc-tenses td { padding: 0 4px; }
+#hovercard .hc-tenses td:first-child { width: 42%; }
 .hc-h { margin-bottom: 2px; color: #555; font-size: 11px; font-weight: 600; text-transform: uppercase; }
 .hc-ex { margin-top: 8px; color: #555; font-style: italic; }
 .hc-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 8px; font-size: 12px; }

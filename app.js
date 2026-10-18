@@ -530,8 +530,8 @@ function renderDictRow(entry) {
       entry.needs_review ? el('span', { class: 'badge warn', text: 'проверить' }) : null),
     el('td', { text: entry.translation.join(', ') }),
     el('td', {}, el('span', { class: 'pos', text: posLabel(entry) })),
-    el('td', { class: 'd-src' }, entry.sources.slice(0, MAX_SOURCES).map(sourceLink),
-      extra > 0 ? el('span', { class: 'muted', text: `+${extra}` }) : null));
+    el('td', {}, el('div', { class: 'd-src' }, entry.sources.slice(0, MAX_SOURCES).map(sourceLink),
+      extra > 0 ? el('span', { class: 'muted', text: `+${extra}` }) : null)));
 }
 
 function buildDictionary() {
@@ -629,6 +629,7 @@ const CASES = [['nom', 'Им.'], ['gen', 'Род.'], ['acc', 'Вин.']];
 const SHOW_DELAY = 150;
 const HIDE_DELAY = 200;
 const CARD_GAP = 6;
+const ARTICLE_RE = /^(ο|η|το|οι|τα) /;
 
 const card = { node: null, span: null, key: null, showTimer: 0, hideTimer: 0, overCard: false };
 
@@ -661,12 +662,18 @@ function renderForms(entry) {
   return null;
 }
 
+// Nouns show their article, as stored in the nominative singular («η δουλειά»).
+function cardLemma(entry) {
+  const nom = entry.pos === 'noun' ? entry.forms?.sg?.nom : null;
+  return nom && ARTICLE_RE.test(nom) ? nom : entry.lemma;
+}
+
 function renderCard(entry) {
   const meta = [POS_LABELS[entry.pos] || entry.pos, GENDER_LABELS[entry.gender], entry.class].filter(Boolean).join(' · ');
   const ex = entry.example?.el ? el('div', { class: 'hc-ex', text: `${entry.example.el} — ${entry.example.ru || ''}` }) : null;
   const topic = entry.sources.find((s) => s.kind === 'topic');
   return [
-    el('div', { class: 'hc-lemma', text: entry.lemma }),
+    el('div', { class: 'hc-lemma', text: cardLemma(entry) }),
     el('div', { class: 'hc-tr', text: entry.translation.join(', ') }),
     el('div', { class: 'hc-meta', text: meta }),
     renderForms(entry),
@@ -799,7 +806,9 @@ function bindHoverCard() {
   });
   // Panes scroll independently; a stale card would float over the wrong text.
   document.addEventListener('scroll', (e) => {
-    if (card.node && !card.node.hidden && !card.node.contains(e.target)) hideCard();
+    if (!card.node || card.node.hidden || card.node.contains(e.target)) return;
+    if (card.span && card.span === document.activeElement) return; // focus scrolled the word into view
+    hideCard();
   }, true);
 }
 
