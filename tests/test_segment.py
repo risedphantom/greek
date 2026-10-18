@@ -222,3 +222,45 @@ def test_unmarked_instruction_session_is_homework():
 def test_marker_does_not_split_homework_twice():
     msgs = [_msg(1, "08:00", "Д/з на 14.10."), _msg(2, "08:05", "Домашнее задание: повторить")]
     assert [s.message_ids for s in segment.sessions(msgs, {})] == [[1, 2]]
+
+
+def test_marker_suffix_is_not_a_task():
+    # Shape of 03.09 (122078-122081).
+    msgs = [
+        _msg(122078, "06:24", "Доброе утро! \nД/з на след. занятие:", day="2026-09-03"),
+        _msg(122079, "06:24", media_kind="photo", day="2026-09-03"),
+        _msg(122080, "06:25", media_kind="audio", day="2026-09-03"),
+        _msg(122081, "06:26", "Прослушать 1 трек, произношение, название букв алфавита, страны", day="2026-09-03"),
+    ]
+    transcripts = {122079: {"kind": "table", "title": "Таблица алфавита"}}
+    [hw] = segment.sessions(msgs, transcripts)
+    tasks = segment.tasks_for(hw, msgs, transcripts)
+
+    assert not any(t.text.startswith("на ") for t in tasks)
+    # Leading media keep the one-task-per-photo/audio rule; the instruction follows them.
+    assert [(t.type, t.text, t.media_ids) for t in tasks] == [
+        ("повторить", "Таблица алфавита", [122079]),
+        ("аудио", "Аудио", [122080]),
+        ("аудио", "Прослушать 1 трек, произношение, название букв алфавита, страны", []),
+    ]
+
+
+@pytest.mark.parametrize("text,is_marker", [
+    ("Домашние задания на 20.10", True),
+    ("Домашнее задание на 14.09.", True),
+    ("Д/з", True),
+    ("Высылаю задание", True),
+    ("Задания скину, обязательно", False),
+])
+def test_marker_regex(text, is_marker):
+    assert segment._has_marker({"text": text}) is is_marker
+
+
+@pytest.mark.parametrize("day,text,due,flagged", [
+    ("2026-12-28", "Д/з на 05.01", date(2027, 1, 5), False),
+    ("2026-09-10", "Домашнее задание на 14.09.\nупр. 3.4 письменно", date(2026, 9, 14), False),
+    ("2026-09-10", "Д/з\nупр. 3.4 письменно", date(2026, 9, 12), True),
+])
+def test_due_from_marker_line(day, text, due, flagged):
+    [hw] = segment.sessions([_msg(1, "08:00", text, day=day)], {})
+    assert (hw.kind, hw.due, hw.due_flagged) == ("homework", due, flagged)

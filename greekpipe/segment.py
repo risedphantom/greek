@@ -13,14 +13,15 @@ AUDIO_KINDS = frozenset({"audio", "voice"})
 PHOTO_TASK_TITLE = "Задание по фото"
 AUDIO_TASK_TITLE = "Аудио"
 
-_MARKER = re.compile(r"д/з|домашнее задание|высылаю задания", re.IGNORECASE)
+_MARKER_WORDS = r"д/з|домашн\w*\s+задани\w*|высылаю задани\w*"
+_MARKER = re.compile(_MARKER_WORDS, re.IGNORECASE)
 _DUE_DATE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\b")
 _DUE_TOMORROW = re.compile(r"^\W*на\s+завтра", re.IGNORECASE)
 _INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен", re.IGNORECASE)
 _MEETING = re.compile(r"telemost|zoom", re.IGNORECASE)
 _GREETING = re.compile(r"^(доброе утро|добрый день|добрый вечер|привет)[!.,]*\s*", re.IGNORECASE)
 _MARKER_HEAD = re.compile(
-    r"^(д/з|домашнее задание|высылаю задания)(\s+на\s+(\d{1,2}\.\d{1,2}\.?|завтра))?[.:!]*\s*",
+    rf"^({_MARKER_WORDS})(\s+на\s+(\d{{1,2}}\.\d{{1,2}}\.?|[^:\n]*:?))?[.:!]*\s*",
     re.IGNORECASE,
 )
 _CLOSING = re.compile(r"^(хорошего (дня|вечера)|если есть вопросы|задания выслала)", re.IGNORECASE)
@@ -96,14 +97,18 @@ def _groups(messages: list[dict]) -> list[list[dict]]:
 
 
 def _explicit_due(text: str, assigned: date) -> date | None:
-    rest = text[_MARKER.search(text).end():]
+    # Only the marker line: task lists below it carry numbers like «упр. 3.4».
+    line = next(line for line in text.splitlines() if _MARKER.search(line))
+    rest = line[_MARKER.search(line).end():]
     if _DUE_TOMORROW.match(rest):
         return assigned + timedelta(days=1)
     found = _DUE_DATE.search(rest)
     if not found:
         return None
+    day, month = int(found.group(1)), int(found.group(2))
     try:
-        return date(assigned.year, int(found.group(2)), int(found.group(1)))
+        due = date(assigned.year, month, day)
+        return due if due >= assigned else date(assigned.year + 1, month, day)
     except ValueError:
         return None
 
