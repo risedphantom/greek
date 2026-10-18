@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 import re
 from pathlib import Path
 
@@ -72,7 +73,10 @@ def _write_message(state_dir: Path, message: dict) -> None:
     messages_dir = state_dir / "messages"
     messages_dir.mkdir(parents=True, exist_ok=True)
     body = json.dumps(message, ensure_ascii=False, indent=2) + "\n"
-    (messages_dir / f"{message['id']}.json").write_text(body, "utf-8")
+    path = messages_dir / f"{message['id']}.json"
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(body, "utf-8")
+    os.replace(tmp, path)
 
 
 async def fetch_new(settings, client=None) -> list[int]:

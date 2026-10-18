@@ -182,3 +182,14 @@ def test_load_messages_sorted(tmp_path):
     for i in (10, 2, 33):
         (d / f"{i}.json").write_text(json.dumps({"id": i}), "utf-8")
     assert [m["id"] for m in tg_fetch.load_messages(tmp_path)] == [2, 10, 33]
+
+
+def test_write_message_is_atomic(tmp_path, monkeypatch):
+    def fail(src, dst):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(tg_fetch.os, "replace", fail)
+    with pytest.raises(OSError):
+        tg_fetch._write_message(tmp_path, {"id": 7})
+    assert not (tmp_path / "messages" / "7.json").exists()
+    assert tg_fetch.load_messages(tmp_path) == []
