@@ -1,0 +1,35 @@
+{
+  "lemma": "γεια",
+  "translation": [
+    "привет",
+    "здравствуй"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεια σας!",
+    "ru": "Здравствуйте!"
+  },
+  "lemma_key": "γεια",
+  "surfaces": [
+    "Γεια",
+    "Γεια σας",
+    "Γεια σας!",
+    "Γεια σου!",
+    "γεια"
+  ],
+  "msg_ids": [
+    122637,
+    122834,
+    122980,
+    122981,
+    123360,
+    123367,
+    123613,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

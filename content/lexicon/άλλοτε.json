@@ -1,0 +1,24 @@
+{
+  "lemma": "άλλοτε",
+  "translation": [
+    "когда-то",
+    "раньше"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Άλλοτε ζούσα εκεί.",
+    "ru": "Когда-то я жил там."
+  },
+  "lemma_key": "άλλοτε",
+  "surfaces": [
+    "άλλοτε"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

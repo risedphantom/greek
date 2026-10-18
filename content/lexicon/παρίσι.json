@@ -1,0 +1,27 @@
+{
+  "lemma": "Παρίσι",
+  "translation": [
+    "Париж"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι στο Παρίσι.",
+    "ru": "Я в Париже."
+  },
+  "lemma_key": "παρίσι",
+  "surfaces": [
+    "Παρίσι"
+  ],
+  "msg_ids": [
+    122072,
+    122079,
+    123361,
+    123612,
+    124016
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

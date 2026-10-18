@@ -1,0 +1,34 @@
+{
+  "lemma": "φορά",
+  "translation": [
+    "раз"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ά/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η φορά",
+      "gen": "της φοράς",
+      "acc": "τη φορά"
+    },
+    "pl": {
+      "nom": "οι φορές",
+      "gen": "των φορών",
+      "acc": "τις φορές"
+    }
+  },
+  "example": {
+    "el": "Μία φορά την εβδομάδα.",
+    "ru": "Один раз в неделю."
+  },
+  "lemma_key": "φορά",
+  "surfaces": [
+    "φορά"
+  ],
+  "msg_ids": [
+    124121
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

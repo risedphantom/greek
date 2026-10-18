@@ -1,0 +1,35 @@
+{
+  "lemma": "ρο",
+  "translation": [
+    "ро"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το ρο",
+      "gen": "του ρο",
+      "acc": "το ρο"
+    },
+    "pl": {
+      "nom": "τα ρο",
+      "gen": "των ρο",
+      "acc": "τα ρο"
+    }
+  },
+  "example": {
+    "el": "Το γράμμα 'ρο'.",
+    "ru": "Буква 'ро'."
+  },
+  "lemma_key": "ρο",
+  "surfaces": [
+    "ρο"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

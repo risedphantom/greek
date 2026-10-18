@@ -1,0 +1,24 @@
+{
+  "lemma": "γεια σου",
+  "translation": [
+    "привет тебе"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεια σου!",
+    "ru": "Привет!"
+  },
+  "lemma_key": "γεια σου",
+  "surfaces": [
+    "Γεια σου"
+  ],
+  "msg_ids": [
+    122495,
+    122639
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

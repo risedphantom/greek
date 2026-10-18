@@ -1,0 +1,34 @@
+{
+  "lemma": "πίστη",
+  "translation": [
+    "вера"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η πίστη",
+      "gen": "της πίστης",
+      "acc": "την πίστη"
+    },
+    "pl": {
+      "nom": "οι πιστοί",
+      "gen": "των πιστών",
+      "acc": "τις πιστούς"
+    }
+  },
+  "example": {
+    "el": "Η πίστη είναι σημαντική.",
+    "ru": "Вера важна."
+  },
+  "lemma_key": "πίστη",
+  "surfaces": [
+    "Πίστη"
+  ],
+  "msg_ids": [
+    123950
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

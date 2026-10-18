@@ -1,0 +1,27 @@
+{
+  "lemma": "Φου",
+  "translation": [
+    "Фу"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ένα πικρό «Φου».",
+    "ru": "Горькое «Фу»."
+  },
+  "lemma_key": "φου",
+  "surfaces": [
+    "Φου",
+    "Φου."
+  ],
+  "msg_ids": [
+    122637,
+    122639,
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

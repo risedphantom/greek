@@ -1,0 +1,34 @@
+{
+  "lemma": "ντάμα",
+  "translation": [
+    "дама"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ντάμα",
+      "gen": "της ντάμας",
+      "acc": "τη ντάμα"
+    },
+    "pl": {
+      "nom": "οι ντάμες",
+      "gen": "των ντάμας",
+      "acc": "τις ντάμες"
+    }
+  },
+  "example": {
+    "el": "Η ντάμα του Ρήγα.",
+    "ru": "Дама червей."
+  },
+  "lemma_key": "ντάμα",
+  "surfaces": [
+    "ντάμα"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

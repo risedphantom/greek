@@ -1,0 +1,24 @@
+{
+  "lemma": "Καισαριανή",
+  "translation": [
+    "Кайсариани"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Καισαριανή είναι συνοικία της Αθήνας.",
+    "ru": "Кайсариани - район Афин."
+  },
+  "lemma_key": "καισαριανή",
+  "surfaces": [
+    "Καισαριανή"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

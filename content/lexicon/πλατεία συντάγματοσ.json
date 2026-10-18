@@ -1,0 +1,24 @@
+{
+  "lemma": "Πλατεία Συντάγματος",
+  "translation": [
+    "площадь Синтагма"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Πλατεία Συντάγματος είναι στο κέντρο.",
+    "ru": "Площадь Синтагма находится в центре."
+  },
+  "lemma_key": "πλατεία συντάγματοσ",
+  "surfaces": [
+    "Πλατεία του Συντάγματος"
+  ],
+  "msg_ids": [
+    124159,
+    124184
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

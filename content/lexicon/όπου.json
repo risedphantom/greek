@@ -1,0 +1,25 @@
+{
+  "lemma": "όπου",
+  "translation": [
+    "где",
+    "куда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Όπου κι αν πας.",
+    "ru": "Куда бы ты ни пошел."
+  },
+  "lemma_key": "όπου",
+  "surfaces": [
+    "όπου"
+  ],
+  "msg_ids": [
+    124160,
+    124185
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

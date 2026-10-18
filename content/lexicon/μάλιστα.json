@@ -1,0 +1,28 @@
+{
+  "lemma": "μάλιστα",
+  "translation": [
+    "да",
+    "конечно",
+    "очень"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μάλιστα, κύριε.",
+    "ru": "Да, господин."
+  },
+  "lemma_key": "μάλιστα",
+  "surfaces": [
+    "Μάλιστα",
+    "μάλιστα"
+  ],
+  "msg_ids": [
+    122822,
+    122985,
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,23 @@
+{
+  "lemma": "καλό απόγευμα",
+  "translation": [
+    "хорошего дня"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Καλό απόγευμα!",
+    "ru": "Хорошего дня!"
+  },
+  "lemma_key": "καλό απόγευμα",
+  "surfaces": [
+    "καλό απόγευμα"
+  ],
+  "msg_ids": [
+    122039
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

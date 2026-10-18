@@ -1,0 +1,30 @@
+{
+  "lemma": "ύστερα",
+  "translation": [
+    "потом",
+    "после"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα έρθω ύστερα.",
+    "ru": "Я приду позже."
+  },
+  "lemma_key": "ύστερα",
+  "surfaces": [
+    "Ύστερα",
+    "ύστερα",
+    "ὕστερα"
+  ],
+  "msg_ids": [
+    123620,
+    123658,
+    123741,
+    123744,
+    123745
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

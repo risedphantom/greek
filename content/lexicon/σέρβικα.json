@@ -1,0 +1,24 @@
+{
+  "lemma": "σέρβικα",
+  "translation": [
+    "по-сербски",
+    "сербский"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάει σέρβικα.",
+    "ru": "Он говорит по-сербски."
+  },
+  "lemma_key": "σέρβικα",
+  "surfaces": [
+    "σέρβικα"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

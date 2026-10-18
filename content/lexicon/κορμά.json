@@ -1,0 +1,24 @@
+{
+  "lemma": "Κορμά",
+  "translation": [
+    "Корма"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Κορμά είναι ο δάσκαλός μου.",
+    "ru": "Корма - мой учитель."
+  },
+  "lemma_key": "κορμά",
+  "surfaces": [
+    "Κορμά"
+  ],
+  "msg_ids": [
+    123727,
+    123737
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

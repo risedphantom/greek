@@ -1,0 +1,34 @@
+{
+  "lemma": "Οδός",
+  "translation": [
+    "улица"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "η οδός",
+      "gen": "της οδού",
+      "acc": "την οδό"
+    },
+    "pl": {
+      "nom": "οι οδοί",
+      "gen": "των οδών",
+      "acc": "τις οδούς"
+    }
+  },
+  "example": {
+    "el": "Η Οδός Ακαδημίας.",
+    "ru": "Улица Академии."
+  },
+  "lemma_key": "οδόσ",
+  "surfaces": [
+    "Οδός"
+  ],
+  "msg_ids": [
+    122614
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

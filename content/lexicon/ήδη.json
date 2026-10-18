@@ -1,0 +1,23 @@
+{
+  "lemma": "ήδη",
+  "translation": [
+    "уже"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι ήδη εδώ.",
+    "ru": "Он уже здесь."
+  },
+  "lemma_key": "ήδη",
+  "surfaces": [
+    "ήδη"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

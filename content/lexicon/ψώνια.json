@@ -1,0 +1,36 @@
+{
+  "lemma": "ψώνια",
+  "translation": [
+    "покупки"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ψώνι",
+      "gen": "του ψωνιού",
+      "acc": "το ψώνι"
+    },
+    "pl": {
+      "nom": "τα ψώνια",
+      "gen": "των ψωνιών",
+      "acc": "τα ψώνια"
+    }
+  },
+  "example": {
+    "el": "Πάμε για ψώνια.",
+    "ru": "Пойдем за покупками."
+  },
+  "lemma_key": "ψώνια",
+  "surfaces": [
+    "ψώνια"
+  ],
+  "msg_ids": [
+    123658,
+    123740,
+    123741
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

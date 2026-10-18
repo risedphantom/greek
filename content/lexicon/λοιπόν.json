@@ -1,0 +1,26 @@
+{
+  "lemma": "λοιπόν",
+  "translation": [
+    "итак",
+    "тогда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Λοιπόν, ας ξεκινήσουμε.",
+    "ru": "Итак, давайте начнем."
+  },
+  "lemma_key": "λοιπόν",
+  "surfaces": [
+    "Λοιπόν",
+    "λοιπόν"
+  ],
+  "msg_ids": [
+    122500,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

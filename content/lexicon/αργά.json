@@ -1,0 +1,32 @@
+{
+  "lemma": "αργά",
+  "translation": [
+    "поздно",
+    "медленно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι αργά.",
+    "ru": "Поздно."
+  },
+  "lemma_key": "αργά",
+  "surfaces": [
+    "αργά"
+  ],
+  "msg_ids": [
+    122040,
+    122041,
+    122819,
+    122823,
+    122829,
+    122830,
+    122849,
+    122986,
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "νίκη",
+  "translation": [
+    "победа"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η νίκη",
+      "gen": "της νίκης",
+      "acc": "τη νίκη"
+    },
+    "pl": {
+      "nom": "οι νίκες",
+      "gen": "των νικών",
+      "acc": "τις νίκες"
+    }
+  },
+  "example": {
+    "el": "Η νίκη μας είναι σίγουρη.",
+    "ru": "Наша победа — это уверенность."
+  },
+  "lemma_key": "νίκη",
+  "surfaces": [
+    "Νίκη"
+  ],
+  "msg_ids": [
+    123950
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

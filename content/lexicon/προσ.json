@@ -1,0 +1,25 @@
+{
+  "lemma": "προς",
+  "translation": [
+    "к",
+    "в направлении",
+    "за"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πηγαίνω προς το σπίτι.",
+    "ru": "Я иду домой."
+  },
+  "lemma_key": "προσ",
+  "surfaces": [
+    "προς"
+  ],
+  "msg_ids": [
+    122041
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

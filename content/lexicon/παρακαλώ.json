@@ -1,0 +1,31 @@
+{
+  "lemma": "παρακαλώ",
+  "translation": [
+    "пожалуйста",
+    "прошу",
+    "извините"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ένα νερό, παρακαλώ.",
+    "ru": "Одну воду, пожалуйста."
+  },
+  "lemma_key": "παρακαλώ",
+  "surfaces": [
+    "Παρακαλώ",
+    "παρακαλώ"
+  ],
+  "msg_ids": [
+    122041,
+    122823,
+    122986,
+    123952,
+    124122,
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

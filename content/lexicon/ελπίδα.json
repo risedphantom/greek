@@ -1,0 +1,34 @@
+{
+  "lemma": "ελπίδα",
+  "translation": [
+    "надежда"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ελπίδα",
+      "gen": "της ελπίδας",
+      "acc": "την ελπίδα"
+    },
+    "pl": {
+      "nom": "οι ελπίδες",
+      "gen": "των ελπίδων",
+      "acc": "τις ελπίδες"
+    }
+  },
+  "example": {
+    "el": "Έχω ελπίδα.",
+    "ru": "У меня есть надежда."
+  },
+  "lemma_key": "ελπίδα",
+  "surfaces": [
+    "Ελπίδα"
+  ],
+  "msg_ids": [
+    123950
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

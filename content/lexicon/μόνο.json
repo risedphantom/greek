@@ -1,0 +1,24 @@
+{
+  "lemma": "μόνο",
+  "translation": [
+    "только",
+    "лишь"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν θέλω μόνο αυτό.",
+    "ru": "Я хочу не только это."
+  },
+  "lemma_key": "μόνο",
+  "surfaces": [
+    "μόνο"
+  ],
+  "msg_ids": [
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

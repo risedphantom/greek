@@ -1,0 +1,25 @@
+{
+  "lemma": "Ακαδημία",
+  "translation": [
+    "Академия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Ακαδημία είναι διάσημη.",
+    "ru": "Академия известна."
+  },
+  "lemma_key": "ακαδημία",
+  "surfaces": [
+    "ΑΚΑΔΗΜΟΣ",
+    "Ακαδημία",
+    "Ακαδημίας"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Κατίνα",
+  "translation": [
+    "Катина"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Κατίνα είναι φίλη μου.",
+    "ru": "Катина - моя подруга."
+  },
+  "lemma_key": "κατίνα",
+  "surfaces": [
+    "Κατίνα"
+  ],
+  "msg_ids": [
+    122052,
+    122496
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

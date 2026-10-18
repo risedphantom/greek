@@ -1,0 +1,23 @@
+{
+  "lemma": "πόσον καιρό",
+  "translation": [
+    "как долго"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πόσον καιρό περιμένεις;",
+    "ru": "Как долго ты ждёшь?"
+  },
+  "lemma_key": "πόσον καιρό",
+  "surfaces": [
+    "πόσον καιρό"
+  ],
+  "msg_ids": [
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

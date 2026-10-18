@@ -1,0 +1,35 @@
+{
+  "lemma": "θέση",
+  "translation": [
+    "место",
+    "позиция"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η θέση",
+      "gen": "της θέσης",
+      "acc": "τη θέση"
+    },
+    "pl": {
+      "nom": "οι θέσεις",
+      "gen": "των θέσεων",
+      "acc": "τις θέσεις"
+    }
+  },
+  "example": {
+    "el": "Πάρε αυτή τη θέση.",
+    "ru": "Займи это место."
+  },
+  "lemma_key": "θέση",
+  "surfaces": [
+    "θέση"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

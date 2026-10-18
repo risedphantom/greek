@@ -1,0 +1,23 @@
+{
+  "lemma": "Νότια Αφρική",
+  "translation": [
+    "Южная Африка"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στη Νότια Αφρική.",
+    "ru": "Я живу в Южной Африке."
+  },
+  "lemma_key": "νότια αφρική",
+  "surfaces": [
+    "Αφρική"
+  ],
+  "msg_ids": [
+    122072
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "βήτα",
+  "translation": [
+    "бета"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η βήτα",
+      "gen": "της βήτας",
+      "acc": "τη βήτα"
+    },
+    "pl": {
+      "nom": "οι βήτες",
+      "gen": "των βητών",
+      "acc": "τις βήτες"
+    }
+  },
+  "example": {
+    "el": "Η δεύτερη γράφεται βήτα.",
+    "ru": "Вторая пишется бета."
+  },
+  "lemma_key": "βήτα",
+  "surfaces": [
+    "βήτα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

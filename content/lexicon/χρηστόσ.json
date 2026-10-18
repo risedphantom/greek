@@ -1,0 +1,23 @@
+{
+  "lemma": "Χρηστός",
+  "translation": [
+    "Христос (имя)"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Χρηστός είναι φίλος μου.",
+    "ru": "Христос мой друг."
+  },
+  "lemma_key": "χρηστόσ",
+  "surfaces": [
+    "Χρηστός"
+  ],
+  "msg_ids": [
+    122829
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

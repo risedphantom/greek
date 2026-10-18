@@ -1,0 +1,34 @@
+{
+  "lemma": "αίμα",
+  "translation": [
+    "кровь"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το αίμα",
+      "gen": "του αίματος",
+      "acc": "το αίμα"
+    },
+    "pl": {
+      "nom": "τα αίματα",
+      "gen": "των αιμάτων",
+      "acc": "τα αίματα"
+    }
+  },
+  "example": {
+    "el": "Έχω αίμα.",
+    "ru": "У меня кровь."
+  },
+  "lemma_key": "αίμα",
+  "surfaces": [
+    "αίμα"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,27 @@
+{
+  "lemma": "Λονδίνο",
+  "translation": [
+    "Лондон"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στο Λονδίνο.",
+    "ru": "Я живу в Лондоне."
+  },
+  "lemma_key": "λονδίνο",
+  "surfaces": [
+    "Λονδίνο"
+  ],
+  "msg_ids": [
+    122072,
+    122079,
+    124016,
+    124017,
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

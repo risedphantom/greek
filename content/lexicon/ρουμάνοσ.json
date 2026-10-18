@@ -1,0 +1,38 @@
+{
+  "lemma": "Ρουμάνος",
+  "translation": [
+    "румын"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {
+    "m": {
+      "sg": "Ρουμάνος",
+      "pl": "Ρουμάνοι"
+    },
+    "f": {
+      "sg": "Ρουμάνα",
+      "pl": "Ρουμάνες"
+    },
+    "n": {
+      "sg": "Ρουμανικό",
+      "pl": "Ρουμανικά"
+    }
+  },
+  "example": {
+    "el": "Είναι Ρουμάνος.",
+    "ru": "Он румын."
+  },
+  "lemma_key": "ρουμάνοσ",
+  "surfaces": [
+    "Ρουμάνος"
+  ],
+  "msg_ids": [
+    122047,
+    123729,
+    123751
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

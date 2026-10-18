@@ -1,0 +1,24 @@
+{
+  "lemma": "ογδόντα",
+  "translation": [
+    "восемьдесят"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι ογδόντα χρονών.",
+    "ru": "Мне восемьдесят лет."
+  },
+  "lemma_key": "ογδόντα",
+  "surfaces": [
+    "ογδόντα"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

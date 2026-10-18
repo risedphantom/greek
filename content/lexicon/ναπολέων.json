@@ -1,0 +1,23 @@
+{
+  "lemma": "Ναπολέων",
+  "translation": [
+    "Наполеон"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Ναπολέων ήταν αυτοκράτορας.",
+    "ru": "Наполеон был императором."
+  },
+  "lemma_key": "ναπολέων",
+  "surfaces": [
+    "Ναπολέων"
+  ],
+  "msg_ids": [
+    122614
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

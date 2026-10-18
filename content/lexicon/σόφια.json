@@ -1,0 +1,25 @@
+{
+  "lemma": "Σόφια",
+  "translation": [
+    "София"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από τη Σόφια.",
+    "ru": "Я из Софии."
+  },
+  "lemma_key": "σόφια",
+  "surfaces": [
+    "Σόφια"
+  ],
+  "msg_ids": [
+    122072,
+    122079,
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

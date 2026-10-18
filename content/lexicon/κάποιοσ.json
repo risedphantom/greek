@@ -1,0 +1,25 @@
+{
+  "lemma": "κάποιος",
+  "translation": [
+    "кто-то",
+    "кто-нибудь"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάποιος χτυπάει την πόρτα.",
+    "ru": "Кто-то стучит в дверь."
+  },
+  "lemma_key": "κάποιοσ",
+  "surfaces": [
+    "κάποιον"
+  ],
+  "msg_ids": [
+    122834,
+    122981
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

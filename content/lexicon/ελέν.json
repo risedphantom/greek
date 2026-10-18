@@ -1,0 +1,23 @@
+{
+  "lemma": "Ελέν",
+  "translation": [
+    "Элен"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Ελέν είναι φίλη μου.",
+    "ru": "Элен — моя подруга."
+  },
+  "lemma_key": "ελέν",
+  "surfaces": [
+    "Ελέν"
+  ],
+  "msg_ids": [
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

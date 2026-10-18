@@ -1,0 +1,34 @@
+{
+  "lemma": "δέντρο",
+  "translation": [
+    "дерево"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το δέντρο",
+      "gen": "του δέντρου",
+      "acc": "το δέντρο"
+    },
+    "pl": {
+      "nom": "τα δέντρα",
+      "gen": "των δέντρων",
+      "acc": "τα δέντρα"
+    }
+  },
+  "example": {
+    "el": "Το δέντρο έχει φύλλα.",
+    "ru": "У дерева есть листья."
+  },
+  "lemma_key": "δέντρο",
+  "surfaces": [
+    "δέντρο"
+  ],
+  "msg_ids": [
+    122071
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

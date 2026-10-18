@@ -1,0 +1,24 @@
+{
+  "lemma": "Ευρώπη",
+  "translation": [
+    "Европа"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στην Ευρώπη.",
+    "ru": "Я живу в Европе."
+  },
+  "lemma_key": "ευρώπη",
+  "surfaces": [
+    "Ευρώπη"
+  ],
+  "msg_ids": [
+    122837,
+    122984
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

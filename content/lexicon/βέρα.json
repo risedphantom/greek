@@ -1,0 +1,25 @@
+{
+  "lemma": "Βέρα",
+  "translation": [
+    "Вера"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Βέρα είναι φίλη μου.",
+    "ru": "Вера - моя подруга."
+  },
+  "lemma_key": "βέρα",
+  "surfaces": [
+    "Βέρα"
+  ],
+  "msg_ids": [
+    122637,
+    122639,
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

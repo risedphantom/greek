@@ -1,0 +1,34 @@
+{
+  "lemma": "λίμνη",
+  "translation": [
+    "озеро"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η λίμνη",
+      "gen": "της λίμνης",
+      "acc": "τη λίμνη"
+    },
+    "pl": {
+      "nom": "οι λίμνες",
+      "gen": "των λιμνών",
+      "acc": "τις λίμνες"
+    }
+  },
+  "example": {
+    "el": "Η λίμνη είναι μεγάλη.",
+    "ru": "Озеро большое."
+  },
+  "lemma_key": "λίμνη",
+  "surfaces": [
+    "λίμνη"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

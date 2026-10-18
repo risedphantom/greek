@@ -1,0 +1,24 @@
+{
+  "lemma": "όμως",
+  "translation": [
+    "однако",
+    "но"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι καλός, όμως.",
+    "ru": "Он хороший, однако."
+  },
+  "lemma_key": "όμωσ",
+  "surfaces": [
+    "όμως"
+  ],
+  "msg_ids": [
+    123621
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

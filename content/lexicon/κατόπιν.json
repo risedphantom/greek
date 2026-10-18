@@ -1,0 +1,24 @@
+{
+  "lemma": "κατόπιν",
+  "translation": [
+    "потом",
+    "затем"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ήρθα κατόπιν.",
+    "ru": "Я пришел потом."
+  },
+  "lemma_key": "κατόπιν",
+  "surfaces": [
+    "κατόπιν"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

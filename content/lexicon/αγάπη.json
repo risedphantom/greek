@@ -1,0 +1,34 @@
+{
+  "lemma": "αγάπη",
+  "translation": [
+    "любовь"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η αγάπη",
+      "gen": "της αγάπης",
+      "acc": "την αγάπη"
+    },
+    "pl": {
+      "nom": "οι αγάπες",
+      "gen": "των αγάπων",
+      "acc": "τις αγάπες"
+    }
+  },
+  "example": {
+    "el": "Η αγάπη είναι όμορφη.",
+    "ru": "Любовь прекрасна."
+  },
+  "lemma_key": "αγάπη",
+  "surfaces": [
+    "Αγάπη"
+  ],
+  "msg_ids": [
+    123950
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

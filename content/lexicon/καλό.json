@@ -1,0 +1,34 @@
+{
+  "lemma": "καλό",
+  "translation": [
+    "хорошее"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το καλό",
+      "gen": "του καλού",
+      "acc": "το καλό"
+    },
+    "pl": {
+      "nom": "τα καλά",
+      "gen": "των καλών",
+      "acc": "τα καλά"
+    }
+  },
+  "example": {
+    "el": "Το καλό είναι ότι έρχεται.",
+    "ru": "Хорошо то, что он приходит."
+  },
+  "lemma_key": "καλό",
+  "surfaces": [
+    "καλό"
+  ],
+  "msg_ids": [
+    122618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

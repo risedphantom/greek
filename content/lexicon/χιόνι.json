@@ -1,0 +1,34 @@
+{
+  "lemma": "χιόνι",
+  "translation": [
+    "снег"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το χιόνι",
+      "gen": "του χιονιού",
+      "acc": "το χιόνι"
+    },
+    "pl": {
+      "nom": "τα χιόνια",
+      "gen": "των χιονιών",
+      "acc": "τα χιόνια"
+    }
+  },
+  "example": {
+    "el": "Το χιόνι πέφτει.",
+    "ru": "Снег падает."
+  },
+  "lemma_key": "χιόνι",
+  "surfaces": [
+    "χιόνι"
+  ],
+  "msg_ids": [
+    122614
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

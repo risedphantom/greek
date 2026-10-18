@@ -1,0 +1,26 @@
+{
+  "lemma": "πάνω",
+  "translation": [
+    "наверху",
+    "над"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το βιβλίο είναι πάνω.",
+    "ru": "Книга наверху."
+  },
+  "lemma_key": "πάνω",
+  "surfaces": [
+    "πάνω"
+  ],
+  "msg_ids": [
+    123089,
+    124158,
+    124183
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

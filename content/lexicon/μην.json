@@ -1,0 +1,23 @@
+{
+  "lemma": "μην",
+  "translation": [
+    "не (частица)"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μην το κάνεις!",
+    "ru": "Не делай этого!"
+  },
+  "lemma_key": "μην",
+  "surfaces": [
+    "μην"
+  ],
+  "msg_ids": [
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,23 @@
+{
+  "lemma": "πεντέμισι",
+  "translation": [
+    "пять с половиной"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι πεντέμισι.",
+    "ru": "Это половина шестого."
+  },
+  "lemma_key": "πεντέμισι",
+  "surfaces": [
+    "πεντέμισι"
+  ],
+  "msg_ids": [
+    123953
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

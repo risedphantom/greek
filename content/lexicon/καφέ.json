@@ -1,0 +1,35 @@
+{
+  "lemma": "καφέ",
+  "translation": [
+    "кофе",
+    "коричневый"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-έ/-έδες",
+  "forms": {
+    "sg": {
+      "nom": "ο καφέ",
+      "gen": "του καφέ",
+      "acc": "τον καφέ"
+    },
+    "pl": {
+      "nom": "οι καφέδες",
+      "gen": "των καφέδων",
+      "acc": "τους καφέδες"
+    }
+  },
+  "example": {
+    "el": "Θέλω ένα καφέ.",
+    "ru": "Я хочу кофе."
+  },
+  "lemma_key": "καφέ",
+  "surfaces": [
+    "καφέ"
+  ],
+  "msg_ids": [
+    124120
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "πάτωμα",
+  "translation": [
+    "пол",
+    "этаж"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πάτωμα",
+      "gen": "του πατώματος",
+      "acc": "το πάτωμα"
+    },
+    "pl": {
+      "nom": "τα πατώματα",
+      "gen": "των πατωμάτων",
+      "acc": "τα πατώματα"
+    }
+  },
+  "example": {
+    "el": "Το πάτωμα είναι καθαρό.",
+    "ru": "Пол чистый."
+  },
+  "lemma_key": "πάτωμα",
+  "surfaces": [
+    "πάτωμα"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

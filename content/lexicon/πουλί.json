@@ -1,0 +1,34 @@
+{
+  "lemma": "πουλί",
+  "translation": [
+    "птица"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το πουλί",
+      "gen": "του πουλιού",
+      "acc": "το πουλί"
+    },
+    "pl": {
+      "nom": "τα πουλιά",
+      "gen": "των πουλιών",
+      "acc": "τα πουλιά"
+    }
+  },
+  "example": {
+    "el": "Το πουλί πετάει ψηλά.",
+    "ru": "Птица летит высоко."
+  },
+  "lemma_key": "πουλί",
+  "surfaces": [
+    "πουλί"
+  ],
+  "msg_ids": [
+    124268
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "νούμερο",
+  "translation": [
+    "номер"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το νούμερο",
+      "gen": "του αριθμού",
+      "acc": "το νούμερο"
+    },
+    "pl": {
+      "nom": "τα νούμερα",
+      "gen": "των αριθμών",
+      "acc": "τα νούμερα"
+    }
+  },
+  "example": {
+    "el": "Ποιο είναι το νούμερό σου;",
+    "ru": "Какой твой номер?"
+  },
+  "lemma_key": "νούμερο",
+  "surfaces": [
+    "νούμερο"
+  ],
+  "msg_ids": [
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

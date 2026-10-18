@@ -1,0 +1,35 @@
+{
+  "lemma": "γιώτα",
+  "translation": [
+    "йота"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η γιώτα",
+      "gen": "της γιώτας",
+      "acc": "τη γιώτα"
+    },
+    "pl": {
+      "nom": "οι γιώτες",
+      "gen": "των γιωτών",
+      "acc": "τις γιώτες"
+    }
+  },
+  "example": {
+    "el": "Δεν άλλαξε ούτε γιώτα.",
+    "ru": "Он не изменился ни на йоту."
+  },
+  "lemma_key": "γιώτα",
+  "surfaces": [
+    "γιώτα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

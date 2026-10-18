@@ -1,0 +1,30 @@
+{
+  "lemma": "έξω",
+  "translation": [
+    "снаружи",
+    "вне"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι έξω.",
+    "ru": "Он снаружи."
+  },
+  "lemma_key": "έξω",
+  "surfaces": [
+    "έξω"
+  ],
+  "msg_ids": [
+    122819,
+    122820,
+    122823,
+    122829,
+    122849,
+    124014,
+    124120
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

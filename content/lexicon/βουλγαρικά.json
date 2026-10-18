@@ -1,0 +1,23 @@
+{
+  "lemma": "βουλγαρικά",
+  "translation": [
+    "болгарский"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω βουλγαρικά.",
+    "ru": "Я говорю по-болгарски."
+  },
+  "lemma_key": "βουλγαρικά",
+  "surfaces": [
+    "βουλγαρικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "Δανός",
+  "translation": [
+    "датчанин"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο Δανός",
+      "gen": "του Δανού",
+      "acc": "τον Δανό"
+    },
+    "pl": {
+      "nom": "οι Δανοί",
+      "gen": "των Δανών",
+      "acc": "τους Δανούς"
+    }
+  },
+  "example": {
+    "el": "Είναι Δανός.",
+    "ru": "Он датчанин."
+  },
+  "lemma_key": "δανόσ",
+  "surfaces": [
+    "Δανός"
+  ],
+  "msg_ids": [
+    123729,
+    123751
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

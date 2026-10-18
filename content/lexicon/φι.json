@@ -1,0 +1,35 @@
+{
+  "lemma": "φι",
+  "translation": [
+    "фи"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το φι",
+      "gen": "του φι",
+      "acc": "το φι"
+    },
+    "pl": {
+      "nom": "τα φι",
+      "gen": "των φι",
+      "acc": "τα φι"
+    }
+  },
+  "example": {
+    "el": "Το φι είναι το τελευταίο γράμμα.",
+    "ru": "Фи — последняя буква."
+  },
+  "lemma_key": "φι",
+  "surfaces": [
+    "φι"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

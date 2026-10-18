@@ -1,0 +1,24 @@
+{
+  "lemma": "Γιολάντα",
+  "translation": [
+    "Иоланда"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Γιολάντα είναι όμορφη.",
+    "ru": "Иоланда красивая."
+  },
+  "lemma_key": "γιολάντα",
+  "surfaces": [
+    "Γιολάντα"
+  ],
+  "msg_ids": [
+    122836,
+    122983
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

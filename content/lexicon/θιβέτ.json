@@ -1,0 +1,24 @@
+{
+  "lemma": "Θιβέτ",
+  "translation": [
+    "Тибет"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από το Θιβέτ.",
+    "ru": "Я из Тибета."
+  },
+  "lemma_key": "θιβέτ",
+  "surfaces": [
+    "Θιβέτ"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

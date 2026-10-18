@@ -1,0 +1,25 @@
+{
+  "lemma": "ένας",
+  "translation": [
+    "один",
+    "одна",
+    "одно"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ένας φίλος μου.",
+    "ru": "Один мой друг."
+  },
+  "lemma_key": "ένασ",
+  "surfaces": [
+    "Ένα"
+  ],
+  "msg_ids": [
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

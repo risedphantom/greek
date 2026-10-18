@@ -1,0 +1,24 @@
+{
+  "lemma": "Πλατεία Ομόνοιας",
+  "translation": [
+    "площадь Омония"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Στην Πλατεία Ομόνοιας.",
+    "ru": "На площади Омония."
+  },
+  "lemma_key": "πλατεία ομόνοιασ",
+  "surfaces": [
+    "Πλατεία της Ομόνοιας"
+  ],
+  "msg_ids": [
+    124159,
+    124184
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

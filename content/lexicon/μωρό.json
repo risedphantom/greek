@@ -1,0 +1,37 @@
+{
+  "lemma": "μωρό",
+  "translation": [
+    "ребёнок",
+    "младенец"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ό/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το μωρό",
+      "gen": "του μωρού",
+      "acc": "το μωρό"
+    },
+    "pl": {
+      "nom": "τα μωρά",
+      "gen": "των μωρών",
+      "acc": "τα μωρά"
+    }
+  },
+  "example": {
+    "el": "Το μωρό κοιμάται.",
+    "ru": "Ребёнок спит."
+  },
+  "lemma_key": "μωρό",
+  "surfaces": [
+    "μωρό"
+  ],
+  "msg_ids": [
+    122052,
+    122496,
+    122619
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

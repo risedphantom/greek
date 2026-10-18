@@ -1,0 +1,24 @@
+{
+  "lemma": "μεσημεριάτικα",
+  "translation": [
+    "днем",
+    "в обеденное время"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Τρώω μεσημεριάτικα.",
+    "ru": "Я ем в обеденное время."
+  },
+  "lemma_key": "μεσημεριάτικα",
+  "surfaces": [
+    "μεσημεριάτικα"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

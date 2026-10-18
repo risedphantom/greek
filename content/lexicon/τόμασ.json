@@ -1,0 +1,24 @@
+{
+  "lemma": "Τόμας",
+  "translation": [
+    "Томас"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Τόμας είναι φίλος μου.",
+    "ru": "Томас - мой друг."
+  },
+  "lemma_key": "τόμασ",
+  "surfaces": [
+    "Τόμας"
+  ],
+  "msg_ids": [
+    122050,
+    122495
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

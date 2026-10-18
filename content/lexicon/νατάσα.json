@@ -1,0 +1,24 @@
+{
+  "lemma": "Νατάσα",
+  "translation": [
+    "Наташа"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Νατάσα είναι νέα.",
+    "ru": "Наташа — молодая."
+  },
+  "lemma_key": "νατάσα",
+  "surfaces": [
+    "Νατάσα"
+  ],
+  "msg_ids": [
+    122637,
+    122639
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "Μάιος",
+  "translation": [
+    "май"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Μάιος",
+      "gen": "του Μαΐου",
+      "acc": "τον Μάιο"
+    },
+    "pl": {
+      "nom": "οι Μάιοι",
+      "gen": "των Μαΐων",
+      "acc": "τους Μάιους"
+    }
+  },
+  "example": {
+    "el": "Τον Μάιο κάνει ζέστη.",
+    "ru": "В мае жарко."
+  },
+  "lemma_key": "μάιοσ",
+  "surfaces": [
+    "Μάιος"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

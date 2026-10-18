@@ -1,0 +1,35 @@
+{
+  "lemma": "όμικρον",
+  "translation": [
+    "омикрон"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το όμικρον",
+      "gen": "του όμικρον",
+      "acc": "το όμικρον"
+    },
+    "pl": {
+      "nom": "τα όμικρον",
+      "gen": "των όμικρον",
+      "acc": "τα όμικρον"
+    }
+  },
+  "example": {
+    "el": "Όμικρον.",
+    "ru": "Омикрон."
+  },
+  "lemma_key": "όμικρον",
+  "surfaces": [
+    "όμικρον"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

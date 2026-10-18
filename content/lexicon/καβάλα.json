@@ -1,0 +1,25 @@
+{
+  "lemma": "Καβάλα",
+  "translation": [
+    "Кавала"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μένω στην Καβάλα.",
+    "ru": "Я живу в Кавале."
+  },
+  "lemma_key": "καβάλα",
+  "surfaces": [
+    "Καβάλα"
+  ],
+  "msg_ids": [
+    122836,
+    122983,
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

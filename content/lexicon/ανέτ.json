@@ -1,0 +1,23 @@
+{
+  "lemma": "Ανέτ",
+  "translation": [
+    "Анет"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Ανέτ είναι από τη Γαλλία.",
+    "ru": "Анет из Франции."
+  },
+  "lemma_key": "ανέτ",
+  "surfaces": [
+    "Ανέτ"
+  ],
+  "msg_ids": [
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

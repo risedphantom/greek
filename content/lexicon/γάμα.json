@@ -1,0 +1,35 @@
+{
+  "lemma": "γάμα",
+  "translation": [
+    "гамма"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η γάμα",
+      "gen": "της γάμας",
+      "acc": "τη γάμα"
+    },
+    "pl": {
+      "nom": "οι γάμες",
+      "gen": "των γάμων",
+      "acc": "τις γάμες"
+    }
+  },
+  "example": {
+    "el": "Η λέξη αρχίζει με γάμα.",
+    "ru": "Слово начинается с гаммы."
+  },
+  "lemma_key": "γάμα",
+  "surfaces": [
+    "γάμα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

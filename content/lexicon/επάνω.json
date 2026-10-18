@@ -1,0 +1,25 @@
+{
+  "lemma": "επάνω",
+  "translation": [
+    "наверху",
+    "на",
+    "вверх"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το βιβλίο είναι επάνω στο τραπέζι.",
+    "ru": "Книга лежит на столе."
+  },
+  "lemma_key": "επάνω",
+  "surfaces": [
+    "επάνω"
+  ],
+  "msg_ids": [
+    123088
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

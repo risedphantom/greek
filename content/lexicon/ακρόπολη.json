@@ -1,0 +1,25 @@
+{
+  "lemma": "Ακρόπολη",
+  "translation": [
+    "Акрополь"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Επισκέφτηκα την Ακρόπολη.",
+    "ru": "Я посетил Акрополь."
+  },
+  "lemma_key": "ακρόπολη",
+  "surfaces": [
+    "Ακρόπολη"
+  ],
+  "msg_ids": [
+    124127,
+    124158,
+    124183
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

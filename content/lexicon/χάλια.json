@@ -1,0 +1,26 @@
+{
+  "lemma": "χάλια",
+  "translation": [
+    "плохо",
+    "ужасно",
+    "развалено"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι χάλια.",
+    "ru": "Это ужасно."
+  },
+  "lemma_key": "χάλια",
+  "surfaces": [
+    "Χάλια"
+  ],
+  "msg_ids": [
+    122834,
+    122981
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "έτσι",
+  "translation": [
+    "так",
+    "таким образом"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάνε το έτσι.",
+    "ru": "Сделай это так."
+  },
+  "lemma_key": "έτσι",
+  "surfaces": [
+    "έτσι"
+  ],
+  "msg_ids": [
+    122500,
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

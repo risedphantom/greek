@@ -1,0 +1,24 @@
+{
+  "lemma": "δεκατέσσερα",
+  "translation": [
+    "четырнадцать"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω δεκατέσσερα μήλα.",
+    "ru": "У меня четырнадцать яблок."
+  },
+  "lemma_key": "δεκατέσσερα",
+  "surfaces": [
+    "δεκατέσσερα"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

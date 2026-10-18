@@ -1,0 +1,23 @@
+{
+  "lemma": "Ηλίας",
+  "translation": [
+    "Илия"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Ηλίας είναι εδώ.",
+    "ru": "Илия здесь."
+  },
+  "lemma_key": "ηλίασ",
+  "surfaces": [
+    "Ηλίας"
+  ],
+  "msg_ids": [
+    122829
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

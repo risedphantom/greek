@@ -1,0 +1,34 @@
+{
+  "lemma": "νησί",
+  "translation": [
+    "остров"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το νησί",
+      "gen": "του νησιού",
+      "acc": "το νησί"
+    },
+    "pl": {
+      "nom": "τα νησιά",
+      "gen": "των νησιών",
+      "acc": "τα νησιά"
+    }
+  },
+  "example": {
+    "el": "Είναι ένα όμορφο νησί.",
+    "ru": "Это красивый остров."
+  },
+  "lemma_key": "νησί",
+  "surfaces": [
+    "νησί"
+  ],
+  "msg_ids": [
+    123956
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

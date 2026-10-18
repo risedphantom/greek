@@ -1,0 +1,23 @@
+{
+  "lemma": "σωστά",
+  "translation": [
+    "правильно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι σωστά.",
+    "ru": "Это правильно."
+  },
+  "lemma_key": "σωστά",
+  "surfaces": [
+    "Σωστά"
+  ],
+  "msg_ids": [
+    122044
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

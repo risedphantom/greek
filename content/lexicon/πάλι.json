@@ -1,0 +1,26 @@
+{
+  "lemma": "πάλι",
+  "translation": [
+    "снова",
+    "опять"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πάλι βρέχει.",
+    "ru": "Снова идёт дождь."
+  },
+  "lemma_key": "πάλι",
+  "surfaces": [
+    "Πάλι",
+    "πάλι"
+  ],
+  "msg_ids": [
+    122041,
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

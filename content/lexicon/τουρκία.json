@@ -1,0 +1,24 @@
+{
+  "lemma": "Τουρκία",
+  "translation": [
+    "Турция"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Τουρκία είναι μια χώρα.",
+    "ru": "Турция - это страна."
+  },
+  "lemma_key": "τουρκία",
+  "surfaces": [
+    "Τουρκία"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

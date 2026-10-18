@@ -1,0 +1,35 @@
+{
+  "lemma": "δίκιο",
+  "translation": [
+    "правота",
+    "быть правым"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το δίκιο",
+      "gen": "του δικίου",
+      "acc": "το δίκιο"
+    },
+    "pl": {
+      "nom": "τα δίκια",
+      "gen": "των δικίων",
+      "acc": "τα δίκια"
+    }
+  },
+  "example": {
+    "el": "Έχεις δίκιο.",
+    "ru": "Ты прав."
+  },
+  "lemma_key": "δίκιο",
+  "surfaces": [
+    "δίκιο"
+  ],
+  "msg_ids": [
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

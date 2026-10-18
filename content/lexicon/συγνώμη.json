@@ -1,0 +1,27 @@
+{
+  "lemma": "συγνώμη",
+  "translation": [
+    "извинение",
+    "прошу прощения"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Συγνώμη, δεν κατάλαβα.",
+    "ru": "Прошу прощения, я не понял."
+  },
+  "lemma_key": "συγνώμη",
+  "surfaces": [
+    "Συγνώμη",
+    "συγνώμη"
+  ],
+  "msg_ids": [
+    122040,
+    123359,
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

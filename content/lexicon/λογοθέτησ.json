@@ -1,0 +1,23 @@
+{
+  "lemma": "Λογοθέτης",
+  "translation": [
+    "Логóтетис (фамилия)"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": null,
+    "ru": null
+  },
+  "lemma_key": "λογοθέτησ",
+  "surfaces": [
+    "Λογοθέτης"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

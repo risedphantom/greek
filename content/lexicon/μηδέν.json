@@ -1,0 +1,26 @@
+{
+  "lemma": "μηδέν",
+  "translation": [
+    "ноль"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το νούμερο είναι μηδέν.",
+    "ru": "Номер - ноль."
+  },
+  "lemma_key": "μηδέν",
+  "surfaces": [
+    "μήδεν",
+    "μηδέν"
+  ],
+  "msg_ids": [
+    123359,
+    123953,
+    123954
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

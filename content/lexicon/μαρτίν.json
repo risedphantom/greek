@@ -1,0 +1,23 @@
+{
+  "lemma": "Μαρτίν",
+  "translation": [
+    "Мартин (имя)"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": null,
+    "ru": null
+  },
+  "lemma_key": "μαρτίν",
+  "surfaces": [
+    "Μάρτιν"
+  ],
+  "msg_ids": [
+    122983
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

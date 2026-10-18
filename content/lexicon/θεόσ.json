@@ -1,0 +1,34 @@
+{
+  "lemma": "Θεός",
+  "translation": [
+    "Бог"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο Θεός",
+      "gen": "του Θεού",
+      "acc": "τον Θεό"
+    },
+    "pl": {
+      "nom": "οι Θεοί",
+      "gen": "των Θεών",
+      "acc": "τους Θεούς"
+    }
+  },
+  "example": {
+    "el": "Ο Θεός είναι παντού.",
+    "ru": "Бог везде."
+  },
+  "lemma_key": "θεόσ",
+  "surfaces": [
+    "Θεός"
+  ],
+  "msg_ids": [
+    122614
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

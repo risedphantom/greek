@@ -1,0 +1,35 @@
+{
+  "lemma": "ευρώ",
+  "translation": [
+    "евро"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ώ/-ώ",
+  "forms": {
+    "sg": {
+      "nom": "το ευρώ",
+      "gen": "του ευρώ",
+      "acc": "το ευρώ"
+    },
+    "pl": {
+      "nom": "τα ευρώ",
+      "gen": "των ευρώ",
+      "acc": "τα ευρώ"
+    }
+  },
+  "example": {
+    "el": "Πόσο κοστίζει;",
+    "ru": "Сколько это стоит?"
+  },
+  "lemma_key": "ευρώ",
+  "surfaces": [
+    "ευρώ"
+  ],
+  "msg_ids": [
+    123618,
+    124121
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "τοίχος",
+  "translation": [
+    "стена"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο τοίχος",
+      "gen": "του τοίχου",
+      "acc": "τον τοίχο"
+    },
+    "pl": {
+      "nom": "οι τοίχοι",
+      "gen": "των τοίχων",
+      "acc": "τους τοίχους"
+    }
+  },
+  "example": {
+    "el": "Ο τοίχος είναι άσπρος.",
+    "ru": "Стена белая."
+  },
+  "lemma_key": "τοίχοσ",
+  "surfaces": [
+    "τοίχο"
+  ],
+  "msg_ids": [
+    124015
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

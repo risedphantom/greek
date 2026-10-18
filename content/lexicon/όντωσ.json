@@ -1,0 +1,24 @@
+{
+  "lemma": "όντως",
+  "translation": [
+    "действительно",
+    "правда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι όντως αλήθεια.",
+    "ru": "Это действительно правда."
+  },
+  "lemma_key": "όντωσ",
+  "surfaces": [
+    "όντως"
+  ],
+  "msg_ids": [
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "ποτέ",
+  "translation": [
+    "никогда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν έχω δει ποτέ κάτι τέτοιο.",
+    "ru": "Я никогда не видел ничего подобного."
+  },
+  "lemma_key": "ποτέ",
+  "surfaces": [
+    "ποτέ"
+  ],
+  "msg_ids": [
+    123956,
+    124120
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

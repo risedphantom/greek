@@ -1,0 +1,35 @@
+{
+  "lemma": "βάρκα",
+  "translation": [
+    "лодка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η βάρκα",
+      "gen": "της βάρκας",
+      "acc": "τη βάρκα"
+    },
+    "pl": {
+      "nom": "οι βάρκες",
+      "gen": "των βαρκών",
+      "acc": "τις βάρκες"
+    }
+  },
+  "example": {
+    "el": "Ταξιδεύω με βάρκα.",
+    "ru": "Я путешествую на лодке."
+  },
+  "lemma_key": "βάρκα",
+  "surfaces": [
+    "βάρκα"
+  ],
+  "msg_ids": [
+    123956,
+    123958
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

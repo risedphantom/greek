@@ -1,0 +1,23 @@
+{
+  "lemma": "Καλκούτα",
+  "translation": [
+    "Калькутта"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Καλκούτα είναι μεγάλη πόλη.",
+    "ru": "Калькутта - большой город."
+  },
+  "lemma_key": "καλκούτα",
+  "surfaces": [
+    "Καλκούτα"
+  ],
+  "msg_ids": [
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

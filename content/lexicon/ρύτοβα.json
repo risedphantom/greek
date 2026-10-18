@@ -1,0 +1,23 @@
+{
+  "lemma": "Ρύτοβα",
+  "translation": [
+    "Рытова"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι το όνομα Ρύτοβα.",
+    "ru": "Это имя Рытова."
+  },
+  "lemma_key": "ρύτοβα",
+  "surfaces": [
+    "Ρытова"
+  ],
+  "msg_ids": [
+    122497
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

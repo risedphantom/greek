@@ -1,0 +1,34 @@
+{
+  "lemma": "γάτα",
+  "translation": [
+    "кошка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η γάτα",
+      "gen": "της γάτας",
+      "acc": "τη γάτα"
+    },
+    "pl": {
+      "nom": "οι γάτες",
+      "gen": "των γατών",
+      "acc": "τις γάτες"
+    }
+  },
+  "example": {
+    "el": "Η γάτα κοιμάται.",
+    "ru": "Кошка спит."
+  },
+  "lemma_key": "γάτα",
+  "surfaces": [
+    "γάτα"
+  ],
+  "msg_ids": [
+    124015
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,30 @@
+{
+  "lemma": "έξι",
+  "translation": [
+    "шесть"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έξι μήλα.",
+    "ru": "Шесть яблок."
+  },
+  "lemma_key": "έξι",
+  "surfaces": [
+    "Έξι",
+    "έξι"
+  ],
+  "msg_ids": [
+    122835,
+    122982,
+    123359,
+    123951,
+    123953,
+    123954,
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

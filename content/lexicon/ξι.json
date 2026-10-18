@@ -1,0 +1,35 @@
+{
+  "lemma": "ξι",
+  "translation": [
+    "кси"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ξι",
+      "gen": "του ξι",
+      "acc": "το ξι"
+    },
+    "pl": {
+      "nom": "τα ξι",
+      "gen": "των ξι",
+      "acc": "τα ξι"
+    }
+  },
+  "example": {
+    "el": "Το γράμμα ξι.",
+    "ru": "Буква кси."
+  },
+  "lemma_key": "ξι",
+  "surfaces": [
+    "ξι"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

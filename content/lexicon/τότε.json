@@ -1,0 +1,24 @@
+{
+  "lemma": "τότε",
+  "translation": [
+    "тогда",
+    "в то время"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Τότε δεν ήξερα τίποτα.",
+    "ru": "Тогда я ничего не знал."
+  },
+  "lemma_key": "τότε",
+  "surfaces": [
+    "τότε"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

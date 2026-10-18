@@ -1,0 +1,24 @@
+{
+  "lemma": "Σκωτία",
+  "translation": [
+    "Шотландия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Σκωτία είναι όμορφη.",
+    "ru": "Шотландия прекрасна."
+  },
+  "lemma_key": "σκωτία",
+  "surfaces": [
+    "Σκωτία"
+  ],
+  "msg_ids": [
+    123360,
+    123613
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

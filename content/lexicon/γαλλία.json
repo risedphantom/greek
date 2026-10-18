@@ -1,0 +1,30 @@
+{
+  "lemma": "Γαλλία",
+  "translation": [
+    "Франция"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Γαλλία είναι μια όμορφη χώρα.",
+    "ru": "Франция - красивая страна."
+  },
+  "lemma_key": "γαλλία",
+  "surfaces": [
+    "Γαλλία"
+  ],
+  "msg_ids": [
+    122046,
+    122047,
+    122048,
+    122049,
+    122072,
+    122079,
+    122493,
+    122494
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

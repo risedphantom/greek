@@ -1,0 +1,24 @@
+{
+  "lemma": "Βαγγέλης",
+  "translation": [
+    "Вангелис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Βαγγέλης είναι καλός φοιτητής.",
+    "ru": "Вангелис - хороший студент."
+  },
+  "lemma_key": "βαγγέλησ",
+  "surfaces": [
+    "Βαγγέλη"
+  ],
+  "msg_ids": [
+    122836,
+    122983
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

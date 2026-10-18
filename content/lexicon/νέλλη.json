@@ -1,0 +1,23 @@
+{
+  "lemma": "Νέλλη",
+  "translation": [
+    "Нелли"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Νέλλη είναι φίλη μου.",
+    "ru": "Нелли — моя подруга."
+  },
+  "lemma_key": "νέλλη",
+  "surfaces": [
+    "Νέλλη"
+  ],
+  "msg_ids": [
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

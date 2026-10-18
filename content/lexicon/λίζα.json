@@ -1,0 +1,26 @@
+{
+  "lemma": "Λίζα",
+  "translation": [
+    "Лиза"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Λίζα είναι φίλη μου.",
+    "ru": "Лиза — моя подруга."
+  },
+  "lemma_key": "λίζα",
+  "surfaces": [
+    "Λίζα"
+  ],
+  "msg_ids": [
+    122048,
+    122050,
+    122493,
+    122495
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

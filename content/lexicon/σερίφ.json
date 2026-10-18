@@ -1,0 +1,25 @@
+{
+  "lemma": "Σερίφ",
+  "translation": [
+    "Сериф"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Σερίφ είναι φίλος μου.",
+    "ru": "Сериф - мой друг."
+  },
+  "lemma_key": "σερίφ",
+  "surfaces": [
+    "Σερίφ"
+  ],
+  "msg_ids": [
+    122637,
+    122639,
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "ναύτης",
+  "translation": [
+    "моряк"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο ναύτης",
+      "gen": "του ναύτη",
+      "acc": "τον ναύτη"
+    },
+    "pl": {
+      "nom": "οι ναύτες",
+      "gen": "των ναυτών",
+      "acc": "τους ναύτες"
+    }
+  },
+  "example": {
+    "el": "Είναι ναύτης.",
+    "ru": "Он моряк."
+  },
+  "lemma_key": "ναύτησ",
+  "surfaces": [
+    "ναύτη",
+    "ναύτης"
+  ],
+  "msg_ids": [
+    122500,
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

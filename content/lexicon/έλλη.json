@@ -1,0 +1,24 @@
+{
+  "lemma": "Έλλη",
+  "translation": [
+    "Элли"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Έλλη είναι Ελληνίδα.",
+    "ru": "Элли - гречанка."
+  },
+  "lemma_key": "έλλη",
+  "surfaces": [
+    "Έλλη"
+  ],
+  "msg_ids": [
+    122045,
+    124268
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Αναστασίου",
+  "translation": [
+    "Анастасиу"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο κύριος Αναστασίου είναι ο δάσκαλός μου.",
+    "ru": "Господин Анастасиу - мой учитель."
+  },
+  "lemma_key": "αναστασίου",
+  "surfaces": [
+    "Αναστασίου"
+  ],
+  "msg_ids": [
+    123727,
+    123737
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

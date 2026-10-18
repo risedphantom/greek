@@ -1,0 +1,34 @@
+{
+  "lemma": "γεύση",
+  "translation": [
+    "вкус"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η γεύση",
+      "gen": "της γεύσης",
+      "acc": "τη γεύση"
+    },
+    "pl": {
+      "nom": "οι γεύσεις",
+      "gen": "των γεύσεων",
+      "acc": "τις γεύσεις"
+    }
+  },
+  "example": {
+    "el": "Έχει ωραία γεύση.",
+    "ru": "У него приятный вкус."
+  },
+  "lemma_key": "γεύση",
+  "surfaces": [
+    "γεύση"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

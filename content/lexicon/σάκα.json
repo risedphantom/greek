@@ -1,0 +1,35 @@
+{
+  "lemma": "σάκα",
+  "translation": [
+    "сумка",
+    "мешок"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η σάκα",
+      "gen": "της σάκας",
+      "acc": "τη σάκα"
+    },
+    "pl": {
+      "nom": "οι σάκες",
+      "gen": "των σακών",
+      "acc": "τις σάκες"
+    }
+  },
+  "example": {
+    "el": "Έχω μια μεγάλη σάκα.",
+    "ru": "У меня большая сумка."
+  },
+  "lemma_key": "σάκα",
+  "surfaces": [
+    "σάκα"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

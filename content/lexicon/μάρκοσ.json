@@ -1,0 +1,34 @@
+{
+  "lemma": "Μάρκος",
+  "translation": [
+    "Маркос"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Μάρκος",
+      "gen": "του Μάρκου",
+      "acc": "τον Μάρκο"
+    },
+    "pl": {
+      "nom": "οι Μάρκοι",
+      "gen": "των Μάρκων",
+      "acc": "τους Μάρκους"
+    }
+  },
+  "example": {
+    "el": "Ο Μάρκος διαβάζει ένα βιβλίο.",
+    "ru": "Маркос читает книгу."
+  },
+  "lemma_key": "μάρκοσ",
+  "surfaces": [
+    "Μάρκ"
+  ],
+  "msg_ids": [
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

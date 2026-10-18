@@ -1,0 +1,27 @@
+{
+  "lemma": "κάθε",
+  "translation": [
+    "каждый"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάθε μέρα.",
+    "ru": "Каждый день."
+  },
+  "lemma_key": "κάθε",
+  "surfaces": [
+    "Κάθε",
+    "κάθε"
+  ],
+  "msg_ids": [
+    122497,
+    122820,
+    123658,
+    123741
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

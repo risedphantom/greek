@@ -1,0 +1,35 @@
+{
+  "lemma": "μπόγος",
+  "translation": [
+    "пакет",
+    "узел"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο μπόγος",
+      "gen": "του μπόγου",
+      "acc": "τον μπόγο"
+    },
+    "pl": {
+      "nom": "οι μπόγοι",
+      "gen": "των μπόγων",
+      "acc": "τους μπόγους"
+    }
+  },
+  "example": {
+    "el": "Έχω έναν μπόγο.",
+    "ru": "У меня есть пакет."
+  },
+  "lemma_key": "μπόγοσ",
+  "surfaces": [
+    "μπόγος"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

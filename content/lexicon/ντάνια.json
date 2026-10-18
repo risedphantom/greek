@@ -1,0 +1,23 @@
+{
+  "lemma": "Ντάνια",
+  "translation": [
+    "Даня"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν ξέρω τη Ντάνια.",
+    "ru": "Я не знаю Даню."
+  },
+  "lemma_key": "ντάνια",
+  "surfaces": [
+    "Ντάνια"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

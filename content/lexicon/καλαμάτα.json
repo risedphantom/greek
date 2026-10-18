@@ -1,0 +1,26 @@
+{
+  "lemma": "Καλαμάτα",
+  "translation": [
+    "Каламата"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μένω στην Καλαμάτα.",
+    "ru": "Я живу в Каламате."
+  },
+  "lemma_key": "καλαμάτα",
+  "surfaces": [
+    "Καλαμάτα"
+  ],
+  "msg_ids": [
+    122836,
+    122983,
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "πάρκο",
+  "translation": [
+    "парк"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πάρκο",
+      "gen": "του πάρκου",
+      "acc": "το πάρκο"
+    },
+    "pl": {
+      "nom": "τα πάρκα",
+      "gen": "των πάρκων",
+      "acc": "τα πάρκα"
+    }
+  },
+  "example": {
+    "el": "Το πάρκο είναι μεγάλο.",
+    "ru": "Парк большой."
+  },
+  "lemma_key": "πάρκο",
+  "surfaces": [
+    "πάρκο"
+  ],
+  "msg_ids": [
+    122830
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

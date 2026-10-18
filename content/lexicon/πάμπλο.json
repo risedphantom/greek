@@ -1,0 +1,26 @@
+{
+  "lemma": "Πάμπλο",
+  "translation": [
+    "Пабло"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Πάμπλο είναι φίλος μου.",
+    "ru": "Пабло - мой друг."
+  },
+  "lemma_key": "πάμπλο",
+  "surfaces": [
+    "Πάμπλο",
+    "Πάμπλο."
+  ],
+  "msg_ids": [
+    122637,
+    122639,
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

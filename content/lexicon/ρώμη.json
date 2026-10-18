@@ -1,0 +1,36 @@
+{
+  "lemma": "Ρώμη",
+  "translation": [
+    "Рим"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η Ρώμη",
+      "gen": "της Ρώμης",
+      "acc": "τη Ρώμη"
+    },
+    "pl": {
+      "nom": "οι Ρώμες",
+      "gen": "των Ρώμων",
+      "acc": "τις Ρώμες"
+    }
+  },
+  "example": {
+    "el": "Πάω στη Ρώμη.",
+    "ru": "Я еду в Рим."
+  },
+  "lemma_key": "ρώμη",
+  "surfaces": [
+    "Ρώμη"
+  ],
+  "msg_ids": [
+    122072,
+    122079,
+    124123
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

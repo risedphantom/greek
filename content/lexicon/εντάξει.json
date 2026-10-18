@@ -1,0 +1,28 @@
+{
+  "lemma": "εντάξει",
+  "translation": [
+    "хорошо",
+    "ладно",
+    "в порядке"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Εντάξει, ας πάμε.",
+    "ru": "Хорошо, пойдем."
+  },
+  "lemma_key": "εντάξει",
+  "surfaces": [
+    "Εντάξει",
+    "εντάξει"
+  ],
+  "msg_ids": [
+    122044,
+    123952,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

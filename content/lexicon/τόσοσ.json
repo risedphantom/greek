@@ -1,0 +1,37 @@
+{
+  "lemma": "τόσος",
+  "translation": [
+    "такой",
+    "столько"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "τόσος, τόση, τόσο",
+  "forms": {
+    "m": {
+      "sg": "τόσος",
+      "pl": "τόσοι"
+    },
+    "f": {
+      "sg": "τόση",
+      "pl": "τόσες"
+    },
+    "n": {
+      "sg": "τόσο",
+      "pl": "τόσα"
+    }
+  },
+  "example": {
+    "el": "Είναι τόσος ψηλός!",
+    "ru": "Он такой высокий!"
+  },
+  "lemma_key": "τόσοσ",
+  "surfaces": [
+    "τόσο"
+  ],
+  "msg_ids": [
+    122834
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

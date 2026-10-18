@@ -1,0 +1,23 @@
+{
+  "lemma": "Αρμενία",
+  "translation": [
+    "Армения"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Αρμενία είναι χώρα.",
+    "ru": "Армения - страна."
+  },
+  "lemma_key": "αρμενία",
+  "surfaces": [
+    "Αρμενία"
+  ],
+  "msg_ids": [
+    122497
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

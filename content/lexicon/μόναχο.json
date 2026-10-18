@@ -1,0 +1,24 @@
+{
+  "lemma": "Μόναχο",
+  "translation": [
+    "Мюнхен"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από το Μόναχο.",
+    "ru": "Я из Мюнхена."
+  },
+  "lemma_key": "μόναχο",
+  "surfaces": [
+    "Μόναχο"
+  ],
+  "msg_ids": [
+    123362,
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Ρίγα",
+  "translation": [
+    "Рига"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Ρίγα είναι η πρωτεύουσα της Λετονίας.",
+    "ru": "Рига - столица Латвии."
+  },
+  "lemma_key": "ρίγα",
+  "surfaces": [
+    "Ρίγα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

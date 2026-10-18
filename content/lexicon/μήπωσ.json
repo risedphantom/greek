@@ -1,0 +1,27 @@
+{
+  "lemma": "μήπως",
+  "translation": [
+    "разве",
+    "неужели",
+    "ли"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μήπως έρχεται;",
+    "ru": "Он, разве, идёт?"
+  },
+  "lemma_key": "μήπωσ",
+  "surfaces": [
+    "Μήπως",
+    "μήπως"
+  ],
+  "msg_ids": [
+    123951,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

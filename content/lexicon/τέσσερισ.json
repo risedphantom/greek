@@ -1,0 +1,26 @@
+{
+  "lemma": "τέσσερις",
+  "translation": [
+    "четыре"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Τέσσερις φίλοι.",
+    "ru": "Четыре друга."
+  },
+  "lemma_key": "τέσσερισ",
+  "surfaces": [
+    "τέσσερις",
+    "τεσσερισήμισι"
+  ],
+  "msg_ids": [
+    123953,
+    123954,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

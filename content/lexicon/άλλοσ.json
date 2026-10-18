@@ -1,0 +1,39 @@
+{
+  "lemma": "άλλος",
+  "translation": [
+    "другой",
+    "иной"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "άλλος",
+      "pl": "άλλοι"
+    },
+    "f": {
+      "sg": "άλλη",
+      "pl": "άλλες"
+    },
+    "n": {
+      "sg": "άλλο",
+      "pl": "άλλα"
+    }
+  },
+  "example": {
+    "el": "Θέλω άλλον.",
+    "ru": "Я хочу другого."
+  },
+  "lemma_key": "άλλοσ",
+  "surfaces": [
+    "άλλοι",
+    "άλλος"
+  ],
+  "msg_ids": [
+    122497,
+    123743
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "Κινέζα",
+  "translation": [
+    "китаянка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η Κινέζα",
+      "gen": "της Κινέζας",
+      "acc": "την Κινέζα"
+    },
+    "pl": {
+      "nom": "οι Κινέζες",
+      "gen": "των Κινέζων",
+      "acc": "τις Κινέζες"
+    }
+  },
+  "example": {
+    "el": "Αυτή είναι Κινέζα.",
+    "ru": "Это китаянка."
+  },
+  "lemma_key": "κινέζα",
+  "surfaces": [
+    "Κινέζα"
+  ],
+  "msg_ids": [
+    123729,
+    123751
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

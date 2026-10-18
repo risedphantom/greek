@@ -1,0 +1,28 @@
+{
+  "lemma": "αγγλικά",
+  "translation": [
+    "по-английски"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω αγγλικά.",
+    "ru": "Я говорю по-английски."
+  },
+  "lemma_key": "αγγλικά",
+  "surfaces": [
+    "αγγλικά"
+  ],
+  "msg_ids": [
+    122041,
+    122823,
+    122986,
+    123616,
+    123955,
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

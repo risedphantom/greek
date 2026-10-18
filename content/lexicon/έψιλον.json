@@ -1,0 +1,35 @@
+{
+  "lemma": "έψιλον",
+  "translation": [
+    "эпсилон"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ον/-α",
+  "forms": {
+    "sg": {
+      "nom": "το έψιλον",
+      "gen": "του εψίλον",
+      "acc": "το έψιλον"
+    },
+    "pl": {
+      "nom": "τα έψιλον",
+      "gen": "των εψίλον",
+      "acc": "τα έψιλον"
+    }
+  },
+  "example": {
+    "el": "Το γράμμα έψιλον.",
+    "ru": "Буква эпсилон."
+  },
+  "lemma_key": "έψιλον",
+  "surfaces": [
+    "έψιλον"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

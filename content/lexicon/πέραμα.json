@@ -1,0 +1,24 @@
+{
+  "lemma": "Πέραμα",
+  "translation": [
+    "Перама"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το Πέραμα είναι κοντά.",
+    "ru": "Перама близко."
+  },
+  "lemma_key": "πέραμα",
+  "surfaces": [
+    "Πέραμα"
+  ],
+  "msg_ids": [
+    123362,
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

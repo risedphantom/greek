@@ -1,0 +1,30 @@
+{
+  "lemma": "ποιος",
+  "translation": [
+    "кто",
+    "какой"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ποιος είναι αυτός;",
+    "ru": "Кто это?"
+  },
+  "lemma_key": "ποιοσ",
+  "surfaces": [
+    "Ποιος",
+    "Ποιός",
+    "ποιά",
+    "ποιό",
+    "ποιός"
+  ],
+  "msg_ids": [
+    122493,
+    122617,
+    122849
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

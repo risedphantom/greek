@@ -1,0 +1,35 @@
+{
+  "lemma": "Δανίδα",
+  "translation": [
+    "датчанка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η Δανίδα",
+      "gen": "της Δανίδας",
+      "acc": "τη Δανίδα"
+    },
+    "pl": {
+      "nom": "οι Δανίδες",
+      "gen": "των Δανίδων",
+      "acc": "τις Δανίδες"
+    }
+  },
+  "example": {
+    "el": "Είναι Δανίδα.",
+    "ru": "Она датчанка."
+  },
+  "lemma_key": "δανίδα",
+  "surfaces": [
+    "Δανίδα"
+  ],
+  "msg_ids": [
+    123729,
+    123751
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

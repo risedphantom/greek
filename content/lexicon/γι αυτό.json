@@ -1,0 +1,24 @@
+{
+  "lemma": "γι' αυτό",
+  "translation": [
+    "поэтому",
+    "вот почему"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έβρεχε, γι' αυτό έμεινα σπίτι.",
+    "ru": "Шёл дождь, поэтому я остался дома."
+  },
+  "lemma_key": "γι αυτό",
+  "surfaces": [
+    "γι' αυτό"
+  ],
+  "msg_ids": [
+    123744
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

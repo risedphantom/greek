@@ -1,0 +1,37 @@
+{
+  "lemma": "ψητός",
+  "translation": [
+    "жареный",
+    "печеный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "ψητός",
+      "pl": "ψητοί"
+    },
+    "f": {
+      "sg": "ψητή",
+      "pl": "ψητές"
+    },
+    "n": {
+      "sg": "ψητό",
+      "pl": "ψητά"
+    }
+  },
+  "example": {
+    "el": "Το κοτόπουλο είναι ψητό.",
+    "ru": "Курица жареная."
+  },
+  "lemma_key": "ψητόσ",
+  "surfaces": [
+    "ψητός"
+  ],
+  "msg_ids": [
+    123956
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

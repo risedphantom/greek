@@ -1,0 +1,25 @@
+{
+  "lemma": "κάποτε",
+  "translation": [
+    "когда-то",
+    "однажды",
+    "иногда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάποτε ζούσε ένας βασιλιάς.",
+    "ru": "Когда-то жил король."
+  },
+  "lemma_key": "κάποτε",
+  "surfaces": [
+    "κάποτε"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

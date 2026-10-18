@@ -1,0 +1,34 @@
+{
+  "lemma": "Κύπρια",
+  "translation": [
+    "киприотка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η Κύπρια",
+      "gen": "της Κύπριας",
+      "acc": "την Κύπρια"
+    },
+    "pl": {
+      "nom": "οι Κύπριες",
+      "gen": "των Κύπριων",
+      "acc": "τις Κύπριες"
+    }
+  },
+  "example": {
+    "el": "Είναι Κύπρια.",
+    "ru": "Она киприотка."
+  },
+  "lemma_key": "κύπρια",
+  "surfaces": [
+    "Κύπρια"
+  ],
+  "msg_ids": [
+    123729
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

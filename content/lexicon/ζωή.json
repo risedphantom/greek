@@ -1,0 +1,37 @@
+{
+  "lemma": "Ζωή",
+  "translation": [
+    "Зои",
+    "жизнь"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η Ζωή",
+      "gen": "της Ζωής",
+      "acc": "τη Ζωή"
+    },
+    "pl": {
+      "nom": "οι ζωές",
+      "gen": "των ζωών",
+      "acc": "τις ζωές"
+    }
+  },
+  "example": {
+    "el": "Η Ζωή είναι όμορφη.",
+    "ru": "Жизнь прекрасна."
+  },
+  "lemma_key": "ζωή",
+  "surfaces": [
+    "Ζωή",
+    "Ζώης"
+  ],
+  "msg_ids": [
+    122829,
+    123950
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

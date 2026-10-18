@@ -1,0 +1,31 @@
+{
+  "lemma": "καλησπέρα",
+  "translation": [
+    "добрый вечер"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Καλησπέρα!",
+    "ru": "Добрый вечер!"
+  },
+  "lemma_key": "καλησπέρα",
+  "surfaces": [
+    "Καλησπέρα",
+    "καλησπέρα"
+  ],
+  "msg_ids": [
+    122039,
+    122045,
+    122833,
+    122834,
+    122835,
+    122980,
+    122981,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

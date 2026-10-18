@@ -1,0 +1,24 @@
+{
+  "lemma": "οπότε",
+  "translation": [
+    "когда",
+    "поэтому"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Οπότε θέλεις, μπορούμε να πάμε.",
+    "ru": "Когда хочешь, мы можем пойти."
+  },
+  "lemma_key": "οπότε",
+  "surfaces": [
+    "οπότε"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Ξάνθη",
+  "translation": [
+    "Ксанти"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μένω στην Ξάνθη.",
+    "ru": "Я живу в Ксанти."
+  },
+  "lemma_key": "ξάνθη",
+  "surfaces": [
+    "Ξάνθη"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

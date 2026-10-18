@@ -1,0 +1,23 @@
+{
+  "lemma": "μαζί μου",
+  "translation": [
+    "со мной"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι μαζί μου.",
+    "ru": "Он со мной."
+  },
+  "lemma_key": "μαζί μου",
+  "surfaces": [
+    "μαζί μου"
+  ],
+  "msg_ids": [
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

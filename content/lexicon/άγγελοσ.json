@@ -1,0 +1,34 @@
+{
+  "lemma": "άγγελος",
+  "translation": [
+    "ангел"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο άγγελος",
+      "gen": "του αγγέλου",
+      "acc": "τον άγγελο"
+    },
+    "pl": {
+      "nom": "οι άγγελοι",
+      "gen": "των αγγέλων",
+      "acc": "τους αγγέλους"
+    }
+  },
+  "example": {
+    "el": "Ο άγγελος ήρθε.",
+    "ru": "Пришел ангел."
+  },
+  "lemma_key": "άγγελοσ",
+  "surfaces": [
+    "άγγελος"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

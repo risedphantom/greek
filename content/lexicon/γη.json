@@ -1,0 +1,34 @@
+{
+  "lemma": "γη",
+  "translation": [
+    "земля"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η γη",
+      "gen": "της γης",
+      "acc": "τη γη"
+    },
+    "pl": {
+      "nom": "οι γαίες",
+      "gen": "των γαιών",
+      "acc": "τις γαίες"
+    }
+  },
+  "example": {
+    "el": "Η γη είναι στρογγυλή.",
+    "ru": "Земля круглая."
+  },
+  "lemma_key": "γη",
+  "surfaces": [
+    "γη"
+  ],
+  "msg_ids": [
+    122614
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "άλφα",
+  "translation": [
+    "альфа"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το άλφα",
+      "gen": "του άλφα",
+      "acc": "το άλφα"
+    },
+    "pl": {
+      "nom": "τα άλφα",
+      "gen": "των άλφα",
+      "acc": "τα άλφα"
+    }
+  },
+  "example": {
+    "el": "Είναι το άλφα.",
+    "ru": "Это альфа."
+  },
+  "lemma_key": "άλφα",
+  "surfaces": [
+    "άλφα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

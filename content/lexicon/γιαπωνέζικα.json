@@ -1,0 +1,23 @@
+{
+  "lemma": "γιαπωνέζικα",
+  "translation": [
+    "японский"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω γιαπωνέζικα.",
+    "ru": "Я говорю по-японски."
+  },
+  "lemma_key": "γιαπωνέζικα",
+  "surfaces": [
+    "γιαπωνέζικα"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

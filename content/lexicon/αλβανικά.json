@@ -1,0 +1,23 @@
+{
+  "lemma": "αλβανικά",
+  "translation": [
+    "албанский"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάς αλβανικά;",
+    "ru": "Ты говоришь по-албански?"
+  },
+  "lemma_key": "αλβανικά",
+  "surfaces": [
+    "αλβανικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

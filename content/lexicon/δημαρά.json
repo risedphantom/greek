@@ -1,0 +1,24 @@
+{
+  "lemma": "Δημαρά",
+  "translation": [
+    "Димaрас"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι το σπίτι του Δημαρά.",
+    "ru": "Это дом Димара."
+  },
+  "lemma_key": "δημαρά",
+  "surfaces": [
+    "Δημαρά"
+  ],
+  "msg_ids": [
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

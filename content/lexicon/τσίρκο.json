@@ -1,0 +1,34 @@
+{
+  "lemma": "τσίρκο",
+  "translation": [
+    "цирк"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το τσίρκο",
+      "gen": "του τσίρκου",
+      "acc": "το τσίρκο"
+    },
+    "pl": {
+      "nom": "τα τσίρκα",
+      "gen": "των τσίρκων",
+      "acc": "τα τσίρκα"
+    }
+  },
+  "example": {
+    "el": "Πάμε στο τσίρκο;",
+    "ru": "Пойдем в цирк?"
+  },
+  "lemma_key": "τσίρκο",
+  "surfaces": [
+    "τσίρκο"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

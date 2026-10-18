@@ -1,0 +1,36 @@
+{
+  "lemma": "κινέζικα",
+  "translation": [
+    "китайский"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {
+    "m": {
+      "sg": "κινέζικος",
+      "pl": "κινέζικοι"
+    },
+    "f": {
+      "sg": "κινέζικη",
+      "pl": "κινέζικες"
+    },
+    "n": {
+      "sg": "κινέζικο",
+      "pl": "κινέζικα"
+    }
+  },
+  "example": {
+    "el": "Μιλάω κινέζικα.",
+    "ru": "Я говорю по-китайски."
+  },
+  "lemma_key": "κινέζικα",
+  "surfaces": [
+    "κινέζικα"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

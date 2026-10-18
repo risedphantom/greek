@@ -1,0 +1,23 @@
+{
+  "lemma": "Γεωργία",
+  "translation": [
+    "Грузия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Γεωργία είναι μια χώρα.",
+    "ru": "Грузия - это страна."
+  },
+  "lemma_key": "γεωργία",
+  "surfaces": [
+    "Γεωργία"
+  ],
+  "msg_ids": [
+    122497
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "ευθύς",
+  "translation": [
+    "прямо",
+    "сразу"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγα ευθύς στο σπίτι.",
+    "ru": "Я пошёл прямо домой."
+  },
+  "lemma_key": "ευθύσ",
+  "surfaces": [
+    "ευθύς"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

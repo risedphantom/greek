@@ -1,0 +1,24 @@
+{
+  "lemma": "πορτογαλικά",
+  "translation": [
+    "португальский язык",
+    "португальский"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω πορτογαλικά.",
+    "ru": "Я говорю по-португальски."
+  },
+  "lemma_key": "πορτογαλικά",
+  "surfaces": [
+    "πορτογαλικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

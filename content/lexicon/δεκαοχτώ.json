@@ -1,0 +1,25 @@
+{
+  "lemma": "δεκαοχτώ",
+  "translation": [
+    "восемнадцать"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι δεκαοχτώ.",
+    "ru": "Мне восемнадцать."
+  },
+  "lemma_key": "δεκαοχτώ",
+  "surfaces": [
+    "δεκαοκτώ",
+    "δεκαοχτώ"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

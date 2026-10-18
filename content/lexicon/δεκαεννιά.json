@@ -1,0 +1,25 @@
+{
+  "lemma": "δεκαεννιά",
+  "translation": [
+    "девятнадцать"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι δεκαεννιά χρονών.",
+    "ru": "Ему/ей девятнадцать лет."
+  },
+  "lemma_key": "δεκαεννιά",
+  "surfaces": [
+    "δεκαεννέα",
+    "δεκαεννιά"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

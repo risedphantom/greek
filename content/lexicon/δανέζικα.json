@@ -1,0 +1,23 @@
+{
+  "lemma": "δανέζικα",
+  "translation": [
+    "датский"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω δανέζικα.",
+    "ru": "Я говорю по-датски."
+  },
+  "lemma_key": "δανέζικα",
+  "surfaces": [
+    "δανέζικα"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

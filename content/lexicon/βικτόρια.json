@@ -1,0 +1,23 @@
+{
+  "lemma": "Βικτόρια",
+  "translation": [
+    "Виктория"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Βικτόρια είναι η αδερφή μου.",
+    "ru": "Виктория - моя сестра."
+  },
+  "lemma_key": "βικτόρια",
+  "surfaces": [
+    "Βικτόρια"
+  ],
+  "msg_ids": [
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

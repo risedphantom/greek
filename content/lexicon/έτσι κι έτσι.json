@@ -1,0 +1,25 @@
+{
+  "lemma": "έτσι κι έτσι",
+  "translation": [
+    "так себе",
+    "ничего"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έτσι κι έτσι.",
+    "ru": "Так себе."
+  },
+  "lemma_key": "έτσι κι έτσι",
+  "surfaces": [
+    "Έτσι κι έτσι"
+  ],
+  "msg_ids": [
+    122834,
+    122981
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

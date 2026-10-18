@@ -1,0 +1,23 @@
+{
+  "lemma": "πώς σας λένε",
+  "translation": [
+    "как вас зовут"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πώς σας λένε;",
+    "ru": "Как вас зовут?"
+  },
+  "lemma_key": "πώσ σασ λένε",
+  "surfaces": [
+    "πώς σας λένε"
+  ],
+  "msg_ids": [
+    122495
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

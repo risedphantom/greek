@@ -1,0 +1,24 @@
+{
+  "lemma": "εβδομήντα",
+  "translation": [
+    "семьдесят"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Εβδομήντα λεπτά.",
+    "ru": "Семьдесят минут."
+  },
+  "lemma_key": "εβδομήντα",
+  "surfaces": [
+    "εβδομήντα"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

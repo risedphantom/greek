@@ -1,0 +1,36 @@
+{
+  "lemma": "ήλιος",
+  "translation": [
+    "солнце"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο ήλιος",
+      "gen": "του ήλιου",
+      "acc": "τον ήλιο"
+    },
+    "pl": {
+      "nom": "οι ήλιοι",
+      "gen": "των ήλιων",
+      "acc": "τους ήλιους"
+    }
+  },
+  "example": {
+    "el": "Ο ήλιος λάμπει.",
+    "ru": "Солнце светит."
+  },
+  "lemma_key": "ήλιοσ",
+  "surfaces": [
+    "ήλιος"
+  ],
+  "msg_ids": [
+    122614,
+    122837,
+    122984
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

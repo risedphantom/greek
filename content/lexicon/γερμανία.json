@@ -1,0 +1,31 @@
+{
+  "lemma": "Γερμανία",
+  "translation": [
+    "Германия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεννήθηκα στη Γερμανία.",
+    "ru": "Я родился в Германии."
+  },
+  "lemma_key": "γερμανία",
+  "surfaces": [
+    "Γερμανία"
+  ],
+  "msg_ids": [
+    122048,
+    122049,
+    122050,
+    122493,
+    122494,
+    122495,
+    123362,
+    123611,
+    124016
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

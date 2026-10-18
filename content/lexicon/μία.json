@@ -1,0 +1,28 @@
+{
+  "lemma": "μία",
+  "translation": [
+    "одна",
+    "один",
+    "одно"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μία φορά.",
+    "ru": "Один раз."
+  },
+  "lemma_key": "μία",
+  "surfaces": [
+    "μία",
+    "μια"
+  ],
+  "msg_ids": [
+    123953,
+    124120,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

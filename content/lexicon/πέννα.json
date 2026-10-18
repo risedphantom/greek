@@ -1,0 +1,36 @@
+{
+  "lemma": "πέννα",
+  "translation": [
+    "перо",
+    "ручка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η πέννα",
+      "gen": "της πέννας",
+      "acc": "την πέννα"
+    },
+    "pl": {
+      "nom": "οι πέννες",
+      "gen": "των πεννών",
+      "acc": "τις πέννες"
+    }
+  },
+  "example": {
+    "el": "Έχω μια πέννα.",
+    "ru": "У меня есть ручка."
+  },
+  "lemma_key": "πέννα",
+  "surfaces": [
+    "πέννα"
+  ],
+  "msg_ids": [
+    122052,
+    122496
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

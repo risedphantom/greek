@@ -1,0 +1,23 @@
+{
+  "lemma": "Βουκουρέστιο",
+  "translation": [
+    "Бухарест"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το Βουκουρέστι είναι μια όμορφη πόλη.",
+    "ru": "Бухарест - красивый город."
+  },
+  "lemma_key": "βουκουρέστιο",
+  "surfaces": [
+    "Βουκουρέστιο"
+  ],
+  "msg_ids": [
+    124017
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

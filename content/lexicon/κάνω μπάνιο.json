@@ -1,0 +1,23 @@
+{
+  "lemma": "κάνω μπάνιο",
+  "translation": [
+    "купаться"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάνω μπάνιο στη θάλασσα.",
+    "ru": "Я купаюсь в море."
+  },
+  "lemma_key": "κάνω μπάνιο",
+  "surfaces": [
+    "κάνω μπάνιο"
+  ],
+  "msg_ids": [
+    123956
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

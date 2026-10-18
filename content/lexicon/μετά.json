@@ -1,0 +1,28 @@
+{
+  "lemma": "μετά",
+  "translation": [
+    "после",
+    "потом"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μετά το μάθημα.",
+    "ru": "После урока."
+  },
+  "lemma_key": "μετά",
+  "surfaces": [
+    "Μετά",
+    "μετά"
+  ],
+  "msg_ids": [
+    122497,
+    123617,
+    123620,
+    124158
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

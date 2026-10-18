@@ -1,0 +1,35 @@
+{
+  "lemma": "γιος",
+  "translation": [
+    "сын"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο γιος",
+      "gen": "του γιου",
+      "acc": "τον γιο"
+    },
+    "pl": {
+      "nom": "οι γιοι",
+      "gen": "των γιων",
+      "acc": "τους γιους"
+    }
+  },
+  "example": {
+    "el": "Ο γιος μου είναι φοιτητής.",
+    "ru": "Мой сын студент."
+  },
+  "lemma_key": "γιοσ",
+  "surfaces": [
+    "γιος"
+  ],
+  "msg_ids": [
+    124121,
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

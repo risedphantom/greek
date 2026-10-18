@@ -1,0 +1,27 @@
+{
+  "lemma": "μακριά",
+  "translation": [
+    "далеко",
+    "далёкий"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω μακριά.",
+    "ru": "Я живу далеко."
+  },
+  "lemma_key": "μακριά",
+  "surfaces": [
+    "μακριά"
+  ],
+  "msg_ids": [
+    124126,
+    124158,
+    124183,
+    124184
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

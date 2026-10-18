@@ -1,0 +1,23 @@
+{
+  "lemma": "τούρκικα",
+  "translation": [
+    "турецкий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάει τούρκικα.",
+    "ru": "Он говорит по-турецки."
+  },
+  "lemma_key": "τούρκικα",
+  "surfaces": [
+    "τούρκικα"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

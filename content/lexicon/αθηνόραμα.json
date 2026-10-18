@@ -1,0 +1,23 @@
+{
+  "lemma": "Αθηνόραμα",
+  "translation": [
+    "Афинора́ма"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Διάβασα το Αθηνόραμα.",
+    "ru": "Я прочитал Афинораму."
+  },
+  "lemma_key": "αθηνόραμα",
+  "surfaces": [
+    "Αθηνόραμα"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

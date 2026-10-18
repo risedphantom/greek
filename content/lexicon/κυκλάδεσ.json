@@ -1,0 +1,24 @@
+{
+  "lemma": "Κυκλάδες",
+  "translation": [
+    "Киклады"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Επισκέφτηκα τις Κυκλάδες.",
+    "ru": "Я посетил Киклады."
+  },
+  "lemma_key": "κυκλάδεσ",
+  "surfaces": [
+    "Κυκλάδων"
+  ],
+  "msg_ids": [
+    122833,
+    122980
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

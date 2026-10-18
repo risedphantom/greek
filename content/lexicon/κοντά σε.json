@@ -1,0 +1,24 @@
+{
+  "lemma": "κοντά σε",
+  "translation": [
+    "рядом с",
+    "около"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω κοντά σε αυτόν.",
+    "ru": "Я живу рядом с ним."
+  },
+  "lemma_key": "κοντά σε",
+  "surfaces": [
+    "κοντά σε"
+  ],
+  "msg_ids": [
+    124159
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

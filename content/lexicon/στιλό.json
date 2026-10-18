@@ -1,0 +1,34 @@
+{
+  "lemma": "στιλό",
+  "translation": [
+    "ручка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ο, -ια",
+  "forms": {
+    "sg": {
+      "nom": "το στιλό",
+      "gen": "του στιλό",
+      "acc": "το στιλό"
+    },
+    "pl": {
+      "nom": "τα στιλό",
+      "gen": "των στιλό",
+      "acc": "τα στιλό"
+    }
+  },
+  "example": {
+    "el": "Έχω ένα μπλε στιλό.",
+    "ru": "У меня есть синяя ручка."
+  },
+  "lemma_key": "στιλό",
+  "surfaces": [
+    "στιλό"
+  ],
+  "msg_ids": [
+    122047
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "αυλή",
+  "translation": [
+    "двор"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η αυλή",
+      "gen": "της αυλής",
+      "acc": "την αυλή"
+    },
+    "pl": {
+      "nom": "οι αυλές",
+      "gen": "των αυλών",
+      "acc": "τις αυλές"
+    }
+  },
+  "example": {
+    "el": "Παίζω στην αυλή.",
+    "ru": "Я играю во дворе."
+  },
+  "lemma_key": "αυλή",
+  "surfaces": [
+    "αυλή"
+  ],
+  "msg_ids": [
+    122500,
+    123089,
+    124015
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

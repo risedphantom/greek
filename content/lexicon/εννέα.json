@@ -1,0 +1,24 @@
+{
+  "lemma": "εννέα",
+  "translation": [
+    "девять"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω εννέα βιβλία.",
+    "ru": "У меня девять книг."
+  },
+  "lemma_key": "εννέα",
+  "surfaces": [
+    "εννέα",
+    "εννιά"
+  ],
+  "msg_ids": [
+    123740
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

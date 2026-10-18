@@ -1,0 +1,24 @@
+{
+  "lemma": "Τορόντο",
+  "translation": [
+    "Торонто"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το Τορόντο είναι μεγάλη πόλη.",
+    "ru": "Торонто - большой город."
+  },
+  "lemma_key": "τορόντο",
+  "surfaces": [
+    "Τορόντο"
+  ],
+  "msg_ids": [
+    123362,
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "αμέσως",
+  "translation": [
+    "сразу",
+    "немедленно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα έρθω αμέσως.",
+    "ru": "Я приду сразу."
+  },
+  "lemma_key": "αμέσωσ",
+  "surfaces": [
+    "αμέσως"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

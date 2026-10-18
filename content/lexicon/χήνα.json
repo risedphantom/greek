@@ -1,0 +1,34 @@
+{
+  "lemma": "χήνα",
+  "translation": [
+    "гусыня"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η χήνα",
+      "gen": "της χήνας",
+      "acc": "τη χήνα"
+    },
+    "pl": {
+      "nom": "οι χήνες",
+      "gen": "των χηνών",
+      "acc": "τις χήνες"
+    }
+  },
+  "example": {
+    "el": "Η χήνα περπατάει.",
+    "ru": "Гусыня идёт."
+  },
+  "lemma_key": "χήνα",
+  "surfaces": [
+    "χήνα"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

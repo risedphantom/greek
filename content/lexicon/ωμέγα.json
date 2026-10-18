@@ -1,0 +1,35 @@
+{
+  "lemma": "ωμέγα",
+  "translation": [
+    "омега"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το ωμέγα",
+      "gen": "του ωμέγα",
+      "acc": "το ωμέγα"
+    },
+    "pl": {
+      "nom": "τα ωμέγα",
+      "gen": "των ωμέγα",
+      "acc": "τα ωμέγα"
+    }
+  },
+  "example": {
+    "el": "Ωμέγα.",
+    "ru": "Омега."
+  },
+  "lemma_key": "ωμέγα",
+  "surfaces": [
+    "ωμέγα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

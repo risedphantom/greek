@@ -1,0 +1,24 @@
+{
+  "lemma": "Λαμία",
+  "translation": [
+    "Ламия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Λαμία είναι πόλη.",
+    "ru": "Ламия — город."
+  },
+  "lemma_key": "λαμία",
+  "surfaces": [
+    "Λαμία"
+  ],
+  "msg_ids": [
+    123367,
+    123616
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

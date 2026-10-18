@@ -1,0 +1,24 @@
+{
+  "lemma": "συγχρόνως",
+  "translation": [
+    "одновременно",
+    "в то же время"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Διαβάζω και δουλεύω συγχρόνως.",
+    "ru": "Я читаю и работаю одновременно."
+  },
+  "lemma_key": "συγχρόνωσ",
+  "surfaces": [
+    "συγχρόνως"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "σουηδικά",
+  "translation": [
+    "шведский язык",
+    "по-шведски"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω σουηδικά.",
+    "ru": "Я говорю по-шведски."
+  },
+  "lemma_key": "σουηδικά",
+  "surfaces": [
+    "σουηδικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "θαύμα",
+  "translation": [
+    "чудо"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το θαύμα",
+      "gen": "του θαύματος",
+      "acc": "το θαύμα"
+    },
+    "pl": {
+      "nom": "τα θαύματα",
+      "gen": "των θαυμάτων",
+      "acc": "τα θαύματα"
+    }
+  },
+  "example": {
+    "el": "Είναι ένα θαύμα.",
+    "ru": "Это чудо."
+  },
+  "lemma_key": "θαύμα",
+  "surfaces": [
+    "θαύμα"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

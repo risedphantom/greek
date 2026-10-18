@@ -1,0 +1,25 @@
+{
+  "lemma": "ένδεκα",
+  "translation": [
+    "одиннадцать"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ένδεκα παιδιά.",
+    "ru": "Одиннадцать детей."
+  },
+  "lemma_key": "ένδεκα",
+  "surfaces": [
+    "Ένδεκα",
+    "ένδεκα"
+  ],
+  "msg_ids": [
+    123953,
+    123954
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

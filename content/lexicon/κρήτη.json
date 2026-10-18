@@ -1,0 +1,24 @@
+{
+  "lemma": "Κρήτη",
+  "translation": [
+    "Крит"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ταξιδεύω στην Κρήτη.",
+    "ru": "Я путешествую на Крит."
+  },
+  "lemma_key": "κρήτη",
+  "surfaces": [
+    "Κρήτη"
+  ],
+  "msg_ids": [
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Γκαέλ",
+  "translation": [
+    "Гаэль"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Γκαέλ παίζει ποδόσφαιρο.",
+    "ru": "Гаэль играет в футбол."
+  },
+  "lemma_key": "γκαέλ",
+  "surfaces": [
+    "Γκαέλ"
+  ],
+  "msg_ids": [
+    122048,
+    122493
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

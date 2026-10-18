@@ -1,0 +1,24 @@
+{
+  "lemma": "Σταύρος",
+  "translation": [
+    "Ставрос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεια σου, Σταύρος.",
+    "ru": "Привет, Ставрос."
+  },
+  "lemma_key": "σταύροσ",
+  "surfaces": [
+    "Σταύρος"
+  ],
+  "msg_ids": [
+    122830,
+    122849
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

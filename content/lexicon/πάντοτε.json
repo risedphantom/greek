@@ -1,0 +1,24 @@
+{
+  "lemma": "πάντοτε",
+  "translation": [
+    "всегда",
+    "постоянно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πάντοτε είμαι εδώ.",
+    "ru": "Я всегда здесь."
+  },
+  "lemma_key": "πάντοτε",
+  "surfaces": [
+    "πάντοτε"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

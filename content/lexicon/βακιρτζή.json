@@ -1,0 +1,23 @@
+{
+  "lemma": "Βακιρτζή",
+  "translation": [
+    "Вакиртзи"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η διεύθυνση του κυρίου Βακιρτζή.",
+    "ru": "Адрес господина Вакиртзи."
+  },
+  "lemma_key": "βακιρτζή",
+  "surfaces": [
+    "Βακιρτζή"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

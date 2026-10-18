@@ -1,0 +1,24 @@
+{
+  "lemma": "πως",
+  "translation": [
+    "как",
+    "что"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν ξέρω πως να το κάνω.",
+    "ru": "Я не знаю, как это сделать."
+  },
+  "lemma_key": "πωσ",
+  "surfaces": [
+    "Πως"
+  ],
+  "msg_ids": [
+    122040
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

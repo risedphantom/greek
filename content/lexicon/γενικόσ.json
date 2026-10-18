@@ -1,0 +1,36 @@
+{
+  "lemma": "γενικός",
+  "translation": [
+    "общий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ός, ή, ό",
+  "forms": {
+    "m": {
+      "sg": "γενικός",
+      "pl": "γενικοί"
+    },
+    "f": {
+      "sg": "γενική",
+      "pl": "γενικές"
+    },
+    "n": {
+      "sg": "γενικό",
+      "pl": "γενικά"
+    }
+  },
+  "example": {
+    "el": "Γενική συνέλευση",
+    "ru": "Общее собрание"
+  },
+  "lemma_key": "γενικόσ",
+  "surfaces": [
+    "Γενική"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

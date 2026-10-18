@@ -1,0 +1,25 @@
+{
+  "lemma": "Ερβίν",
+  "translation": [
+    "Эрвин"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πώς σε λένε;",
+    "ru": "Как тебя зовут?"
+  },
+  "lemma_key": "ερβίν",
+  "surfaces": [
+    "Ερβίν",
+    "Ερβίν."
+  ],
+  "msg_ids": [
+    122637,
+    122639
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

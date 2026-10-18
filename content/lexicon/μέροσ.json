@@ -1,0 +1,36 @@
+{
+  "lemma": "μέρος",
+  "translation": [
+    "часть",
+    "место"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ος/-η",
+  "forms": {
+    "sg": {
+      "nom": "το μέρος",
+      "gen": "του μέρους",
+      "acc": "το μέρος"
+    },
+    "pl": {
+      "nom": "τα μέρη",
+      "gen": "των μερών",
+      "acc": "τα μέρη"
+    }
+  },
+  "example": {
+    "el": "Αυτό είναι ένα μέρος.",
+    "ru": "Это одно место."
+  },
+  "lemma_key": "μέροσ",
+  "surfaces": [
+    "μέρος"
+  ],
+  "msg_ids": [
+    123362,
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

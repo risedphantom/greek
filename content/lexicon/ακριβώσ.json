@@ -1,0 +1,29 @@
+{
+  "lemma": "ακριβώς",
+  "translation": [
+    "точно",
+    "именно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ακριβώς αυτό θέλω.",
+    "ru": "Именно это я хочу."
+  },
+  "lemma_key": "ακριβώσ",
+  "surfaces": [
+    "ακριβώς"
+  ],
+  "msg_ids": [
+    122833,
+    122834,
+    122980,
+    122981,
+    123621,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

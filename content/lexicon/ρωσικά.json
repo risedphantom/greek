@@ -1,0 +1,24 @@
+{
+  "lemma": "ρωσικά",
+  "translation": [
+    "по-русски",
+    "русский"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάω ρωσικά.",
+    "ru": "Я говорю по-русски."
+  },
+  "lemma_key": "ρωσικά",
+  "surfaces": [
+    "ρωσικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

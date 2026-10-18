@@ -1,0 +1,24 @@
+{
+  "lemma": "πρωτύτερα",
+  "translation": [
+    "раньше",
+    "прежде"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πρωτύτερα μέναμε σε άλλη πόλη.",
+    "ru": "Раньше мы жили в другом городе."
+  },
+  "lemma_key": "πρωτύτερα",
+  "surfaces": [
+    "πρωτύτερα"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Ιράν",
+  "translation": [
+    "Иран"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στο Ιράν.",
+    "ru": "Я живу в Иране."
+  },
+  "lemma_key": "ιράν",
+  "surfaces": [
+    "Ιράν"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

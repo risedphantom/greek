@@ -1,0 +1,36 @@
+{
+  "lemma": "ζήτα",
+  "translation": [
+    "буква Z",
+    "зета"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ζήτα",
+      "gen": "της ζήτας",
+      "acc": "τη ζήτα"
+    },
+    "pl": {
+      "nom": "οι ζήτες",
+      "gen": "των ζητών",
+      "acc": "τις ζήτες"
+    }
+  },
+  "example": {
+    "el": "Η λέξη αρχίζει με ζήτα.",
+    "ru": "Слово начинается с буквы Z."
+  },
+  "lemma_key": "ζήτα",
+  "surfaces": [
+    "ζήτα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

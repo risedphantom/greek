@@ -1,0 +1,35 @@
+{
+  "lemma": "κακό",
+  "translation": [
+    "зло",
+    "плохое"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το κακό",
+      "gen": "του κακού",
+      "acc": "το κακό"
+    },
+    "pl": {
+      "nom": "τα κακά",
+      "gen": "των κακών",
+      "acc": "τα κακά"
+    }
+  },
+  "example": {
+    "el": "Δεν θέλω κακό.",
+    "ru": "Я не хочу зла."
+  },
+  "lemma_key": "κακό",
+  "surfaces": [
+    "κακό"
+  ],
+  "msg_ids": [
+    122618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

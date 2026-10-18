@@ -1,0 +1,24 @@
+{
+  "lemma": "Πασαλιμάνι",
+  "translation": [
+    "Пасалимáни"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πάμε στο Πασαλιμάνι.",
+    "ru": "Пойдём в Пасалимáни."
+  },
+  "lemma_key": "πασαλιμάνι",
+  "surfaces": [
+    "Πασαλιμάνι"
+  ],
+  "msg_ids": [
+    122833,
+    122980
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

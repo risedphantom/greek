@@ -1,0 +1,24 @@
+{
+  "lemma": "τακτικά",
+  "translation": [
+    "регулярно",
+    "постоянно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έρχεται τακτικά.",
+    "ru": "Он приходит регулярно."
+  },
+  "lemma_key": "τακτικά",
+  "surfaces": [
+    "τακτικά"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

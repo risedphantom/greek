@@ -1,0 +1,26 @@
+{
+  "lemma": "Αλέκος",
+  "translation": [
+    "Алекос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Αλέκος είναι φίλος μου.",
+    "ru": "Алекос - мой друг."
+  },
+  "lemma_key": "αλέκοσ",
+  "surfaces": [
+    "Αλέκος"
+  ],
+  "msg_ids": [
+    122047,
+    122823,
+    122829,
+    122986
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

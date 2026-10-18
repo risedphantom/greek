@@ -1,0 +1,24 @@
+{
+  "lemma": "Τανάκα",
+  "translation": [
+    "Танака"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο κύριος Τανάκα.",
+    "ru": "Господин Танака."
+  },
+  "lemma_key": "τανάκα",
+  "surfaces": [
+    "Τανάκα"
+  ],
+  "msg_ids": [
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

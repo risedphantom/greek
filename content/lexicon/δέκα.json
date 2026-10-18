@@ -1,0 +1,28 @@
+{
+  "lemma": "δέκα",
+  "translation": [
+    "десять"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω δέκα ευρώ.",
+    "ru": "У меня десять евро."
+  },
+  "lemma_key": "δέκα",
+  "surfaces": [
+    "δέκα"
+  ],
+  "msg_ids": [
+    123359,
+    123727,
+    123737,
+    123953,
+    123954,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

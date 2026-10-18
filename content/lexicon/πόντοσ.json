@@ -1,0 +1,23 @@
+{
+  "lemma": "Πόντος",
+  "translation": [
+    "Понт"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Πόντος είναι μια περιοχή.",
+    "ru": "Понт - это регион."
+  },
+  "lemma_key": "πόντοσ",
+  "surfaces": [
+    "Πόντου"
+  ],
+  "msg_ids": [
+    122834
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

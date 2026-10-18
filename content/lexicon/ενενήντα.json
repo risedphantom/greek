@@ -1,0 +1,24 @@
+{
+  "lemma": "ενενήντα",
+  "translation": [
+    "девяносто"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι ενενήντα.",
+    "ru": "Их девяносто."
+  },
+  "lemma_key": "ενενήντα",
+  "surfaces": [
+    "ενενήντα"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

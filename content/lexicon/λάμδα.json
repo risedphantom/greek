@@ -1,0 +1,35 @@
+{
+  "lemma": "λάμδα",
+  "translation": [
+    "ламбда"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "το λάμδα",
+      "gen": "του λάμδα",
+      "acc": "το λάμδα"
+    },
+    "pl": {
+      "nom": "τα λάμδα",
+      "gen": "των λάμδα",
+      "acc": "τα λάμδα"
+    }
+  },
+  "example": {
+    "el": "το λάμδα",
+    "ru": "ламбда"
+  },
+  "lemma_key": "λάμδα",
+  "surfaces": [
+    "λάμδα"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "ντιβάνι",
+  "translation": [
+    "диван"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ντιβάνι",
+      "gen": "του ντιβάνι",
+      "acc": "το ντιβάνι"
+    },
+    "pl": {
+      "nom": "τα ντιβάνια",
+      "gen": "των ντιβάνιων",
+      "acc": "τα ντιβάνια"
+    }
+  },
+  "example": {
+    "el": "Ένα μεγάλο ντιβάνι.",
+    "ru": "Большой диван."
+  },
+  "lemma_key": "ντιβάνι",
+  "surfaces": [
+    "ντιβάνι"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

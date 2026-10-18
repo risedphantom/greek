@@ -1,0 +1,23 @@
+{
+  "lemma": "Γιαννης",
+  "translation": [
+    "Яннис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Γιάννης είναι φίλος μου.",
+    "ru": "Яннис мой друг."
+  },
+  "lemma_key": "γιαννησ",
+  "surfaces": [
+    "Γιάννης"
+  ],
+  "msg_ids": [
+    122493
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

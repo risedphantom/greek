@@ -1,0 +1,26 @@
+{
+  "lemma": "Μαδρίτη",
+  "translation": [
+    "Мадрид"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από τη Μαδρίτη.",
+    "ru": "Я из Мадрида."
+  },
+  "lemma_key": "μαδρίτη",
+  "surfaces": [
+    "Μαδρίτη"
+  ],
+  "msg_ids": [
+    122072,
+    122079,
+    123362,
+    123611
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

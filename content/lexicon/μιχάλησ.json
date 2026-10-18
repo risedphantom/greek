@@ -1,0 +1,23 @@
+{
+  "lemma": "Μιχάλης",
+  "translation": [
+    "Михалис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Μιχάλης είναι φίλος μου.",
+    "ru": "Михалис - мой друг."
+  },
+  "lemma_key": "μιχάλησ",
+  "surfaces": [
+    "Μιχάλης"
+  ],
+  "msg_ids": [
+    124016
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

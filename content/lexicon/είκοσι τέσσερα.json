@@ -1,0 +1,23 @@
+{
+  "lemma": "είκοσι τέσσερα",
+  "translation": [
+    "двадцать четыре"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είκοσι τέσσερα.",
+    "ru": "Двадцать четыре."
+  },
+  "lemma_key": "είκοσι τέσσερα",
+  "surfaces": [
+    "είκοσι τέσσερα"
+  ],
+  "msg_ids": [
+    123951
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

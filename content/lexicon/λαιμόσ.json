@@ -1,0 +1,35 @@
+{
+  "lemma": "λαιμός",
+  "translation": [
+    "шея",
+    "горло"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο λαιμός",
+      "gen": "του λαιμού",
+      "acc": "το λαιμό"
+    },
+    "pl": {
+      "nom": "οι λαιμοί",
+      "gen": "των λαιμών",
+      "acc": "τους λαιμούς"
+    }
+  },
+  "example": {
+    "el": "Πονάει ο λαιμός μου.",
+    "ru": "У меня болит горло."
+  },
+  "lemma_key": "λαιμόσ",
+  "surfaces": [
+    "λαιμός"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

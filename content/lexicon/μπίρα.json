@@ -1,0 +1,34 @@
+{
+  "lemma": "μπίρα",
+  "translation": [
+    "пиво"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η μπίρα",
+      "gen": "της μπίρας",
+      "acc": "τη μπίρα"
+    },
+    "pl": {
+      "nom": "οι μπίρες",
+      "gen": "των μπίρων",
+      "acc": "τις μπίρες"
+    }
+  },
+  "example": {
+    "el": "Θέλω μια κρύα μπίρα.",
+    "ru": "Я хочу холодное пиво."
+  },
+  "lemma_key": "μπίρα",
+  "surfaces": [
+    "μπίρα"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

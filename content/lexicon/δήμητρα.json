@@ -1,0 +1,23 @@
+{
+  "lemma": "Δήμητρα",
+  "translation": [
+    "Деметра (женское имя)"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Δήμητρα είναι φίλη μου.",
+    "ru": "Деметра - моя подруга."
+  },
+  "lemma_key": "δήμητρα",
+  "surfaces": [
+    "Δήμητρα"
+  ],
+  "msg_ids": [
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

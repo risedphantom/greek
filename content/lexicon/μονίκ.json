@@ -1,0 +1,23 @@
+{
+  "lemma": "Μονίκ",
+  "translation": [
+    "Моник"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Μονίκ είναι Γαλλίδα.",
+    "ru": "Моник - француженка."
+  },
+  "lemma_key": "μονίκ",
+  "surfaces": [
+    "Μονίκ"
+  ],
+  "msg_ids": [
+    123610
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

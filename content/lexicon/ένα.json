@@ -1,0 +1,27 @@
+{
+  "lemma": "ένα",
+  "translation": [
+    "один",
+    "одно"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θέλω ένα καφέ.",
+    "ru": "Я хочу один кофе."
+  },
+  "lemma_key": "ένα",
+  "surfaces": [
+    "ένα"
+  ],
+  "msg_ids": [
+    122835,
+    122982,
+    123359,
+    123367
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

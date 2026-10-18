@@ -1,0 +1,25 @@
+{
+  "lemma": "παρά",
+  "translation": [
+    "у",
+    "мимо",
+    "против"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγα παρά το πάρκο.",
+    "ru": "Я пошел мимо парка."
+  },
+  "lemma_key": "παρά",
+  "surfaces": [
+    "παρά"
+  ],
+  "msg_ids": [
+    123951
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

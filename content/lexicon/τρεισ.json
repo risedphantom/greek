@@ -1,0 +1,29 @@
+{
+  "lemma": "τρεις",
+  "translation": [
+    "три"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω τρεις γάτες.",
+    "ru": "У меня есть три кошки."
+  },
+  "lemma_key": "τρεισ",
+  "surfaces": [
+    "Τρεις",
+    "τρείς",
+    "τρεις",
+    "τρεισήμισι"
+  ],
+  "msg_ids": [
+    123951,
+    123953,
+    123954,
+    124122
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

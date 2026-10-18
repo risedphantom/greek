@@ -1,0 +1,24 @@
+{
+  "lemma": "ασφαλώς",
+  "translation": [
+    "безусловно",
+    "конечно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ασφαλώς και θα έρθω.",
+    "ru": "Конечно, я приду."
+  },
+  "lemma_key": "ασφαλώσ",
+  "surfaces": [
+    "ασφαλώς"
+  ],
+  "msg_ids": [
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

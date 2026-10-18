@@ -1,0 +1,34 @@
+{
+  "lemma": "βάζο",
+  "translation": [
+    "ваза"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το βάζο",
+      "gen": "του βάζου",
+      "acc": "το βάζο"
+    },
+    "pl": {
+      "nom": "τα βάζα",
+      "gen": "των βάζων",
+      "acc": "τα βάζα"
+    }
+  },
+  "example": {
+    "el": "Το βάζο είναι άδειο.",
+    "ru": "Ваза пустая."
+  },
+  "lemma_key": "βάζο",
+  "surfaces": [
+    "βάζο"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

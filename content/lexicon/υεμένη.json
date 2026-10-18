@@ -1,0 +1,24 @@
+{
+  "lemma": "Υεμένη",
+  "translation": [
+    "Йемен"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Υεμένη είναι χώρα στην Ασία.",
+    "ru": "Йемен - страна в Азии."
+  },
+  "lemma_key": "υεμένη",
+  "surfaces": [
+    "Υεμένη"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

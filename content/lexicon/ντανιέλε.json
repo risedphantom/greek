@@ -1,0 +1,24 @@
+{
+  "lemma": "Ντανιέλε",
+  "translation": [
+    "Даниеле"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Ντανιέλε είναι φίλος μου.",
+    "ru": "Даниеле - мой друг."
+  },
+  "lemma_key": "ντανιέλε",
+  "surfaces": [
+    "Ντανιέλε"
+  ],
+  "msg_ids": [
+    122048,
+    122493
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

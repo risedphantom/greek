@@ -1,0 +1,23 @@
+{
+  "lemma": "Βουλγαρία",
+  "translation": [
+    "Болгария"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Βουλγαρία είναι στην Ευρώπη.",
+    "ru": "Болгария находится в Европе."
+  },
+  "lemma_key": "βουλγαρία",
+  "surfaces": [
+    "Βουλγαρία"
+  ],
+  "msg_ids": [
+    122047
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

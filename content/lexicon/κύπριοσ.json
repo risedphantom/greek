@@ -1,0 +1,34 @@
+{
+  "lemma": "Κύπριος",
+  "translation": [
+    "киприот"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Κύπριος",
+      "gen": "του Κύπριου",
+      "acc": "τον Κύπριο"
+    },
+    "pl": {
+      "nom": "οι Κύπριοι",
+      "gen": "των Κύπριων",
+      "acc": "τους Κύπριους"
+    }
+  },
+  "example": {
+    "el": "Είναι Κύπριος.",
+    "ru": "Он киприот."
+  },
+  "lemma_key": "κύπριοσ",
+  "surfaces": [
+    "Κύπριος"
+  ],
+  "msg_ids": [
+    123729
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

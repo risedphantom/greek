@@ -1,0 +1,23 @@
+{
+  "lemma": "Καναδά",
+  "translation": [
+    "Канада"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από τον Καναδά.",
+    "ru": "Я из Канады."
+  },
+  "lemma_key": "καναδά",
+  "surfaces": [
+    "Καναδά"
+  ],
+  "msg_ids": [
+    123359
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

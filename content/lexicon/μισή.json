@@ -1,0 +1,37 @@
+{
+  "lemma": "μισή",
+  "translation": [
+    "половина",
+    "половинка"
+  ],
+  "pos": "adj",
+  "gender": "f",
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "μισός",
+      "pl": "μισοί"
+    },
+    "f": {
+      "sg": "μισή",
+      "pl": "μισές"
+    },
+    "n": {
+      "sg": "μισό",
+      "pl": "μισά"
+    }
+  },
+  "example": {
+    "el": "μισή ώρα",
+    "ru": "полчаса"
+  },
+  "lemma_key": "μισή",
+  "surfaces": [
+    "μισή"
+  ],
+  "msg_ids": [
+    123953
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "ψαράς",
+  "translation": [
+    "рыбак"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-άς/-άδες",
+  "forms": {
+    "sg": {
+      "nom": "ο ψαράς",
+      "gen": "του ψαρά",
+      "acc": "τον ψαρά"
+    },
+    "pl": {
+      "nom": "οι ψαράδες",
+      "gen": "των ψαράδων",
+      "acc": "τους ψαράδες"
+    }
+  },
+  "example": {
+    "el": "Είναι ψαράς.",
+    "ru": "Он рыбак."
+  },
+  "lemma_key": "ψαράσ",
+  "surfaces": [
+    "ψαρά"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

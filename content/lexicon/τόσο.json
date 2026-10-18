@@ -1,0 +1,26 @@
+{
+  "lemma": "τόσο",
+  "translation": [
+    "так",
+    "так сильно",
+    "так много"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γιατί είσαι τόσο λυπημένος;",
+    "ru": "Почему ты так грустен?"
+  },
+  "lemma_key": "τόσο",
+  "surfaces": [
+    "τόσο"
+  ],
+  "msg_ids": [
+    122835,
+    122981
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

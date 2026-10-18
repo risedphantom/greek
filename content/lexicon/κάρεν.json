@@ -1,0 +1,23 @@
+{
+  "lemma": "Κάρεν",
+  "translation": [
+    "Карен"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Κάρεν είναι φίλη μου.",
+    "ru": "Карен — моя подруга."
+  },
+  "lemma_key": "κάρεν",
+  "surfaces": [
+    "Κάρεν"
+  ],
+  "msg_ids": [
+    123613
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

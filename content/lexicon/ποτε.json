@@ -1,0 +1,23 @@
+{
+  "lemma": "ποτε",
+  "translation": [
+    "когда"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πότε θα έρθεις;",
+    "ru": "Когда ты придёшь?"
+  },
+  "lemma_key": "ποτε",
+  "surfaces": [
+    "πότε"
+  ],
+  "msg_ids": [
+    122617
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

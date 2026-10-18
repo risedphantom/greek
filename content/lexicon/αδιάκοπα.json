@@ -1,0 +1,24 @@
+{
+  "lemma": "αδιάκοπα",
+  "translation": [
+    "непрерывно",
+    "беспрестанно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Χιόνιζε αδιάκοπα.",
+    "ru": "Снег шёл непрерывно."
+  },
+  "lemma_key": "αδιάκοπα",
+  "surfaces": [
+    "αδιάκοπα"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

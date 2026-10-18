@@ -1,0 +1,23 @@
+{
+  "lemma": "κάθε πρωί",
+  "translation": [
+    "каждое утро"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάθε πρωί ξυπνάω νωρίς.",
+    "ru": "Каждое утро я просыпаюсь рано."
+  },
+  "lemma_key": "κάθε πρωί",
+  "surfaces": [
+    "κάθε πρωί"
+  ],
+  "msg_ids": [
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

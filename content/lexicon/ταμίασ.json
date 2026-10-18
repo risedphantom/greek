@@ -1,0 +1,34 @@
+{
+  "lemma": "ταμίας",
+  "translation": [
+    "кассир"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ας/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο ταμίας",
+      "gen": "του ταμία",
+      "acc": "τον ταμία"
+    },
+    "pl": {
+      "nom": "οι ταμίες",
+      "gen": "των ταμιών",
+      "acc": "τους ταμίες"
+    }
+  },
+  "example": {
+    "el": "Ο ταμίας είναι εκεί.",
+    "ru": "Кассир там."
+  },
+  "lemma_key": "ταμίασ",
+  "surfaces": [
+    "ταμία"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

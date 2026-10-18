@@ -1,0 +1,24 @@
+{
+  "lemma": "ξανά",
+  "translation": [
+    "снова, опять"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ήρθα ξανά.",
+    "ru": "Я пришёл снова."
+  },
+  "lemma_key": "ξανά",
+  "surfaces": [
+    "ξανά"
+  ],
+  "msg_ids": [
+    122040,
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

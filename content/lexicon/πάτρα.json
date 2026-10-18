@@ -1,0 +1,24 @@
+{
+  "lemma": "Πάτρα",
+  "translation": [
+    "Патра"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Πάτρα είναι πόλη.",
+    "ru": "Патра - город."
+  },
+  "lemma_key": "πάτρα",
+  "surfaces": [
+    "Πάτρα"
+  ],
+  "msg_ids": [
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

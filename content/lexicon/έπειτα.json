@@ -1,0 +1,24 @@
+{
+  "lemma": "έπειτα",
+  "translation": [
+    "затем",
+    "потом"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγα σπίτι, έπειτα κοιμήθηκα.",
+    "ru": "Я пошел домой, затем уснул."
+  },
+  "lemma_key": "έπειτα",
+  "surfaces": [
+    "έπειτα"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

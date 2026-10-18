@@ -1,0 +1,24 @@
+{
+  "lemma": "Βινς",
+  "translation": [
+    "Винс"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτός είναι ο Βινς.",
+    "ru": "Это Винс."
+  },
+  "lemma_key": "βινσ",
+  "surfaces": [
+    "Βινς"
+  ],
+  "msg_ids": [
+    122049,
+    122494
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

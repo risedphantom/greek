@@ -1,0 +1,28 @@
+{
+  "lemma": "Κοσμίδης",
+  "translation": [
+    "Космидис"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο κύριος Κοσμίδης έρχεται.",
+    "ru": "Господин Космидис приходит."
+  },
+  "lemma_key": "κοσμίδησ",
+  "surfaces": [
+    "Κοσμίδη",
+    "Κοσμίδη!",
+    "Κοσμίδης"
+  ],
+  "msg_ids": [
+    122048,
+    122050,
+    122493,
+    122495
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "γαλλικός",
+  "translation": [
+    "французский"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "καλός",
+      "pl": "καλοί"
+    },
+    "f": {
+      "sg": "καλή",
+      "pl": "καλές"
+    },
+    "n": {
+      "sg": "καλό",
+      "pl": "καλά"
+    }
+  },
+  "example": {
+    "el": "ελληνικά γαλλικά",
+    "ru": "греческий французский"
+  },
+  "lemma_key": "γαλλικόσ",
+  "surfaces": [
+    "γαλλικά"
+  ],
+  "msg_ids": [
+    123730
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

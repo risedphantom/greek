@@ -1,0 +1,26 @@
+{
+  "lemma": "βέβαια",
+  "translation": [
+    "конечно",
+    "разумеется"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Βέβαια, θέλω να έρθω.",
+    "ru": "Конечно, я хочу прийти."
+  },
+  "lemma_key": "βέβαια",
+  "surfaces": [
+    "Βέβαια",
+    "βέβαια"
+  ],
+  "msg_ids": [
+    122044,
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

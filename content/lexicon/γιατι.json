@@ -1,0 +1,25 @@
+{
+  "lemma": "γιατι",
+  "translation": [
+    "почему",
+    "потому что"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν ήρθες γιατί ήσουν άρρωστος;",
+    "ru": "Ты не пришёл, потому что болел?"
+  },
+  "lemma_key": "γιατι",
+  "surfaces": [
+    "γιατί",
+    "διατί"
+  ],
+  "msg_ids": [
+    122617
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

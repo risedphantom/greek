@@ -1,0 +1,23 @@
+{
+  "lemma": "πολλά",
+  "translation": [
+    "много"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω πολλά βιβλία.",
+    "ru": "У меня много книг."
+  },
+  "lemma_key": "πολλά",
+  "surfaces": [
+    "πολλά"
+  ],
+  "msg_ids": [
+    124161
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "γνωστός",
+  "translation": [
+    "известный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "γνωστός",
+      "pl": "γνωστοί"
+    },
+    "f": {
+      "sg": "γνωστή",
+      "pl": "γνωστές"
+    },
+    "n": {
+      "sg": "γνωστό",
+      "pl": "γνωστά"
+    }
+  },
+  "example": {
+    "el": "Είναι γνωστός μου.",
+    "ru": "Он мне знаком."
+  },
+  "lemma_key": "γνωστόσ",
+  "surfaces": [
+    "γνωστή"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

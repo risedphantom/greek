@@ -1,0 +1,34 @@
+{
+  "lemma": "κορτέ",
+  "translation": [
+    "корте"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "έ/-η",
+  "forms": {
+    "sg": {
+      "nom": "το κορτέ",
+      "gen": "του κορτέ",
+      "acc": "το κορτέ"
+    },
+    "pl": {
+      "nom": "τα κορτέ",
+      "gen": "των κορτέ",
+      "acc": "τα κορτέ"
+    }
+  },
+  "example": {
+    "el": "Το κορτέ του προέδρου.",
+    "ru": "Кортеж президента."
+  },
+  "lemma_key": "κορτέ",
+  "surfaces": [
+    "κορτέ"
+  ],
+  "msg_ids": [
+    122618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Φιλοθέη",
+  "translation": [
+    "Филотеи"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Φιλοθέη είναι μια περιοχή.",
+    "ru": "Филотеи — это район."
+  },
+  "lemma_key": "φιλοθέη",
+  "surfaces": [
+    "Φιλοθέη"
+  ],
+  "msg_ids": [
+    122835,
+    122982
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

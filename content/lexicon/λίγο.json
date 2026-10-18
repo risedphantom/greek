@@ -1,0 +1,27 @@
+{
+  "lemma": "λίγο",
+  "translation": [
+    "немного",
+    "мало"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα σου πω λίγο.",
+    "ru": "Я тебе немного скажу."
+  },
+  "lemma_key": "λίγο",
+  "surfaces": [
+    "λίγο"
+  ],
+  "msg_ids": [
+    122040,
+    122041,
+    122047,
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

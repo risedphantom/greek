@@ -1,0 +1,25 @@
+{
+  "lemma": "αύριο",
+  "translation": [
+    "завтра"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα πάω αύριο.",
+    "ru": "Я пойду завтра."
+  },
+  "lemma_key": "αύριο",
+  "surfaces": [
+    "αύριο"
+  ],
+  "msg_ids": [
+    122039,
+    122500,
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

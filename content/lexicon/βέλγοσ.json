@@ -1,0 +1,35 @@
+{
+  "lemma": "Βέλγος",
+  "translation": [
+    "бельгиец"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Βέλγος",
+      "gen": "του Βέλγου",
+      "acc": "τον Βέλγο"
+    },
+    "pl": {
+      "nom": "οι Βέλγοι",
+      "gen": "των Βέλγων",
+      "acc": "τους Βέλγους"
+    }
+  },
+  "example": {
+    "el": "Αυτός είναι Βέλγος.",
+    "ru": "Он бельгиец."
+  },
+  "lemma_key": "βέλγοσ",
+  "surfaces": [
+    "Βέλγος"
+  ],
+  "msg_ids": [
+    123729,
+    123751
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

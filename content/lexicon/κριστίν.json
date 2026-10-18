@@ -1,0 +1,24 @@
+{
+  "lemma": "Κριστίν",
+  "translation": [
+    "Кристин"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Κριστίν είναι φίλη μου.",
+    "ru": "Кристин моя подруга."
+  },
+  "lemma_key": "κριστίν",
+  "surfaces": [
+    "Κριστίν"
+  ],
+  "msg_ids": [
+    122050,
+    122495
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

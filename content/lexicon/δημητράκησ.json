@@ -1,0 +1,23 @@
+{
+  "lemma": "Δημητράκης",
+  "translation": [
+    "Димитрис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Δημητράκης είναι Έλληνας.",
+    "ru": "Димитрис - грек."
+  },
+  "lemma_key": "δημητράκησ",
+  "surfaces": [
+    "Δημητράκης"
+  ],
+  "msg_ids": [
+    123618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

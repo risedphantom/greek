@@ -1,0 +1,35 @@
+{
+  "lemma": "χρέος",
+  "translation": [
+    "долг",
+    "обязанность"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ος/-η",
+  "forms": {
+    "sg": {
+      "nom": "το χρέος",
+      "gen": "του χρέους",
+      "acc": "το χρέος"
+    },
+    "pl": {
+      "nom": "τα χρέη",
+      "gen": "των χρεών",
+      "acc": "τα χρέη"
+    }
+  },
+  "example": {
+    "el": "Έχω ένα χρέος.",
+    "ru": "У меня есть долг."
+  },
+  "lemma_key": "χρέοσ",
+  "surfaces": [
+    "χρέος"
+  ],
+  "msg_ids": [
+    122618
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

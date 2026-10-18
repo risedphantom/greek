@@ -1,0 +1,27 @@
+{
+  "lemma": "γύρω",
+  "translation": [
+    "вокруг",
+    "около"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το σπίτι είναι γύρω από το δέντρο.",
+    "ru": "Дом находится вокруг дерева."
+  },
+  "lemma_key": "γύρω",
+  "surfaces": [
+    "γύρω"
+  ],
+  "msg_ids": [
+    124158,
+    124160,
+    124183,
+    124185
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

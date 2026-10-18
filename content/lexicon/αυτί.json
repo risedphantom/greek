@@ -1,0 +1,34 @@
+{
+  "lemma": "αυτί",
+  "translation": [
+    "ухо"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το αυτί",
+      "gen": "του αυτιού",
+      "acc": "το αυτί"
+    },
+    "pl": {
+      "nom": "τα αυτιά",
+      "gen": "των αυτιών",
+      "acc": "τα αυτιά"
+    }
+  },
+  "example": {
+    "el": "Πονάει το αυτί μου.",
+    "ru": "У меня болит ухо."
+  },
+  "lemma_key": "αυτί",
+  "surfaces": [
+    "αυτί"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

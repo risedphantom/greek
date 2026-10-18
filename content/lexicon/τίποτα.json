@@ -1,0 +1,24 @@
+{
+  "lemma": "τίποτα",
+  "translation": [
+    "ничего",
+    "пустяк"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν θέλω τίποτα.",
+    "ru": "Я ничего не хочу."
+  },
+  "lemma_key": "τίποτα",
+  "surfaces": [
+    "τίποτα"
+  ],
+  "msg_ids": [
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

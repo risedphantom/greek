@@ -1,0 +1,35 @@
+{
+  "lemma": "σινεμά",
+  "translation": [
+    "кино"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ά/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το σινεμά",
+      "gen": "του σινεμά",
+      "acc": "το σινεμά"
+    },
+    "pl": {
+      "nom": "τα σινεμά",
+      "gen": "των σινεμά",
+      "acc": "τα σινεμά"
+    }
+  },
+  "example": {
+    "el": "Πάμε σινεμά;",
+    "ru": "Пойдём в кино?"
+  },
+  "lemma_key": "σινεμά",
+  "surfaces": [
+    "σινεμά"
+  ],
+  "msg_ids": [
+    124120,
+    124121
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+  "lemma": "καφές",
+  "translation": [
+    "кофе"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ές/-έδες",
+  "forms": {
+    "sg": {
+      "nom": "ο καφές",
+      "gen": "του καφέ",
+      "acc": "τον καφέ"
+    },
+    "pl": {
+      "nom": "οι καφέδες",
+      "gen": "των καφέδων",
+      "acc": "τους καφέδες"
+    }
+  },
+  "example": {
+    "el": "Πίνω έναν καφέ.",
+    "ru": "Я пью кофе."
+  },
+  "lemma_key": "καφέσ",
+  "surfaces": [
+    "καφέ"
+  ],
+  "msg_ids": [
+    124267
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "κούκλα",
+  "translation": [
+    "кукла"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η κούκλα",
+      "gen": "της κούκλας",
+      "acc": "την κούκλα"
+    },
+    "pl": {
+      "nom": "οι κούκλες",
+      "gen": "των κουκλών",
+      "acc": "τις κούκλες"
+    }
+  },
+  "example": {
+    "el": "Η κούκλα είναι ωραία.",
+    "ru": "Кукла красивая."
+  },
+  "lemma_key": "κούκλα",
+  "surfaces": [
+    "κούκλα"
+  ],
+  "msg_ids": [
+    123367,
+    123616
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

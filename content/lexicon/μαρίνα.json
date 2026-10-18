@@ -1,0 +1,27 @@
+{
+  "lemma": "Μαρίνα",
+  "translation": [
+    "Марина"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Μαρίνα είναι ωραία.",
+    "ru": "Марина прекрасна."
+  },
+  "lemma_key": "μαρίνα",
+  "surfaces": [
+    "Μαρίνα"
+  ],
+  "msg_ids": [
+    122637,
+    122639,
+    122834,
+    122981,
+    124015
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "πράγματι",
+  "translation": [
+    "действительно",
+    "в самом деле"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πράγματι, έχεις δίκιο.",
+    "ru": "Действительно, ты прав."
+  },
+  "lemma_key": "πράγματι",
+  "surfaces": [
+    "πράγματι"
+  ],
+  "msg_ids": [
+    123952
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

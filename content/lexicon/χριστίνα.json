@@ -1,0 +1,23 @@
+{
+  "lemma": "Χριστίνα",
+  "translation": [
+    "Кристина (имя)"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Χριστίνα ήρθε.",
+    "ru": "Кристина пришла."
+  },
+  "lemma_key": "χριστίνα",
+  "surfaces": [
+    "Χριστίνα"
+  ],
+  "msg_ids": [
+    122047
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

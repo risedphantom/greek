@@ -1,0 +1,23 @@
+{
+  "lemma": "γαλλικά",
+  "translation": [
+    "французский"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μιλάς γαλλικά;",
+    "ru": "Ты говоришь по-французски?"
+  },
+  "lemma_key": "γαλλικά",
+  "surfaces": [
+    "γαλλικά"
+  ],
+  "msg_ids": [
+    123955
+  ],
+  "needs_review": true,
+  "model": "google/gemini-2.5-flash-lite"
+}

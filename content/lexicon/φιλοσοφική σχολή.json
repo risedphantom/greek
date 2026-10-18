@@ -1,0 +1,23 @@
+{
+  "lemma": "Φιλοσοφική Σχολή",
+  "translation": [
+    "философский факультет"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν έχω σπουδάσει στη Φιλοσοφική Σχολή.",
+    "ru": "Я не учился на философском факультете."
+  },
+  "lemma_key": "φιλοσοφική σχολή",
+  "surfaces": [
+    "Φιλοσοφική Σχολή"
+  ],
+  "msg_ids": [
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "καλώς",
+  "translation": [
+    "хорошо",
+    "добро пожаловать"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Καλώς ήρθες!",
+    "ru": "Добро пожаловать!"
+  },
+  "lemma_key": "καλώσ",
+  "surfaces": [
+    "Καλώς"
+  ],
+  "msg_ids": [
+    122050
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

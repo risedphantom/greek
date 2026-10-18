@@ -1,0 +1,24 @@
+{
+  "lemma": "Μαρόκο",
+  "translation": [
+    "Марокко"
+  ],
+  "pos": "other",
+  "gender": "n",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το Μαρόκο είναι στην Αφρική.",
+    "ru": "Марокко находится в Африке."
+  },
+  "lemma_key": "μαρόκο",
+  "surfaces": [
+    "Μαρόκο"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

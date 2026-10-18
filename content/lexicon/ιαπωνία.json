@@ -1,0 +1,24 @@
+{
+  "lemma": "Ιαπωνία",
+  "translation": [
+    "Япония"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ταξιδεύω στην Ιαπωνία.",
+    "ru": "Я путешествую в Японию."
+  },
+  "lemma_key": "ιαπωνία",
+  "surfaces": [
+    "Ιαπωνία"
+  ],
+  "msg_ids": [
+    123361,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

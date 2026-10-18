@@ -1,0 +1,29 @@
+{
+  "lemma": "παρακάτω",
+  "translation": [
+    "ниже",
+    "далее"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δες παρακάτω.",
+    "ru": "Посмотри ниже."
+  },
+  "lemma_key": "παρακάτω",
+  "surfaces": [
+    "Παρακάτω",
+    "παρακάτω"
+  ],
+  "msg_ids": [
+    122497,
+    122819,
+    122820,
+    122821,
+    124158
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

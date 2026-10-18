@@ -1,0 +1,24 @@
+{
+  "lemma": "Χιλή",
+  "translation": [
+    "Чили"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Χιλή είναι χώρα.",
+    "ru": "Чили - страна."
+  },
+  "lemma_key": "χιλή",
+  "surfaces": [
+    "Χιλή"
+  ],
+  "msg_ids": [
+    122072,
+    122079
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

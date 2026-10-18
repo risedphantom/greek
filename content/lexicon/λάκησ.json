@@ -1,0 +1,23 @@
+{
+  "lemma": "Λάκης",
+  "translation": [
+    "Лакис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Λάκης",
+    "ru": "Лакис"
+  },
+  "lemma_key": "λάκησ",
+  "surfaces": [
+    "Λάκης"
+  ],
+  "msg_ids": [
+    124268
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

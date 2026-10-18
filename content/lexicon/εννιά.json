@@ -1,0 +1,24 @@
+{
+  "lemma": "εννιά",
+  "translation": [
+    "девять"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι εννιά.",
+    "ru": "Их девять."
+  },
+  "lemma_key": "εννιά",
+  "surfaces": [
+    "εννιά"
+  ],
+  "msg_ids": [
+    123359,
+    123658
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

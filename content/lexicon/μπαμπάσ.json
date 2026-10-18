@@ -1,0 +1,34 @@
+{
+  "lemma": "μπαμπάς",
+  "translation": [
+    "папа"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-άς/-άδες",
+  "forms": {
+    "sg": {
+      "nom": "ο μπαμπάς",
+      "gen": "του μπαμπά",
+      "acc": "τον μπαμπά"
+    },
+    "pl": {
+      "nom": "οι μπαμπάδες",
+      "gen": "των μπαμπάδων",
+      "acc": "τους μπαμπάδες"
+    }
+  },
+  "example": {
+    "el": "Ο μπαμπάς διαβάζει.",
+    "ru": "Папа читает."
+  },
+  "lemma_key": "μπαμπάσ",
+  "surfaces": [
+    "μπαμπά"
+  ],
+  "msg_ids": [
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

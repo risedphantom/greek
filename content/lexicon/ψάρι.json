@@ -1,0 +1,34 @@
+{
+  "lemma": "ψάρι",
+  "translation": [
+    "рыба"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ψάρι",
+      "gen": "του ψαριού",
+      "acc": "το ψάρι"
+    },
+    "pl": {
+      "nom": "τα ψάρια",
+      "gen": "των ψαριών",
+      "acc": "τα ψάρια"
+    }
+  },
+  "example": {
+    "el": "Το ψάρι είναι υγιεινό.",
+    "ru": "Рыба полезна."
+  },
+  "lemma_key": "ψάρι",
+  "surfaces": [
+    "ψάρι"
+  ],
+  "msg_ids": [
+    123956
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

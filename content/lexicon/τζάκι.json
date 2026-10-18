@@ -1,0 +1,34 @@
+{
+  "lemma": "τζάκι",
+  "translation": [
+    "камин"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-α",
+  "forms": {
+    "sg": {
+      "nom": "το τζάκι",
+      "gen": "του τζακιού",
+      "acc": "το τζάκι"
+    },
+    "pl": {
+      "nom": "τα τζάκια",
+      "gen": "των τζακιών",
+      "acc": "τα τζάκια"
+    }
+  },
+  "example": {
+    "el": "Το τζάκι είναι ζεστό.",
+    "ru": "В камине тепло."
+  },
+  "lemma_key": "τζάκι",
+  "surfaces": [
+    "τζάκι"
+  ],
+  "msg_ids": [
+    122500
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

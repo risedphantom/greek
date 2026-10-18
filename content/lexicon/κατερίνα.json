@@ -1,0 +1,23 @@
+{
+  "lemma": "Κατερίνα",
+  "translation": [
+    "Катерина"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Κατερίνα είναι εδώ.",
+    "ru": "Катерина здесь."
+  },
+  "lemma_key": "κατερίνα",
+  "surfaces": [
+    "Κατερίνα"
+  ],
+  "msg_ids": [
+    122619
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

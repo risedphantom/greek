@@ -1,0 +1,24 @@
+{
+  "lemma": "Εδιμβούργο",
+  "translation": [
+    "Эдинбург"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι από το Εδιμβούργο.",
+    "ru": "Я из Эдинбурга."
+  },
+  "lemma_key": "εδιμβούργο",
+  "surfaces": [
+    "Εδιμβούργο"
+  ],
+  "msg_ids": [
+    123360,
+    123613
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

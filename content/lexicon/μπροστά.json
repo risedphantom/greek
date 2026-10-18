@@ -1,0 +1,26 @@
+{
+  "lemma": "μπροστά",
+  "translation": [
+    "впереди",
+    "перед"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είμαι μπροστά.",
+    "ru": "Я впереди."
+  },
+  "lemma_key": "μπροστά",
+  "surfaces": [
+    "μπροστά"
+  ],
+  "msg_ids": [
+    123088,
+    123089,
+    124124
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

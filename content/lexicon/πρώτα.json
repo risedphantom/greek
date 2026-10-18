@@ -1,0 +1,25 @@
+{
+  "lemma": "πρώτα",
+  "translation": [
+    "сначала",
+    "сперва",
+    "первый"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πρώτα διάβασα, μετά έφαγα.",
+    "ru": "Сначала я почитал, потом поел."
+  },
+  "lemma_key": "πρώτα",
+  "surfaces": [
+    "πρώτα"
+  ],
+  "msg_ids": [
+    123620
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

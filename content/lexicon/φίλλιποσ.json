@@ -1,0 +1,23 @@
+{
+  "lemma": "Φίλλιπος",
+  "translation": [
+    "Филипп"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Φίλιππος έρχεται.",
+    "ru": "Филипп приходит."
+  },
+  "lemma_key": "φίλλιποσ",
+  "surfaces": [
+    "Φίλλιπος"
+  ],
+  "msg_ids": [
+    122047
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

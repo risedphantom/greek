@@ -1,0 +1,24 @@
+{
+  "lemma": "Μελά",
+  "translation": [
+    "Мела"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η οδός Μελά.",
+    "ru": "Улица Мела."
+  },
+  "lemma_key": "μελά",
+  "surfaces": [
+    "Μελά"
+  ],
+  "msg_ids": [
+    122047,
+    122836
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

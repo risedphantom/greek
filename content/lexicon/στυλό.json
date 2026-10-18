@@ -1,0 +1,37 @@
+{
+  "lemma": "στυλό",
+  "translation": [
+    "ручка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ο, -ια",
+  "forms": {
+    "sg": {
+      "nom": "το στυλό",
+      "gen": "του στυλό",
+      "acc": "το στυλό"
+    },
+    "pl": {
+      "nom": "τα στυλό",
+      "gen": "των στυλό",
+      "acc": "τα στυλό"
+    }
+  },
+  "example": {
+    "el": "Αυτό είναι ένα στυλό.",
+    "ru": "Это ручка."
+  },
+  "lemma_key": "στυλό",
+  "surfaces": [
+    "στυλό"
+  ],
+  "msg_ids": [
+    122052,
+    122071,
+    122496,
+    123089
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

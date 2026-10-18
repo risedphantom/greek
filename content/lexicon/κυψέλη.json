@@ -1,0 +1,28 @@
+{
+  "lemma": "Κυψέλη",
+  "translation": [
+    "Кипсели"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στην Κυψέλη.",
+    "ru": "Я живу в Кипсели."
+  },
+  "lemma_key": "κυψέλη",
+  "surfaces": [
+    "Κυψέλη"
+  ],
+  "msg_ids": [
+    122833,
+    122980,
+    123361,
+    123362,
+    123611,
+    123612
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}

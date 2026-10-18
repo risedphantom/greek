@@ -1,0 +1,23 @@
+{
+  "lemma": "Νέα Ορλεάνη",
+  "translation": [
+    "Новый Орлеан"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Νέα Ορλεάνη είναι πόλη.",
+    "ru": "Новый Орлеан — город."
+  },
+  "lemma_key": "νέα ορλεάνη",
+  "surfaces": [
+    "Νέα Ορλεάνη"
+  ],
+  "msg_ids": [
+    122072
+  ],
+  "needs_review": false,
+  "model": "google/gemini-2.5-flash-lite"
+}
