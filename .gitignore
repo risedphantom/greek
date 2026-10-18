@@ -1,0 +1,5 @@
+.env
+tg.session*
+.superpowers/
+__pycache__/
+.DS_Store
