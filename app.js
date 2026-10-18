@@ -5,6 +5,7 @@
 const state = {
   site: null,
   formsIndex: {},
+  dictByKey: new Map(),
   query: '',
   topicId: null,
   openGroups: new Set(),
@@ -103,7 +104,7 @@ function wrapGreek(root) {
       const key = lookupKey(m[0]);
       if (!key) continue;
       if (m.index > last) frag.append(text.slice(last, m.index));
-      frag.append(el('span', { class: 'w', 'data-key': key, text: m[0] }));
+      frag.append(el('span', { class: 'w', 'data-key': key, tabindex: '0', text: m[0] }));
       last = m.index + m[0].length;
       wrapped = true;
     }
@@ -152,6 +153,7 @@ function parseRoute() {
 
 function route() {
   closeLightbox();
+  hideCard();
   const r = parseRoute();
   setTab(r.tab);
   if (r.tab === 'dictionary') {
@@ -475,15 +477,331 @@ function showHomework(hwId, taskIdx) {
   if (row) flash(row);
 }
 
-// ---------------------------------------------------------------- views: dictionary (Task 12)
+// ---------------------------------------------------------------- views: dictionary
 
-function renderDictionary(key) {
-  const view = document.getElementById('view-dictionary');
-  view.replaceChildren(el('section', { class: 'pane' }, el('h2', { text: 'Словарь — скоро' })));
+const POS_FILTERS = [
+  { id: 'all', label: 'Все', pos: null },
+  { id: 'verb', label: 'Глаголы', pos: ['verb'] },
+  { id: 'noun', label: 'Сущ.', pos: ['noun'] },
+  { id: 'adj', label: 'Прил.', pos: ['adj'] },
+  { id: 'adv', label: 'Наречия', pos: ['adv'] },
+  { id: 'phrase', label: 'Фразы', pos: ['phrase', 'other'] },
+];
+const POS_LABELS = { noun: 'сущ.', verb: 'гл.', adj: 'прил.', adv: 'нареч.', phrase: 'фраза', other: 'др.' };
+const GENDER_LABELS = { m: 'м.р.', f: 'ж.р.', n: 'ср.р.' };
+const DICT_PAGE = 300;
+const MAX_SOURCES = 3;
+
+const dict = { built: false, q: '', filter: 'all', sort: 'date', limit: DICT_PAGE, rows: new Map(), text: new Map() };
+
+function plural(n, one, few, many) {
+  const m10 = n % 10, m100 = n % 100;
+  if (m10 === 1 && m100 !== 11) return one;
+  if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+  return many;
 }
 
-// Hover hook for Greek word spans; Task 12 replaces with hover cards.
-function onGreekWordHover(span, key, event) {}
+function formStrings(forms) {
+  if (forms == null) return [];
+  if (typeof forms === 'string') return [forms];
+  return Object.values(forms).flatMap(formStrings);
+}
+
+function posLabel(entry) {
+  let label = POS_LABELS[entry.pos] || entry.pos;
+  if (entry.pos === 'noun' && GENDER_LABELS[entry.gender]) label += ` ${GENDER_LABELS[entry.gender]}`;
+  return entry.class ? `${label} · ${entry.class}` : label;
+}
+
+function sourceLink(s) {
+  if (s.kind === 'hw') return el('a', { class: 'ref', href: `#/lessons/hw/${encodeURIComponent(s.id)}`, text: `Д/з ${hwDate(s.id)}` });
+  const found = findTopic(s.id);
+  return el('a', { class: 'ref', href: `#/lessons/topic/${encodeURIComponent(s.id)}`, text: found ? found.topic.title : s.id });
+}
+
+function wordSpan(entry) {
+  return el('span', { class: 'w', 'data-key': entry.key, tabindex: '0', text: entry.lemma });
+}
+
+function renderDictRow(entry) {
+  const extra = entry.sources.length - MAX_SOURCES;
+  return el('tr', { id: `w-${entry.key}` },
+    el('td', { class: 'd-word' }, wordSpan(entry),
+      entry.needs_review ? el('span', { class: 'badge warn', text: 'проверить' }) : null),
+    el('td', { text: entry.translation.join(', ') }),
+    el('td', {}, el('span', { class: 'pos', text: posLabel(entry) })),
+    el('td', { class: 'd-src' }, entry.sources.slice(0, MAX_SOURCES).map(sourceLink),
+      extra > 0 ? el('span', { class: 'muted', text: `+${extra}` }) : null));
+}
+
+function buildDictionary() {
+  const view = document.getElementById('view-dictionary');
+  const search = el('input', {
+    type: 'search', id: 'dict-search', class: 'search', 'aria-label': 'Поиск по словарю',
+    placeholder: 'Поиск: δουλειά, работа, έφαγα…',
+    oninput: (e) => { dict.q = e.target.value; dict.limit = DICT_PAGE; renderDictRows(); },
+  });
+  const chips = el('div', { class: 'chips' }, POS_FILTERS.map((f) => el('button', {
+    type: 'button', class: 'chip', 'data-filter': f.id, 'aria-pressed': String(f.id === dict.filter), text: f.label,
+    onclick: () => { dict.filter = f.id; dict.limit = DICT_PAGE; renderDictRows(); },
+  })));
+  const sort = el('button', {
+    type: 'button', id: 'dict-sort', class: 'chip',
+    onclick: () => { dict.sort = dict.sort === 'date' ? 'alpha' : 'date'; renderDictRows(); },
+  });
+  const table = el('table', { class: 'dict' },
+    el('thead', {}, el('tr', {}, ['Слово', 'Перевод', 'Тип', 'Где встречалось'].map((h) => el('th', { text: h })))),
+    el('tbody', { id: 'dict-body' }));
+  const more = el('button', {
+    type: 'button', id: 'dict-more', class: 'chip more', text: 'показать ещё',
+    onclick: () => { dict.limit += DICT_PAGE; renderDictRows(); },
+  });
+  view.replaceChildren(el('section', { class: 'pane dict-pane' },
+    el('div', { class: 'dict-bar' }, search, chips, sort, el('span', { id: 'dict-count', class: 'muted' })),
+    el('p', { id: 'dict-msg', class: 'muted', hidden: true }),
+    table,
+    el('p', { id: 'dict-empty', class: 'muted', text: 'Ничего не найдено', hidden: true }),
+    more));
+  for (const entry of state.site.dictionary) {
+    dict.text.set(entry.key, searchable([entry.lemma, ...entry.translation, ...formStrings(entry.forms)].join('\n')));
+  }
+  dict.built = true;
+}
+
+function dictMatches() {
+  const q = searchable(dict.q.trim());
+  const pos = POS_FILTERS.find((f) => f.id === dict.filter).pos;
+  const list = state.site.dictionary.filter((e) =>
+    (!pos || pos.includes(e.pos)) && (!q || dict.text.get(e.key).includes(q)));
+  if (dict.sort === 'alpha') list.sort((a, b) => a.lemma.localeCompare(b.lemma, 'el'));
+  else list.sort((a, b) => b.first_date.localeCompare(a.first_date) || a.key.localeCompare(b.key, 'el'));
+  return list;
+}
+
+function renderDictRows() {
+  const list = dictMatches();
+  const shown = list.slice(0, dict.limit).map((e) => {
+    if (!dict.rows.has(e.key)) dict.rows.set(e.key, renderDictRow(e));
+    return dict.rows.get(e.key);
+  });
+  document.getElementById('dict-body').replaceChildren(...shown);
+  document.getElementById('dict-count').textContent = `${list.length} ${plural(list.length, 'слово', 'слова', 'слов')}`;
+  document.getElementById('dict-empty').hidden = list.length > 0;
+  document.getElementById('dict-more').hidden = list.length <= dict.limit;
+  for (const chip of document.querySelectorAll('.chips .chip')) {
+    chip.setAttribute('aria-pressed', String(chip.dataset.filter === dict.filter));
+  }
+  document.getElementById('dict-sort').textContent = dict.sort === 'date' ? '↕ по дате' : '↕ по алфавиту';
+  return list;
+}
+
+function renderDictionary(key) {
+  if (!dict.built) buildDictionary();
+  const msg = document.getElementById('dict-msg');
+  msg.hidden = true;
+  if (!key) {
+    renderDictRows();
+    return;
+  }
+  dict.q = '';
+  dict.filter = 'all';
+  document.getElementById('dict-search').value = '';
+  const list = dictMatches();
+  const idx = list.findIndex((e) => e.key === key);
+  if (idx < 0) {
+    renderDictRows();
+    msg.textContent = 'Слово не найдено';
+    msg.hidden = false;
+    return;
+  }
+  dict.limit = Math.max(dict.limit, Math.ceil((idx + 1) / DICT_PAGE) * DICT_PAGE);
+  renderDictRows();
+  const row = document.getElementById(`w-${key}`);
+  row.scrollIntoView({ block: 'center' });
+  flash(row);
+}
+
+// ---------------------------------------------------------------- hover card
+
+const PERSONS = ['εγώ', 'εσύ', 'αυτός', 'εμείς', 'εσείς', 'αυτοί'];
+const TENSES = [['present', 'Настоящее'], ['imperfect', 'Имперфект'], ['aorist', 'Аорист'], ['future', 'Будущее']];
+const CASES = [['nom', 'Им.'], ['gen', 'Род.'], ['acc', 'Вин.']];
+const SHOW_DELAY = 150;
+const HIDE_DELAY = 200;
+const CARD_GAP = 6;
+
+const card = { node: null, span: null, key: null, showTimer: 0, hideTimer: 0, overCard: false };
+
+function formRows(pairs) {
+  return el('table', {}, el('tbody', {}, pairs.map(([label, form]) =>
+    el('tr', {}, el('td', { text: label }), el('td', { text: form || '—' })))));
+}
+
+function renderForms(entry) {
+  const f = entry.forms || {};
+  if (entry.pos === 'noun' && f.sg) {
+    return formRows(['sg', 'pl'].flatMap((n) => CASES.map(([c, label]) =>
+      [`${label} ${n === 'sg' ? 'ед.' : 'мн.'}`, f[n]?.[c]])));
+  }
+  if (entry.pos === 'verb' && f.present) {
+    const sections = TENSES.filter(([t]) => f[t]).map(([t, title]) => el('div', { class: 'hc-tense' },
+      el('div', { class: 'hc-h', text: title }), formRows(PERSONS.map((p, i) => [p, f[t][i]]))));
+    if (f.imperative) {
+      sections.push(el('div', { class: 'hc-tense' }, el('div', { class: 'hc-h', text: 'Повелительное' }),
+        formRows([['εσύ', f.imperative.sg], ['εσείς', f.imperative.pl]])));
+    }
+    return el('div', { class: 'hc-tenses' }, sections);
+  }
+  if (entry.pos === 'adj' && f.m) {
+    return el('table', {},
+      el('thead', {}, el('tr', {}, el('th'), el('th', { text: 'ед.' }), el('th', { text: 'мн.' }))),
+      el('tbody', {}, Object.entries(GENDER_LABELS).map(([g, label]) =>
+        el('tr', {}, el('td', { text: label }), el('td', { text: f[g]?.sg || '—' }), el('td', { text: f[g]?.pl || '—' })))));
+  }
+  return null;
+}
+
+function renderCard(entry) {
+  const meta = [POS_LABELS[entry.pos] || entry.pos, GENDER_LABELS[entry.gender], entry.class].filter(Boolean).join(' · ');
+  const ex = entry.example?.el ? el('div', { class: 'hc-ex', text: `${entry.example.el} — ${entry.example.ru || ''}` }) : null;
+  const topic = entry.sources.find((s) => s.kind === 'topic');
+  return [
+    el('div', { class: 'hc-lemma', text: entry.lemma }),
+    el('div', { class: 'hc-tr', text: entry.translation.join(', ') }),
+    el('div', { class: 'hc-meta', text: meta }),
+    renderForms(entry),
+    ex,
+    el('div', { class: 'hc-links' },
+      el('a', { class: 'ref', href: `#/dictionary/${encodeURIComponent(entry.key)}`, text: 'открыть в словаре' }),
+      topic ? sourceLink(topic) : null),
+  ];
+}
+
+function cardNode() {
+  if (card.node) return card.node;
+  card.node = el('div', {
+    id: 'hovercard', role: 'dialog', hidden: true,
+    onmouseenter: () => { card.overCard = true; clearTimeout(card.hideTimer); },
+    onmouseleave: () => { card.overCard = false; scheduleHide(); },
+    onclick: (e) => { if (e.target.closest('a')) hideCard(); },
+  });
+  document.body.append(card.node);
+  return card.node;
+}
+
+function showCard(span, key) {
+  clearTimeout(card.showTimer);
+  clearTimeout(card.hideTimer);
+  const entry = state.dictByKey.get(key);
+  if (!entry) return;
+  const node = cardNode();
+  if (card.span !== span || node.hidden) {
+    node.replaceChildren(...renderCard(entry).filter(Boolean));
+    node.classList.toggle('wide', entry.pos === 'verb');
+    node.setAttribute('aria-label', entry.lemma);
+  }
+  card.span = span;
+  card.key = key;
+  node.hidden = false;
+  placeCard(span, node);
+}
+
+// Below-right of the word; flips above / left when it would leave the viewport.
+// When neither side fits, the roomier side wins and the card scrolls.
+function placeCard(span, node) {
+  node.style.maxHeight = '';
+  const r = span.getBoundingClientRect();
+  const w = node.offsetWidth, h = node.offsetHeight;
+  const vw = document.documentElement.clientWidth, vh = window.innerHeight;
+  const below = vh - r.bottom - 2 * CARD_GAP, above = r.top - 2 * CARD_GAP;
+  const flip = h > below && above > below;
+  if (h > (flip ? above : below)) node.style.maxHeight = `${flip ? above : below}px`;
+  const top = flip ? r.top - CARD_GAP - Math.min(h, above) : r.bottom + CARD_GAP;
+  let left = r.left;
+  if (left + w > vw) left = Math.max(CARD_GAP, r.right - w);
+  node.style.top = `${top + window.scrollY}px`;
+  node.style.left = `${left + window.scrollX}px`;
+}
+
+function hideCard() {
+  clearTimeout(card.showTimer);
+  clearTimeout(card.hideTimer);
+  card.overCard = false;
+  card.span = null;
+  if (card.node) card.node.hidden = true;
+}
+
+function scheduleHide() {
+  clearTimeout(card.hideTimer);
+  card.hideTimer = setTimeout(() => { if (!card.overCard) hideCard(); }, HIDE_DELAY);
+}
+
+function cardOpenFor(span) {
+  return card.node && !card.node.hidden && card.span === span;
+}
+
+const noHover = matchMedia('(hover: none)');
+let lastPointer = 'mouse';
+
+function isTouch() {
+  return lastPointer === 'touch' || noHover.matches;
+}
+
+// Mouse hover: show after a short delay (touch devices use tap instead).
+function onGreekWordHover(span, key, event) {
+  if (isTouch()) return;
+  clearTimeout(card.hideTimer);
+  if (cardOpenFor(span)) return;
+  clearTimeout(card.showTimer);
+  card.showTimer = setTimeout(() => showCard(span, key), SHOW_DELAY);
+}
+
+function bindHoverCard() {
+  document.addEventListener('pointerdown', (e) => { lastPointer = e.pointerType; }, true);
+  document.addEventListener('mouseout', (e) => {
+    const span = e.target.closest && e.target.closest('.w');
+    if (!span || span.contains(e.relatedTarget)) return;
+    clearTimeout(card.showTimer);
+    if (card.node && !card.node.hidden) scheduleHide();
+  });
+  document.addEventListener('click', (e) => {
+    const span = e.target.closest && e.target.closest('.w');
+    if (span) {
+      // A word inside a homework <label> must not toggle the checkbox.
+      if (span.closest('label')) { e.preventDefault(); e.stopPropagation(); }
+      if (isTouch()) {
+        if (cardOpenFor(span)) hideCard();
+        else showCard(span, span.dataset.key);
+      }
+      return;
+    }
+    if (card.node && !card.node.hidden && !card.node.contains(e.target)) hideCard();
+  });
+  document.addEventListener('focusin', (e) => {
+    const span = e.target.closest && e.target.closest('.w');
+    // Keyboard focus only; mouse clicks and taps are handled by hover / click.
+    if (span && span.matches(':focus-visible')) showCard(span, span.dataset.key);
+    else if (card.node && !card.node.contains(e.target)) clearTimeout(card.showTimer);
+  });
+  document.addEventListener('focusout', (e) => {
+    if (!e.target.closest || !e.target.closest('.w, #hovercard')) return;
+    if (card.node && card.node.contains(e.relatedTarget)) return;
+    if (!card.overCard) scheduleHide();
+  });
+  // Registered before the lightbox's listener: Esc closes the card first.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !card.node || card.node.hidden) return;
+    const span = card.span;
+    hideCard();
+    if (span && span.isConnected && card.node.contains(document.activeElement)) span.focus();
+    e.stopImmediatePropagation();
+    e.preventDefault();
+  });
+  // Panes scroll independently; a stale card would float over the wrong text.
+  document.addEventListener('scroll', (e) => {
+    if (card.node && !card.node.hidden && !card.node.contains(e.target)) hideCard();
+  }, true);
+}
 
 // ---------------------------------------------------------------- events + boot
 
@@ -496,15 +814,16 @@ function bindEvents() {
   document.getElementById('hw-search').addEventListener('input', (e) => filterHomework(e.target.value));
   // Same-hash clicks fire no hashchange; re-route so the target scrolls and flashes again.
   document.addEventListener('click', (e) => {
-    const a = e.target.closest && e.target.closest('a.ref[href^="#/lessons/"]');
+    const a = e.target.closest && e.target.closest('a.ref[href^="#/"]');
     if (!a || location.hash !== a.getAttribute('href')) return;
     e.preventDefault();
     route();
   });
   document.addEventListener('mouseover', (e) => {
     const span = e.target.closest && e.target.closest('.w');
-    if (span) window.GREEK.onGreekWordHover(span, span.dataset.key, e);
+    if (span && !span.contains(e.relatedTarget)) window.GREEK.onGreekWordHover(span, span.dataset.key, e);
   });
+  bindHoverCard();
 }
 
 async function boot() {
@@ -518,6 +837,7 @@ async function boot() {
     return;
   }
   state.formsIndex = state.site.forms_index || {};
+  state.dictByKey = new Map((state.site.dictionary || []).map((e) => [e.key, e]));
   window.GREEK = { site: state.site, formsIndex: state.formsIndex, renderMarkdown, normalize, lookupKey, onGreekWordHover };
   document.getElementById('updated').textContent = `обновлено ${fmtDate(state.site.updated, true)}`;
 

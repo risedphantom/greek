@@ -219,7 +219,7 @@ body {
 #lightbox {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,6 +252,70 @@ body {
 .lb-close { margin-left: auto; }
 .lb-text { padding: 8px 14px; overflow: auto; }
 
+/* ---- dictionary ---- */
+
+.dict-pane { max-width: 1100px; width: 100%; margin: 0 auto; }
+.dict-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+.dict-bar .search { flex: 1 1 260px; width: auto; margin: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--fg);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: #222; border-color: #222; color: #fff; }
+.chip.more { display: block; margin: 10px auto; }
+
+table.dict { width: 100%; border-collapse: collapse; }
+.dict th {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  color: #777;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+.dict td { padding: 6px 10px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+.dict tr { scroll-margin-top: 40px; }
+.d-word { font-weight: 600; white-space: nowrap; }
+.d-word .badge { margin-left: 6px; font-weight: 400; }
+.d-src { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 12px; }
+.pos { padding: 1px 7px; border-radius: 10px; background: #eee; font-size: 11px; white-space: nowrap; }
+
+/* ---- hover card ---- */
+
+#hovercard {
+  position: absolute;
+  z-index: 1100;
+  width: 300px;
+  max-height: calc(100vh - 12px);
+  overflow: auto;
+  padding: 12px 14px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+  font-size: 13px;
+}
+#hovercard.wide { width: 440px; }
+.hc-lemma { font-size: 17px; font-weight: 700; }
+.hc-tr { margin: 2px 0 6px; color: var(--accent); font-weight: 600; }
+.hc-meta { margin-bottom: 8px; color: #777; font-size: 11px; }
+#hovercard table { width: 100%; border-collapse: collapse; }
+#hovercard th { color: #777; font-size: 11px; font-weight: 400; text-align: left; padding: 2px 6px; }
+#hovercard td { padding: 1px 6px; border-bottom: 1px solid #f0f0f0; }
+#hovercard td:first-child { width: 40%; color: #777; }
+.hc-tenses { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+.hc-h { margin-bottom: 2px; color: #555; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+.hc-ex { margin-top: 8px; color: #555; font-style: italic; }
+.hc-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 8px; font-size: 12px; }
+
 /* ---- narrow screens ---- */
 
 @media (max-width: 900px) {
@@ -261,4 +325,6 @@ body {
   .lb-box { flex-direction: column; overflow: auto; }
   .lb-img img { max-width: 92vw; max-height: 60vh; }
   .lb-side { width: auto; }
+  #hovercard.wide { width: 300px; }
+  .hc-tenses { grid-template-columns: 1fr; }
 }
