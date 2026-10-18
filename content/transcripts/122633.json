@@ -1,0 +1,75 @@
+{
+  "msg_id": 122633,
+  "source": "text",
+  "kind": "vocab",
+  "title": "Список глаголов",
+  "body_md": "γράφω\nανοίγω\nδείχνω\nκάνω\nδιαβάζω\nμπαίνω\nβλέπω\nτελειώνω\nπαίρνω",
+  "greek_words": [
+    {
+      "lemma": "γράφω",
+      "pos": "verb",
+      "surface": [
+        "γράφω"
+      ]
+    },
+    {
+      "lemma": "ανοίγω",
+      "pos": "verb",
+      "surface": [
+        "ανοίγω"
+      ]
+    },
+    {
+      "lemma": "δείχνω",
+      "pos": "verb",
+      "surface": [
+        "δείχνω"
+      ]
+    },
+    {
+      "lemma": "κάνω",
+      "pos": "verb",
+      "surface": [
+        "κάνω"
+      ]
+    },
+    {
+      "lemma": "διαβάζω",
+      "pos": "verb",
+      "surface": [
+        "διαβάζω"
+      ]
+    },
+    {
+      "lemma": "μπαίνω",
+      "pos": "verb",
+      "surface": [
+        "μπαίνω"
+      ]
+    },
+    {
+      "lemma": "βλέπω",
+      "pos": "verb",
+      "surface": [
+        "βλέπω"
+      ]
+    },
+    {
+      "lemma": "τελειώνω",
+      "pos": "verb",
+      "surface": [
+        "τελειώνω"
+      ]
+    },
+    {
+      "lemma": "παίρνω",
+      "pos": "verb",
+      "surface": [
+        "παίρνω"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: глаголы",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

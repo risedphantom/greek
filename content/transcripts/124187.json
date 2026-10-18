@@ -1,0 +1,11 @@
+{
+  "msg_id": 124187,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Чтение и перевод текста с акцентом на глаголы",
+  "body_md": "Прочитать и перевести текст, особое внимание на глаголы",
+  "greek_words": [],
+  "topic_hint": "Глаголы",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,11 @@
+{
+  "msg_id": 124312,
+  "source": "text",
+  "kind": "chat",
+  "title": "Расписание",
+  "body_md": "Так что все 12.30 я , к сожалению, никак. А позже, вечером вы не можете?",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,11 @@
+{
+  "msg_id": 123341,
+  "source": "text",
+  "kind": "chat",
+  "title": "Ситуативное обучение",
+  "body_md": "Тогда посмотрим по ситуации, если что пропустим",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

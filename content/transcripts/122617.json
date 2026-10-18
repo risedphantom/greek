@@ -1,0 +1,99 @@
+{
+  "msg_id": 122617,
+  "source": "text",
+  "kind": "vocab",
+  "title": "Притяжательные и вопросительные местоимения",
+  "body_md": "мой - μου\nтвой - σου\nего - του\nеё - της\nнаш - μας\nваш - σας\nих - τους\n\nкто? - ποιός; м.р. ποιά; ж.р. ποιό; ср.р.\nчто? - τι;\nгде? - που;\nкогда? - πότε;\nпочему? - γιατί;\nзачем? - διατί; γιατί?",
+  "greek_words": [
+    {
+      "lemma": "μου",
+      "pos": "phrase",
+      "surface": [
+        "μου"
+      ]
+    },
+    {
+      "lemma": "σου",
+      "pos": "phrase",
+      "surface": [
+        "σου"
+      ]
+    },
+    {
+      "lemma": "του",
+      "pos": "phrase",
+      "surface": [
+        "του"
+      ]
+    },
+    {
+      "lemma": "της",
+      "pos": "phrase",
+      "surface": [
+        "της"
+      ]
+    },
+    {
+      "lemma": "μας",
+      "pos": "phrase",
+      "surface": [
+        "μας"
+      ]
+    },
+    {
+      "lemma": "σας",
+      "pos": "phrase",
+      "surface": [
+        "σας"
+      ]
+    },
+    {
+      "lemma": "τους",
+      "pos": "phrase",
+      "surface": [
+        "τους"
+      ]
+    },
+    {
+      "lemma": "ποιος",
+      "pos": "phrase",
+      "surface": [
+        "ποιός",
+        "ποιά",
+        "ποιό"
+      ]
+    },
+    {
+      "lemma": "τι",
+      "pos": "phrase",
+      "surface": [
+        "τι"
+      ]
+    },
+    {
+      "lemma": "που",
+      "pos": "adv",
+      "surface": [
+        "που"
+      ]
+    },
+    {
+      "lemma": "ποτε",
+      "pos": "adv",
+      "surface": [
+        "πότε"
+      ]
+    },
+    {
+      "lemma": "γιατι",
+      "pos": "adv",
+      "surface": [
+        "γιατί",
+        "διατί"
+      ]
+    }
+  ],
+  "topic_hint": "Притяжательные и вопросительные местоимения",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

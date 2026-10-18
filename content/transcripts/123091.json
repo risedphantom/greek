@@ -1,0 +1,26 @@
+{
+  "msg_id": 123091,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Прописать буквы σ и υ",
+  "body_md": "3) тетрадь с упражнениями с. 15 и 16 прописать\n  Анастасия, у тебя еще по две строки σ и υ . Потренируйся, обязательно!",
+  "greek_words": [
+    {
+      "lemma": "σ",
+      "pos": "other",
+      "surface": [
+        "σ"
+      ]
+    },
+    {
+      "lemma": "υ",
+      "pos": "other",
+      "surface": [
+        "υ"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: буквы σ, υ",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

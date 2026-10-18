@@ -1,0 +1,11 @@
+{
+  "msg_id": 122636,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Упражнения из тетради",
+  "body_md": "Тетрадь упражнений с. 3 и 4 прописать в тетради упражнения",
+  "greek_words": [],
+  "topic_hint": "Упражнения",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

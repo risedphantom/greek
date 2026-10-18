@@ -1,0 +1,75 @@
+{
+  "msg_id": 122634,
+  "source": "text",
+  "kind": "vocab",
+  "title": "Глаголы",
+  "body_md": "καθίζω | сажусь, сижу\nξέρω | знаю\nεπιτρέπω | разрешаю\nδίνω | даю\nκλίνω | склоняю\nκλείνω | закрываю\nκαταλαβαίνω | понимаю\nβάζω | кладу, ставлю\nβγαίνω | выхожу",
+  "greek_words": [
+    {
+      "lemma": "καθίζω",
+      "pos": "verb",
+      "surface": [
+        "καθίζω"
+      ]
+    },
+    {
+      "lemma": "ξέρω",
+      "pos": "verb",
+      "surface": [
+        "ξέρω"
+      ]
+    },
+    {
+      "lemma": "επιτρέπω",
+      "pos": "verb",
+      "surface": [
+        "επιτρέπω"
+      ]
+    },
+    {
+      "lemma": "δίνω",
+      "pos": "verb",
+      "surface": [
+        "δίνω"
+      ]
+    },
+    {
+      "lemma": "κλίνω",
+      "pos": "verb",
+      "surface": [
+        "κλίνω"
+      ]
+    },
+    {
+      "lemma": "κλείνω",
+      "pos": "verb",
+      "surface": [
+        "κλείνω"
+      ]
+    },
+    {
+      "lemma": "καταλαβαίνω",
+      "pos": "verb",
+      "surface": [
+        "καταλαβαίνω"
+      ]
+    },
+    {
+      "lemma": "βάζω",
+      "pos": "verb",
+      "surface": [
+        "βάζω"
+      ]
+    },
+    {
+      "lemma": "βγαίνω",
+      "pos": "verb",
+      "surface": [
+        "βγαίνω"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: глаголы",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

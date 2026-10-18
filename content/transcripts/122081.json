@@ -1,0 +1,11 @@
+{
+  "msg_id": 122081,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Прослушать 1 трек",
+  "body_md": "Прослушать 1 трек, произношение, название букв алфавита, страны",
+  "greek_words": [],
+  "topic_hint": "Лексика: алфавит, страны",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

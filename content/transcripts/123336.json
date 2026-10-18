@@ -1,0 +1,11 @@
+{
+  "msg_id": 123336,
+  "source": "text",
+  "kind": "chat",
+  "title": "Ожидание заданий",
+  "body_md": "Задания вышлю, обязательно\nЯ и хотела, позже сделать",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

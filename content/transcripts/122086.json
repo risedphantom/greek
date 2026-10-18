@@ -1,0 +1,11 @@
+{
+  "msg_id": 122086,
+  "source": "text",
+  "kind": "chat",
+  "title": "Совет по изучению лексики",
+  "body_md": "Когда выполняете задания с новой лексикой, стараемся учить её!",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,11 @@
+{
+  "msg_id": 122832,
+  "source": "photo",
+  "kind": "other",
+  "title": "Символы",
+  "body_md": "",
+  "greek_words": [],
+  "topic_hint": "Символы",
+  "confidence": 0.5,
+  "model": "google/gemini-2.5-flash"
+}

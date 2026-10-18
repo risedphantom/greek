@@ -1,0 +1,11 @@
+{
+  "msg_id": 122488,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационное сообщение",
+  "body_md": "Я буду пробовать Яндекс телемост, а пока в зуме будем",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

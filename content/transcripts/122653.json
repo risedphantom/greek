@@ -1,0 +1,11 @@
+{
+  "msg_id": 122653,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационное сообщение",
+  "body_md": "Глаголы учим спряжение, по возможности запоминаем и перевод. Всё постепенно",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

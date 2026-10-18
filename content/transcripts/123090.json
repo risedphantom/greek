@@ -1,0 +1,11 @@
+{
+  "msg_id": 123090,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Выполнить упражнения 7, 8, 9",
+  "body_md": "2) выполнить упражнения 7,8 устно, 9 письменно",
+  "greek_words": [],
+  "topic_hint": "Упражнения",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

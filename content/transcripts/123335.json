@@ -1,0 +1,11 @@
+{
+  "msg_id": 123335,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационный вопрос",
+  "body_md": "Если свет дадут в 21 - это поздно будет для вас?",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

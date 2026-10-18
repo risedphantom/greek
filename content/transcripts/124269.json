@@ -1,0 +1,11 @@
+{
+  "msg_id": 124269,
+  "source": "text",
+  "kind": "chat",
+  "title": "Учебные материалы",
+  "body_md": "Тетрадь с упражнениями ( закрепл.) с. 29, 30, 33",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

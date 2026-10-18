@@ -1,0 +1,11 @@
+{
+  "msg_id": 123960,
+  "source": "text",
+  "kind": "chat",
+  "title": "Общение",
+  "body_md": "Ребята, в пятницу можно с 8.00 до 12, если у вас получится",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

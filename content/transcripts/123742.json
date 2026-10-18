@@ -1,0 +1,11 @@
+{
+  "msg_id": 123742,
+  "source": "text",
+  "kind": "exercise",
+  "title": "Повторить глаголы и наречия времени",
+  "body_md": "Повторить глаголы и наречия времени",
+  "greek_words": [],
+  "topic_hint": "Глаголы и наречия времени",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}
