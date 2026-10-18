@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ελληνικά · Группа 5</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <strong class="brand">Ελληνικά · Группа 5</strong>
+    <nav class="tabs">
+      <a class="tab" id="tab-lessons" href="#/lessons">Уроки</a>
+      <a class="tab" id="tab-dictionary" href="#/dictionary">Словарь</a>
+    </nav>
+    <span class="updated" id="updated"></span>
+  </header>
+
+  <main id="view-lessons" class="body">
+    <section class="pane" id="grammar-pane">
+      <input type="search" id="search" class="search" placeholder="Поиск по грамматике: σε, артикль, είμαι…" aria-label="Поиск по грамматике">
+      <div id="topic-list"></div>
+      <article id="article" class="article" hidden></article>
+    </section>
+    <section class="pane" id="hw-pane"></section>
+  </main>
+
+  <main id="view-dictionary" class="body single" hidden></main>
+
+  <script src="app.js"></script>
+</body>
+</html>

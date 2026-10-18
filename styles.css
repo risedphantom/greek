@@ -1,0 +1,184 @@
+:root {
+  --topbar: 46px;
+  --fg: #222;
+  --muted: #888;
+  --line: #ddd;
+  --accent: #2a5bd7;
+  --sel: #eef2ff;
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html, body { margin: 0; height: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--fg);
+  background: #fff;
+}
+
+/* ---- top bar ---- */
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: var(--topbar);
+  padding: 0 14px;
+  border-bottom: 1px solid var(--line);
+  background: #f7f7f7;
+}
+
+.tabs { display: flex; gap: 4px; }
+
+.tab {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--fg);
+  text-decoration: none;
+}
+.tab:hover { background: #e9e9e9; }
+.tab.on { background: #222; color: #fff; }
+
+.updated { margin-left: auto; color: var(--muted); font-size: 13px; }
+
+/* ---- two panes ---- */
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - var(--topbar));
+}
+.body.single { grid-template-columns: 1fr; }
+
+.pane {
+  padding: 12px 14px;
+  overflow: auto;
+  min-width: 0;
+}
+.pane + .pane { border-left: 1px solid var(--line); }
+
+.search {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font: inherit;
+}
+
+.muted { color: var(--muted); }
+
+/* ---- topic list ---- */
+
+.grp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  margin: 10px 0 4px;
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: #555;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+}
+.caret { width: 10px; color: var(--muted); }
+
+.item {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--fg);
+  text-decoration: none;
+}
+.item:hover { background: #f3f3f3; }
+.item.on { background: var(--sel); font-weight: 600; }
+.item small { color: var(--muted); font-weight: 400; font-size: 12px; }
+
+.audio-item { padding: 4px 8px; }
+.audio-cap small { color: var(--muted); font-size: 12px; }
+.audio-item audio { width: 100%; height: 32px; margin-top: 2px; }
+
+/* ---- article ---- */
+
+.article {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background: #fafafa;
+  scroll-margin-top: 8px;
+}
+.article h2 { margin: 0 0 8px; font-size: 17px; }
+
+.occ { padding: 10px 0; border-top: 1px dashed var(--line); }
+.occ:first-of-type { border-top: 0; padding-top: 0; }
+
+.occ-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.date { color: #555; font-size: 13px; font-weight: 600; }
+
+.badge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: #eee;
+  font-size: 11px;
+}
+.badge.kind-grammar { background: #e6edff; }
+.badge.kind-table { background: #e8f6ec; }
+.badge.kind-vocab { background: #fff3dd; }
+.badge.kind-text { background: #f1e8fb; }
+.badge.warn { background: #fde2e1; color: #a33; }
+
+.md h1, .md h2, .md h3, .md h4 { font-size: 15px; margin: 10px 0 6px; }
+.md p { margin: 6px 0; }
+.md ul, .md ol { margin: 6px 0; padding-left: 22px; }
+.md table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+.md th, .md td { border: 1px solid #ccc; padding: 3px 8px; text-align: left; vertical-align: top; }
+.md th { background: #f0f0f0; }
+.md code { background: #eee; padding: 0 3px; border-radius: 3px; }
+
+.w { border-bottom: 1px dotted var(--accent); cursor: help; }
+
+.thumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.thumb img {
+  display: block;
+  width: 64px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+.file {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.src { margin-top: 8px; color: var(--muted); font-size: 11px; }
+
+.tasks { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.tasks ul { margin: 4px 0 0; padding-left: 20px; }
+.ref { color: var(--accent); }
+
+/* ---- narrow screens ---- */
+
+@media (max-width: 900px) {
+  .body { grid-template-columns: 1fr; height: auto; }
+  .pane { overflow: visible; }
+  .pane + .pane { border-left: 0; border-top: 1px solid var(--line); }
+}
