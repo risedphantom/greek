@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from greekpipe.config import STOPWORDS, normalize
-from greekpipe.lexicon import load_lexicon
+from greekpipe.lexicon import load_lexicon, validate
 from greekpipe.segment import _MARKER, sessions, tasks_for
 from greekpipe.tg_fetch import load_messages
 from greekpipe.topics import NEW_GROUP, Taxonomy, load_topics
@@ -171,6 +171,17 @@ def _index_keys(entry: dict) -> set[str]:
             and _GREEK_KEY.fullmatch(k)}
 
 
+def _verb_class(lemma: str) -> str | None:
+    word = unicodedata.normalize("NFC", lemma.strip().lower())
+    if word.endswith(("άω", "ώ")):
+        return "2 спр."
+    if word.endswith("μαι"):
+        return "-μαι"
+    if word.endswith("ω"):
+        return "1 спр."
+    return None
+
+
 def _dictionary(lexicon, messages, msg_topics, homework) -> tuple[list[dict], dict, int]:
     dates = {m["id"]: _day(m) for m in messages}
     msg_hw = {}
@@ -198,7 +209,9 @@ def _dictionary(lexicon, messages, msg_topics, homework) -> tuple[list[dict], di
             "key": key,
             **{k: entry.get(k) for k in ("translation", "pos", "gender", "class", "forms",
                                          "example")},
-            "needs_review": bool(entry.get("needs_review")),
+            **({"class": _verb_class(entry["lemma"]) or entry.get("class")}
+               if entry.get("pos") == "verb" else {}),
+            "needs_review": bool(entry.get("needs_review")) or not validate(entry),
             "first_date": known[0] if known else None,
             "sources": [{"kind": kind, "id": sid, "date": day} for (kind, sid), day
                         in sorted(sources.items(), key=lambda s: (s[1], s[0]))],

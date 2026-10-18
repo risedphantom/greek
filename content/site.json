@@ -2688,7 +2688,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "έρχομαι",
@@ -2756,7 +2756,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "έχω",
@@ -2853,7 +2853,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "αγαπάω",
@@ -3109,7 +3109,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ακούω",
@@ -3434,7 +3434,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "αρχίζω",
@@ -3702,7 +3702,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -έπω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "βλέπω",
@@ -4132,7 +4132,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "διαβάζω",
@@ -4244,7 +4244,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "διαφωνώ",
@@ -4437,7 +4437,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "-μαι",
    "forms": {
     "present": [
      "είμαι",
@@ -4730,7 +4730,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άνω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "επαναλαμβάνω",
@@ -4827,7 +4827,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "ευχαριστώ",
@@ -4899,7 +4899,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "θέλω",
@@ -5481,7 +5481,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -αίνω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "καταλαβαίνω",
@@ -5563,7 +5563,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "κοιμάμαι",
@@ -5876,7 +5876,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "λέω",
@@ -6159,7 +6159,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "μένω",
@@ -6393,7 +6393,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -αίνω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "μαθαίνω",
@@ -6586,7 +6586,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "μιλάω",
@@ -6683,7 +6683,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "μιλώ",
@@ -6785,7 +6785,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ώ/-ούμαι",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "μπορώ",
@@ -6981,7 +6981,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ξέρω",
@@ -7148,7 +7148,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ονομάζω",
@@ -7210,7 +7210,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ορίζω",
@@ -7302,7 +7302,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "πάω",
@@ -7971,7 +7971,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "σημαίνω",
@@ -8247,7 +8247,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "συμφωνώ",
@@ -8867,7 +8867,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "φιλώ",
@@ -9130,7 +9130,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "χαίρομαι",
@@ -9191,7 +9191,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "χαίρω",
@@ -11241,7 +11241,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίγω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ανοίγω",
@@ -11312,7 +11312,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "απαντώ",
@@ -11595,7 +11595,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "βάζω",
@@ -11682,7 +11682,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -αίνω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "βγαίνω",
@@ -11908,7 +11908,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "γευματίζω",
@@ -12194,7 +12194,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "δίνω",
@@ -12265,7 +12265,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "δείχνω",
@@ -12372,7 +12372,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άσκω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "διδάσκω",
@@ -13109,7 +13109,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "καθίζω",
@@ -13396,7 +13396,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -νω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "κλείνω",
@@ -13467,7 +13467,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "κολυμπώ",
@@ -13908,7 +13908,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -εύω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "μαζεύω",
@@ -14155,7 +14155,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "μεταφράζω",
@@ -14257,7 +14257,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "μπαίνω",
@@ -14760,7 +14760,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ρνω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "παίρνω",
@@ -15234,7 +15234,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -νω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "Σβήνω",
@@ -15368,7 +15368,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "συγχωρώ",
@@ -15478,7 +15478,7 @@
     "el": "Συμπληρώνω την αίτηση.",
     "ru": "Я заполняю анкету."
    },
-   "needs_review": false,
+   "needs_review": true,
    "first_date": "2026-09-07",
    "sources": []
   },
@@ -15732,7 +15732,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "τελειώνω",
@@ -15989,7 +15989,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "υιοθετώ",
@@ -17154,7 +17154,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "λέγομαι",
@@ -17250,7 +17250,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "νικώ",
@@ -17392,7 +17392,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "ονομάζομαι",
@@ -17490,7 +17490,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "περνάω",
@@ -17923,7 +17923,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -λλω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "βάλλω",
@@ -18014,7 +18014,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -έπω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "επιτρέπω",
@@ -18147,7 +18147,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "κάθομαι",
@@ -18214,7 +18214,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -νω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "κλίνω",
@@ -18619,7 +18619,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "απαντάω",
@@ -18737,7 +18737,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "γίνομαι",
@@ -19387,7 +19387,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -έφω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "επιστρέφω",
@@ -20600,7 +20600,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "Ρωτάω",
@@ -21506,7 +21506,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χαιρετώ",
@@ -24449,7 +24449,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "βρίσκω",
@@ -24848,7 +24848,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "κοιτάζω",
@@ -25296,7 +25296,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "παίζω",
@@ -26025,7 +26025,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "βοηθώ",
@@ -26141,7 +26141,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "εξηγώ",
@@ -26552,7 +26552,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "Ρωτώ",
@@ -26762,7 +26762,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χαιρετάω",
@@ -27235,7 +27235,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "βοηθάω",
@@ -27490,7 +27490,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "γελάω",
@@ -28107,7 +28107,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "ζητάω",
@@ -28530,7 +28530,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "κλαίω",
@@ -28592,7 +28592,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "κρατάω",
@@ -29326,7 +29326,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "σκέφτομαι",
@@ -30037,7 +30037,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χτυπάω",
@@ -30725,7 +30725,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χτυπώ",
@@ -31048,7 +31048,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "αργώ",
@@ -32604,7 +32604,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "πιστεύω",
@@ -33478,7 +33478,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "περιμένω",
@@ -34020,7 +34020,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "ζητώ",
@@ -34087,7 +34087,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "ζω",
@@ -34149,7 +34149,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "θυμάμαι",
@@ -34276,7 +34276,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "λυπάμαι",
@@ -34568,7 +34568,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "ξυπνάω",
@@ -34624,7 +34624,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -άω",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "οδηγώ",
@@ -34686,7 +34686,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "πίνω",
@@ -35088,7 +35088,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "συναντώ",
@@ -35150,7 +35150,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "τηλεφωνώ",
@@ -35333,7 +35333,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "-ομαι",
+   "class": "-μαι",
    "forms": {
     "present": [
      "φοβάμαι",
@@ -35448,7 +35448,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ίζω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "χτίζω",
@@ -36164,7 +36164,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "αγαπώ",
@@ -36287,7 +36287,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "γελώ",
@@ -36384,7 +36384,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "διψώ",
@@ -36481,7 +36481,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "κοιτώ",
@@ -36543,7 +36543,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "κρατώ",
@@ -36640,7 +36640,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "μελετώ",
@@ -36701,7 +36701,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "ξεχνώ",
@@ -36799,7 +36799,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "πεινώ",
@@ -36862,7 +36862,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "περνώ",
@@ -36924,7 +36924,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "πετώ",
@@ -36986,7 +36986,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "πονώ",
@@ -37082,7 +37082,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "πουλώ",
@@ -37145,7 +37145,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ω",
+   "class": "1 спр.",
    "forms": {
     "present": [
      "προσέχω",
@@ -37188,7 +37188,7 @@
     "el": "Πρόσεχε στο δρόμο!",
     "ru": "Будь осторожен на дороге!"
    },
-   "needs_review": false,
+   "needs_review": true,
    "first_date": "2026-10-16",
    "sources": [
     {
@@ -37207,7 +37207,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "1 спр.",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "σταματώ",
@@ -37269,7 +37269,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "συζητώ",
@@ -37356,7 +37356,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "τραγουδώ",
@@ -37453,7 +37453,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "φιλώ",
@@ -37515,7 +37515,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "φορώ",
@@ -37576,7 +37576,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "φυσώ",
@@ -37637,7 +37637,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χαμογελώ",
@@ -37699,7 +37699,7 @@
    ],
    "pos": "verb",
    "gender": null,
-   "class": "2 спр. -ώ",
+   "class": "2 спр.",
    "forms": {
     "present": [
      "χρωστώ",

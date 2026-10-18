@@ -177,6 +177,25 @@ def test_dictionary_rows_sources_and_order(tmp_path):
     assert site["stats"]["words"] == 2
 
 
+def test_verb_class_derived_from_ending(tmp_path):
+    lexicon = [{**entry(lemma, pos="verb", msg_ids=[123088]), "class": model_class}
+               for lemma, model_class in [("θέλω", "2 спр."), ("φιλάω", "1 спр."),
+                                          ("αγαπώ", None), ("έρχομαι", "1 спр.")]]
+    lexicon.append({**entry("σπίτι", msg_ids=[123088]), "class": "ουδ."})
+    site = build_site(make_settings(tmp_path, lexicon=lexicon))
+
+    assert {r["lemma"]: r["class"] for r in site["dictionary"]} == {
+        "θέλω": "1 спр.", "φιλάω": "2 спр.", "αγαπώ": "2 спр.", "έρχομαι": "-μαι", "σπίτι": "ουδ."}
+
+
+def test_invalid_entry_on_disk_badged_needs_review(tmp_path):
+    valid = {**entry("νερό", pos="adv", msg_ids=[123088]), "example": {"el": "Νερό.", "ru": "Вода."}}
+    broken = {**valid, "lemma": "μέσα", "lemma_key": "μέσα", "translation": []}
+    site = build_site(make_settings(tmp_path, lexicon=[valid, broken]))
+
+    assert {r["lemma"]: r["needs_review"] for r in site["dictionary"]} == {"νερό": False, "μέσα": True}
+
+
 def test_proper_names_excluded(tmp_path):
     lexicon = [entry("Αθήνα", surfaces=["Αθήνα"], msg_ids=[123088], proper_name=True),
                entry("σπίτι", msg_ids=[123088])]

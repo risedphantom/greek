@@ -98,9 +98,9 @@ def _syllables(token: str) -> int:
 
 
 def _accented(form: str) -> bool:
-    """Every token of two or more syllables carries a stress mark."""
+    """Every token of two or more syllables carries one stress mark, none carries two."""
     return all(
-        _syllables(t) < 2 or not _ACCENTED.isdisjoint(t)
+        (_syllables(t) < 2 or not _ACCENTED.isdisjoint(t)) and sum(c in _ACCENTED for c in t) <= 1
         for t in normalize(form).split()
     )
 

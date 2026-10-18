@@ -491,6 +491,7 @@ const POS_LABELS = { noun: 'сущ.', verb: 'гл.', adj: 'прил.', adv: 'н�
 const GENDER_LABELS = { m: 'м.р.', f: 'ж.р.', n: 'ср.р.' };
 const DICT_PAGE = 300;
 const MAX_SOURCES = 3;
+const FORMS_NOTE = 'формы сгенерированы автоматически, проверяйте по учебнику';
 
 const dict = { built: false, q: '', filter: 'all', sort: 'date', limit: DICT_PAGE, rows: new Map(), text: new Map() };
 
@@ -558,6 +559,7 @@ function buildDictionary() {
   });
   view.replaceChildren(el('section', { class: 'pane dict-pane' },
     el('div', { class: 'dict-bar' }, search, chips, sort, el('span', { id: 'dict-count', class: 'muted' })),
+    el('p', { class: 'dict-note muted', text: FORMS_NOTE }),
     el('p', { id: 'dict-msg', class: 'muted', hidden: true }),
     table,
     el('p', { id: 'dict-empty', class: 'muted', text: 'Ничего не найдено', hidden: true }),
@@ -682,6 +684,7 @@ function renderCard(entry) {
     el('div', { class: 'hc-links' },
       el('a', { class: 'ref', href: `#/dictionary/${encodeURIComponent(entry.key)}`, text: 'открыть в словаре' }),
       topic ? sourceLink(topic) : null),
+    el('div', { class: 'hc-note muted', text: FORMS_NOTE }),
   ];
 }
 

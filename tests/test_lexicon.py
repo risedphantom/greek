@@ -309,3 +309,12 @@ def test_imperative_list_normalised(settings):
     entry = json.loads((settings.lexicon_dir / "τρώω.json").read_text("utf-8"))
     assert entry["forms"]["imperative"] == {"sg": "φάε", "pl": "φάτε"}
     assert entry["needs_review"] is False and report.needs_review == []
+
+
+def test_validate_rejects_double_accent():
+    verb = {**entry_for({"lemma": "συμπληρώνω", "pos": "verb"})}
+    past = ["συμπλήρωνα", "συμπλήρωνες", "συμπλήρωνε", "συμπληρώναμε", "συμπληρώνατε", "συμπλήρωναν"]
+    verb["forms"] = {**verb["forms"], "imperfect": past}
+    assert lexicon.validate(verb)
+    verb["forms"] = {**verb["forms"], "imperfect": [*past[:4], "συμπλήρώνατε", past[5]]}
+    assert not lexicon.validate(verb)
