@@ -22,15 +22,19 @@ human check what the pipeline flagged. Budget: 5–10 minutes.
 2. For each item under «низкая уверенность» in the summary: open the photo
    (`media/<id>.jpg`, Read tool) next to `content/transcripts/<id>.json`.
    If `body_md`, `kind` or `topic_hint` is wrong, edit the JSON by hand
-   (keep Greek verbatim). Delete the file instead to make the pipeline
-   regenerate it on the next run.
+   (keep Greek verbatim). After verifying or fixing a transcript, set its
+   `confidence` to `1.0` so it leaves the review list and enters the
+   dictionary. Delete the file instead to make the pipeline regenerate it
+   on the next run. Items shown as `#<id>` are text posts, not photos:
+   open `state/messages/<id>.json` instead of `media/<id>.jpg`.
 
 3. For each hint under «Новые темы в „Новое“»: add it to the `hints` list of
    the right topic in `content/topics.json` (whole-word matching, lowercase
    not required), or add a new topic to the right group. Keep «Новое» empty.
 
 4. For each lemma under «нужна проверка»: open `content/lexicon/<lemma>.json`.
-   Fix forms by hand or delete the file to regenerate.
+   Fix forms by hand and set `needs_review` to `false`, or delete the file
+   to regenerate.
 
 5. Rebuild without fetching and re-read the summary:
 
