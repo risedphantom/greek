@@ -196,6 +196,18 @@ def test_invalid_entry_on_disk_badged_needs_review(tmp_path):
     assert {r["lemma"]: r["needs_review"] for r in site["dictionary"]} == {"νερό": False, "μέσα": True}
 
 
+def test_dictionary_sources_follow_new_transcripts(tmp_path):
+    lexicon = [entry("σπίτι", surfaces=["σπίτι"], msg_ids=[123088])]
+    later = {**transcript(122819, hint="Предлог σε"),
+             "greek_words": [{"lemma": "σπίτι", "pos": "noun", "surface": ["σπιτιού"]}]}
+    site = build_site(make_settings(tmp_path, [transcript(123088, kind="exercise"), later], lexicon))
+
+    [row] = site["dictionary"]
+    assert row["first_date"] == "2026-09-14"
+    assert {"kind": "topic", "id": "prep-se", "date": "2026-09-14"} in row["sources"]
+    assert site["forms_index"][normalize("σπιτιού")] == row["key"]
+
+
 def test_proper_names_excluded(tmp_path):
     lexicon = [entry("Αθήνα", surfaces=["Αθήνα"], msg_ids=[123088], proper_name=True),
                entry("σπίτι", msg_ids=[123088])]

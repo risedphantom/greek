@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from greekpipe.config import STOPWORDS, normalize
-from greekpipe.lexicon import load_lexicon, validate
+from greekpipe.lexicon import collect_lemmas, load_lexicon, validate
 from greekpipe.segment import _MARKER, sessions, tasks_for
 from greekpipe.tg_fetch import load_messages
 from greekpipe.topics import NEW_GROUP, Taxonomy, load_topics
@@ -235,11 +235,24 @@ def _path_id(path: str) -> int:
     return int(Path(path).stem)
 
 
+def _with_refs(lexicon: dict[str, dict], transcripts) -> dict[str, dict]:
+    """Cached entries plus the sources and surfaces of transcripts added since generation."""
+    refs = collect_lemmas(transcripts)
+    merged = {}
+    for key, entry in lexicon.items():
+        ref = refs.get(key)
+        if ref is not None:
+            entry = {**entry, "msg_ids": sorted({*entry["msg_ids"], *ref.msg_ids}),
+                     "surfaces": sorted({*entry["surfaces"], *ref.surfaces})}
+        merged[key] = entry
+    return merged
+
+
 def build_site(settings) -> dict:
     messages = load_messages(settings.state_dir)
     transcripts = load_transcripts(settings.transcripts_dir)
     taxonomy = load_topics(settings.content_dir / "topics.json")
-    lexicon = load_lexicon(settings.lexicon_dir)
+    lexicon = _with_refs(load_lexicon(settings.lexicon_dir), transcripts)
 
     occurrences = _occurrences(messages, transcripts)
     homework = _homework(messages, transcripts, taxonomy)
