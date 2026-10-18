@@ -9,11 +9,14 @@ const state = {
   topicId: null,
   openGroups: new Set(),
   topicText: new Map(), // topic id -> lowercased searchable text
+  hwCards: [], // [{ card, rows: [{ row, text }] }] for the homework filter
 };
 
 const KIND_LABELS = { grammar: 'правило', table: 'таблица', vocab: 'лексика', text: 'текст' };
 const LOW_CONFIDENCE = 0.7;
 const AUDIO_GROUP = 'audio';
+const FLASH_MS = 2000;
+const PHOTO_RE = /\.(jpe?g|png|webp|gif)$/i;
 
 // ---------------------------------------------------------------- helpers
 
@@ -42,6 +45,14 @@ function fmtDate(iso, withYear = false) {
 
 function hwDate(hwId) {
   return fmtDate(hwId.replace(/^hw-/, ''));
+}
+
+// Restart a short highlight animation on a node.
+function flash(node) {
+  node.classList.remove('flash');
+  void node.offsetWidth;
+  node.classList.add('flash');
+  setTimeout(() => node.classList.remove('flash'), FLASH_MS);
 }
 
 // ---------------------------------------------------------------- normalize / index
@@ -102,11 +113,28 @@ function wrapGreek(root) {
   }
 }
 
-function renderMarkdown(md) {
+function markdownTemplate(md) {
   const tpl = document.createElement('template');
-  tpl.innerHTML = marked.parse(md || '', { gfm: true, breaks: true });
+  tpl.innerHTML = marked.parse(md || '', { gfm: true, breaks: true }); // our own content
   wrapGreek(tpl.content);
-  return tpl.innerHTML;
+  return tpl;
+}
+
+// String form kept for the window.GREEK contract.
+function renderMarkdown(md) {
+  return markdownTemplate(md).innerHTML;
+}
+
+function renderMarkdownInto(node, md) {
+  node.append(markdownTemplate(md).content);
+  return node;
+}
+
+// Plain text (no markdown) with Greek words wrapped.
+function textWithGreek(str, cls) {
+  const span = el('span', { class: cls, text: str });
+  wrapGreek(span);
+  return span;
 }
 
 // ---------------------------------------------------------------- router
@@ -115,7 +143,10 @@ function parseRoute() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent);
   if (parts[0] === 'dictionary') return { tab: 'dictionary', key: parts[1] || null };
   if (parts[1] === 'topic' && parts[2]) return { tab: 'lessons', topicId: parts[2] };
-  if (parts[1] === 'hw' && parts[2]) return { tab: 'lessons', hwId: parts[2] };
+  if (parts[1] === 'hw' && parts[2]) {
+    const taskIdx = parts[3] != null && parts[3] !== '' ? Number(parts[3]) : null;
+    return { tab: 'lessons', hwId: parts[2], taskIdx };
+  }
   return { tab: 'lessons' };
 }
 
@@ -127,7 +158,7 @@ function route() {
     return;
   }
   if (r.topicId && r.topicId !== state.topicId) selectTopic(r.topicId);
-  if (r.hwId) showHomework(r.hwId);
+  if (r.hwId) showHomework(r.hwId, r.taskIdx);
 }
 
 function setTab(tab) {
@@ -232,7 +263,7 @@ function renderArticle(topic) {
 
   if (topic.task_refs.length) {
     const links = topic.task_refs.map((ref) => el('li', {},
-      el('a', { class: 'ref', href: `#/lessons/hw/${encodeURIComponent(ref.hw_id)}` },
+      el('a', { class: 'ref', href: `#/lessons/hw/${encodeURIComponent(ref.hw_id)}/${ref.task_idx}` },
         `Д/з ${hwDate(ref.hw_id)} №${ref.task_idx + 1}`)));
     article.append(el('div', { class: 'tasks' }, el('strong', { text: 'Упражнения по теме:' }), el('ul', {}, links)));
   }
@@ -240,16 +271,14 @@ function renderArticle(topic) {
 }
 
 function renderOccurrence(o) {
-  const body = el('div', { class: 'md' });
-  body.innerHTML = renderMarkdown(o.body_md); // marked output from our own content
+  const body = renderMarkdownInto(el('div', { class: 'md' }), o.body_md);
 
-  const photos = o.media.filter((m) => /\.(jpe?g|png|webp|gif)$/i.test(m));
+  const photos = o.media.filter((m) => PHOTO_RE.test(m));
   const others = o.media.filter((m) => !photos.includes(m));
+  const slides = photos.map((src) => ({ src, md: o.body_md }));
   const thumbs = el('div', { class: 'thumbs' },
-    photos.map((src) => el('a', { href: src, target: '_blank', rel: 'noopener', class: 'thumb' },
-      el('img', { src, loading: 'lazy', alt: 'фото', width: '64' }))),
-    others.map((src) => el('a', { href: src, target: '_blank', rel: 'noopener', class: 'file' },
-      src.split('.').pop().toUpperCase())));
+    photos.map((src, i) => renderThumb(src, 'фото', slides, i)),
+    others.map((src) => fileChip(src, src.split('.').pop().toUpperCase())));
 
   const src = `Источник: урок ${fmtDate(o.date)}` + (photos.length ? ` · фото ×${photos.length}` : '');
   return el('section', { class: 'occ' },
@@ -262,14 +291,187 @@ function renderOccurrence(o) {
     el('div', { class: 'src', text: src }));
 }
 
-// ---------------------------------------------------------------- views: homework (Task 11)
+// ---------------------------------------------------------------- views: media
 
-function renderHomeworkPane() {
-  // Task 11 renders site.homework into #hw-pane.
+// Thumbnail link: opens the lightbox; middle-click / new tab still gets the file.
+function renderThumb(src, alt, slides, index) {
+  const a = el('a', { href: src, class: 'thumb' }, el('img', { src, loading: 'lazy', alt, width: '64' }));
+  a.addEventListener('click', (e) => {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    openLightbox(slides, index, a);
+  });
+  return a;
 }
 
-function showHomework(hwId) {
-  // Task 11 scrolls to the homework / task.
+function fileChip(src, label) {
+  return el('a', { href: src, target: '_blank', rel: 'noopener', class: 'file', text: label });
+}
+
+// ---------------------------------------------------------------- views: lightbox
+
+const lightbox = { node: null, slides: [], index: 0, opener: null };
+
+function openLightbox(slides, index, opener) {
+  closeLightbox();
+  lightbox.slides = slides;
+  lightbox.index = index;
+  lightbox.opener = opener;
+  const close = el('button', { type: 'button', class: 'lb-close', 'aria-label': 'Закрыть', text: '×', onclick: closeLightbox });
+  const nav = slides.length > 1 ? el('div', { class: 'lb-nav' },
+    el('button', { type: 'button', 'aria-label': 'Предыдущее фото', text: '←', onclick: () => stepLightbox(-1) }),
+    el('span', { class: 'lb-count' }),
+    el('button', { type: 'button', 'aria-label': 'Следующее фото', text: '→', onclick: () => stepLightbox(1) })) : null;
+  lightbox.node = el('div', {
+    id: 'lightbox', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Фото задания',
+    onclick: (e) => { if (e.target === lightbox.node) closeLightbox(); },
+  }, el('div', { class: 'lb-box' },
+    el('div', { class: 'lb-img' }, el('img', { alt: 'фото задания' })),
+    el('div', { class: 'lb-side' }, el('div', { class: 'lb-bar' }, nav, close), el('div', { class: 'lb-text md' }))));
+  document.body.append(lightbox.node);
+  document.addEventListener('keydown', onLightboxKey);
+  showSlide();
+  close.focus();
+}
+
+function showSlide() {
+  const { node, slides, index } = lightbox;
+  const slide = slides[index];
+  node.querySelector('.lb-img img').src = slide.src;
+  const text = node.querySelector('.lb-text');
+  text.replaceChildren();
+  if (slide.md) renderMarkdownInto(text, slide.md);
+  else text.append(el('p', { class: 'muted', text: 'Нет расшифровки' }));
+  const count = node.querySelector('.lb-count');
+  if (count) count.textContent = `${index + 1} / ${slides.length}`;
+}
+
+function stepLightbox(delta) {
+  const n = lightbox.slides.length;
+  if (n < 2) return;
+  lightbox.index = (lightbox.index + delta + n) % n;
+  showSlide();
+}
+
+function closeLightbox() {
+  if (!lightbox.node) return;
+  document.removeEventListener('keydown', onLightboxKey);
+  lightbox.node.remove();
+  lightbox.node = null;
+  if (lightbox.opener && lightbox.opener.isConnected) lightbox.opener.focus();
+}
+
+function onLightboxKey(e) {
+  if (e.key === 'Escape') closeLightbox();
+  else if (e.key === 'ArrowLeft') stepLightbox(-1);
+  else if (e.key === 'ArrowRight') stepLightbox(1);
+  else if (e.key === 'Tab') trapFocus(e);
+  else return;
+  e.preventDefault();
+}
+
+function trapFocus(e) {
+  const items = [...lightbox.node.querySelectorAll('button, a[href]')];
+  const i = items.indexOf(document.activeElement);
+  const next = e.shiftKey ? (i <= 0 ? items.length - 1 : i - 1) : (i + 1) % items.length;
+  items[next].focus();
+}
+
+// ---------------------------------------------------------------- views: homework
+
+const DUE_FLAG_TITLE = 'срок рассчитан: следующий урок не найден';
+
+function searchable(str) {
+  return stripAccents(normalize(str));
+}
+
+function renderHomeworkPane() {
+  const list = document.getElementById('hw-list');
+  const hws = [...state.site.homework].sort((a, b) => b.assigned.localeCompare(a.assigned));
+  state.hwCards = hws.map(renderHomeworkCard);
+  list.replaceChildren(...state.hwCards.map((c) => c.card),
+    el('p', { class: 'muted', id: 'hw-empty', text: 'Ничего не найдено', hidden: true }));
+}
+
+function renderHomeworkCard(hw) {
+  const due = el('span', { title: hw.due_flagged ? DUE_FLAG_TITLE : null },
+    (hw.due_flagged ? '≈ ' : '') + `Д/з на ${fmtDate(hw.due)}`);
+  const rows = hw.tasks.map((t) => ({
+    row: renderTask(hw, t),
+    text: searchable([t.text, ...t.transcripts.flatMap((tr) => [tr.title, tr.body_md])].join('\n')),
+  }));
+  const card = el('article', { class: 'hw', id: hw.id },
+    el('h3', { class: 'hw-head' }, due, el('span', { class: 'muted', text: `задано ${fmtDate(hw.assigned)}` })),
+    rows.map((r) => r.row));
+  return { card, rows };
+}
+
+function renderTask(hw, task) {
+  const key = `done:${task.done_key}`;
+  const row = el('div', { class: 'task', id: `${hw.id}-${task.idx}` });
+  const box = el('input', { type: 'checkbox', checked: localStorage.getItem(key) === '1' });
+  const sync = () => row.classList.toggle('done', box.checked);
+  box.addEventListener('change', () => {
+    if (box.checked) localStorage.setItem(key, '1');
+    else localStorage.removeItem(key);
+    sync();
+  });
+  sync();
+  row.append(el('label', { class: 'task-main' }, box,
+    el('span', { class: 'tag', text: task.type }), textWithGreek(task.text, 'task-text')));
+
+  // Transcripts follow the photo order for the photos that have one.
+  const photos = task.media.filter((m) => PHOTO_RE.test(m));
+  const slides = photos.map((src, i) => ({ src, md: task.transcripts[i]?.body_md }));
+  const others = task.media.filter((m) => !PHOTO_RE.test(m));
+  if (task.media.length) {
+    row.append(el('div', { class: 'thumbs' },
+      photos.map((src, i) => renderThumb(src, 'фото задания', slides, i)),
+      others.map((src) => fileChip(src, /\.pdf$/i.test(src) ? 'PDF' : 'аудио'))));
+  }
+
+  if (task.transcripts.length) {
+    row.append(el('details', { class: 'tr' }, el('summary', { text: 'Текст задания' }),
+      task.transcripts.map((tr) => el('div', { class: 'tr-item' },
+        tr.confidence < LOW_CONFIDENCE ? el('span', { class: 'badge warn', text: 'проверить' }) : null,
+        renderMarkdownInto(el('div', { class: 'md' }), tr.body_md)))));
+  }
+
+  const links = task.topic_ids.map(findTopic).filter(Boolean).map(({ topic }) =>
+    el('a', { class: 'ref', href: `#/lessons/topic/${encodeURIComponent(topic.id)}`, text: topic.title }));
+  if (links.length) row.append(el('div', { class: 'task-refs' }, links));
+  return row;
+}
+
+function filterHomework(query) {
+  const q = searchable(query.trim());
+  let any = false;
+  for (const { card, rows } of state.hwCards) {
+    let shown = 0;
+    for (const { row, text } of rows) {
+      const hit = !q || text.includes(q);
+      row.hidden = !hit;
+      if (hit) shown++;
+    }
+    card.hidden = shown === 0;
+    any ||= shown > 0;
+  }
+  document.getElementById('hw-empty').hidden = any;
+}
+
+function showHomework(hwId, taskIdx) {
+  setTab('lessons');
+  const search = document.getElementById('hw-search');
+  if (search.value) {
+    search.value = '';
+    filterHomework('');
+  }
+  const card = document.getElementById(hwId);
+  if (!card) return;
+  card.scrollIntoView({ block: 'start' });
+  flash(card);
+  const row = taskIdx != null && document.getElementById(`${hwId}-${taskIdx}`);
+  if (row) flash(row);
 }
 
 // ---------------------------------------------------------------- views: dictionary (Task 12)
@@ -290,6 +492,7 @@ function bindEvents() {
     state.query = e.target.value;
     renderTopicList();
   });
+  document.getElementById('hw-search').addEventListener('input', (e) => filterHomework(e.target.value));
   document.addEventListener('mouseover', (e) => {
     const span = e.target.closest && e.target.closest('.w');
     if (span) window.GREEK.onGreekWordHover(span, span.dataset.key, e);
