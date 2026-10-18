@@ -264,3 +264,15 @@ def test_marker_regex(text, is_marker):
 def test_due_from_marker_line(day, text, due, flagged):
     [hw] = segment.sessions([_msg(1, "08:00", text, day=day)], {})
     assert (hw.kind, hw.due, hw.due_flagged) == ("homework", due, flagged)
+
+
+def test_short_chat_texts_never_tasks():
+    msgs = [
+        _msg(1, "08:00", "Д/з"),
+        _msg(2, "08:01", "Упр. 5 письменно"),
+        _msg(3, "08:02", "Интернет пропал"),
+        _msg(4, "08:03", "Да, конечно, перенесём на среду"),
+    ]
+    [hw] = segment.sessions(msgs, {})
+    tasks = segment.tasks_for(hw, msgs, {})
+    assert [(t.type, t.text) for t in tasks] == [("упражнение", "Упр. 5 письменно")]

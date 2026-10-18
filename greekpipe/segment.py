@@ -17,7 +17,7 @@ _MARKER_WORDS = r"д/з|домашн\w*\s+задани\w*|высылаю зад�
 _MARKER = re.compile(_MARKER_WORDS, re.IGNORECASE)
 _DUE_DATE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\b")
 _DUE_TOMORROW = re.compile(r"^\W*на\s+завтра", re.IGNORECASE)
-_INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен", re.IGNORECASE)
+_INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен|перев|выучи|\bучи[мт]|состав|прослуш", re.IGNORECASE)
 _MEETING = re.compile(r"telemost|zoom", re.IGNORECASE)
 _GREETING = re.compile(r"^(доброе утро|добрый день|добрый вечер|привет)[!.,]*\s*", re.IGNORECASE)
 _MARKER_HEAD = re.compile(
@@ -217,7 +217,12 @@ def tasks_for(session: Session, messages: list[dict], transcripts: dict[int, dic
 
         kind = transcripts.get(msg["id"], {}).get("kind")
         text = _instruction(msg["text"])
-        if not text or (kind == "chat" and not _is_instruction(text)):
+        continuation = (
+            reply in owner
+            or reply in held
+            or (current is not None and bool(_CONTINUATION.search(text) or not _CYRILLIC.search(text)))
+        )
+        if not text or (kind in (None, "chat") and not _is_instruction(text) and not continuation):
             continue
         if reply in owner:
             owner[reply].text += "\n" + text
