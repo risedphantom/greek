@@ -294,6 +294,7 @@ table.dict { width: 100%; border-collapse: collapse; }
   position: absolute;
   z-index: 1100;
   width: 300px;
+  max-width: calc(100vw - 16px);
   max-height: calc(100vh - 12px);
   overflow: auto;
   padding: 12px 14px;
@@ -330,6 +331,11 @@ table.dict { width: 100%; border-collapse: collapse; }
   .lb-box { flex-direction: column; overflow: auto; }
   .lb-img img { max-width: 92vw; max-height: 60vh; }
   .lb-side { width: auto; }
+  #hovercard.wide { width: 440px; }
+  .hc-tenses { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
   #hovercard.wide { width: 300px; }
   .hc-tenses { grid-template-columns: 1fr; }
 }

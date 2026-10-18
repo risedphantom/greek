@@ -629,9 +629,10 @@ const CASES = [['nom', 'Им.'], ['gen', 'Род.'], ['acc', 'Вин.']];
 const SHOW_DELAY = 150;
 const HIDE_DELAY = 200;
 const CARD_GAP = 6;
+const SCROLL_GRACE = 250; // focus scrolls the word into view just after the card shows
 const ARTICLE_RE = /^(ο|η|το|οι|τα) /;
 
-const card = { node: null, span: null, key: null, showTimer: 0, hideTimer: 0, overCard: false };
+const card = { node: null, span: null, key: null, showTimer: 0, hideTimer: 0, overCard: false, shownAt: 0 };
 
 function formRows(pairs) {
   return el('table', {}, el('tbody', {}, pairs.map(([label, form]) =>
@@ -709,6 +710,7 @@ function showCard(span, key) {
   }
   card.span = span;
   card.key = key;
+  card.shownAt = performance.now();
   node.hidden = false;
   placeCard(span, node);
 }
@@ -787,8 +789,9 @@ function bindHoverCard() {
   document.addEventListener('focusin', (e) => {
     const span = e.target.closest && e.target.closest('.w');
     // Keyboard focus only; mouse clicks and taps are handled by hover / click.
-    if (span && span.matches(':focus-visible')) showCard(span, span.dataset.key);
-    else if (card.node && !card.node.contains(e.target)) clearTimeout(card.showTimer);
+    if (span) {
+      if (span.matches(':focus-visible')) showCard(span, span.dataset.key);
+    } else if (card.node && !card.node.contains(e.target)) clearTimeout(card.showTimer);
   });
   document.addEventListener('focusout', (e) => {
     if (!e.target.closest || !e.target.closest('.w, #hovercard')) return;
@@ -807,7 +810,7 @@ function bindHoverCard() {
   // Panes scroll independently; a stale card would float over the wrong text.
   document.addEventListener('scroll', (e) => {
     if (!card.node || card.node.hidden || card.node.contains(e.target)) return;
-    if (card.span && card.span === document.activeElement) return; // focus scrolled the word into view
+    if (performance.now() - card.shownAt < SCROLL_GRACE) return;
     hideCard();
   }, true);
 }
