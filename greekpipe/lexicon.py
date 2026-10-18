@@ -32,7 +32,6 @@ _LETTER = re.compile(r"[^\W\d_]")
 _ACCENTED = frozenset("άέήίόύώΐΰ")
 # A run of vowels counts as one syllable: covers αι ει οι ου υι and synizesis (γιος, μια).
 _VOWEL_RUN = re.compile(r"[αεηιουω]+")
-_CYRILLIC_UPPER = re.compile(r"[А-ЯЁ]")
 
 
 @dataclass
@@ -151,9 +150,21 @@ def validate(entry: dict) -> bool:
 
 def _proper_name(entry: dict) -> bool:
     gloss = (entry.get("translation") or [""])[0]
-    return entry["lemma"][:1].isupper() or (
-        isinstance(gloss, str) and bool(_CYRILLIC_UPPER.match(gloss)) and entry["forms"] == {}
+    return (
+        entry.get("pos") == "other"
+        and entry["forms"] == {}
+        and isinstance(gloss, str)
+        and gloss[:1].isupper()
     )
+
+
+def _normalise_forms(forms) -> dict:
+    if not forms:
+        return {}
+    imperative = forms.get("imperative") if isinstance(forms, dict) else None
+    if isinstance(imperative, list) and len(imperative) == 2 and all(isinstance(f, str) for f in imperative):
+        forms = {**forms, "imperative": dict(zip(NUMBERS, imperative))}
+    return forms
 
 
 def _request_items(refs: list[LemmaRef]) -> list[dict]:
@@ -167,7 +178,7 @@ def _entry(raw: dict, key: str, ref: LemmaRef, model: str) -> dict:
     entry = {k: raw.get(k) for k in ("lemma", "translation", "pos", *OPTIONAL)}
     entry.update(
         lemma=ref.lemma,
-        forms=raw.get("forms") or {},
+        forms=_normalise_forms(raw.get("forms")),
         example=raw.get("example"),
         lemma_key=key,
         surfaces=sorted(ref.surfaces),

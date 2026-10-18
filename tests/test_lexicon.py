@@ -282,18 +282,30 @@ def test_validate_rejects_adjective_with_article_or_foreign_paradigm():
 
 def test_proper_name_flag(settings):
     refs = {
-        "άννα": ref("Άννα", "noun"),
-        "μαρία": ref("μαρία", "other"),
-        "νερό": ref("νερό", "noun"),
-        "αθήνα": ref("αθήνα", "noun"),
+        "τζον": ref("Τζον", "other"),
+        "αμερικανόσ": ref("Αμερικανός", "noun"),
+        "κυριακή": ref("Κυριακή", "noun"),
+        "αθήνα": ref("αθήνα", "other"),
     }
     fake = FakeLLM(overrides={
-        "μαρία": {"translation": ["Мария"]},
-        "νερό": {"translation": ["Вода"], "forms": NOUN_FORMS},
+        "Τζον": {"translation": ["Джон"]},
+        "Αμερικανός": {"translation": ["американец"], "forms": NOUN_FORMS},
+        "Κυριακή": {"translation": ["Воскресенье"], "forms": NOUN_FORMS},
         "αθήνα": {"translation": ["афины"]},
     })
 
     lexicon.generate_pending(settings, fake, refs)
 
     flags = {k: e["proper_name"] for k, e in lexicon.load_lexicon(settings.lexicon_dir).items()}
-    assert flags == {"άννα": True, "μαρία": True, "νερό": False, "αθήνα": False}
+    assert flags == {"τζον": True, "αμερικανόσ": False, "κυριακή": False, "αθήνα": False}
+
+
+def test_imperative_list_normalised(settings):
+    forms = {**verb_forms(), "imperative": ["φάε", "φάτε"]}
+    fake = FakeLLM(overrides={"τρώω": {"forms": forms}})
+
+    report = lexicon.generate_pending(settings, fake, refs_of("τρώω", pos="verb"))
+
+    entry = json.loads((settings.lexicon_dir / "τρώω.json").read_text("utf-8"))
+    assert entry["forms"]["imperative"] == {"sg": "φάε", "pl": "φάτε"}
+    assert entry["needs_review"] is False and report.needs_review == []

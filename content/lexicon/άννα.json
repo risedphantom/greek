@@ -43,6 +43,6 @@
     124268
   ],
   "model": "google/gemini-2.5-flash-lite",
-  "proper_name": true,
+  "proper_name": false,
   "needs_review": false
 }

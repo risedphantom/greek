@@ -41,14 +41,14 @@
       "θα φάτε",
       "θα φάνε"
     ],
-    "imperative": [
-      "φάε",
-      "φάτε"
-    ]
+    "imperative": {
+      "sg": "φάε",
+      "pl": "φάτε"
+    }
   },
   "example": {
-    "el": "Τι θα φας;",
-    "ru": "Что ты будешь есть?"
+    "el": "Τι τρως;",
+    "ru": "Что ты ешь?"
   },
   "lemma_key": "τρώω",
   "surfaces": [
@@ -79,5 +79,5 @@
   ],
   "model": "google/gemini-2.5-flash-lite",
   "proper_name": false,
-  "needs_review": true
+  "needs_review": false
 }
