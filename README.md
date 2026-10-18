@@ -1,11 +1,20 @@
 # greek
 
+Live site: **https://risedphantom.github.io/greek/**
+
 Pipeline (`greekpipe`) that turns a Telegram Greek-course group's messages
-into a static site (GitHub Pages, `.nojekyll`).
+into a static site (GitHub Pages serves the `main` branch root; `.nojekyll`).
+Left panel: grammar by topic (searchable). Right panel: homework, newest
+first. «Словарь» tab: every word that appeared, with hover cards showing
+translation and forms.
 
-Run the full update:
+Run the full update (fetch → transcribe → lexicon → build → summary):
 
-    uv run scripts/update.py
+    uv run scripts/update.py            # fetch new messages and rebuild
+    uv run scripts/update.py --no-fetch # rebuild only
+    uv run scripts/update.py --no-fetch --push  # commit + push content
+
+In Claude Code: `/update-greek` wraps the same flow with a review step.
 
 Tests: `uv run pytest -q`
 
