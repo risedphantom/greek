@@ -151,6 +151,7 @@ function parseRoute() {
 }
 
 function route() {
+  closeLightbox();
   const r = parseRoute();
   setTab(r.tab);
   if (r.tab === 'dictionary') {
@@ -468,9 +469,9 @@ function showHomework(hwId, taskIdx) {
   }
   const card = document.getElementById(hwId);
   if (!card) return;
-  card.scrollIntoView({ block: 'start' });
+  const row = taskIdx != null ? document.getElementById(`${hwId}-${taskIdx}`) : null;
+  (row || card).scrollIntoView({ block: 'start' });
   flash(card);
-  const row = taskIdx != null && document.getElementById(`${hwId}-${taskIdx}`);
   if (row) flash(row);
 }
 
@@ -493,6 +494,13 @@ function bindEvents() {
     renderTopicList();
   });
   document.getElementById('hw-search').addEventListener('input', (e) => filterHomework(e.target.value));
+  // Same-hash clicks fire no hashchange; re-route so the target scrolls and flashes again.
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a.ref[href^="#/lessons/"]');
+    if (!a || location.hash !== a.getAttribute('href')) return;
+    e.preventDefault();
+    route();
+  });
   document.addEventListener('mouseover', (e) => {
     const span = e.target.closest && e.target.closest('.w');
     if (span) window.GREEK.onGreekWordHover(span, span.dataset.key, e);

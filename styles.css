@@ -155,7 +155,8 @@ body {
 .thumb img {
   display: block;
   width: 64px;
-  height: auto;
+  height: 86px;
+  object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 3px;
 }
@@ -188,7 +189,7 @@ body {
 .hw-head .muted { font-size: 12px; font-weight: 400; }
 .hw-head [title] { cursor: help; }
 
-.task { padding: 6px 4px; border-top: 1px dashed var(--line); border-radius: 4px; }
+.task { padding: 6px 4px; border-top: 1px dashed var(--line); border-radius: 4px; scroll-margin-top: 8px; }
 .task:first-of-type { border-top: 0; }
 .task-main { display: flex; align-items: baseline; gap: 6px; cursor: pointer; }
 .task-main input { margin: 0; flex: none; transform: translateY(1px); }
