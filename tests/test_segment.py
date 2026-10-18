@@ -166,3 +166,59 @@ def test_chat_messages_never_tasks(messages):
 ])
 def test_task_type(text, kind, expected):
     assert segment.task_type(text, kind) == expected
+
+
+def _msg(id, time, text="", media_kind=None, grouped_id=None, day="2026-10-11"):
+    return {"id": id, "date": f"{day}T{time}:00+00:00", "text": text, "media": None,
+            "media_kind": media_kind, "reply_to": None, "grouped_id": grouped_id}
+
+
+def test_marker_starts_new_session():
+    # Shape of 11.10: lesson slides, then «Д/з на завтра» 18 min later.
+    msgs = [
+        _msg(124117, "11:01", "Добрый день!"),
+        *[_msg(i, "12:34", media_kind="photo") for i in range(124118, 124125)],
+        _msg(124125, "13:15", "Д/з на завтра"),
+        _msg(124126, "13:15", media_kind="photo", grouped_id=7),
+        _msg(124127, "13:15", media_kind="photo", grouped_id=7),
+        _msg(124128, "13:15", "Повторить спряжение глаголов 1 и 2, наречия времени"),
+        _msg(124129, "13:16", "Хорошего вечера!"),
+    ]
+    transcripts = {i: {"kind": "exercise"} for i in range(124118, 124125)}
+    lesson, hw = segment.sessions(msgs, transcripts)
+
+    assert (lesson.kind, lesson.message_ids) == ("lesson", list(range(124117, 124125)))
+    assert (hw.kind, hw.message_ids) == ("homework", list(range(124125, 124130)))
+    assert (hw.due, hw.due_flagged) == (date(2026, 10, 12), False)
+    tasks = segment.tasks_for(hw, msgs, {124126: {"kind": "text", "title": "Диалог"}})
+    assert [(t.type, t.text, t.media_ids) for t in tasks] == [
+        ("текст", "Диалог", [124126, 124127]),
+        ("повторить", "Повторить спряжение глаголов 1 и 2, наречия времени", []),
+    ]
+
+
+def test_unmarked_instruction_session_is_homework():
+    # Shape of 16.10: two exercise photos, then the instruction without a marker.
+    msgs = [
+        _msg(124267, "08:29", media_kind="photo", day="2026-10-16"),
+        _msg(124268, "08:30", media_kind="photo", day="2026-10-16"),
+        _msg(124269, "08:42", "Тетрадь с упражнениями ( закрепл.) с. 29, 30, 33", day="2026-10-16"),
+    ]
+    transcripts = {124267: {"kind": "exercise"}, 124268: {"kind": "exercise"}}
+    [hw] = segment.sessions(msgs, transcripts)
+    assert hw.kind == "homework"
+    assert (hw.due, hw.due_flagged) == (date(2026, 10, 18), True)
+    # The transcriber labelled 124269 «chat»; an instruction head still makes it a task.
+    tasks = segment.tasks_for(hw, msgs, {**transcripts, 124269: {"kind": "chat"}})
+    assert [(t.type, t.media_ids) for t in tasks] == [
+        ("упражнение", [124267]), ("упражнение", [124268]), ("тетрадь", []),
+    ]
+
+    lesson = _msg(124400, "16:00", "Заходите в zoom", day="2026-10-19")
+    hw = segment.sessions([*msgs, lesson], transcripts)[0]
+    assert (hw.due, hw.due_flagged) == (date(2026, 10, 19), False)
+
+
+def test_marker_does_not_split_homework_twice():
+    msgs = [_msg(1, "08:00", "Д/з на 14.10."), _msg(2, "08:05", "Домашнее задание: повторить")]
+    assert [s.message_ids for s in segment.sessions(msgs, {})] == [[1, 2]]

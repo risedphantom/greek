@@ -16,6 +16,7 @@ AUDIO_TASK_TITLE = "Аудио"
 _MARKER = re.compile(r"д/з|домашнее задание|высылаю задания", re.IGNORECASE)
 _DUE_DATE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\b")
 _DUE_TOMORROW = re.compile(r"^\W*на\s+завтра", re.IGNORECASE)
+_INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен", re.IGNORECASE)
 _MEETING = re.compile(r"telemost|zoom", re.IGNORECASE)
 _GREETING = re.compile(r"^(доброе утро|добрый день|добрый вечер|привет)[!.,]*\s*", re.IGNORECASE)
 _MARKER_HEAD = re.compile(
@@ -75,10 +76,19 @@ def _when(msg: dict) -> datetime:
     return datetime.fromisoformat(msg["date"])
 
 
+def _has_marker(msg: dict) -> bool:
+    return bool(_MARKER.search(msg["text"] or ""))
+
+
 def _groups(messages: list[dict]) -> list[list[dict]]:
+    """Split on gaps > SESSION_GAP and on the first homework marker of a session."""
     groups: list[list[dict]] = []
     for msg in sorted(messages, key=lambda m: m["id"]):
-        if groups and _when(msg) - _when(groups[-1][-1]) <= SESSION_GAP:
+        if (
+            groups
+            and _when(msg) - _when(groups[-1][-1]) <= SESSION_GAP
+            and not (_has_marker(msg) and not any(_has_marker(m) for m in groups[-1]))
+        ):
             groups[-1].append(msg)
         else:
             groups.append([msg])
@@ -98,14 +108,25 @@ def _explicit_due(text: str, assigned: date) -> date | None:
         return None
 
 
-def _is_lesson(group: list[dict], transcripts: dict[int, dict]) -> bool:
+def _is_instruction(text: str | None) -> bool:
+    # Head only: lesson notes (conjugation tables, vocab lists) mention
+    # «сочинение»/«выполнять» deep inside their content.
+    head = _INSTRUCTION_END.split(_instruction(text), maxsplit=1)[0]
+    return bool(_INSTRUCTION.search(head))
+
+
+def _kind(group: list[dict], transcripts: dict[int, dict]) -> str:
+    if any(_has_marker(m) for m in group):
+        return "homework"
+    if any(_MEETING.search(m["text"] or "") for m in group):
+        return "lesson"
+    if any(not m["media_kind"] and _is_instruction(m["text"]) for m in group):
+        return "homework"
     for msg in group:
         kind = transcripts.get(msg["id"], {}).get("kind")
         if msg["media_kind"] and kind is not None and kind not in NOT_LESSON_KINDS:
-            return True
-        if _MEETING.search(msg["text"] or ""):
-            return True
-    return False
+            return "lesson"
+    return "chat"
 
 
 def sessions(messages: list[dict], transcripts: dict[int, dict]) -> list[Session]:
@@ -113,14 +134,10 @@ def sessions(messages: list[dict], transcripts: dict[int, dict]) -> list[Session
     explicit: dict[int, date | None] = {}
     for group in _groups(messages):
         day = _when(group[0]).date()
-        marker = next((m for m in group if _MARKER.search(m["text"] or "")), None)
-        if marker is not None:
-            kind = "homework"
-            explicit[len(result)] = _explicit_due(marker["text"], day)
-        elif _is_lesson(group, transcripts):
-            kind = "lesson"
-        else:
-            kind = "chat"
+        kind = _kind(group, transcripts)
+        if kind == "homework":
+            marker = next((m for m in group if _has_marker(m)), None)
+            explicit[len(result)] = _explicit_due(marker["text"], day) if marker else None
         result.append(Session(kind, day, [m["id"] for m in group], None, False))
 
     for i, due in explicit.items():
@@ -195,7 +212,7 @@ def tasks_for(session: Session, messages: list[dict], transcripts: dict[int, dic
 
         kind = transcripts.get(msg["id"], {}).get("kind")
         text = _instruction(msg["text"])
-        if kind == "chat" or not text:
+        if not text or (kind == "chat" and not _is_instruction(text)):
             continue
         if reply in owner:
             owner[reply].text += "\n" + text
