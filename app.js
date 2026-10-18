@@ -167,6 +167,7 @@ function route() {
 function setTab(tab) {
   document.getElementById('view-lessons').hidden = tab !== 'lessons';
   document.getElementById('view-dictionary').hidden = tab !== 'dictionary';
+  document.getElementById('seg').hidden = tab !== 'lessons';
   for (const name of ['lessons', 'dictionary']) {
     const a = document.getElementById(`tab-${name}`);
     a.classList.toggle('on', name === tab);
@@ -258,11 +259,98 @@ function selectTopic(id) {
   renderArticle(found.topic);
   const hint = document.getElementById('article-hint');
   if (hint) hint.hidden = true;
-  const pane = document.getElementById('grammar-pane');
-  if (window.matchMedia('(max-width: 900px)').matches) {
-    document.getElementById('article').scrollIntoView({ block: 'start', behavior: 'smooth' });
-  } else {
-    pane.scrollTo({ top: 0 });
+  if (isMobile()) setPane('article');
+  document.getElementById('grammar-pane').scrollTo({ top: 0 });
+}
+
+// ---------------------------------------------------------------- layout: mobile panes + resizable gutters
+
+const mobileMQ = matchMedia('(max-width: 900px)');
+function isMobile() { return mobileMQ.matches; }
+
+function setPane(name) {
+  document.getElementById('view-lessons').dataset.pane = name;
+  for (const b of document.querySelectorAll('.seg-btn')) {
+    const on = b.dataset.pane === name;
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-selected', String(on));
+  }
+}
+
+const LAYOUT_KEY = 'greek.layout';
+const TOC_MIN = 160, TOC_MAX = 480, ART_MIN = 0.25, ART_MAX = 0.75;
+
+function applyLayout(layout) {
+  const main = document.getElementById('view-lessons');
+  if (layout.toc) main.style.setProperty('--toc-w', `${layout.toc}px`);
+  if (layout.art) {
+    main.style.setProperty('--art-fr', `${layout.art}fr`);
+    main.style.setProperty('--hw-fr', `${1 - layout.art}fr`);
+  }
+}
+
+function loadLayout() {
+  try { return JSON.parse(localStorage.getItem(LAYOUT_KEY)) || {}; } catch { return {}; }
+}
+
+function saveLayout(layout) {
+  localStorage.setItem(LAYOUT_KEY, JSON.stringify(layout));
+}
+
+function resetLayout() {
+  localStorage.removeItem(LAYOUT_KEY);
+  const main = document.getElementById('view-lessons');
+  for (const v of ['--toc-w', '--art-fr', '--hw-fr']) main.style.removeProperty(v);
+}
+
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+
+// Gutter 1 sets the TOC width in px; gutter 2 splits the remaining width
+// between article and homework as a fraction, so a window resize keeps the ratio.
+function bindGutters() {
+  const main = document.getElementById('view-lessons');
+  applyLayout(loadLayout());
+  for (const g of document.querySelectorAll('.gutter')) {
+    const which = g.dataset.gutter;
+    const layoutFromX = (x) => {
+      const layout = loadLayout();
+      const rect = main.getBoundingClientRect();
+      const toc = document.getElementById('toc-pane').getBoundingClientRect().width;
+      if (which === 'toc') {
+        layout.toc = Math.round(clamp(x - rect.left, TOC_MIN, Math.min(TOC_MAX, rect.width * 0.5)));
+      } else {
+        const rest = rect.width - toc - 12; // two 6px gutters
+        layout.art = Math.round(clamp((x - rect.left - toc - 6) / rest, ART_MIN, ART_MAX) * 1000) / 1000;
+      }
+      return layout;
+    };
+    g.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      e.preventDefault();
+      try { g.setPointerCapture(e.pointerId); } catch { /* synthetic events have no active pointer */ }
+      g.classList.add('on');
+      document.body.classList.add('resizing');
+      let layout = loadLayout();
+      const move = (ev) => { layout = layoutFromX(ev.clientX); applyLayout(layout); };
+      const up = () => {
+        g.removeEventListener('pointermove', move);
+        g.classList.remove('on');
+        document.body.classList.remove('resizing');
+        saveLayout(layout);
+      };
+      g.addEventListener('pointermove', move);
+      g.addEventListener('pointerup', up, { once: true });
+      g.addEventListener('pointercancel', up, { once: true });
+    });
+    g.addEventListener('dblclick', resetLayout);
+    g.addEventListener('keydown', (e) => {
+      const step = { ArrowLeft: -16, ArrowRight: 16 }[e.key];
+      if (step == null) return;
+      e.preventDefault();
+      const layout = layoutFromX(g.getBoundingClientRect().left + 3 + step);
+      applyLayout(layout);
+      saveLayout(layout);
+    });
   }
 }
 
@@ -478,6 +566,7 @@ function showHomework(hwId, taskIdx) {
   }
   const card = document.getElementById(hwId);
   if (!card) return;
+  if (isMobile()) setPane('hw');
   const row = taskIdx != null ? document.getElementById(`${hwId}-${taskIdx}`) : null;
   (row || card).scrollIntoView({ block: 'start' });
   flash(card);
@@ -834,6 +923,12 @@ function bindEvents() {
     renderTopicList();
   });
   document.getElementById('hw-search').addEventListener('input', (e) => filterHomework(e.target.value));
+  document.getElementById('seg').addEventListener('click', (e) => {
+    const b = e.target.closest('.seg-btn');
+    if (b) setPane(b.dataset.pane);
+  });
+  setPane('toc');
+  bindGutters();
   // Same-hash clicks fire no hashchange; re-route so the target scrolls and flashes again.
   document.addEventListener('click', (e) => {
     const a = e.target.closest && e.target.closest('a.ref[href^="#/"]');

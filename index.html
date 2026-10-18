@@ -18,15 +18,23 @@
     <span class="updated" id="updated"></span>
   </header>
 
-  <main id="view-lessons" class="body lessons">
+  <div class="seg" id="seg" role="tablist" aria-label="Разделы">
+    <button class="seg-btn" data-pane="toc" role="tab">Темы</button>
+    <button class="seg-btn" data-pane="article" role="tab">Грамматика</button>
+    <button class="seg-btn" data-pane="hw" role="tab">Задания</button>
+  </div>
+
+  <main id="view-lessons" class="body lessons" data-pane="toc">
     <nav class="pane toc" id="toc-pane" aria-label="Оглавление грамматики">
       <input type="search" id="search" class="search" placeholder="Поиск: σε, артикль, είμαι…" aria-label="Поиск по грамматике">
       <div id="topic-list"></div>
     </nav>
+    <div class="gutter" data-gutter="toc" role="separator" aria-orientation="vertical" aria-label="Ширина оглавления" tabindex="0"></div>
     <section class="pane" id="grammar-pane">
       <p class="hint" id="article-hint">Выберите тему слева</p>
       <article id="article" class="article" hidden></article>
     </section>
+    <div class="gutter" data-gutter="article" role="separator" aria-orientation="vertical" aria-label="Ширина грамматики" tabindex="0"></div>
     <section class="pane" id="hw-pane">
       <input type="search" id="hw-search" class="search" placeholder="Поиск по заданиям: тетрадь, глаголы…" aria-label="Поиск по заданиям">
       <div id="hw-list"></div>
