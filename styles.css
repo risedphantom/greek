@@ -53,7 +53,7 @@ body {
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - var(--topbar));
 }
-.body.lessons { grid-template-columns: 250px minmax(0, 1fr) 400px; }
+.body.lessons { grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr); }
 .body.single { grid-template-columns: 1fr; }
 
 /* table of contents: compact */
@@ -338,7 +338,7 @@ table.dict { width: 100%; border-collapse: collapse; }
 /* ---- narrow screens ---- */
 
 @media (max-width: 1200px) {
-  .body.lessons { grid-template-columns: 220px minmax(0, 1fr) 340px; }
+  .body.lessons { grid-template-columns: 210px minmax(0, 1fr) minmax(0, 1fr); }
 }
 @media (max-width: 900px) {
   .body, .body.lessons { grid-template-columns: 1fr; height: auto; }
