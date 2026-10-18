@@ -43,7 +43,7 @@ def test_resolve_texts_and_lexis_prefixes(taxonomy):
 
 
 def test_resolve_unmapped_goes_to_new(taxonomy):
-    assert taxonomy.resolve("Аорист: сильные формы!") == ("new", "аорист-сильные-формы")
+    assert taxonomy.resolve("Аорист: сильные глаголы!") == ("new", "аорист-сильные-глаголы")
     assert taxonomy.unmapped(["Предлог σε", "Аорист", "Аорист"]) == ["Аорист"]
 
 
@@ -51,10 +51,22 @@ def test_short_hint_does_not_substring_match(taxonomy):
     assert taxonomy.resolve("сп")[0] == "new"
 
 
+def test_substring_matches_whole_words_only(taxonomy):
+    assert taxonomy.resolve("Прошедшее время глаголов")[0] == "new"
+    assert taxonomy.resolve("Модальные глаголы")[0] == "new"
+    assert taxonomy.resolve("Сообщение другу")[0] == "new"
+
+
+def test_mediopassive_verbs_resolve_to_verb_mai(taxonomy):
+    assert taxonomy.resolve("Глаголы на -ομαι") == ("verb", "verb-mai")
+    assert taxonomy.resolve("Глаголы на -μαι, упражнения") == ("verb", "verb-mai")
+
+
 def test_topic_for_task_text(taxonomy):
     assert taxonomy.topic_for_task_text("Повторить спряжение глаголов 1 и 2") == ["conj-1", "conj-2"]
     assert taxonomy.topic_for_task_text("Упр. 5: предлог σε, вставьте пропуски") == ["prep-se"]
     assert taxonomy.topic_for_task_text("Выучить слова") == []
+    assert taxonomy.topic_for_task_text("Упр. 3: единственного и множественного числа") == []
 
 
 @pytest.mark.skipif(not TRANSCRIPTS.is_dir(), reason="no backfilled transcripts")

@@ -24,6 +24,11 @@ def _norm(text: str) -> str:
     return " ".join(normalize(text).split())
 
 
+def _contains(outer: str, inner: str) -> bool:
+    """Whole-word containment: inner's tokens appear contiguously in outer's."""
+    return f" {inner} " in f" {outer} "
+
+
 def slug(text: str) -> str:
     return _NON_WORD.sub("-", normalize(text)).strip("-")
 
@@ -68,9 +73,9 @@ class Taxonomy:
         normalised = _norm(text)
         # «спряжение глаголов 1 и 2» also reads as «… глаголов 1» and «… глаголов 2»
         expanded = [normalised] + [
-            f"{m[1]} {n}" for m in _NUMBER_PAIR.finditer(normalised) for n in (m[2], m[3])
+            f"{m[1].strip()} {n}" for m in _NUMBER_PAIR.finditer(normalised) for n in (m[2], m[3])
         ]
-        found = {tid for hint, _, tid in self._hints if any(hint in t for t in expanded)}
+        found = {tid for hint, _, tid in self._hints if any(_contains(t, hint) for t in expanded)}
         return [tid for tid in self._topics if tid in found]
 
     @staticmethod
@@ -80,7 +85,7 @@ class Taxonomy:
         best, best_len = None, MIN_SUBSTRING - 1
         for h, gid, tid in candidates:
             overlap = min(len(h), len(hint))
-            if overlap > best_len and (h in hint or hint in h):
+            if overlap > best_len and (_contains(hint, h) or _contains(h, hint)):
                 best, best_len = (gid, tid), overlap
         return best
 
