@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ελληνικά · Группа 5</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js"></script>
 </head>
 <body>
@@ -14,6 +14,7 @@
     <nav class="tabs">
       <a class="tab" id="tab-lessons" href="#/lessons">Уроки</a>
       <a class="tab" id="tab-dictionary" href="#/dictionary">Словарь</a>
+      <a class="tab" id="tab-exercises" href="#/exercises">Упражнения</a>
     </nav>
     <span class="updated" id="updated"></span>
   </header>
@@ -43,6 +44,15 @@
 
   <main id="view-dictionary" class="body single" hidden></main>
 
-  <script src="app.js?v=3"></script>
+  <main id="view-exercises" class="body pdf" hidden>
+    <div class="pdf-bar">
+      <span>Сборник упражнений (PDF, 9 МБ)</span>
+      <a class="file" href="media/122635.pdf" target="_blank" rel="noopener">Открыть в новой вкладке</a>
+      <a class="file" href="media/122635.pdf" download>Скачать</a>
+    </div>
+    <iframe id="pdf-frame" title="Сборник упражнений" data-src="media/122635.pdf#view=FitH"></iframe>
+  </main>
+
+  <script src="app.js?v=4"></script>
 </body>
 </html>

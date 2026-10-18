@@ -143,6 +143,7 @@ function textWithGreek(str, cls) {
 function parseRoute() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent);
   if (parts[0] === 'dictionary') return { tab: 'dictionary', key: parts[1] || null };
+  if (parts[0] === 'exercises') return { tab: 'exercises' };
   if (parts[1] === 'topic' && parts[2]) return { tab: 'lessons', topicId: parts[2] };
   if (parts[1] === 'hw' && parts[2]) {
     const taskIdx = parts[3] != null && parts[3] !== '' ? Number(parts[3]) : null;
@@ -160,6 +161,12 @@ function route() {
     renderDictionary(r.key);
     return;
   }
+  if (r.tab === 'exercises') {
+    // 9 MB: load the PDF only when the tab is first opened.
+    const frame = document.getElementById('pdf-frame');
+    if (!frame.src) frame.src = frame.dataset.src;
+    return;
+  }
   if (r.topicId && r.topicId !== state.topicId) selectTopic(r.topicId);
   if (r.hwId) showHomework(r.hwId, r.taskIdx);
 }
@@ -167,8 +174,9 @@ function route() {
 function setTab(tab) {
   document.getElementById('view-lessons').hidden = tab !== 'lessons';
   document.getElementById('view-dictionary').hidden = tab !== 'dictionary';
+  document.getElementById('view-exercises').hidden = tab !== 'exercises';
   document.getElementById('seg').hidden = tab !== 'lessons';
-  for (const name of ['lessons', 'dictionary']) {
+  for (const name of ['lessons', 'dictionary', 'exercises']) {
     const a = document.getElementById(`tab-${name}`);
     a.classList.toggle('on', name === tab);
     if (name === tab) a.setAttribute('aria-current', 'page');
