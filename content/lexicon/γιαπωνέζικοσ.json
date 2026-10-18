@@ -5,7 +5,7 @@
   ],
   "pos": "adj",
   "gender": null,
-  "class": "ος, η, ο",
+  "class": "-ος, -η, -ο",
   "forms": {
     "m": {
       "sg": "ιαπωνέζικος",
@@ -21,8 +21,8 @@
     }
   },
   "example": {
-    "el": "Αυτό είναι ένα ιαπωνέζικο τραγούδι.",
-    "ru": "Это японская песня."
+    "el": "Μιλάω ιαπωνέζικα.",
+    "ru": "Я говорю по-японски."
   },
   "lemma_key": "γιαπωνέζικοσ",
   "surfaces": [
@@ -31,6 +31,7 @@
   "msg_ids": [
     123730
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": true
 }

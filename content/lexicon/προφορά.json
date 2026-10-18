@@ -38,6 +38,7 @@
     123358,
     123614
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
 }

@@ -1,24 +1,23 @@
 {
   "lemma": "κλειστός",
   "translation": [
-    "закрытый",
-    "замкнутый"
+    "закрытый"
   ],
   "pos": "adj",
   "gender": null,
-  "class": "ος, η, ο",
+  "class": "-ος, -η, -ο",
   "forms": {
     "m": {
-      "sg": "ο κλειστός",
-      "pl": "οι κλειστοί"
+      "sg": "κλειστός",
+      "pl": "κλειστοί"
     },
     "f": {
-      "sg": "η κλειστή",
-      "pl": "οι κλειστές"
+      "sg": "κλειστή",
+      "pl": "κλειστές"
     },
     "n": {
-      "sg": "το κλειστό",
-      "pl": "τα κλειστά"
+      "sg": "κλειστό",
+      "pl": "κλειστά"
     }
   },
   "example": {
@@ -32,6 +31,7 @@
   "msg_ids": [
     123618
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
 }

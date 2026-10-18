@@ -4,25 +4,25 @@
     "ливийский"
   ],
   "pos": "adj",
-  "gender": "m",
+  "gender": null,
   "class": "-ος, -η, -ο",
   "forms": {
     "m": {
-      "sg": "ο Λυβικός",
-      "pl": "οι Λυβικοί"
+      "sg": "Λυβικός",
+      "pl": "Λυβικοί"
     },
     "f": {
-      "sg": "η Λυβική",
-      "pl": "οι Λυβικές"
+      "sg": "Λυβική",
+      "pl": "Λυβικές"
     },
     "n": {
-      "sg": "το Λυβικό",
-      "pl": "τα Λυβικά"
+      "sg": "Λυβικό",
+      "pl": "Λυβικά"
     }
   },
   "example": {
-    "el": "το Λυβικό ζήτημα",
-    "ru": "ливийский вопрос"
+    "el": "Αυτό είναι Λυβικό.",
+    "ru": "Это ливийское."
   },
   "lemma_key": "λυβικού",
   "surfaces": [
@@ -31,6 +31,7 @@
   "msg_ids": [
     123618
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": true
 }

@@ -5,7 +5,7 @@
   ],
   "pos": "adj",
   "gender": null,
-  "class": null,
+  "class": "-ος, -η, -ο",
   "forms": {
     "m": {
       "sg": "κινέζικος",
@@ -31,6 +31,7 @@
   "msg_ids": [
     123955
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": true
 }

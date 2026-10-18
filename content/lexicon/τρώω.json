@@ -2,7 +2,8 @@
   "lemma": "τρώω",
   "translation": [
     "есть",
-    "кушать"
+    "кушать",
+    "съедать"
   ],
   "pos": "verb",
   "gender": null,
@@ -10,7 +11,7 @@
   "forms": {
     "present": [
       "τρώω",
-      "τρώς",
+      "τρως",
       "τρώει",
       "τρώμε",
       "τρώτε",
@@ -40,14 +41,14 @@
       "θα φάτε",
       "θα φάνε"
     ],
-    "imperative": {
-      "sg": "φάε",
-      "pl": "φάτε"
-    }
+    "imperative": [
+      "φάε",
+      "φάτε"
+    ]
   },
   "example": {
-    "el": "Τρώω ένα μήλο.",
-    "ru": "Я ем яблоко."
+    "el": "Τι θα φας;",
+    "ru": "Что ты будешь есть?"
   },
   "lemma_key": "τρώω",
   "surfaces": [
@@ -76,6 +77,7 @@
     124184,
     124186
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": true
 }

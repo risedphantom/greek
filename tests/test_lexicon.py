@@ -125,7 +125,7 @@ def test_generate_writes_entry_file(settings):
     assert entry == {
         **entry_for({"lemma": "τρώω", "pos": "verb"}),
         "lemma_key": "τρώω", "surfaces": ["Τρώω", "τρώει"], "msg_ids": [2, 5],
-        "needs_review": False, "model": "text/model",
+        "needs_review": False, "proper_name": False, "model": "text/model",
     }
     assert lexicon.load_lexicon(settings.lexicon_dir) == {"τρώω": entry}
 
@@ -224,7 +224,8 @@ def test_reply_entries_for_unknown_lemmas_are_ignored(settings):
 
 NOUN_FORMS = {"sg": {"nom": "η μέρα", "gen": "της μέρας", "acc": "τη μέρα"},
               "pl": {"nom": "οι μέρες", "gen": "των ημερών", "acc": "τις μέρες"}}
-ADJ_FORMS = {g: {"sg": "καλ", "pl": "καλ"} for g in "mfn"}
+ADJ_FORMS = {"m": {"sg": "καλός", "pl": "καλοί"}, "f": {"sg": "καλή", "pl": "καλές"},
+             "n": {"sg": "καλό", "pl": "καλά"}}
 
 
 @pytest.mark.parametrize("pos, forms, ok", [
@@ -242,7 +243,7 @@ ADJ_FORMS = {g: {"sg": "καλ", "pl": "καλ"} for g in "mfn"}
     ("other", {"x": 1}, False),
 ])
 def test_validate_forms_by_pos(pos, forms, ok):
-    entry = {**entry_for({"lemma": "λ", "pos": pos}), "forms": forms}
+    entry = {**entry_for({"lemma": "καλός", "pos": pos}), "forms": forms}
     assert lexicon.validate(entry) is ok
 
 
@@ -252,6 +253,47 @@ def test_validate_rejects_bad_core_fields():
     assert not lexicon.validate({**good, "translation": []})
     assert not lexicon.validate({**good, "translation": "вода"})
     assert not lexicon.validate({**good, "pos": "pronoun"})
+    assert not lexicon.validate({**good, "pos": ["adv"]})
+    assert not lexicon.validate({**good, "translation": ["вода", "влага", "жидкость", "сок"]})
     assert not lexicon.validate({k: v for k, v in good.items() if k != "example"})
     assert not lexicon.validate({**good, "gender": "x"})
     assert lexicon.validate({k: v for k, v in good.items() if k not in ("gender", "class")})
+
+
+def test_validate_rejects_unaccented_polysyllable():
+    good = {**entry_for({"lemma": "γιος", "pos": "noun"}), "forms": {
+        "sg": {"nom": "ο γιος", "gen": "του γιου", "acc": "τον γιο"},
+        "pl": {"nom": "οι γιοι", "gen": "των γιων", "acc": "τους γιους"}}}
+    assert lexicon.validate(good)
+    assert not lexicon.validate({**good, "forms": NOUN_FORMS | {"pl": {**NOUN_FORMS["pl"], "nom": "οι μερες"}}})
+    verb = {**entry_for({"lemma": "δουλεύω", "pos": "verb"})}
+    verb["forms"] = {**verb["forms"], "imperfect": ["δουλευα", "δούλευες", "δούλευε", "δουλεύαμε", "δουλεύατε", "δούλευαν"]}
+    assert not lexicon.validate(verb)
+
+
+def test_validate_rejects_adjective_with_article_or_foreign_paradigm():
+    adj = {**entry_for({"lemma": "κλειστός", "pos": "adj"}), "lemma_key": "κλειστόσ"}
+    ok = {"m": {"sg": "κλειστός", "pl": "κλειστοί"}, "f": {"sg": "κλειστή", "pl": "κλειστές"},
+          "n": {"sg": "κλειστό", "pl": "κλειστά"}}
+    assert lexicon.validate({**adj, "forms": ok})
+    assert not lexicon.validate({**adj, "forms": ADJ_FORMS})
+    assert not lexicon.validate({**adj, "forms": {**ok, "f": {"sg": "η κλειστή", "pl": "οι κλειστές"}}})
+
+
+def test_proper_name_flag(settings):
+    refs = {
+        "άννα": ref("Άννα", "noun"),
+        "μαρία": ref("μαρία", "other"),
+        "νερό": ref("νερό", "noun"),
+        "αθήνα": ref("αθήνα", "noun"),
+    }
+    fake = FakeLLM(overrides={
+        "μαρία": {"translation": ["Мария"]},
+        "νερό": {"translation": ["Вода"], "forms": NOUN_FORMS},
+        "αθήνα": {"translation": ["афины"]},
+    })
+
+    lexicon.generate_pending(settings, fake, refs)
+
+    flags = {k: e["proper_name"] for k, e in lexicon.load_lexicon(settings.lexicon_dir).items()}
+    assert flags == {"άννα": True, "μαρία": True, "νερό": False, "αθήνα": False}

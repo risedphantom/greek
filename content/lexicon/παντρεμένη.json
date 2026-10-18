@@ -1,11 +1,12 @@
 {
   "lemma": "παντρεμένη",
   "translation": [
-    "замужняя"
+    "замужняя",
+    "женатый"
   ],
   "pos": "adj",
   "gender": null,
-  "class": "1 спр.",
+  "class": "-ος, -η, -ο",
   "forms": {
     "m": {
       "sg": "παντρεμένος",
@@ -31,6 +32,7 @@
   "msg_ids": [
     123360
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": true
 }

@@ -5,7 +5,7 @@
     "половинка"
   ],
   "pos": "adj",
-  "gender": "f",
+  "gender": null,
   "class": "-ος, -η, -ο",
   "forms": {
     "m": {
@@ -22,8 +22,8 @@
     }
   },
   "example": {
-    "el": "μισή ώρα",
-    "ru": "полчаса"
+    "el": "Ήπια μισή κούπα νερό.",
+    "ru": "Я выпил полчашки воды."
   },
   "lemma_key": "μισή",
   "surfaces": [
@@ -32,6 +32,7 @@
   "msg_ids": [
     123953
   ],
-  "needs_review": false,
-  "model": "google/gemini-2.5-flash-lite"
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": true
 }

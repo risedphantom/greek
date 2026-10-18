@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -22,10 +23,16 @@ PERSONS = 6
 CASES = ("nom", "gen", "acc")
 NUMBERS = ("sg", "pl")
 GENDERS = ("m", "f", "n")
+ARTICLES = frozenset({"ο", "η", "το", "οι", "τα"})
+MAX_TRANSLATIONS = 3
 
 _GREEK_LETTER = re.compile(r"[\u0370-\u03ff\u1f00-\u1fff]")
 _NON_GREEK_LETTER = re.compile(r"[^\W\d_\u0370-\u03ff\u1f00-\u1fff]")
 _LETTER = re.compile(r"[^\W\d_]")
+_ACCENTED = frozenset("άέήίόύώΐΰ")
+# A run of vowels counts as one syllable: covers αι ει οι ου υι and synizesis (γιος, μια).
+_VOWEL_RUN = re.compile(r"[αεηιουω]+")
+_CYRILLIC_UPPER = re.compile(r"[А-ЯЁ]")
 
 
 @dataclass
@@ -76,6 +83,35 @@ def _pair(d, keys) -> bool:
     return isinstance(d, dict) and all(_filled(d.get(k)) for k in keys)
 
 
+def _form_strings(forms) -> list[str]:
+    if isinstance(forms, str):
+        return [forms]
+    if isinstance(forms, dict):
+        forms = list(forms.values())
+    if isinstance(forms, list):
+        return [s for f in forms for s in _form_strings(f)]
+    return []
+
+
+def _syllables(token: str) -> int:
+    bare = "".join(c for c in unicodedata.normalize("NFD", token) if not unicodedata.combining(c))
+    return len(_VOWEL_RUN.findall(bare))
+
+
+def _accented(form: str) -> bool:
+    """Every token of two or more syllables carries a stress mark."""
+    return all(
+        _syllables(t) < 2 or not _ACCENTED.isdisjoint(t)
+        for t in normalize(form).split()
+    )
+
+
+def _adjective_ok(forms: dict, key: str) -> bool:
+    return normalize(forms["m"]["sg"]) == key and all(
+        normalize(f).split()[0] not in ARTICLES for f in _form_strings(forms)
+    )
+
+
 def _forms_ok(pos: str, forms) -> bool:
     if pos == "verb":
         return (
@@ -95,15 +131,28 @@ def _forms_ok(pos: str, forms) -> bool:
 
 def validate(entry: dict) -> bool:
     translation = entry.get("translation")
+    pos = entry.get("pos")
+    forms = entry.get("forms")
+    key = entry.get("lemma_key") or normalize(str(entry.get("lemma")))
     return (
         all(k in entry for k in REQUIRED)
         and isinstance(translation, list)
-        and bool(translation)
+        and 1 <= len(translation) <= MAX_TRANSLATIONS
         and all(map(_filled, translation))
-        and entry["pos"] in POS
+        and isinstance(pos, str)
+        and pos in POS
         and entry.get("gender") in (None, *GENDERS)
         and _pair(entry["example"], ("el", "ru"))
-        and _forms_ok(entry["pos"], entry.get("forms"))
+        and _forms_ok(pos, forms)
+        and all(map(_accented, _form_strings(forms)))
+        and (pos != "adj" or _adjective_ok(forms, key))
+    )
+
+
+def _proper_name(entry: dict) -> bool:
+    gloss = (entry.get("translation") or [""])[0]
+    return entry["lemma"][:1].isupper() or (
+        isinstance(gloss, str) and bool(_CYRILLIC_UPPER.match(gloss)) and entry["forms"] == {}
     )
 
 
@@ -115,7 +164,6 @@ def _request_items(refs: list[LemmaRef]) -> list[dict]:
 
 
 def _entry(raw: dict, key: str, ref: LemmaRef, model: str) -> dict:
-    ok = validate(raw)
     entry = {k: raw.get(k) for k in ("lemma", "translation", "pos", *OPTIONAL)}
     entry.update(
         lemma=ref.lemma,
@@ -124,9 +172,10 @@ def _entry(raw: dict, key: str, ref: LemmaRef, model: str) -> dict:
         lemma_key=key,
         surfaces=sorted(ref.surfaces),
         msg_ids=sorted(ref.msg_ids),
-        needs_review=not ok,
         model=model,
     )
+    entry["proper_name"] = _proper_name(entry)
+    entry["needs_review"] = not validate(entry)
     return entry
 
 
