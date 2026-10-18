@@ -10,8 +10,8 @@ TG_API_ID=12345
 TG_API_HASH=abc
 TG_PHONE=+10000000000
 TG_2FA_PASSWORD=secret
-TG_CHAT_ID=-CHAT_ID
-TG_TEACHER_ID=TEACHER_ID
+TG_CHAT_ID=-100123
+TG_TEACHER_ID=42
 OPENROUTER_API_KEY=sk-test
 """
 
@@ -23,7 +23,7 @@ def test_load_settings_defaults_models(tmp_path, monkeypatch):
     s = load_settings(tmp_path)
     assert s.or_vision_model == "google/gemini-2.5-flash"
     assert s.or_text_model == "google/gemini-2.5-flash-lite"
-    assert s.tg_chat_id == -CHAT_ID
+    assert s.tg_chat_id == -100123
     assert s.tg_api_id == 12345
     assert s.transcripts_dir == tmp_path / "content" / "transcripts"
 

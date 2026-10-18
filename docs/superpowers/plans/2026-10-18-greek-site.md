@@ -14,7 +14,7 @@
 
 - Public repo: `.env`, `tg.session*`, `.superpowers/` gitignored; no Telegram ids, sender ids, or sender names anywhere in committed files; only the teacher's messages are stored.
 - Runtime AI = OpenRouter only (`OPENROUTER_API_KEY`); no step may call Claude or need a Claude Code session.
-- `.env` keys: `TG_API_ID`, `TG_API_HASH`, `TG_PHONE`, `TG_2FA_PASSWORD`, `TG_CHAT_ID` (`-CHAT_ID`), `TG_TEACHER_ID` (`TEACHER_ID`), `OPENROUTER_API_KEY`, `OR_VISION_MODEL` (default `google/gemini-2.5-flash`), `OR_TEXT_MODEL` (default `google/gemini-2.5-flash-lite`).
+- `.env` keys: `TG_API_ID`, `TG_API_HASH`, `TG_PHONE`, `TG_2FA_PASSWORD`, `TG_CHAT_ID` (`<from .env>`), `TG_TEACHER_ID` (`<from .env>`), `OPENROUTER_API_KEY`, `OR_VISION_MODEL` (default `google/gemini-2.5-flash`), `OR_TEXT_MODEL` (default `google/gemini-2.5-flash-lite`).
 - Stored message shape (`state/messages/<id>.json`): `{"id", "date" (ISO 8601 with tz), "text", "media" (repo-relative path or null), "media_kind" ("photo"|"audio"|"pdf"|null), "reply_to", "grouped_id"}`. Nothing else.
 - Idempotent stages: an output file that exists is never regenerated unless deleted by hand.
 - Transcript confidence `< 0.7` → listed in update summary. Unmapped `topic_hint` → group `new` («Новое») and listed in summary.
@@ -46,7 +46,7 @@
 - [ ] **Step 1: Write `pyproject.toml`**: project `greekpipe`, `requires-python = ">=3.12"`, dependencies `telethon>=1.36`, `python-dotenv`, `httpx>=0.27`; dev group `pytest`, `pytest-asyncio`, `respx`. `[tool.pytest.ini_options] testpaths = ["tests"]`.
 - [ ] **Step 2: Copy fixture** `/private/tmp/claude-501/-Users-anton-dev-own-greek/5486a39f-ed65-419d-930e-e549ceb18baf/scratchpad/raw/fixture_messages.json` → `tests/fixtures/messages_sample.json` (104 sanitised teacher messages, 2026-09-07…2026-09-24, already in the stored message shape).
 - [ ] **Step 3: Write failing tests** `tests/test_config.py`:
-  - `test_load_settings_defaults_models(tmp_path, monkeypatch)`: write a `.env` with only TG/OR keys → `s.or_vision_model == "google/gemini-2.5-flash"`, `s.or_text_model == "google/gemini-2.5-flash-lite"`, `s.tg_chat_id == -CHAT_ID` (int), `s.transcripts_dir == tmp_path/"content"/"transcripts"`.
+  - `test_load_settings_defaults_models(tmp_path, monkeypatch)`: write a `.env` with only TG/OR keys → `s.or_vision_model == "google/gemini-2.5-flash"`, `s.or_text_model == "google/gemini-2.5-flash-lite"`, `s.tg_chat_id == <from .env>` (int), `s.transcripts_dir == tmp_path/"content"/"transcripts"`.
   - `test_normalize`: `normalize("Τρώει;") == "τρώει"`, `normalize("φοιτητής") == "φοιτητήσ"`, `normalize("ΚΑΛΗΜΕΡΑ,") == "καλημερα"` — note: casefold keeps accents; assert `normalize("Καλημέρα") == "καλημέρα"`.
   - `test_stopwords_normalized`: every item in `STOPWORDS` equals `normalize(item)`.
 - [ ] **Step 4: Run** `uv run pytest -q` → FAIL (module missing).
