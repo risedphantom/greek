@@ -8,7 +8,7 @@ from dotenv import dotenv_values
 DEFAULT_VISION_MODEL = "google/gemini-2.5-flash"
 DEFAULT_TEXT_MODEL = "google/gemini-2.5-flash-lite"
 
-_PUNCTUATION = dict.fromkeys(map(ord, ';,.!?«»–—()[]:"\'…'))
+_PUNCTUATION = dict.fromkeys(map(ord, ';,.!?«»–—()[]:"\'…·'))
 
 
 @dataclass(frozen=True)
@@ -63,7 +63,7 @@ def load_settings(root: Path | None = None) -> Settings:
 
 
 def normalize(word: str) -> str:
-    word = unicodedata.normalize("NFC", word.translate(_PUNCTUATION))
+    word = unicodedata.normalize("NFC", word).translate(_PUNCTUATION)
     return word.casefold().replace("ς", "σ")
 
 

@@ -1,3 +1,8 @@
+import json
+import re
+from pathlib import Path
+
+
 from greekpipe.config import STOPWORDS, load_settings, normalize
 
 ENV = """\
@@ -45,3 +50,17 @@ def test_stopwords_normalized():
     assert STOPWORDS
     for item in STOPWORDS:
         assert item == normalize(item)
+
+
+def test_normalize_greek_punctuation():
+    assert normalize("Τρώει;") == "τρώει"  # U+037E Greek question mark
+    assert normalize("καλά·") == "καλά"  # U+0387 ano teleia
+
+
+def test_fixture_has_no_meeting_links():
+    path = Path(__file__).parent / "fixtures" / "messages_sample.json"
+    messages = json.loads(path.read_text())
+    keys = {"id", "date", "text", "media", "media_kind", "reply_to", "grouped_id"}
+    for m in messages:
+        assert set(m) == keys
+        assert not re.search(r"zoom\.us|telemost\.yandex", m["text"] or "")
