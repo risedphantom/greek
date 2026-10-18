@@ -18,10 +18,13 @@
     <span class="updated" id="updated"></span>
   </header>
 
-  <main id="view-lessons" class="body">
-    <section class="pane" id="grammar-pane">
-      <input type="search" id="search" class="search" placeholder="Поиск по грамматике: σε, артикль, είμαι…" aria-label="Поиск по грамматике">
+  <main id="view-lessons" class="body lessons">
+    <nav class="pane toc" id="toc-pane" aria-label="Оглавление грамматики">
+      <input type="search" id="search" class="search" placeholder="Поиск: σε, артикль, είμαι…" aria-label="Поиск по грамматике">
       <div id="topic-list"></div>
+    </nav>
+    <section class="pane" id="grammar-pane">
+      <p class="hint" id="article-hint">Выберите тему слева</p>
       <article id="article" class="article" hidden></article>
     </section>
     <section class="pane" id="hw-pane">

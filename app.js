@@ -256,7 +256,14 @@ function selectTopic(id) {
   state.openGroups.add(found.group.id);
   renderTopicList();
   renderArticle(found.topic);
-  document.getElementById('article').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  const hint = document.getElementById('article-hint');
+  if (hint) hint.hidden = true;
+  const pane = document.getElementById('grammar-pane');
+  if (window.matchMedia('(max-width: 900px)').matches) {
+    document.getElementById('article').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  } else {
+    pane.scrollTo({ top: 0 });
+  }
 }
 
 function renderArticle(topic) {

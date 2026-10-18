@@ -53,7 +53,18 @@ body {
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - var(--topbar));
 }
+.body.lessons { grid-template-columns: 250px minmax(0, 1fr) 400px; }
 .body.single { grid-template-columns: 1fr; }
+
+/* table of contents: compact */
+.toc { font-size: 12px; padding: 10px 8px; }
+.toc .search { padding: 5px 8px; font-size: 12px; }
+.toc .grp { margin: 8px 0 2px; font-size: 10px; }
+.toc .item { padding: 2px 6px; line-height: 1.3; }
+.toc .item small { font-size: 10px; }
+.toc .audio-item { padding: 2px 6px; }
+.hint { color: var(--muted); margin: 8px 2px; }
+#grammar-pane .article { margin-top: 0; }
 
 .pane {
   padding: 12px 14px;
@@ -326,8 +337,11 @@ table.dict { width: 100%; border-collapse: collapse; }
 
 /* ---- narrow screens ---- */
 
+@media (max-width: 1200px) {
+  .body.lessons { grid-template-columns: 220px minmax(0, 1fr) 340px; }
+}
 @media (max-width: 900px) {
-  .body { grid-template-columns: 1fr; height: auto; }
+  .body, .body.lessons { grid-template-columns: 1fr; height: auto; }
   .pane { overflow: visible; }
   .pane + .pane { border-left: 0; border-top: 1px solid var(--line); }
   .lb-box { flex-direction: column; overflow: auto; }
