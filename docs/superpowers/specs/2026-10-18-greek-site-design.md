@@ -122,17 +122,16 @@ Rhythm:
   `media/`. No framework, no bundler, no build step. GitHub Pages serves the
   `main` branch root. Python scripts (`uv run`, PEP 723 inline deps) under
   `scripts/`.
-- Models are read from `.env`: `OR_VISION_MODEL` (default a free
-  vision-capable model, e.g. `google/gemini-2.0-flash-exp:free` or
-  `qwen/qwen2.5-vl-72b-instruct:free`) and `OR_TEXT_MODEL` (default a free
-  text model, e.g. `deepseek/deepseek-chat:free`). The builder verifies
-  defaults against `https://openrouter.ai/api/v1/models` on first run and
-  implements a fallback list, since free model availability churns.
-  Free tier is rate-limited (≈50 requests/day without a $10 credit
-  top-up, ≈1000/day with it); the pipeline must survive 429s by backing
-  off and resuming on the next run — partial progress is always saved.
-  Backfill (≈124 photos + ≈50 lexicon batches of 20 lemmas) may therefore
-  span several days on the pure free tier; that is acceptable.
+- Models are read from `.env`: `OR_VISION_MODEL` (default
+  `google/gemini-2.5-flash`, verified 2026-10-18 on a declension-table
+  photo: exact transcription, $0.0023/photo) and `OR_TEXT_MODEL` (default
+  `google/gemini-2.5-flash-lite`). Free `:free` models were tested the
+  same day and rejected: all but one returned 429/502/403, the one that
+  answered produced polytonic garbage (`πυλᾶτ-ης` for `πωλητ-ής`). Anton
+  topped up OpenRouter credits; expected cost ≈ $0.30 backfill, ≈ 5¢ per
+  update. The pipeline must still survive 429/5xx by backing off and
+  leaving the item pending for the next run — partial progress is always
+  saved.
 - Transcription prompt asks for strict JSON: `kind` (grammar | exercise |
   text | vocab | table | other), `title`, `body_md` (Greek verbatim,
   Russian verbatim, tables as markdown tables), `greek_words` (lemmas with
