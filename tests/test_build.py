@@ -105,6 +105,7 @@ def test_forms_index_handles_case_accent_final_sigma(tmp_path):
               forms={"present": ["τρώω", "τρως", "τρώει", "τρώμε", "τρώτε", "τρώνε"],
                      "future": ["θα φάω", "θα φας", "θα φάει", "θα φάμε", "θα φάτε", "θα φάνε"]}),
         entry("φοιτητής", surfaces=["φοιτητές"], msg_ids=[123089]),
+        entry("καλημέρα", pos="interj", msg_ids=[123089]),
         entry("δουλειά", msg_ids=[123089],
               forms={"sg": {"nom": "η δουλειά", "gen": "της δουλειάς", "acc": "τη δουλειά"},
                      "pl": {"nom": "οι δουλειές", "gen": "των δουλειών", "acc": "τις δουλειές"}}),
@@ -118,6 +119,20 @@ def test_forms_index_handles_case_accent_final_sigma(tmp_path):
     assert index["δουλειά"] == "δουλειά"
     assert index[normalize("δουλειάς")] == "δουλειά"
     assert not {"η", "της", "τη", "οι", "θα", "των", "τισ"} & index.keys()
+    assert index[normalize("ΚΑΛΗΜΕΡΑ")] == "καλημέρα"
+    assert index[normalize("Καλημερα")] == "καλημέρα"
+
+
+def test_forms_index_only_greek_keys(tmp_path):
+    lexicon = [entry("γράφω", pos="verb", surfaces=["хочу"], msg_ids=[123088],
+                     forms={"imperfect": ["έγραφα", "γράφdαμε"]}),
+               entry("γεια σου", pos="phrase", msg_ids=[123088])]
+    index = build_site(make_settings(tmp_path, lexicon=lexicon))["forms_index"]
+
+    assert "хочу" not in index
+    assert normalize("γράφdαμε") not in index
+    assert index[normalize("έγραφα")] == "γράφω"
+    assert index["γεια σου"] == "γεια σου"
 
 
 def test_forms_index_collision_first_lemma_wins(tmp_path):
@@ -186,6 +201,20 @@ def test_audio_caption_fallback(tmp_path):
         {"id": "3", "date": "2026-09-23", "file": "media/3.mp3", "caption": "Трек к уроку 5"},
         {"id": "5", "date": "2026-09-23", "file": "media/5.mp3", "caption": "Трек 3"},
     ]
+
+
+def test_audio_caption_skips_homework_marker(tmp_path):
+    messages = [
+        {"id": 1, "date": "2026-09-23T14:00:00+00:00", "text": "Доброе утро! \nД/з на след. занятие:",
+         "media": None, "media_kind": None, "reply_to": None, "grouped_id": None},
+        {"id": 2, "date": "2026-09-23T14:01:00+00:00", "text": "", "media": "media/2.mp3",
+         "media_kind": "audio", "reply_to": None, "grouped_id": None},
+        {"id": 3, "date": "2026-09-23T14:02:00+00:00", "text": " Диалог \n в кафе ",
+         "media": "media/3.mp3", "media_kind": "audio", "reply_to": None, "grouped_id": None},
+    ]
+    site = build_site(make_settings(tmp_path, messages=messages))
+
+    assert [a["caption"] for a in site["audio"]] == ["Трек 1", "Диалог в кафе"]
 
 
 def test_new_group_only_lists_used_topics(tmp_path):

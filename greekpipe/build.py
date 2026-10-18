@@ -3,12 +3,14 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import unicodedata
 from datetime import datetime, timedelta
 from pathlib import Path
 
 from greekpipe.config import STOPWORDS, normalize
 from greekpipe.lexicon import load_lexicon
-from greekpipe.segment import sessions, tasks_for
+from greekpipe.segment import _MARKER, sessions, tasks_for
 from greekpipe.tg_fetch import load_messages
 from greekpipe.topics import NEW_GROUP, Taxonomy, load_topics
 from greekpipe.transcribe import load_transcripts
@@ -17,6 +19,8 @@ OCCURRENCE_KINDS = frozenset({"grammar", "table", "vocab", "text"})
 LOW_CONFIDENCE = 0.7
 ALBUM_SEPARATOR = "\n\n---\n\n"
 AUDIO_CAPTION_WINDOW = timedelta(minutes=2)
+_GREEK_WORD = r"[\u0300-\u03ff\u1f00-\u1fff]+"  # Greek letters + combining accents
+_GREEK_KEY = re.compile(rf"{_GREEK_WORD}( {_GREEK_WORD})*")  # phrase lemmas: «γεια σου»
 NOT_FORMS = frozenset(normalize(w) for w in "ο η το οι τα τον την του της των τους τις τη θα".split())
 
 
@@ -129,18 +133,28 @@ def _audio(messages) -> list[dict]:
     for msg in messages:
         if msg["media_kind"] != "audio":
             continue
-        caption = msg["text"].strip()
+        caption = _caption(msg["text"])
         if not caption:
             when = datetime.fromisoformat(msg["date"])
             caption = next(
-                (m["text"].strip() for m in reversed(messages)
-                 if m["id"] < msg["id"] and not m["media_kind"] and m["text"].strip()
+                (_caption(m["text"]) for m in reversed(messages)
+                 if m["id"] < msg["id"] and not m["media_kind"] and _caption(m["text"])
+                 and not _MARKER.search(m["text"])
                  and when - datetime.fromisoformat(m["date"]) <= AUDIO_CAPTION_WINDOW),
                 "",
             ) or f"Трек {len(result) + 1}"
         result.append({"id": str(msg["id"]), "date": _day(msg), "file": msg["media"],
                        "caption": caption})
     return result
+
+
+def _caption(text: str) -> str:
+    return " ".join(text.split())
+
+
+def _strip_accents(word: str) -> str:
+    decomposed = unicodedata.normalize("NFD", word)
+    return unicodedata.normalize("NFC", "".join(c for c in decomposed if unicodedata.category(c) != "Mn"))
 
 
 def _form_tokens(forms) -> list[str]:
@@ -153,7 +167,8 @@ def _form_tokens(forms) -> list[str]:
 def _index_keys(entry: dict) -> set[str]:
     words = [entry["lemma"], *entry["surfaces"], *_form_tokens(entry["forms"])]
     keys = {normalize(w) for w in words}
-    return {k for k in keys if len(k) > 1 and k not in NOT_FORMS and k not in STOPWORDS}
+    return {k for k in keys if len(k) > 1 and k not in NOT_FORMS and k not in STOPWORDS
+            and _GREEK_KEY.fullmatch(k)}
 
 
 def _dictionary(lexicon, messages, msg_topics, homework) -> tuple[list[dict], dict, int]:
@@ -198,6 +213,8 @@ def _dictionary(lexicon, messages, msg_topics, homework) -> tuple[list[dict], di
                 index[form] = key
             elif index[form] != key:
                 collisions += 1
+    for form, key in list(index.items()):  # accentless fallback: all-caps or unaccented input
+        index.setdefault(_strip_accents(form), key)
     return [row for _, _, row in rows], dict(sorted(index.items())), collisions
 
 
