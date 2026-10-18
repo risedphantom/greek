@@ -13,7 +13,7 @@ AUDIO_KINDS = frozenset({"audio", "voice"})
 PHOTO_TASK_TITLE = "Задание по фото"
 AUDIO_TASK_TITLE = "Аудио"
 
-_MARKER_WORDS = r"д/з|домашн\w*\s+задани\w*|высылаю задани\w*"
+_MARKER_WORDS = r"д/з|домашн\w*[^\S\n]+задани\w*|высылаю задани\w*"
 _MARKER = re.compile(_MARKER_WORDS, re.IGNORECASE)
 _DUE_DATE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\b")
 _DUE_TOMORROW = re.compile(r"^\W*на\s+завтра", re.IGNORECASE)
@@ -98,7 +98,9 @@ def _groups(messages: list[dict]) -> list[list[dict]]:
 
 def _explicit_due(text: str, assigned: date) -> date | None:
     # Only the marker line: task lists below it carry numbers like «упр. 3.4».
-    line = next(line for line in text.splitlines() if _MARKER.search(line))
+    line = next((line for line in text.splitlines() if _MARKER.search(line)), None)
+    if line is None:
+        return None
     rest = line[_MARKER.search(line).end():]
     if _DUE_TOMORROW.match(rest):
         return assigned + timedelta(days=1)

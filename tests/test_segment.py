@@ -276,3 +276,10 @@ def test_short_chat_texts_never_tasks():
     [hw] = segment.sessions(msgs, {})
     tasks = segment.tasks_for(hw, msgs, {})
     assert [(t.type, t.text) for t in tasks] == [("упражнение", "Упр. 5 письменно")]
+
+
+def test_marker_split_across_lines_does_not_crash():
+    assert segment._has_marker({"text": "Домашнее задание"})
+    assert segment._explicit_due("Домашнее\nзадание на 22.10", date(2026, 10, 18)) is None
+    [session] = segment.sessions([_msg(1, "08:00", "Домашнее\nзадание на 22.10", day="2026-10-18")], {})
+    assert session.message_ids == [1]
