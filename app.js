@@ -654,6 +654,7 @@ function buildDictionary() {
     onclick: () => { dict.limit += DICT_PAGE; renderDictRows(); },
   });
   view.replaceChildren(el('section', { class: 'pane dict-pane' },
+    renderTranslator(),
     el('div', { class: 'dict-bar' }, search, chips, sort, el('span', { id: 'dict-count', class: 'muted' })),
     el('p', { class: 'dict-note muted', text: FORMS_NOTE }),
     el('p', { id: 'dict-msg', class: 'muted', hidden: true }),
@@ -664,6 +665,75 @@ function buildDictionary() {
     dict.text.set(entry.key, searchable([entry.lemma, ...entry.translation, ...formStrings(entry.forms)].join('\n')));
   }
   dict.built = true;
+}
+
+// ---------------------------------------------------------------- views: translator (Google Translate, ru <-> el)
+
+const GT_ENDPOINT = 'https://translate.googleapis.com/translate_a/single?client=gtx&dt=t';
+
+function gtDirection(text, forced) {
+  if (forced) return forced;
+  return /[\u0370-\u03FF\u1F00-\u1FFF]/.test(text) ? ['el', 'ru'] : ['ru', 'el'];
+}
+
+function gtLink(text, [sl, tl]) {
+  return `https://translate.google.com/?sl=${sl}&tl=${tl}&op=translate&text=${encodeURIComponent(text)}`;
+}
+
+async function gtTranslate(text, [sl, tl]) {
+  const res = await fetch(`${GT_ENDPOINT}&sl=${sl}&tl=${tl}&q=${encodeURIComponent(text)}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  return (data[0] || []).map((seg) => seg[0]).join('');
+}
+
+function renderTranslator() {
+  let forced = null; // null = auto by alphabet; otherwise [sl, tl]
+  const input = el('input', {
+    type: 'text', class: 'search gt-in', placeholder: 'Переводчик: введите слово или фразу…',
+    'aria-label': 'Переводчик', autocomplete: 'off', spellcheck: 'false',
+  });
+  const dir = el('button', { type: 'button', class: 'chip gt-dir', title: 'Направление перевода' });
+  const out = el('div', { class: 'gt-out', hidden: true });
+  const link = el('a', { class: 'gt-link', target: '_blank', rel: 'noopener', text: 'открыть в Google Translate', hidden: true });
+
+  const setDir = () => {
+    const [sl, tl] = gtDirection(input.value, forced);
+    dir.textContent = `${sl === 'ru' ? 'рус' : 'ελλ'} → ${tl === 'ru' ? 'рус' : 'ελλ'}`;
+  };
+  let seq = 0;
+  const run = async () => {
+    const text = input.value.trim();
+    out.hidden = link.hidden = !text;
+    if (!text) return;
+    const d = gtDirection(text, forced);
+    link.href = gtLink(text, d);
+    const my = ++seq;
+    out.textContent = '…';
+    out.classList.remove('err');
+    try {
+      const result = await gtTranslate(text, d);
+      if (my !== seq) return;
+      out.replaceChildren(textWithGreek(result, 'gt-result'));
+    } catch {
+      if (my !== seq) return;
+      out.textContent = 'Перевод недоступен — откройте в Google Translate';
+      out.classList.add('err');
+    }
+  };
+  let timer;
+  input.addEventListener('input', () => { setDir(); clearTimeout(timer); timer = setTimeout(run, 500); });
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { clearTimeout(timer); run(); } });
+  dir.addEventListener('click', () => {
+    const [sl, tl] = gtDirection(input.value, forced);
+    forced = [tl, sl];
+    setDir();
+    if (input.value.trim()) run();
+  });
+  setDir();
+  return el('div', { class: 'gt' },
+    el('div', { class: 'gt-row' }, input, dir),
+    out, link);
 }
 
 function dictMatches() {
