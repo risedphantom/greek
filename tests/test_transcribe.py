@@ -212,11 +212,11 @@ def test_text_post_uses_text_model(settings):
 def test_model_output_is_normalised(settings):
     store(settings, photo_msg(90))
     messy = {
-        "kind": "poem", "confidence": "1.7", "msg_id": 999, "source": "x", "model": "liar",
+        "kind": ["grammar"], "confidence": "1.7", "msg_id": 999, "source": "x", "model": "liar",
         "greek_words": [
             {"lemma": "γράφω", "pos": "verb", "surface": ["γράφεις", "γράφω", "γράφεις"]},
             {"surface": ["χωρίς"]},
-            {"lemma": "σπίτι"},
+            {"lemma": "σπίτι", "pos": {"a": 1}},
             {"lemma": "δουλ-ειά", "pos": "noun", "surface": ["δουλ-ειές"]},
             "junk",
         ],
@@ -233,6 +233,26 @@ def test_model_output_is_normalised(settings):
         {"lemma": "σπίτι", "pos": "other", "surface": ["σπίτι"]},
         {"lemma": "δουλειά", "pos": "noun", "surface": ["δουλειές"]},
     ]
+
+
+def test_unknown_string_kind_becomes_other(settings):
+    store(settings, photo_msg(95))
+    transcribe.transcribe_pending(settings, FakeLLM(default=reply(kind="poem")))
+
+    assert read_transcript(settings, 95)["kind"] == "other"
+
+
+def test_write_is_atomic(settings, monkeypatch):
+    store(settings, photo_msg(96))
+
+    def fail(src, dst):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(transcribe.os, "replace", fail)
+    with pytest.raises(OSError):
+        transcribe.transcribe_pending(settings, FakeLLM())
+
+    assert not (settings.transcripts_dir / "96.json").exists()
 
 
 def test_load_transcripts(settings):
@@ -277,10 +297,13 @@ def test_text_post_drops_greek_words_absent_from_source(settings):
     assert report.low_confidence == []
 
 
-def test_text_post_with_invented_greek_body_is_flagged_low_confidence(settings):
-    store(settings, text_msg(121, "Глагол ειμαι знать спряжение, личные местоимения я, ты, он"))
+def test_text_post_with_invented_greek_body_falls_back_to_source(settings):
+    source = "Глагол ειμαι знать спряжение, личные местоимения я, ты, он"
+    store(settings, text_msg(121, source))
     invented = reply(kind="table", body_md="| я | είμαι |\n| ты | είσαι |", confidence=1.0, greek_words=[])
     report = transcribe.transcribe_pending(settings, FakeLLM(default=invented))
 
-    assert read_transcript(settings, 121)["confidence"] == 0.5
+    t = read_transcript(settings, 121)
+    assert t["body_md"] == source
+    assert t["confidence"] == 0.5
     assert report.low_confidence == [121]

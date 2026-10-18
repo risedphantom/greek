@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import unicodedata
 from dataclasses import dataclass, field
@@ -59,6 +60,10 @@ def _confidence(value) -> float:
     return min(max(value, 0.0), 1.0) if math.isfinite(value) else 0.0
 
 
+def _choice(value, allowed: frozenset[str]) -> str:
+    return value if isinstance(value, str) and value in allowed else "other"
+
+
 def _form(s) -> str:
     """Tidy a word form; textbook tables split endings off with a hyphen (πωλητ-ής)."""
     return _MORPHEME_HYPHEN.sub("", s.strip()) if isinstance(s, str) else ""
@@ -74,7 +79,7 @@ def _words(raw) -> list[dict]:
         surface = list(dict.fromkeys(f for f in map(_form, raw_surface) if f))
         words.append({
             "lemma": lemma,
-            "pos": w.get("pos") if w.get("pos") in POS else "other",
+            "pos": _choice(w.get("pos"), POS),
             "surface": surface or [lemma],
         })
     return words
@@ -88,7 +93,7 @@ def _normalise(raw: dict, msg_id: int, source: str, model: str) -> dict:
     return {
         "msg_id": msg_id,
         "source": source,
-        "kind": raw.get("kind") if raw.get("kind") in KINDS else "other",
+        "kind": _choice(raw.get("kind"), KINDS),
         "title": text("title"),
         "body_md": text("body_md"),
         "greek_words": _words(raw.get("greek_words")),
@@ -105,17 +110,19 @@ def _greek_tokens(text: str) -> set[str]:
 
 
 def _ground(transcript: dict, source_text: str) -> dict:
-    """Text posts are their own ground truth: drop invented words, flag invented Greek in the body."""
+    """Text posts are their own ground truth: drop invented words; invented Greek in the body
+    means the body is untrustworthy, so fall back to the message itself and flag it."""
     known = _greek_tokens(source_text)
     words = []
     for w in transcript["greek_words"]:
         surface = [f for f in w["surface"] if _greek_tokens(f) <= known]
         if surface:
             words.append({**w, "surface": surface})
-    confidence = transcript["confidence"]
+    grounded = {**transcript, "greek_words": words}
     if not _greek_tokens(transcript["body_md"]) <= known:
-        confidence = min(confidence, UNGROUNDED_CONFIDENCE)
-    return {**transcript, "greek_words": words, "confidence": confidence}
+        grounded["body_md"] = source_text
+        grounded["confidence"] = min(transcript["confidence"], UNGROUNDED_CONFIDENCE)
+    return grounded
 
 
 def _request(settings, msg: dict) -> tuple[str, str, str, list[dict]]:
@@ -133,7 +140,10 @@ def _request(settings, msg: dict) -> tuple[str, str, str, list[dict]]:
 
 def _write(transcripts_dir: Path, transcript: dict) -> None:
     body = json.dumps(transcript, ensure_ascii=False, indent=2) + "\n"
-    (transcripts_dir / f"{transcript['msg_id']}.json").write_text(body, "utf-8")
+    path = transcripts_dir / f"{transcript['msg_id']}.json"
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(body, "utf-8")
+    os.replace(tmp, path)
 
 
 def transcribe_pending(settings, client, limit: int | None = None) -> TranscribeReport:
