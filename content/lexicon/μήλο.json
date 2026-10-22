@@ -1,0 +1,38 @@
+{
+  "lemma": "μήλο",
+  "translation": [
+    "яблоко"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το μήλο",
+      "gen": "του μήλου",
+      "acc": "το μήλο"
+    },
+    "pl": {
+      "nom": "τα μήλα",
+      "gen": "των μήλων",
+      "acc": "τα μήλα"
+    }
+  },
+  "example": {
+    "el": "Έφαγα ένα μήλο.",
+    "ru": "Я съел яблоко."
+  },
+  "lemma_key": "μήλο",
+  "surfaces": [
+    "μήλα",
+    "μήλο",
+    "μήλου",
+    "μήλων"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,37 @@
+{
+  "lemma": "πρώτος",
+  "translation": [
+    "первый"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "ο πρώτος",
+      "pl": "οι πρώτοι"
+    },
+    "f": {
+      "sg": "η πρώτη",
+      "pl": "οι πρώτες"
+    },
+    "n": {
+      "sg": "το πρώτο",
+      "pl": "τα πρώτα"
+    }
+  },
+  "example": {
+    "el": "Είναι ο πρώτος μου χρόνος εδώ.",
+    "ru": "Это мой первый год здесь."
+  },
+  "lemma_key": "πρώτοσ",
+  "surfaces": [
+    "πρώτη"
+  ],
+  "msg_ids": [
+    124413
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

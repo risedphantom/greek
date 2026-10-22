@@ -1,0 +1,24 @@
+{
+  "lemma": "Καλάβρυτα",
+  "translation": [
+    "Калаврита"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγα στα Καλάβρυτα.",
+    "ru": "Я ездил в Калавриту."
+  },
+  "lemma_key": "καλάβρυτα",
+  "surfaces": [
+    "Καλάβρυτα"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

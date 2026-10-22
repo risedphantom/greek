@@ -1,0 +1,11 @@
+{
+  "msg_id": 124317,
+  "source": "text",
+  "kind": "chat",
+  "title": "Вопрос о времени занятия",
+  "body_md": "Настя, Антон, как у вас по времени с занятием на сегодня после 17 получится?",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

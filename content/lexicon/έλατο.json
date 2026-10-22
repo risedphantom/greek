@@ -1,0 +1,35 @@
+{
+  "lemma": "έλατο",
+  "translation": [
+    "ель"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το έλατο",
+      "gen": "του έλατου",
+      "acc": "το έλατο"
+    },
+    "pl": {
+      "nom": "τα έλατα",
+      "gen": "των ελάτων",
+      "acc": "τα έλατα"
+    }
+  },
+  "example": {
+    "el": "Στολίζουμε ένα έλατο τα Χριστούγεννα.",
+    "ru": "Мы украшаем ёлку на Рождество."
+  },
+  "lemma_key": "έλατο",
+  "surfaces": [
+    "έλατο"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Άγραφα",
+  "translation": [
+    "Аграфа"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Τα Άγραφα είναι μια περιοχή στην Ευρυτανία.",
+    "ru": "Аграфа — это район в Эвритании."
+  },
+  "lemma_key": "άγραφα",
+  "surfaces": [
+    "Άγραφα"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

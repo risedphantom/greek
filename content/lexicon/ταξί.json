@@ -1,0 +1,35 @@
+{
+  "lemma": "ταξί",
+  "translation": [
+    "такси"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το ταξί",
+      "gen": "του ταξί",
+      "acc": "το ταξί"
+    },
+    "pl": {
+      "nom": "τα ταξί",
+      "gen": "των ταξί",
+      "acc": "τα ταξί"
+    }
+  },
+  "example": {
+    "el": "Πάρε ένα ταξί για το αεροδρόμιο.",
+    "ru": "Возьми такси до аэропорта."
+  },
+  "lemma_key": "ταξί",
+  "surfaces": [
+    "ταξί"
+  ],
+  "msg_ids": [
+    124419
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

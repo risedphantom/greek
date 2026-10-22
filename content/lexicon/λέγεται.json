@@ -1,0 +1,58 @@
+{
+  "lemma": "λέγεται",
+  "translation": [
+    "называется",
+    "говорится"
+  ],
+  "pos": "verb",
+  "gender": null,
+  "class": "страд. от λέω (λέγομαι)",
+  "forms": {
+    "present": [
+      null,
+      null,
+      "λέγεται",
+      null,
+      null,
+      null
+    ],
+    "imperfect": [
+      null,
+      null,
+      "λεγόταν",
+      null,
+      null,
+      null
+    ],
+    "aorist": [
+      null,
+      null,
+      "λέχτηκε",
+      null,
+      null,
+      null
+    ],
+    "future": [
+      null,
+      null,
+      "θα λεχτεί",
+      null,
+      null,
+      null
+    ]
+  },
+  "example": {
+    "el": "Αυτό λέγεται \"φιλία\".",
+    "ru": "Это называется \"дружба\"."
+  },
+  "lemma_key": "λέγεται",
+  "surfaces": [
+    "λέγεται"
+  ],
+  "msg_ids": [
+    124423
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

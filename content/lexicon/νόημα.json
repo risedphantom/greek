@@ -1,0 +1,36 @@
+{
+  "lemma": "νόημα",
+  "translation": [
+    "смысл",
+    "значение"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το νόημα",
+      "gen": "του νοήματος",
+      "acc": "το νόημα"
+    },
+    "pl": {
+      "nom": "τα νοήματα",
+      "gen": "των νοημάτων",
+      "acc": "τα νοήματα"
+    }
+  },
+  "example": {
+    "el": "Τι νόημα έχει αυτό;",
+    "ru": "Какой в этом смысл?"
+  },
+  "lemma_key": "νόημα",
+  "surfaces": [
+    "νόημα"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

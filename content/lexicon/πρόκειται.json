@@ -1,0 +1,43 @@
+{
+  "lemma": "πρόκειται",
+  "translation": [
+    "предстоит",
+    "речь идёт о",
+    "собираться (πρόκειται να)"
+  ],
+  "pos": "verb",
+  "gender": null,
+  "class": "безличный",
+  "forms": {
+    "present": [
+      null,
+      null,
+      "πρόκειται",
+      null,
+      null,
+      null
+    ],
+    "imperfect": [
+      null,
+      null,
+      "επρόκειτο",
+      null,
+      null,
+      null
+    ]
+  },
+  "example": {
+    "el": "Πρόκειται να πάμε εκδρομή.",
+    "ru": "Нам предстоит поехать на экскурсию."
+  },
+  "lemma_key": "πρόκειται",
+  "surfaces": [
+    "πρόκειται"
+  ],
+  "msg_ids": [
+    124423
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,39 @@
+{
+  "lemma": "μήνας",
+  "translation": [
+    "месяц"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ας/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο μήνας",
+      "gen": "του μήνα",
+      "acc": "τον μήνα"
+    },
+    "pl": {
+      "nom": "οι μήνες",
+      "gen": "των μηνών",
+      "acc": "τους μήνες"
+    }
+  },
+  "example": {
+    "el": "Ο μήνας έχει 30 ημέρες.",
+    "ru": "В месяце 30 дней."
+  },
+  "lemma_key": "μήνασ",
+  "surfaces": [
+    "μήνα",
+    "μηνός",
+    "μηνών"
+  ],
+  "msg_ids": [
+    124411,
+    124412,
+    124413
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

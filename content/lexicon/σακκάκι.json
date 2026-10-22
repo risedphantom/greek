@@ -1,0 +1,35 @@
+{
+  "lemma": "σακκάκι",
+  "translation": [
+    "пиджак"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το σακκάκι",
+      "gen": "του σακκακιού",
+      "acc": "το σακκάκι"
+    },
+    "pl": {
+      "nom": "τα σακκάκια",
+      "gen": "των σακκακιών",
+      "acc": "τα σακκάκια"
+    }
+  },
+  "example": {
+    "el": "Φόρεσε το μπλε σακκάκι.",
+    "ru": "Надень синий пиджак."
+  },
+  "lemma_key": "σακκάκι",
+  "surfaces": [
+    "σακκάκι"
+  ],
+  "msg_ids": [
+    124415
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

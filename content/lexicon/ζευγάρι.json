@@ -1,0 +1,35 @@
+{
+  "lemma": "ζευγάρι",
+  "translation": [
+    "пара"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ζευγάρι",
+      "gen": "του ζευγαριού",
+      "acc": "το ζευγάρι"
+    },
+    "pl": {
+      "nom": "τα ζευγάρια",
+      "gen": "των ζευγαριών",
+      "acc": "τα ζευγάρια"
+    }
+  },
+  "example": {
+    "el": "Ένα ζευγάρι παπούτσια.",
+    "ru": "Одна пара обуви."
+  },
+  "lemma_key": "ζευγάρι",
+  "surfaces": [
+    "ζευγάρι"
+  ],
+  "msg_ids": [
+    124412
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

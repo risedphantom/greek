@@ -1,0 +1,35 @@
+{
+  "lemma": "καθρέφτης",
+  "translation": [
+    "зеркало"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο καθρέφτης",
+      "gen": "του καθρέφτη",
+      "acc": "τον καθρέφτη"
+    },
+    "pl": {
+      "nom": "οι καθρέφτες",
+      "gen": "των καθρεφτών",
+      "acc": "τους καθρέφτες"
+    }
+  },
+  "example": {
+    "el": "Κοίταξέ τον καθρέφτη.",
+    "ru": "Посмотри в зеркало."
+  },
+  "lemma_key": "καθρέφτησ",
+  "surfaces": [
+    "καθρέφτης"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,42 @@
+{
+  "lemma": "θα πάω",
+  "translation": [
+    "я пойду",
+    "я поеду"
+  ],
+  "pos": "verb",
+  "gender": null,
+  "class": "будущее от πάω/πηγαίνω",
+  "forms": {
+    "present": [
+      "πάω",
+      "πας",
+      "πάει",
+      "πάμε",
+      "πάτε",
+      "πάνε"
+    ],
+    "future": [
+      "θα πάω",
+      "θα πας",
+      "θα πάει",
+      "θα πάμε",
+      "θα πάτε",
+      "θα πάνε"
+    ]
+  },
+  "example": {
+    "el": "Θα πάω στο σπίτι.",
+    "ru": "Я пойду домой."
+  },
+  "lemma_key": "θα πάω",
+  "surfaces": [
+    "Θα πάμε"
+  ],
+  "msg_ids": [
+    124410
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,37 @@
+{
+  "lemma": "δώρο",
+  "translation": [
+    "подарок"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το δώρο",
+      "gen": "του δώρου",
+      "acc": "το δώρο"
+    },
+    "pl": {
+      "nom": "τα δώρα",
+      "gen": "των δώρων",
+      "acc": "τα δώρα"
+    }
+  },
+  "example": {
+    "el": "Ένα ωραίο δώρο.",
+    "ru": "Красивый подарок."
+  },
+  "lemma_key": "δώρο",
+  "surfaces": [
+    "δώρο"
+  ],
+  "msg_ids": [
+    124410,
+    124421,
+    124447
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

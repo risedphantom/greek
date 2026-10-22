@@ -1,0 +1,35 @@
+{
+  "lemma": "Οκτώβριος",
+  "translation": [
+    "октябрь"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Οκτώβριος",
+      "gen": "του Οκτωβρίου",
+      "acc": "τον Οκτώβριο"
+    },
+    "pl": {
+      "nom": "οι Οκτώβριοι",
+      "gen": "των Οκτωβρίων",
+      "acc": "τους Οκτωβρίους"
+    }
+  },
+  "example": {
+    "el": "Τον Οκτώβριο κάνει κρύο.",
+    "ru": "В октябре холодно."
+  },
+  "lemma_key": "οκτώβριοσ",
+  "surfaces": [
+    "Οκτωβρίου"
+  ],
+  "msg_ids": [
+    124413
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

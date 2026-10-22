@@ -1,0 +1,36 @@
+{
+  "lemma": "πρωινό",
+  "translation": [
+    "завтрак",
+    "утро"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πρωινό",
+      "gen": "του πρωινού",
+      "acc": "το πρωινό"
+    },
+    "pl": {
+      "nom": "τα πρωινά",
+      "gen": "των πρωινών",
+      "acc": "τα πρωινά"
+    }
+  },
+  "example": {
+    "el": "Το πρωινό είναι το πιο σημαντικό γεύμα.",
+    "ru": "Завтрак - самый важный приём пищи."
+  },
+  "lemma_key": "πρωινό",
+  "surfaces": [
+    "Πρωινό"
+  ],
+  "msg_ids": [
+    124420
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "αργότερα",
+  "translation": [
+    "позже"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα μιλήσουμε αργότερα.",
+    "ru": "Мы поговорим позже."
+  },
+  "lemma_key": "αργότερα",
+  "surfaces": [
+    "αργότερα"
+  ],
+  "msg_ids": [
+    124420
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

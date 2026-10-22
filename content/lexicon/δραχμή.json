@@ -1,0 +1,35 @@
+{
+  "lemma": "δραχμή",
+  "translation": [
+    "драхма"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η δραχμή",
+      "gen": "της δραχμής",
+      "acc": "τη δραχμή"
+    },
+    "pl": {
+      "nom": "οι δραχμές",
+      "gen": "των δραχμών",
+      "acc": "τις δραχμές"
+    }
+  },
+  "example": {
+    "el": "Μία δραχμή.",
+    "ru": "Одна драхма."
+  },
+  "lemma_key": "δραχμή",
+  "surfaces": [
+    "δραχμές"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

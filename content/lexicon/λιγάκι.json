@@ -1,0 +1,26 @@
+{
+  "lemma": "λιγάκι",
+  "translation": [
+    "немного",
+    "чуть-чуть"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πίνω λίγο καφέ.",
+    "ru": "Я пью немного кофе."
+  },
+  "lemma_key": "λιγάκι",
+  "surfaces": [
+    "λιγάκι"
+  ],
+  "msg_ids": [
+    124421,
+    124447
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

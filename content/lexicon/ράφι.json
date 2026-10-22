@@ -1,0 +1,35 @@
+{
+  "lemma": "ράφι",
+  "translation": [
+    "полка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ράφι",
+      "gen": "του ραφιού",
+      "acc": "το ράφι"
+    },
+    "pl": {
+      "nom": "τα ράφια",
+      "gen": "των ραφιών",
+      "acc": "τα ράφια"
+    }
+  },
+  "example": {
+    "el": "Το βιβλίο είναι στο πάνω ράφι.",
+    "ru": "Книга на верхней полке."
+  },
+  "lemma_key": "ράφι",
+  "surfaces": [
+    "ράφι"
+  ],
+  "msg_ids": [
+    124415
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

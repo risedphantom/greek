@@ -1,0 +1,35 @@
+{
+  "lemma": "πορτοκάλι",
+  "translation": [
+    "апельсин"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το πορτοκάλι",
+      "gen": "του πορτοκαλιού",
+      "acc": "το πορτοκάλι"
+    },
+    "pl": {
+      "nom": "τα πορτοκάλια",
+      "gen": "των πορτοκαλιών",
+      "acc": "τα πορτοκάλια"
+    }
+  },
+  "example": {
+    "el": "Έφαγα ένα πορτοκάλι.",
+    "ru": "Я съел апельсин."
+  },
+  "lemma_key": "πορτοκάλι",
+  "surfaces": [
+    "πορτοκάλια"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

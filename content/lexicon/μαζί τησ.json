@@ -1,0 +1,24 @@
+{
+  "lemma": "μαζί της",
+  "translation": [
+    "с ней"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγε η Μαρία μαζί της.",
+    "ru": "Мария пошла с ней."
+  },
+  "lemma_key": "μαζί τησ",
+  "surfaces": [
+    "μαζί της"
+  ],
+  "msg_ids": [
+    124412
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

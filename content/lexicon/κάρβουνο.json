@@ -1,0 +1,35 @@
+{
+  "lemma": "κάρβουνο",
+  "translation": [
+    "уголь"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το κάρβουνο",
+      "gen": "του κάρβουνου",
+      "acc": "το κάρβουνο"
+    },
+    "pl": {
+      "nom": "τα κάρβουνα",
+      "gen": "των κάρβουνων",
+      "acc": "τα κάρβουνα"
+    }
+  },
+  "example": {
+    "el": "Το κάρβουνο είναι μαύρο.",
+    "ru": "Уголь чёрный."
+  },
+  "lemma_key": "κάρβουνο",
+  "surfaces": [
+    "κάρβουνο"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

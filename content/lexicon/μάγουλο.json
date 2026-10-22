@@ -1,0 +1,35 @@
+{
+  "lemma": "μάγουλο",
+  "translation": [
+    "щека"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το μάγουλο",
+      "gen": "του μάγουλου",
+      "acc": "το μάγουλο"
+    },
+    "pl": {
+      "nom": "τα μάγουλα",
+      "gen": "των μάγουλων",
+      "acc": "τα μάγουλα"
+    }
+  },
+  "example": {
+    "el": "Έχει κόκκινα μάγουλα.",
+    "ru": "У него красные щеки."
+  },
+  "lemma_key": "μάγουλο",
+  "surfaces": [
+    "μάγουλο"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

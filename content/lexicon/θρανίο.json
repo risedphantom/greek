@@ -1,0 +1,36 @@
+{
+  "lemma": "θρανίο",
+  "translation": [
+    "парта",
+    "ученическая парта"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το θρανίο",
+      "gen": "του θρανίου",
+      "acc": "το θρανίο"
+    },
+    "pl": {
+      "nom": "τα θρανία",
+      "gen": "των θρανίων",
+      "acc": "τα θρανία"
+    }
+  },
+  "example": {
+    "el": "Το θρανίο είναι παλιό.",
+    "ru": "Парта старая."
+  },
+  "lemma_key": "θρανίο",
+  "surfaces": [
+    "θρανίο"
+  ],
+  "msg_ids": [
+    124448
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "κοστούμι",
+  "translation": [
+    "костюм"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το κοστούμι",
+      "gen": "του κοστουμιού",
+      "acc": "το κοστούμι"
+    },
+    "pl": {
+      "nom": "τα κοστούμια",
+      "gen": "των κοστουμιών",
+      "acc": "τα κοστούμια"
+    }
+  },
+  "example": {
+    "el": "Φοράω ένα μαύρο κοστούμι.",
+    "ru": "Я ношу чёрный костюм."
+  },
+  "lemma_key": "κοστούμι",
+  "surfaces": [
+    "κοστούμι"
+  ],
+  "msg_ids": [
+    124415
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

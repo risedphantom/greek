@@ -1,0 +1,37 @@
+{
+  "lemma": "σημείο",
+  "translation": [
+    "точка",
+    "место",
+    "пункт"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το σημείο",
+      "gen": "του σημείου",
+      "acc": "το σημείο"
+    },
+    "pl": {
+      "nom": "τα σημεία",
+      "gen": "των σημείων",
+      "acc": "τα σημεία"
+    }
+  },
+  "example": {
+    "el": "Αυτό είναι ένα σημαντικό σημείο.",
+    "ru": "Это важный пункт."
+  },
+  "lemma_key": "σημείο",
+  "surfaces": [
+    "σημείο"
+  ],
+  "msg_ids": [
+    124414
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

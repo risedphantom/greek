@@ -1,0 +1,58 @@
+{
+  "lemma": "συμβαίνει",
+  "translation": [
+    "случаться",
+    "происходить"
+  ],
+  "pos": "verb",
+  "gender": null,
+  "class": "безличный, от συμβαίνω",
+  "forms": {
+    "present": [
+      null,
+      null,
+      "συμβαίνει",
+      null,
+      null,
+      null
+    ],
+    "imperfect": [
+      null,
+      null,
+      "συνέβαινε",
+      null,
+      null,
+      null
+    ],
+    "aorist": [
+      null,
+      null,
+      "συνέβη",
+      null,
+      null,
+      null
+    ],
+    "future": [
+      null,
+      null,
+      "θα συμβεί",
+      null,
+      null,
+      null
+    ]
+  },
+  "example": {
+    "el": "Τι συμβαίνει εδώ;",
+    "ru": "Что здесь происходит?"
+  },
+  "lemma_key": "συμβαίνει",
+  "surfaces": [
+    "συμβαίνει"
+  ],
+  "msg_ids": [
+    124423
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

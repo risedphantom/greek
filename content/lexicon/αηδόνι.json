@@ -1,0 +1,35 @@
+{
+  "lemma": "αηδόνι",
+  "translation": [
+    "соловей"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το αηδόνι",
+      "gen": "του αηδονιού",
+      "acc": "το αηδόνι"
+    },
+    "pl": {
+      "nom": "τα αηδόνια",
+      "gen": "των αηδονιών",
+      "acc": "τα αηδόνια"
+    }
+  },
+  "example": {
+    "el": "Το αηδόνι τραγουδάει όμορφα.",
+    "ru": "Соловей поёт красиво."
+  },
+  "lemma_key": "αηδόνι",
+  "surfaces": [
+    "αηδόνια"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

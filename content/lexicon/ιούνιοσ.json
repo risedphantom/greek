@@ -1,0 +1,35 @@
+{
+  "lemma": "Ιούνιος",
+  "translation": [
+    "июнь"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Ιούνιος",
+      "gen": "του Ιουνίου",
+      "acc": "τον Ιούνιο"
+    },
+    "pl": {
+      "nom": "οι Ιούνιοι",
+      "gen": "των Ιουνίων",
+      "acc": "τους Ιούνιους"
+    }
+  },
+  "example": {
+    "el": "Τον Ιούνιο έχει ζέστη.",
+    "ru": "В июне жарко."
+  },
+  "lemma_key": "ιούνιοσ",
+  "surfaces": [
+    "Ιουνίου"
+  ],
+  "msg_ids": [
+    124413
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "ομάδα",
+  "translation": [
+    "команда",
+    "группа"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ομάδα",
+      "gen": "της ομάδας",
+      "acc": "την ομάδα"
+    },
+    "pl": {
+      "nom": "οι ομάδες",
+      "gen": "των ομάδων",
+      "acc": "τις ομάδες"
+    }
+  },
+  "example": {
+    "el": "Παίζουμε σε μια ομάδα.",
+    "ru": "Мы играем в одной команде."
+  },
+  "lemma_key": "ομάδα",
+  "surfaces": [
+    "ομάδα"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

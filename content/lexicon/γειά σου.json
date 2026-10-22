@@ -1,0 +1,25 @@
+{
+  "lemma": "γειά σου",
+  "translation": [
+    "привет",
+    "здравствуй"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεια σου, Μαρία!",
+    "ru": "Привет, Мария!"
+  },
+  "lemma_key": "γειά σου",
+  "surfaces": [
+    "Γεια σου"
+  ],
+  "msg_ids": [
+    124447
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

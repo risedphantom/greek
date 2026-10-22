@@ -1,0 +1,35 @@
+{
+  "lemma": "λεφτά",
+  "translation": [
+    "деньги"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ά/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το λεφτό",
+      "gen": "του λεφτού",
+      "acc": "το λεφτό"
+    },
+    "pl": {
+      "nom": "τα λεφτά",
+      "gen": "των λεφτών",
+      "acc": "τα λεφτά"
+    }
+  },
+  "example": {
+    "el": "Δεν έχω λεφτά.",
+    "ru": "У меня нет денег."
+  },
+  "lemma_key": "λεφτά",
+  "surfaces": [
+    "λεφτά"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

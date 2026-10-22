@@ -1,0 +1,36 @@
+{
+  "lemma": "κουτί",
+  "translation": [
+    "коробка",
+    "ящик"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το κουτί",
+      "gen": "του κουτιού",
+      "acc": "το κουτί"
+    },
+    "pl": {
+      "nom": "τα κουτιά",
+      "gen": "των κουτιών",
+      "acc": "τα κουτιά"
+    }
+  },
+  "example": {
+    "el": "Ένα κουτί σοκολάτες.",
+    "ru": "Одна коробка конфет."
+  },
+  "lemma_key": "κουτί",
+  "surfaces": [
+    "κουτί"
+  ],
+  "msg_ids": [
+    124415
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

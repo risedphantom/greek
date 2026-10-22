@@ -1,0 +1,26 @@
+{
+  "lemma": "ωραία",
+  "translation": [
+    "хорошо",
+    "красиво",
+    "отлично"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πολύ ωραία!",
+    "ru": "Очень хорошо!"
+  },
+  "lemma_key": "ωραία",
+  "surfaces": [
+    "ωραία"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

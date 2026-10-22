@@ -1,0 +1,24 @@
+{
+  "lemma": "επτά",
+  "translation": [
+    "семь"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Έχω επτά βιβλία.",
+    "ru": "У меня семь книг."
+  },
+  "lemma_key": "επτά",
+  "surfaces": [
+    "επτά"
+  ],
+  "msg_ids": [
+    124421
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

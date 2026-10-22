@@ -1,0 +1,35 @@
+{
+  "lemma": "χτένα",
+  "translation": [
+    "расчёска"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η χτένα",
+      "gen": "της χτένας",
+      "acc": "τη χτένα"
+    },
+    "pl": {
+      "nom": "οι χτένες",
+      "gen": "των χτενών",
+      "acc": "τις χτένες"
+    }
+  },
+  "example": {
+    "el": "Πού είναι η χτένα μου;",
+    "ru": "Где моя расчёска?"
+  },
+  "lemma_key": "χτένα",
+  "surfaces": [
+    "χτένα"
+  ],
+  "msg_ids": [
+    124450
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

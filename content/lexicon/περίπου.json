@@ -1,0 +1,26 @@
+{
+  "lemma": "περίπου",
+  "translation": [
+    "примерно",
+    "около"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι περίπου δέκα χρονών.",
+    "ru": "Ему около десяти лет."
+  },
+  "lemma_key": "περίπου",
+  "surfaces": [
+    "περίπου"
+  ],
+  "msg_ids": [
+    124412,
+    124420
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

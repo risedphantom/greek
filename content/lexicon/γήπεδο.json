@@ -1,0 +1,36 @@
+{
+  "lemma": "γήπεδο",
+  "translation": [
+    "стадион",
+    "поле"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το γήπεδο",
+      "gen": "του γηπέδου",
+      "acc": "το γήπεδο"
+    },
+    "pl": {
+      "nom": "τα γήπεδα",
+      "gen": "των γηπέδων",
+      "acc": "τα γήπεδα"
+    }
+  },
+  "example": {
+    "el": "Το γήπεδο είναι μεγάλο.",
+    "ru": "Стадион большой."
+  },
+  "lemma_key": "γήπεδο",
+  "surfaces": [
+    "γήπεδο"
+  ],
+  "msg_ids": [
+    124422
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

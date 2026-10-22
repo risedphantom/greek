@@ -1,0 +1,25 @@
+{
+  "lemma": "κάνω βόλτες",
+  "translation": [
+    "гулять",
+    "прогуливаться"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μου αρέσει να κάνω βόλτες.",
+    "ru": "Мне нравится гулять."
+  },
+  "lemma_key": "κάνω βόλτεσ",
+  "surfaces": [
+    "κάνω βόλτες"
+  ],
+  "msg_ids": [
+    124422
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
