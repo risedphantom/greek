@@ -1,0 +1,24 @@
+{
+  "lemma": "Χαράλαμπος",
+  "translation": [
+    "Харалампос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ονομάζομαι Χαράλαμπος.",
+    "ru": "Меня зовут Харалампос."
+  },
+  "lemma_key": "χαράλαμποσ",
+  "surfaces": [
+    "Χαράλαμπος"
+  ],
+  "msg_ids": [
+    124760
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

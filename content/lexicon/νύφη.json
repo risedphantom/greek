@@ -1,0 +1,36 @@
+{
+  "lemma": "νύφη",
+  "translation": [
+    "невеста",
+    "сноха"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η νύφη",
+      "gen": "της νύφης",
+      "acc": "τη νύφη"
+    },
+    "pl": {
+      "nom": "οι νύφες",
+      "gen": "των νυφών",
+      "acc": "τις νύφες"
+    }
+  },
+  "example": {
+    "el": "Η νύφη φοράει λευκό φόρεμα.",
+    "ru": "Невеста одета в белое платье."
+  },
+  "lemma_key": "νύφη",
+  "surfaces": [
+    "νύφη"
+  ],
+  "msg_ids": [
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

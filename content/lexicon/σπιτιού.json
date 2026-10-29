@@ -1,0 +1,36 @@
+{
+  "lemma": "σπιτιού",
+  "translation": [
+    "дома",
+    "жилья"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το σπίτι",
+      "gen": "του σπιτιού",
+      "acc": "το σπίτι"
+    },
+    "pl": {
+      "nom": "τα σπίτια",
+      "gen": "των σπιτιών",
+      "acc": "τα σπίτια"
+    }
+  },
+  "example": {
+    "el": "Αυτό το σπίτι είναι παλιό.",
+    "ru": "Этот дом старый."
+  },
+  "lemma_key": "σπιτιού",
+  "surfaces": [
+    "σπιτιού"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

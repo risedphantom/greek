@@ -1,0 +1,26 @@
+{
+  "lemma": "αριστερά",
+  "translation": [
+    "слева",
+    "налево",
+    "левый"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πήγαινε αριστερά.",
+    "ru": "Иди налево."
+  },
+  "lemma_key": "αριστερά",
+  "surfaces": [
+    "αριστερά"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

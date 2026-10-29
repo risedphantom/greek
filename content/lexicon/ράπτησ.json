@@ -1,0 +1,35 @@
+{
+  "lemma": "ράπτης",
+  "translation": [
+    "портной"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο ράπτης",
+      "gen": "του ράφτη",
+      "acc": "τον ράφτη"
+    },
+    "pl": {
+      "nom": "οι ράφτες",
+      "gen": "των ραφτών",
+      "acc": "τους ράφτες"
+    }
+  },
+  "example": {
+    "el": "Ο ράπτης έφτιαξε το κοστούμι.",
+    "ru": "Портной сшил костюм."
+  },
+  "lemma_key": "ράπτησ",
+  "surfaces": [
+    "ράπτης"
+  ],
+  "msg_ids": [
+    124767
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

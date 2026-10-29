@@ -1,0 +1,35 @@
+{
+  "lemma": "ρολογάς",
+  "translation": [
+    "часовщик"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-άς/-άδες",
+  "forms": {
+    "sg": {
+      "nom": "ο ρολογάς",
+      "gen": "του ρολογά",
+      "acc": "τον ρολογά"
+    },
+    "pl": {
+      "nom": "οι ρολογάδες",
+      "gen": "των ρολογάδων",
+      "acc": "τους ρολογάδες"
+    }
+  },
+  "example": {
+    "el": "Ο ρολογάς φτιάχνει ρολόγια.",
+    "ru": "Часовщик чинит часы."
+  },
+  "lemma_key": "ρολογάσ",
+  "surfaces": [
+    "ρολογάς"
+  ],
+  "msg_ids": [
+    124765
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

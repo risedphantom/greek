@@ -1,0 +1,25 @@
+{
+  "lemma": "Λίλιαν",
+  "translation": [
+    "Лилиян"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Λίλιαν είναι από τη Βουλγαρία.",
+    "ru": "Лилиян из Болгарии."
+  },
+  "lemma_key": "λίλιαν",
+  "surfaces": [
+    "Λίλιαν"
+  ],
+  "msg_ids": [
+    124761,
+    124780
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

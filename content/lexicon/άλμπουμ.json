@@ -1,0 +1,35 @@
+{
+  "lemma": "άλμπουμ",
+  "translation": [
+    "альбом"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ουμ/-α",
+  "forms": {
+    "sg": {
+      "nom": "το άλμπουμ",
+      "gen": "του άλμπουμ",
+      "acc": "το άλμπουμ"
+    },
+    "pl": {
+      "nom": "τα άλμπουμ",
+      "gen": "των άλμπουμ",
+      "acc": "τα άλμπουμ"
+    }
+  },
+  "example": {
+    "el": "Αυτό είναι ένα νέο άλμπουμ.",
+    "ru": "Это новый альбом."
+  },
+  "lemma_key": "άλμπουμ",
+  "surfaces": [
+    "άλμπουμ"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

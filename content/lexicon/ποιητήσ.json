@@ -1,0 +1,35 @@
+{
+  "lemma": "ποιητής",
+  "translation": [
+    "поэт"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "της/-ής",
+  "forms": {
+    "sg": {
+      "nom": "ο ποιητής",
+      "gen": "του ποιητή",
+      "acc": "τον ποιητή"
+    },
+    "pl": {
+      "nom": "οι ποιητές",
+      "gen": "των ποιητών",
+      "acc": "τους ποιητές"
+    }
+  },
+  "example": {
+    "el": "Ο Γιάννης είναι ποιητής.",
+    "ru": "Яннис - поэт."
+  },
+  "lemma_key": "ποιητήσ",
+  "surfaces": [
+    "ποιητής"
+  ],
+  "msg_ids": [
+    124767
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

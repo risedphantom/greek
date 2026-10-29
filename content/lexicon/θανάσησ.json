@@ -1,0 +1,25 @@
+{
+  "lemma": "Θανάσης",
+  "translation": [
+    "Танасис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Θανάσης είναι φίλος μου.",
+    "ru": "Танасис — мой друг."
+  },
+  "lemma_key": "θανάσησ",
+  "surfaces": [
+    "Θανάσης"
+  ],
+  "msg_ids": [
+    124761,
+    124780
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

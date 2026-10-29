@@ -1,0 +1,25 @@
+{
+  "lemma": "Αντώνης",
+  "translation": [
+    "Антонис"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Αντώνης δουλεύει εδώ.",
+    "ru": "Антонис работает здесь."
+  },
+  "lemma_key": "αντώνησ",
+  "surfaces": [
+    "Αντώνης"
+  ],
+  "msg_ids": [
+    124761,
+    124780
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

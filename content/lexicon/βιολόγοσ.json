@@ -1,0 +1,35 @@
+{
+  "lemma": "βιολόγος",
+  "translation": [
+    "биолог"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο βιολόγος",
+      "gen": "του βιολόγου",
+      "acc": "τον βιολόγο"
+    },
+    "pl": {
+      "nom": "οι βιολόγοι",
+      "gen": "των βιολόγων",
+      "acc": "τους βιολόγους"
+    }
+  },
+  "example": {
+    "el": "Ο βιολόγος μελετά τα φυτά.",
+    "ru": "Биолог изучает растения."
+  },
+  "lemma_key": "βιολόγοσ",
+  "surfaces": [
+    "βιολόγος"
+  ],
+  "msg_ids": [
+    124766
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

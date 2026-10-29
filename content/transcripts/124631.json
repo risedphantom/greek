@@ -1,0 +1,11 @@
+{
+  "msg_id": 124631,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационное сообщение",
+  "body_md": "Нет, ребята, даже написать что-то с трудом ищу интернет мобильный.",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "αδέρφια",
+  "translation": [
+    "братья и сестры",
+    "братья"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το αδέρφι",
+      "gen": "του αδερφιού",
+      "acc": "το αδέρφι"
+    },
+    "pl": {
+      "nom": "τα αδέρφια",
+      "gen": "των αδερφιών",
+      "acc": "τα αδέρφια"
+    }
+  },
+  "example": {
+    "el": "Έχω δύο αδέρφια.",
+    "ru": "У меня двое братьев (сестер)."
+  },
+  "lemma_key": "αδέρφια",
+  "surfaces": [
+    "αδέρφια"
+  ],
+  "msg_ids": [
+    124759
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

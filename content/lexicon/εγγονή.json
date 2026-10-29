@@ -1,0 +1,35 @@
+{
+  "lemma": "εγγονή",
+  "translation": [
+    "внучка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η εγγονή",
+      "gen": "της εγγονής",
+      "acc": "την εγγονή"
+    },
+    "pl": {
+      "nom": "οι εγγονές",
+      "gen": "των εγγονών",
+      "acc": "τις εγγονές"
+    }
+  },
+  "example": {
+    "el": "Η εγγονή παίζει με τη μαμά της.",
+    "ru": "Внучка играет со своей мамой."
+  },
+  "lemma_key": "εγγονή",
+  "surfaces": [
+    "εγγονή"
+  ],
+  "msg_ids": [
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

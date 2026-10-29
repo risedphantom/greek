@@ -1,0 +1,24 @@
+{
+  "lemma": "Λουκάς",
+  "translation": [
+    "Лукас"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Λουκάς είναι φίλος.",
+    "ru": "Лукас — друг."
+  },
+  "lemma_key": "λουκάσ",
+  "surfaces": [
+    "Λουκάς"
+  ],
+  "msg_ids": [
+    124760
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

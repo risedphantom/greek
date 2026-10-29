@@ -1,0 +1,35 @@
+{
+  "lemma": "πωλήτρια",
+  "translation": [
+    "продавщица"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η πωλήτρια",
+      "gen": "της πωλήτριας",
+      "acc": "την πωλήτρια"
+    },
+    "pl": {
+      "nom": "οι πωλήτριες",
+      "gen": "των πωλητριών",
+      "acc": "τις πωλήτριες"
+    }
+  },
+  "example": {
+    "el": "Η πωλήτρια είναι ευγενική.",
+    "ru": "Продавщица вежлива."
+  },
+  "lemma_key": "πωλήτρια",
+  "surfaces": [
+    "πωλήτρια"
+  ],
+  "msg_ids": [
+    124768
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

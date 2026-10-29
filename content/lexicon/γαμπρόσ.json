@@ -1,0 +1,36 @@
+{
+  "lemma": "γαμπρός",
+  "translation": [
+    "жених",
+    "зять"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο γαμπρός",
+      "gen": "του γαμπρού",
+      "acc": "τον γαμπρό"
+    },
+    "pl": {
+      "nom": "οι γαμπροί",
+      "gen": "των γαμπρών",
+      "acc": "τους γαμπρούς"
+    }
+  },
+  "example": {
+    "el": "Ο γαμπρός είναι έτοιμος.",
+    "ru": "Жених готов."
+  },
+  "lemma_key": "γαμπρόσ",
+  "surfaces": [
+    "γαμπρός"
+  ],
+  "msg_ids": [
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

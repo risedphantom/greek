@@ -1,0 +1,36 @@
+{
+  "lemma": "πτυχίο",
+  "translation": [
+    "диплом",
+    "степень"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πτυχίο",
+      "gen": "του πτυχίου",
+      "acc": "το πτυχίο"
+    },
+    "pl": {
+      "nom": "τα πτυχία",
+      "gen": "των πτυχίων",
+      "acc": "τα πτυχία"
+    }
+  },
+  "example": {
+    "el": "Έχει πτυχίο πανεπιστημίου.",
+    "ru": "У него диплом университета."
+  },
+  "lemma_key": "πτυχίο",
+  "surfaces": [
+    "πτυχίο"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

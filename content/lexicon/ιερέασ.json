@@ -1,0 +1,35 @@
+{
+  "lemma": "ιερέας",
+  "translation": [
+    "священник"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-έας/-είς",
+  "forms": {
+    "sg": {
+      "nom": "ο ιερέας",
+      "gen": "του ιερέα",
+      "acc": "τον ιερέα"
+    },
+    "pl": {
+      "nom": "οι ιερείς",
+      "gen": "των ιερέων",
+      "acc": "τους ιερείς"
+    }
+  },
+  "example": {
+    "el": "Ο ιερέας διάβασε την ευχή.",
+    "ru": "Священник прочитал молитву."
+  },
+  "lemma_key": "ιερέασ",
+  "surfaces": [
+    "ιερέας"
+  ],
+  "msg_ids": [
+    124757
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

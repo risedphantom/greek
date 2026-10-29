@@ -1,0 +1,35 @@
+{
+  "lemma": "υφαντής",
+  "translation": [
+    "ткач"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ής/-ήδες",
+  "forms": {
+    "sg": {
+      "nom": "ο υφαντής",
+      "gen": "του υφαντή",
+      "acc": "τον υφαντή"
+    },
+    "pl": {
+      "nom": "οι υφαντές",
+      "gen": "των υφαντών",
+      "acc": "τους υφαντές"
+    }
+  },
+  "example": {
+    "el": "Ο υφαντής φτιάχνει υφάσματα.",
+    "ru": "Ткач делает ткани."
+  },
+  "lemma_key": "υφαντήσ",
+  "surfaces": [
+    "υφαντής"
+  ],
+  "msg_ids": [
+    124767
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

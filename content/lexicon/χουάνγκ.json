@@ -1,0 +1,24 @@
+{
+  "lemma": "Χουάνγκ",
+  "translation": [
+    "Хуанг"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το όνομα του φίλου μου είναι Χουάνγκ.",
+    "ru": "Моего друга зовут Хуанг."
+  },
+  "lemma_key": "χουάνγκ",
+  "surfaces": [
+    "Χουάνγκ"
+  ],
+  "msg_ids": [
+    124759
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

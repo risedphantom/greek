@@ -1,0 +1,35 @@
+{
+  "lemma": "μαμά",
+  "translation": [
+    "мама"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ά/-άδες",
+  "forms": {
+    "sg": {
+      "nom": "η μαμά",
+      "gen": "της μαμάς",
+      "acc": "τη μαμά"
+    },
+    "pl": {
+      "nom": "οι μαμάδες",
+      "gen": "των μαμάδων",
+      "acc": "τις μαμάδες"
+    }
+  },
+  "example": {
+    "el": "Η μαμά είναι στο σπίτι.",
+    "ru": "Мама дома."
+  },
+  "lemma_key": "μαμά",
+  "surfaces": [
+    "μαμά"
+  ],
+  "msg_ids": [
+    124759
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

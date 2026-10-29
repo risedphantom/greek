@@ -1,0 +1,38 @@
+{
+  "lemma": "θηλυκός",
+  "translation": [
+    "женский",
+    "самка"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "θηλυκός",
+      "pl": "θηλυκοί"
+    },
+    "f": {
+      "sg": "θηλυκή",
+      "pl": "θηλυκές"
+    },
+    "n": {
+      "sg": "θηλυκό",
+      "pl": "θηλυκά"
+    }
+  },
+  "example": {
+    "el": "Το θηλυκό είναι πιο μεγάλο.",
+    "ru": "Самка больше."
+  },
+  "lemma_key": "θηλυκόσ",
+  "surfaces": [
+    "θηλυκό"
+  ],
+  "msg_ids": [
+    124768
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

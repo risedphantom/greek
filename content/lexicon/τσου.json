@@ -1,0 +1,24 @@
+{
+  "lemma": "Τσου",
+  "translation": [
+    "Цу"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι το όνομα Τσου.",
+    "ru": "Это имя Цу."
+  },
+  "lemma_key": "τσου",
+  "surfaces": [
+    "Τσου"
+  ],
+  "msg_ids": [
+    124759
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

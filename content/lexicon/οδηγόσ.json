@@ -1,0 +1,37 @@
+{
+  "lemma": "οδηγός",
+  "translation": [
+    "водитель",
+    "гид"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο οδηγός",
+      "gen": "του οδηγού",
+      "acc": "τον οδηγό"
+    },
+    "pl": {
+      "nom": "οι οδηγοί",
+      "gen": "των οδηγών",
+      "acc": "τους οδηγούς"
+    }
+  },
+  "example": {
+    "el": "Είναι καλός οδηγός.",
+    "ru": "Он хороший водитель."
+  },
+  "lemma_key": "οδηγόσ",
+  "surfaces": [
+    "οδηγός"
+  ],
+  "msg_ids": [
+    124757,
+    124762
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

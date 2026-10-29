@@ -1,0 +1,35 @@
+{
+  "lemma": "αρτοποιός",
+  "translation": [
+    "пекарь"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο αρτοποιός",
+      "gen": "του αρτοποιού",
+      "acc": "τον αρτοποιό"
+    },
+    "pl": {
+      "nom": "οι αρτοποιοί",
+      "gen": "των αρτοποιών",
+      "acc": "τους αρτοποιούς"
+    }
+  },
+  "example": {
+    "el": "Ο αρτοποιός φτιάχνει ψωμί.",
+    "ru": "Пекарь делает хлеб."
+  },
+  "lemma_key": "αρτοποιόσ",
+  "surfaces": [
+    "αρτοποιός"
+  ],
+  "msg_ids": [
+    124767
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,37 @@
+{
+  "lemma": "τρίτος",
+  "translation": [
+    "третий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "τρίτος",
+      "pl": "τρίτοι"
+    },
+    "f": {
+      "sg": "τρίτη",
+      "pl": "τρίτες"
+    },
+    "n": {
+      "sg": "τρίτο",
+      "pl": "τρίτα"
+    }
+  },
+  "example": {
+    "el": "Αυτός είναι ο τρίτος όροφος.",
+    "ru": "Это третий этаж."
+  },
+  "lemma_key": "τρίτοσ",
+  "surfaces": [
+    "τρίτη"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

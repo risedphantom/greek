@@ -1,0 +1,35 @@
+{
+  "lemma": "ανεψιά",
+  "translation": [
+    "племянница"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ιά/-ιές",
+  "forms": {
+    "sg": {
+      "nom": "η ανεψιά",
+      "gen": "της ανεψιάς",
+      "acc": "την ανεψιά"
+    },
+    "pl": {
+      "nom": "οι ανεψιές",
+      "gen": "των ανεψιών",
+      "acc": "τις ανεψιές"
+    }
+  },
+  "example": {
+    "el": "Η ανεψιά μου έρχεται σήμερα.",
+    "ru": "Моя племянница приезжает сегодня."
+  },
+  "lemma_key": "ανεψιά",
+  "surfaces": [
+    "ανεψιά"
+  ],
+  "msg_ids": [
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

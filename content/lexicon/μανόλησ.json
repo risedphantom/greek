@@ -1,0 +1,25 @@
+{
+  "lemma": "Μανόλης",
+  "translation": [
+    "Манолис"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Μανόλης πίνει καφέ.",
+    "ru": "Манолис пьет кофе."
+  },
+  "lemma_key": "μανόλησ",
+  "surfaces": [
+    "Μανόλη",
+    "Μανόλης"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

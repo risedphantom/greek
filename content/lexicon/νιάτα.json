@@ -1,0 +1,35 @@
+{
+  "lemma": "νιάτα",
+  "translation": [
+    "молодость"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-ατα",
+  "forms": {
+    "sg": {
+      "nom": "το νιάτο",
+      "gen": "του νιάτου",
+      "acc": "το νιάτο"
+    },
+    "pl": {
+      "nom": "τα νιάτα",
+      "gen": "των νιάτων",
+      "acc": "τα νιάτα"
+    }
+  },
+  "example": {
+    "el": "Στα νιάτα μου, ήμουν πολύ δραστήριος.",
+    "ru": "В молодости я был очень активным."
+  },
+  "lemma_key": "νιάτα",
+  "surfaces": [
+    "νιάτα"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

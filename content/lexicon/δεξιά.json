@@ -1,0 +1,25 @@
+{
+  "lemma": "δεξιά",
+  "translation": [
+    "справа",
+    "направо"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το σπίτι είναι δεξιά.",
+    "ru": "Дом справа."
+  },
+  "lemma_key": "δεξιά",
+  "surfaces": [
+    "δεξιά"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

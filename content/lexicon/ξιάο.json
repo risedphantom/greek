@@ -1,0 +1,24 @@
+{
+  "lemma": "Ξιάο",
+  "translation": [
+    "Сяо"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Ξιάο είναι από την Κίνα.",
+    "ru": "Сяо из Китая."
+  },
+  "lemma_key": "ξιάο",
+  "surfaces": [
+    "Ξιάο"
+  ],
+  "msg_ids": [
+    124759
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

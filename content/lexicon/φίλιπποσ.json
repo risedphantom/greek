@@ -1,0 +1,24 @@
+{
+  "lemma": "Φίλιππος",
+  "translation": [
+    "Филипп"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Φίλιππος είναι Έλληνας.",
+    "ru": "Филипп – грек."
+  },
+  "lemma_key": "φίλιπποσ",
+  "surfaces": [
+    "Φίλιππος"
+  ],
+  "msg_ids": [
+    124760
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

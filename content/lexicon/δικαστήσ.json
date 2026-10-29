@@ -1,0 +1,35 @@
+{
+  "lemma": "δικαστής",
+  "translation": [
+    "судья"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ής/-είς",
+  "forms": {
+    "sg": {
+      "nom": "ο δικαστής",
+      "gen": "του δικαστή",
+      "acc": "τον δικαστή"
+    },
+    "pl": {
+      "nom": "οι δικαστές",
+      "gen": "των δικαστών",
+      "acc": "τους δικαστές"
+    }
+  },
+  "example": {
+    "el": "Ο δικαστής άκουσε την υπόθεση.",
+    "ru": "Судья выслушал дело."
+  },
+  "lemma_key": "δικαστήσ",
+  "surfaces": [
+    "δικαστής"
+  ],
+  "msg_ids": [
+    124757
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

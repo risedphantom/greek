@@ -1,0 +1,38 @@
+{
+  "lemma": "άριστος",
+  "translation": [
+    "отличный",
+    "превосходный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "άριστος",
+      "pl": "άριστοι"
+    },
+    "f": {
+      "sg": "αρίστη",
+      "pl": "άριστες"
+    },
+    "n": {
+      "sg": "άριστο",
+      "pl": "άριστα"
+    }
+  },
+  "example": {
+    "el": "Έλαβα άριστη βαθμολογία.",
+    "ru": "Я получил отличную оценку."
+  },
+  "lemma_key": "άριστοσ",
+  "surfaces": [
+    "Άριστος"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

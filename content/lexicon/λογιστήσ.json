@@ -1,0 +1,35 @@
+{
+  "lemma": "λογιστής",
+  "translation": [
+    "бухгалтер"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ής/-ές",
+  "forms": {
+    "sg": {
+      "nom": "ο λογιστής",
+      "gen": "του λογιστή",
+      "acc": "τον λογιστή"
+    },
+    "pl": {
+      "nom": "οι λογιστές",
+      "gen": "των λογιστών",
+      "acc": "τους λογιστές"
+    }
+  },
+  "example": {
+    "el": "Ο λογιστής δουλεύει πολύ.",
+    "ru": "Бухгалтер много работает."
+  },
+  "lemma_key": "λογιστήσ",
+  "surfaces": [
+    "λογιστής"
+  ],
+  "msg_ids": [
+    124757
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

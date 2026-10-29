@@ -1,0 +1,118 @@
+{
+  "msg_id": 124780,
+  "source": "photo",
+  "kind": "exercise",
+  "title": "Профессии",
+  "body_md": "## Τι δουλειά κάνεις;\n\n1. Η Λίλιαν είναι γιατρός.\n\n2. \n\n3. \n\n4. \n\n5. \n\n6. \n\n7. \n\n8. \n\n9. \n\n10. \n\n11.",
+  "greek_words": [
+    {
+      "lemma": "δουλειά",
+      "pos": "noun",
+      "surface": [
+        "δουλειά"
+      ]
+    },
+    {
+      "lemma": "κάνω",
+      "pos": "verb",
+      "surface": [
+        "κάνεις",
+        "κάνουν"
+      ]
+    },
+    {
+      "lemma": "Λίλιαν",
+      "pos": "noun",
+      "surface": [
+        "Λίλιαν"
+      ]
+    },
+    {
+      "lemma": "είμαι",
+      "pos": "verb",
+      "surface": [
+        "είναι"
+      ]
+    },
+    {
+      "lemma": "γιατρός",
+      "pos": "noun",
+      "surface": [
+        "γιατρός"
+      ]
+    },
+    {
+      "lemma": "Κώστας",
+      "pos": "noun",
+      "surface": [
+        "Κώστας"
+      ]
+    },
+    {
+      "lemma": "Αλέξανδρος",
+      "pos": "noun",
+      "surface": [
+        "Αλέξανδρος"
+      ]
+    },
+    {
+      "lemma": "Καίτη",
+      "pos": "noun",
+      "surface": [
+        "Καίτη"
+      ]
+    },
+    {
+      "lemma": "Νίκος",
+      "pos": "noun",
+      "surface": [
+        "Νίκος"
+      ]
+    },
+    {
+      "lemma": "Ρούλα",
+      "pos": "noun",
+      "surface": [
+        "Ρούλα"
+      ]
+    },
+    {
+      "lemma": "Θανάσης",
+      "pos": "noun",
+      "surface": [
+        "Θανάσης"
+      ]
+    },
+    {
+      "lemma": "Αντώνης",
+      "pos": "noun",
+      "surface": [
+        "Αντώνης"
+      ]
+    },
+    {
+      "lemma": "Ταμίλα",
+      "pos": "noun",
+      "surface": [
+        "Ταμίλα"
+      ]
+    },
+    {
+      "lemma": "Σωκράτης",
+      "pos": "noun",
+      "surface": [
+        "Σωκράτης"
+      ]
+    },
+    {
+      "lemma": "Νίνα",
+      "pos": "noun",
+      "surface": [
+        "Νίνα"
+      ]
+    }
+  ],
+  "topic_hint": "Профессии",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

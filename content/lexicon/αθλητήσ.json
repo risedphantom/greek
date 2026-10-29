@@ -1,0 +1,36 @@
+{
+  "lemma": "αθλητής",
+  "translation": [
+    "спортсмен"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ής/-ές",
+  "forms": {
+    "sg": {
+      "nom": "ο αθλητής",
+      "gen": "του αθλητή",
+      "acc": "τον αθλητή"
+    },
+    "pl": {
+      "nom": "οι αθλητές",
+      "gen": "των αθλητών",
+      "acc": "τους αθλητές"
+    }
+  },
+  "example": {
+    "el": "Είναι γνωστός αθλητής.",
+    "ru": "Он известный спортсмен."
+  },
+  "lemma_key": "αθλητήσ",
+  "surfaces": [
+    "αθλήτρια",
+    "αθλητής"
+  ],
+  "msg_ids": [
+    124762
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

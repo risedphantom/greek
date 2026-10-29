@@ -1,0 +1,11 @@
+{
+  "msg_id": 124632,
+  "source": "text",
+  "kind": "chat",
+  "title": "Вопрос о разнице во времени",
+  "body_md": "У нас теперь разница во времени? Сколько времени сейчас у вас?",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

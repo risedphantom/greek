@@ -1,0 +1,36 @@
+{
+  "lemma": "Χατζής",
+  "translation": [
+    "Хаджи"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ής/-ήδες",
+  "forms": {
+    "sg": {
+      "nom": "ο Χατζής",
+      "gen": "του Χατζή",
+      "acc": "τον Χατζή"
+    },
+    "pl": {
+      "nom": "οι Χατζήδες",
+      "gen": "των Χατζήδων",
+      "acc": "τους Χατζήδες"
+    }
+  },
+  "example": {
+    "el": "Ο Χατζής είναι ευγενικός.",
+    "ru": "Хаджи вежлив."
+  },
+  "lemma_key": "χατζήσ",
+  "surfaces": [
+    "Χατζή",
+    "Χατζής"
+  ],
+  "msg_ids": [
+    124760
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

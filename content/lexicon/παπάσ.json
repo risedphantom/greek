@@ -1,0 +1,36 @@
+{
+  "lemma": "παπάς",
+  "translation": [
+    "священник"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-άς/-άδες",
+  "forms": {
+    "sg": {
+      "nom": "ο παπάς",
+      "gen": "του παπά",
+      "acc": "τον παπά"
+    },
+    "pl": {
+      "nom": "οι παπάδες",
+      "gen": "των παπάδων",
+      "acc": "τους παπάδες"
+    }
+  },
+  "example": {
+    "el": "Ο παπάς διάβασε την ευχή.",
+    "ru": "Священник прочитал молитву."
+  },
+  "lemma_key": "παπάσ",
+  "surfaces": [
+    "παπάς"
+  ],
+  "msg_ids": [
+    124757,
+    124768
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

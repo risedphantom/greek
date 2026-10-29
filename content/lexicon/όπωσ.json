@@ -1,0 +1,26 @@
+{
+  "lemma": "όπως",
+  "translation": [
+    "как",
+    "подобно",
+    "будто"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάνε όπως σου είπα.",
+    "ru": "Делай, как я сказал."
+  },
+  "lemma_key": "όπωσ",
+  "surfaces": [
+    "όπως"
+  ],
+  "msg_ids": [
+    124760
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

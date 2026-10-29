@@ -1,0 +1,37 @@
+{
+  "lemma": "οικιακός",
+  "translation": [
+    "домашний"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ο, η, ο",
+  "forms": {
+    "m": {
+      "sg": "οικιακός",
+      "pl": "οικιακοί"
+    },
+    "f": {
+      "sg": "οικιακή",
+      "pl": "οικιακές"
+    },
+    "n": {
+      "sg": "οικιακό",
+      "pl": "οικιακά"
+    }
+  },
+  "example": {
+    "el": "Έχω οικιακά καθήκοντα.",
+    "ru": "У меня домашние обязанности."
+  },
+  "lemma_key": "οικιακόσ",
+  "surfaces": [
+    "οικιακά"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

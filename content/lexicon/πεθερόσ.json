@@ -1,0 +1,36 @@
+{
+  "lemma": "πεθερός",
+  "translation": [
+    "тесть",
+    "свекор"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο πεθερός",
+      "gen": "του πεθερού",
+      "acc": "τον πεθερό"
+    },
+    "pl": {
+      "nom": "οι πεθεροί",
+      "gen": "των πεθερών",
+      "acc": "τους πεθερούς"
+    }
+  },
+  "example": {
+    "el": "Ο πεθερός μου είναι γιατρός.",
+    "ru": "Мой тесть – врач."
+  },
+  "lemma_key": "πεθερόσ",
+  "surfaces": [
+    "πεθερός"
+  ],
+  "msg_ids": [
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

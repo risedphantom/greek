@@ -1,0 +1,35 @@
+{
+  "lemma": "γεωργός",
+  "translation": [
+    "фермер"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο γεωργός",
+      "gen": "του γεωργού",
+      "acc": "τον γεωργό"
+    },
+    "pl": {
+      "nom": "οι γεωργοί",
+      "gen": "των γεωργών",
+      "acc": "τους γεωργούς"
+    }
+  },
+  "example": {
+    "el": "Ο γεωργός δουλεύει στο χωράφι.",
+    "ru": "Фермер работает на поле."
+  },
+  "lemma_key": "γεωργόσ",
+  "surfaces": [
+    "γεωργός"
+  ],
+  "msg_ids": [
+    124765
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,37 @@
+{
+  "lemma": "παππούς",
+  "translation": [
+    "дедушка"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ύς/-είς",
+  "forms": {
+    "sg": {
+      "nom": "ο παππούς",
+      "gen": "του παππού",
+      "acc": "τον παππού"
+    },
+    "pl": {
+      "nom": "οι παππούδες",
+      "gen": "των παππούδων",
+      "acc": "τους παππούδες"
+    }
+  },
+  "example": {
+    "el": "Ο παππούς μου είναι σοφός.",
+    "ru": "Мой дедушка мудр."
+  },
+  "lemma_key": "παππούσ",
+  "surfaces": [
+    "παππούς"
+  ],
+  "msg_ids": [
+    124759,
+    124760,
+    124764
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,37 @@
+{
+  "lemma": "αργία",
+  "translation": [
+    "выходной",
+    "праздник",
+    "отпуск"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ία/-ίες",
+  "forms": {
+    "sg": {
+      "nom": "η αργία",
+      "gen": "της αργίας",
+      "acc": "την αργία"
+    },
+    "pl": {
+      "nom": "οι αργίες",
+      "gen": "των αργιών",
+      "acc": "τις αργίες"
+    }
+  },
+  "example": {
+    "el": "Αύριο είναι αργία.",
+    "ru": "Завтра выходной."
+  },
+  "lemma_key": "αργία",
+  "surfaces": [
+    "αργίες"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

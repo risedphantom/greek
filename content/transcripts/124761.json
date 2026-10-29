@@ -1,0 +1,118 @@
+{
+  "msg_id": 124761,
+  "source": "photo",
+  "kind": "exercise",
+  "title": "Профессии: что они делают?",
+  "body_md": "## Τι δουλειά κάνεις;\n\n16 Τι δουλειά κάνουν;\n\n1. Η Λίλιαν είναι γιατρός.\n\nΛίλιαν\n\nΚώστας\n\nΑλέξανδρος\n\n2.\n\nΝίκος\n\n3.\n\nΚαίτη\n\n4.\n\n5.\n\nΘανάσης\n\n6.\n\nΡούλα\n\n7.\n\nΤαμίλα\n\n8.\n\nΑντώνης\n\n9.\n\nΝίνα\n\n10.\n\nΣωκράτης\n\n11.",
+  "greek_words": [
+    {
+      "lemma": "δουλειά",
+      "pos": "noun",
+      "surface": [
+        "δουλειά"
+      ]
+    },
+    {
+      "lemma": "κάνω",
+      "pos": "verb",
+      "surface": [
+        "κάνεις",
+        "κάνουν"
+      ]
+    },
+    {
+      "lemma": "Λίλιαν",
+      "pos": "other",
+      "surface": [
+        "Λίλιαν"
+      ]
+    },
+    {
+      "lemma": "είμαι",
+      "pos": "verb",
+      "surface": [
+        "είναι"
+      ]
+    },
+    {
+      "lemma": "γιατρός",
+      "pos": "noun",
+      "surface": [
+        "γιατρός"
+      ]
+    },
+    {
+      "lemma": "Κώστας",
+      "pos": "other",
+      "surface": [
+        "Κώστας"
+      ]
+    },
+    {
+      "lemma": "Αλέξανδρος",
+      "pos": "other",
+      "surface": [
+        "Αλέξανδρος"
+      ]
+    },
+    {
+      "lemma": "Νίκος",
+      "pos": "other",
+      "surface": [
+        "Νίκος"
+      ]
+    },
+    {
+      "lemma": "Καίτη",
+      "pos": "other",
+      "surface": [
+        "Καίτη"
+      ]
+    },
+    {
+      "lemma": "Θανάσης",
+      "pos": "other",
+      "surface": [
+        "Θανάσης"
+      ]
+    },
+    {
+      "lemma": "Ρούλα",
+      "pos": "other",
+      "surface": [
+        "Ρούλα"
+      ]
+    },
+    {
+      "lemma": "Ταμίλα",
+      "pos": "other",
+      "surface": [
+        "Ταμίλα"
+      ]
+    },
+    {
+      "lemma": "Αντώνης",
+      "pos": "other",
+      "surface": [
+        "Αντώνης"
+      ]
+    },
+    {
+      "lemma": "Νίνα",
+      "pos": "other",
+      "surface": [
+        "Νίνα"
+      ]
+    },
+    {
+      "lemma": "Σωκράτης",
+      "pos": "other",
+      "surface": [
+        "Σωκράτης"
+      ]
+    }
+  ],
+  "topic_hint": "Профессии",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

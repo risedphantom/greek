@@ -1,0 +1,36 @@
+{
+  "lemma": "ελιά",
+  "translation": [
+    "олива",
+    "маслина"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "ιά/-ιές",
+  "forms": {
+    "sg": {
+      "nom": "η ελιά",
+      "gen": "της ελιάς",
+      "acc": "την ελιά"
+    },
+    "pl": {
+      "nom": "οι ελιές",
+      "gen": "των ελιών",
+      "acc": "τις ελιές"
+    }
+  },
+  "example": {
+    "el": "Φάγαμε νόστιμες ελιές.",
+    "ru": "Мы съели вкусные оливки."
+  },
+  "lemma_key": "ελιά",
+  "surfaces": [
+    "ελιές"
+  ],
+  "msg_ids": [
+    124781
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
