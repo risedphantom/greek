@@ -53,6 +53,7 @@ class LexiconReport:
 def _keep(key: str) -> bool:
     return (
         key not in STOPWORDS
+        and "/" not in key
         and len(_LETTER.findall(key)) >= MIN_LETTERS
         and bool(_GREEK_LETTER.search(key))
         and not _NON_GREEK_LETTER.search(key)
