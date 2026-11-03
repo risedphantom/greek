@@ -1,0 +1,35 @@
+{
+  "lemma": "Απρίλης",
+  "translation": [
+    "апрель"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ηδες",
+  "forms": {
+    "sg": {
+      "nom": "ο Απρίλης",
+      "gen": "του Απρίλη",
+      "acc": "τον Απρίλη"
+    },
+    "pl": {
+      "nom": "οι Απρίληδες",
+      "gen": "των Απρίληδων",
+      "acc": "τους Απρίληδες"
+    }
+  },
+  "example": {
+    "el": "Τον Απρίλη ο καιρός αλλάζει.",
+    "ru": "В апреле погода меняется."
+  },
+  "lemma_key": "απρίλησ",
+  "surfaces": [
+    "Απρίλης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

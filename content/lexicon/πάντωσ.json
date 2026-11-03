@@ -1,0 +1,26 @@
+{
+  "lemma": "πάντως",
+  "translation": [
+    "во всяком случае",
+    "однако"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θα έρθω, πάντως.",
+    "ru": "Я приду, во всяком случае."
+  },
+  "lemma_key": "πάντωσ",
+  "surfaces": [
+    "πάντως"
+  ],
+  "msg_ids": [
+    124912,
+    124913
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

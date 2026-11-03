@@ -1,0 +1,35 @@
+{
+  "lemma": "Μάης",
+  "translation": [
+    "май"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ηδες",
+  "forms": {
+    "sg": {
+      "nom": "ο Μάης",
+      "gen": "του Μάη",
+      "acc": "τον Μάη"
+    },
+    "pl": {
+      "nom": "οι Μάηδες",
+      "gen": "των Μάηδων",
+      "acc": "τους Μάηδες"
+    }
+  },
+  "example": {
+    "el": "Ο Μάης είναι μήνας της άνοιξης.",
+    "ru": "Май - это весенний месяц."
+  },
+  "lemma_key": "μάησ",
+  "surfaces": [
+    "Μάης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

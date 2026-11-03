@@ -1,0 +1,38 @@
+{
+  "lemma": "χειρότερος",
+  "translation": [
+    "худший",
+    "хуже"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "χειρότερος",
+      "pl": "χειρότεροι"
+    },
+    "f": {
+      "sg": "χειρότερη",
+      "pl": "χειρότερες"
+    },
+    "n": {
+      "sg": "χειρότερο",
+      "pl": "χειρότερα"
+    }
+  },
+  "example": {
+    "el": "Αυτό είναι χειρότερο.",
+    "ru": "Это хуже."
+  },
+  "lemma_key": "χειρότεροσ",
+  "surfaces": [
+    "χειρότερο"
+  ],
+  "msg_ids": [
+    124912
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

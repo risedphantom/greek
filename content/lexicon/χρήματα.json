@@ -1,0 +1,35 @@
+{
+  "lemma": "χρήματα",
+  "translation": [
+    "деньги"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το χρήμα",
+      "gen": "του χρήματος",
+      "acc": "το χρήμα"
+    },
+    "pl": {
+      "nom": "τα χρήματα",
+      "gen": "των χρημάτων",
+      "acc": "τα χρήματα"
+    }
+  },
+  "example": {
+    "el": "Δεν έχω πολλά χρήματα.",
+    "ru": "У меня мало денег."
+  },
+  "lemma_key": "χρήματα",
+  "surfaces": [
+    "χρήματα"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

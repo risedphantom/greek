@@ -1,0 +1,35 @@
+{
+  "lemma": "σοκολάτα",
+  "translation": [
+    "шоколад"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η σοκολάτα",
+      "gen": "της σοκολάτας",
+      "acc": "τη σοκολάτα"
+    },
+    "pl": {
+      "nom": "οι σοκολάτες",
+      "gen": "των σοκολάτων",
+      "acc": "τις σοκολάτες"
+    }
+  },
+  "example": {
+    "el": "Μου αρέσει η σοκολάτα.",
+    "ru": "Мне нравится шоколад."
+  },
+  "lemma_key": "σοκολάτα",
+  "surfaces": [
+    "σοκολάτα"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

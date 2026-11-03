@@ -1,0 +1,36 @@
+{
+  "lemma": "κόσμος",
+  "translation": [
+    "мир",
+    "люди"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο κόσμος",
+      "gen": "του κόσμου",
+      "acc": "τον κόσμο"
+    },
+    "pl": {
+      "nom": "οι κόσμοι",
+      "gen": "των κόσμων",
+      "acc": "τους κόσμους"
+    }
+  },
+  "example": {
+    "el": "Ο κόσμος είναι μεγάλος.",
+    "ru": "Мир велик."
+  },
+  "lemma_key": "κόσμοσ",
+  "surfaces": [
+    "κόσμος"
+  ],
+  "msg_ids": [
+    124907
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

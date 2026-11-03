@@ -1,0 +1,35 @@
+{
+  "lemma": "άνοιξη",
+  "translation": [
+    "весна"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η άνοιξη",
+      "gen": "της άνοιξης",
+      "acc": "την άνοιξη"
+    },
+    "pl": {
+      "nom": "οι άνοιξες",
+      "gen": "των ανοιξών",
+      "acc": "τις άνοιξες"
+    }
+  },
+  "example": {
+    "el": "Η άνοιξη είναι όμορφη.",
+    "ru": "Весна прекрасна."
+  },
+  "lemma_key": "άνοιξη",
+  "surfaces": [
+    "άνοιξης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,39 @@
+{
+  "lemma": "κακός",
+  "translation": [
+    "плохой",
+    "злой"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "κακός",
+      "pl": "κακοί"
+    },
+    "f": {
+      "sg": "κακή",
+      "pl": "κακές"
+    },
+    "n": {
+      "sg": "κακό",
+      "pl": "κακά"
+    }
+  },
+  "example": {
+    "el": "Αυτός είναι ένας κακός άνθρωπος.",
+    "ru": "Это плохой человек."
+  },
+  "lemma_key": "κακόσ",
+  "surfaces": [
+    "χειρότερο"
+  ],
+  "msg_ids": [
+    124911,
+    124913
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

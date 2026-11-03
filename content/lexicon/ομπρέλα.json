@@ -1,0 +1,36 @@
+{
+  "lemma": "ομπρέλα",
+  "translation": [
+    "зонт",
+    "зонтик"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ομπρέλα",
+      "gen": "της ομπρέλας",
+      "acc": "την ομπρέλα"
+    },
+    "pl": {
+      "nom": "οι ομπρέλες",
+      "gen": "των ομπρελών",
+      "acc": "τις ομπρέλες"
+    }
+  },
+  "example": {
+    "el": "Πάρε την ομπρέλα σου, βρέχει.",
+    "ru": "Возьми свой зонт, идет дождь."
+  },
+  "lemma_key": "ομπρέλα",
+  "surfaces": [
+    "ομπρέλα"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

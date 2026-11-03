@@ -1,0 +1,24 @@
+{
+  "lemma": "Μάρω",
+  "translation": [
+    "Маро"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Μάρω είναι φίλη μου.",
+    "ru": "Маро - моя подруга."
+  },
+  "lemma_key": "μάρω",
+  "surfaces": [
+    "Μάρω"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "καθώς",
+  "translation": [
+    "как",
+    "поскольку"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάνε όπως κάνω εγώ, καθώς σου είπα.",
+    "ru": "Делай, как я, как я тебе сказал."
+  },
+  "lemma_key": "καθώσ",
+  "surfaces": [
+    "καθώς"
+  ],
+  "msg_ids": [
+    124912
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "Φλεβάρης",
+  "translation": [
+    "февраль"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο Φλεβάρης",
+      "gen": "του Φλεβάρη",
+      "acc": "τον Φλεβάρη"
+    },
+    "pl": {
+      "nom": "οι Φλεβάρηδες",
+      "gen": "των Φλεβάρηδων",
+      "acc": "τους Φλεβάρηδες"
+    }
+  },
+  "example": {
+    "el": "Τον Φεβρουάριο έχει κρύο.",
+    "ru": "В феврале холодно."
+  },
+  "lemma_key": "φλεβάρησ",
+  "surfaces": [
+    "Φλεβάρης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

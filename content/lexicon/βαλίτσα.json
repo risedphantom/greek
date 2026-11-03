@@ -1,0 +1,35 @@
+{
+  "lemma": "βαλίτσα",
+  "translation": [
+    "чемодан"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η βαλίτσα",
+      "gen": "της βαλίτσας",
+      "acc": "τη βαλίτσα"
+    },
+    "pl": {
+      "nom": "οι βαλίτσες",
+      "gen": "των βαλιτσών",
+      "acc": "τις βαλίτσες"
+    }
+  },
+  "example": {
+    "el": "Έχω μια μεγάλη βαλίτσα.",
+    "ru": "У меня есть большой чемодан."
+  },
+  "lemma_key": "βαλίτσα",
+  "surfaces": [
+    "βαλίτσες"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

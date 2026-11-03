@@ -1,0 +1,25 @@
+{
+  "lemma": "παλιός χρόνος",
+  "translation": [
+    "прошлое",
+    "старые времена"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μου αρέσει να θυμάμαι παλιά χρόνια.",
+    "ru": "Мне нравится вспоминать старые времена."
+  },
+  "lemma_key": "παλιόσ χρόνοσ",
+  "surfaces": [
+    "παλιά χρόνια"
+  ],
+  "msg_ids": [
+    124912
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

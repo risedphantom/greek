@@ -1,0 +1,36 @@
+{
+  "lemma": "κασετίνα",
+  "translation": [
+    "пенал",
+    "кейс"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η κασετίνα",
+      "gen": "της κασετίνας",
+      "acc": "την κασετίνα"
+    },
+    "pl": {
+      "nom": "οι κασετίνες",
+      "gen": "των κασετινών",
+      "acc": "τις κασετίνες"
+    }
+  },
+  "example": {
+    "el": "Η κασετίνα είναι γεμάτη.",
+    "ru": "Пенал полон."
+  },
+  "lemma_key": "κασετίνα",
+  "surfaces": [
+    "κασετίνα"
+  ],
+  "msg_ids": [
+    125023
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

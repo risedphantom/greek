@@ -1,0 +1,35 @@
+{
+  "lemma": "κεφάλι",
+  "translation": [
+    "голова"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το κεφάλι",
+      "gen": "του κεφαλιού",
+      "acc": "το κεφάλι"
+    },
+    "pl": {
+      "nom": "τα κεφάλια",
+      "gen": "των κεφαλιών",
+      "acc": "τα κεφάλια"
+    }
+  },
+  "example": {
+    "el": "Πονάει το κεφάλι μου.",
+    "ru": "У меня болит голова."
+  },
+  "lemma_key": "κεφάλι",
+  "surfaces": [
+    "κεφάλι"
+  ],
+  "msg_ids": [
+    125021
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

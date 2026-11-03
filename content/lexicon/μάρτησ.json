@@ -1,0 +1,35 @@
+{
+  "lemma": "Μάρτης",
+  "translation": [
+    "март"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ηδες",
+  "forms": {
+    "sg": {
+      "nom": "ο Μάρτης",
+      "gen": "του Μάρτη",
+      "acc": "τον Μάρτη"
+    },
+    "pl": {
+      "nom": "οι Μάρτηδες",
+      "gen": "των Μάρτηδων",
+      "acc": "τους Μάρτηδες"
+    }
+  },
+  "example": {
+    "el": "Ο Μάρτης είναι κρύος.",
+    "ru": "Март холодный."
+  },
+  "lemma_key": "μάρτησ",
+  "surfaces": [
+    "Μάρτης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

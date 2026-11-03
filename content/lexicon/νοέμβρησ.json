@@ -1,0 +1,35 @@
+{
+  "lemma": "Νοέμβρης",
+  "translation": [
+    "ноябрь"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ηδες",
+  "forms": {
+    "sg": {
+      "nom": "ο Νοέμβρης",
+      "gen": "του Νοέμβρη",
+      "acc": "τον Νοέμβρη"
+    },
+    "pl": {
+      "nom": "οι Νοέμβρηδες",
+      "gen": "των Νοέμβρηδων",
+      "acc": "τους Νοέμβρηδες"
+    }
+  },
+  "example": {
+    "el": "Ο Νοέμβρης είναι χειμώνας.",
+    "ru": "Ноябрь - это зима."
+  },
+  "lemma_key": "νοέμβρησ",
+  "surfaces": [
+    "Νοέμβρης"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

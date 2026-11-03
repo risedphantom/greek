@@ -1,0 +1,25 @@
+{
+  "lemma": "από ό,τι",
+  "translation": [
+    "чем",
+    "чем то, что"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είναι καλύτερο από ό,τι περίμενα.",
+    "ru": "Это лучше, чем я ожидал."
+  },
+  "lemma_key": "από ότι",
+  "surfaces": [
+    "απ' ό,τι"
+  ],
+  "msg_ids": [
+    124912
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

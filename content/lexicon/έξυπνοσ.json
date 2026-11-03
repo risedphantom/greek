@@ -1,0 +1,38 @@
+{
+  "lemma": "έξυπνος",
+  "translation": [
+    "умный",
+    "сообразительный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "έξυπνος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "έξυπνος",
+      "pl": "έξυπνοι"
+    },
+    "f": {
+      "sg": "έξυπνη",
+      "pl": "έξυπνες"
+    },
+    "n": {
+      "sg": "έξυπνο",
+      "pl": "έξυπνα"
+    }
+  },
+  "example": {
+    "el": "Είναι έξυπνος μαθητής.",
+    "ru": "Он умный ученик."
+  },
+  "lemma_key": "έξυπνοσ",
+  "surfaces": [
+    "έξυπνος"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

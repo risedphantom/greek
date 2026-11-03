@@ -1,0 +1,35 @@
+{
+  "lemma": "Ιούλιος",
+  "translation": [
+    "июль"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Ιούλιος",
+      "gen": "του Ιουλίου",
+      "acc": "τον Ιούλιο"
+    },
+    "pl": {
+      "nom": "οι Ιούλιοι",
+      "gen": "των Ιουλίων",
+      "acc": "τους Ιούλιους"
+    }
+  },
+  "example": {
+    "el": "Ο Ιούλιος είναι καλοκαίρι.",
+    "ru": "Июль - это лето."
+  },
+  "lemma_key": "ιούλιοσ",
+  "surfaces": [
+    "Ιούλιος"
+  ],
+  "msg_ids": [
+    124903
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

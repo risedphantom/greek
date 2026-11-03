@@ -1,0 +1,40 @@
+{
+  "msg_id": 125019,
+  "source": "text",
+  "kind": "chat",
+  "title": "Поздравление",
+  "body_md": "Антон, С Днем Рождения! Χρόνια πολλά! Ο'τι επιθυμείς!",
+  "greek_words": [
+    {
+      "lemma": "χρόνια",
+      "pos": "other",
+      "surface": [
+        "Χρόνια"
+      ]
+    },
+    {
+      "lemma": "πολλά",
+      "pos": "adj",
+      "surface": [
+        "πολλά"
+      ]
+    },
+    {
+      "lemma": "ό,τι",
+      "pos": "phrase",
+      "surface": [
+        "Ο'τι"
+      ]
+    },
+    {
+      "lemma": "επιθυμώ",
+      "pos": "verb",
+      "surface": [
+        "επιθυμείς"
+      ]
+    }
+  ],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

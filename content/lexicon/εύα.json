@@ -1,0 +1,24 @@
+{
+  "lemma": "Εύα",
+  "translation": [
+    "Ева"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Εύα είναι στο σπίτι.",
+    "ru": "Ева дома."
+  },
+  "lemma_key": "εύα",
+  "surfaces": [
+    "Εύα"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

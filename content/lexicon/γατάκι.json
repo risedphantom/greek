@@ -1,0 +1,35 @@
+{
+  "lemma": "γατάκι",
+  "translation": [
+    "котёнок"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το γατάκι",
+      "gen": "του γατιού",
+      "acc": "το γατάκι"
+    },
+    "pl": {
+      "nom": "τα γατάκια",
+      "gen": "των γατιών",
+      "acc": "τα γατάκια"
+    }
+  },
+  "example": {
+    "el": "Το γατάκι κοιμάται.",
+    "ru": "Котёнок спит."
+  },
+  "lemma_key": "γατάκι",
+  "surfaces": [
+    "γατάκια"
+  ],
+  "msg_ids": [
+    125022
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
