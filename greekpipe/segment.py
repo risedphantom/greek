@@ -17,7 +17,8 @@ _MARKER_WORDS = r"д/з|домашн\w*[^\S\n]+задани\w*|высылаю з
 _MARKER = re.compile(_MARKER_WORDS, re.IGNORECASE)
 _DUE_DATE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\b")
 _DUE_TOMORROW = re.compile(r"^\W*на\s+завтра", re.IGNORECASE)
-_INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен|перев|выучи|\bучи[мт]|состав|прослуш", re.IGNORECASE)
+_INSTRUCTION = re.compile(r"тетрад|упражн|выполн|прочита|повтор|письменно|устно|сочинен|перев|выучи|\bучи[мт]|состав|прослуш|описа", re.IGNORECASE)
+_ADDENDUM = re.compile(r"^(добавила|добавляю)\s+задани", re.IGNORECASE)
 _MEETING = re.compile(r"telemost|zoom", re.IGNORECASE)
 _GREETING = re.compile(r"^(доброе утро|добрый день|добрый вечер|привет)[!.,]*\s*", re.IGNORECASE)
 _MARKER_HEAD = re.compile(
@@ -32,7 +33,7 @@ _INSTRUCTION_END = re.compile(r"[:\n]")
 _TYPE_RULES = [
     (re.compile(r"тетрад", re.IGNORECASE), "тетрадь"),
     (re.compile(r"повтор|знать|выучить", re.IGNORECASE), "повторить"),
-    (re.compile(r"сочинен|составить", re.IGNORECASE), "сочинение"),
+    (re.compile(r"сочинен|составить|описа", re.IGNORECASE), "сочинение"),
     (re.compile(r"прочитать|текст|перев", re.IGNORECASE), "текст"),
     (re.compile(r"прослуш|трек|аудио", re.IGNORECASE), "аудио"),
     (re.compile(r"упр|выполн|письменно|устно|раскр", re.IGNORECASE), "упражнение"),
@@ -93,7 +94,15 @@ def _groups(messages: list[dict]) -> list[list[dict]]:
             groups[-1].append(msg)
         else:
             groups.append([msg])
-    return groups
+    # «Добавила задание» after a long pause extends that day's homework.
+    merged: list[list[dict]] = []
+    for group in groups:
+        addendum = any(_ADDENDUM.search(_GREETING.sub("", (m["text"] or "").strip())) for m in group)
+        if addendum and merged and _when(merged[-1][0]).date() == _when(group[0]).date():
+            merged[-1].extend(group)
+        else:
+            merged.append(group)
+    return merged
 
 
 def _explicit_due(text: str, assigned: date) -> date | None:
@@ -181,6 +190,7 @@ def tasks_for(session: Session, messages: list[dict], transcripts: dict[int, dic
     held: dict[int, Task | None] = {}  # reply-targeted media -> task current when it arrived
     albums: dict[int, Task] = {}
     current: Task | None = None
+    previous: dict | None = None
 
     def new_task(type_: str, text: str) -> Task:
         task = Task(len(tasks), type_, text, [])
@@ -205,6 +215,9 @@ def tasks_for(session: Session, messages: list[dict], transcripts: dict[int, dic
         return task
 
     for msg in msgs:
+        if previous is not None and _when(msg) - _when(previous) > SESSION_GAP:
+            current = None  # a later addendum starts its own tasks
+        previous = msg
         reply = msg["reply_to"] if msg["reply_to"] in media else None
         if msg["media_kind"]:
             if msg["id"] in reply_targets:
@@ -224,6 +237,12 @@ def tasks_for(session: Session, messages: list[dict], transcripts: dict[int, dic
             or reply in held
             or (current is not None and bool(_CONTINUATION.search(text) or not _CYRILLIC.search(text)))
         )
+        if text and _has_marker(msg) and not _is_instruction(text) and not continuation:
+            # «Я д/з озвучила…\nОписание…\nповторить…»: the instructions follow a chatty head.
+            for line in text.splitlines():
+                if _is_instruction(line):
+                    current = new_task(task_type(line, kind), line)
+            continue
         if not text or (kind in (None, "chat") and not _is_instruction(text) and not continuation):
             continue
         if reply in owner:

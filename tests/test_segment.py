@@ -283,3 +283,25 @@ def test_marker_split_across_lines_does_not_crash():
     assert segment._explicit_due("Домашнее\nзадание на 22.10", date(2026, 10, 18)) is None
     [session] = segment.sessions([_msg(1, "08:00", "Домашнее\nзадание на 22.10", day="2026-10-18")], {})
     assert session.message_ids == [1]
+
+
+def test_marker_with_chatty_head_and_late_addendum():
+    # Shape of 06.11 (125153-125155): instructions under a chatty first line,
+    # then an extra exercise photo 2 h later with «Добавила задание».
+    day = "2026-11-06"
+    msgs = [
+        _msg(125153, "10:01", "Добрый день!\nЯ д/з озвучила в конце занятия\n"
+             "Описание 2 картинок со всеми фразами, которые я дала\n"
+             "М. Р на -ος, повторить остальные склонения", day=day),
+        _msg(125154, "12:09", media_kind="photo", day=day),
+        _msg(125155, "12:10", "Добавила задание, Антону мало показалось😊", day=day),
+    ]
+    transcripts = {125154: {"kind": "exercise", "title": "Артикли"}, 125155: {"kind": "chat"}}
+    [hw] = segment.sessions(msgs, transcripts)
+    assert (hw.kind, hw.message_ids) == ("homework", [125153, 125154, 125155])
+    tasks = segment.tasks_for(hw, msgs, transcripts)
+    assert [(t.type, t.text, t.media_ids) for t in tasks] == [
+        ("сочинение", "Описание 2 картинок со всеми фразами, которые я дала", []),
+        ("повторить", "М. Р на -ος, повторить остальные склонения", []),
+        ("упражнение", "Артикли", [125154]),
+    ]
