@@ -1,0 +1,25 @@
+{
+  "lemma": "παιδικά χρόνια",
+  "translation": [
+    "детские годы"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Θυμάμαι τα παιδικά μου χρόνια.",
+    "ru": "Я помню свое детство."
+  },
+  "lemma_key": "παιδικά χρόνια",
+  "surfaces": [
+    "παιδικά",
+    "χρόνια"
+  ],
+  "msg_ids": [
+    125124
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

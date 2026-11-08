@@ -1,0 +1,24 @@
+{
+  "lemma": "Μανωλιό",
+  "translation": [
+    "Манолио"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Μανωλιό είναι καλός.",
+    "ru": "Манолио хороший."
+  },
+  "lemma_key": "μανωλιό",
+  "surfaces": [
+    "Μανωλιό"
+  ],
+  "msg_ids": [
+    125114
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "από τότε και ύστερα",
+  "translation": [
+    "с тех пор",
+    "после этого"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Από τότε και ύστερα, δεν τον είδα ξανά.",
+    "ru": "С тех пор я его больше не видел."
+  },
+  "lemma_key": "από τότε και ύστερα",
+  "surfaces": [
+    "από τότε και ύστερα"
+  ],
+  "msg_ids": [
+    125120
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

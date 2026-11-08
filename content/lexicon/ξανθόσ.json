@@ -1,0 +1,38 @@
+{
+  "lemma": "ξανθός",
+  "translation": [
+    "светлый",
+    "блондин"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "ξανθός",
+      "pl": "ξανθοί"
+    },
+    "f": {
+      "sg": "ξανθιά",
+      "pl": "ξανθιές"
+    },
+    "n": {
+      "sg": "ξανθό",
+      "pl": "ξανθά"
+    }
+  },
+  "example": {
+    "el": "Έχει ξανθά μαλλιά.",
+    "ru": "У нее светлые волосы."
+  },
+  "lemma_key": "ξανθόσ",
+  "surfaces": [
+    "ξανθά"
+  ],
+  "msg_ids": [
+    125125
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

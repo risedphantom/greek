@@ -1,0 +1,25 @@
+{
+  "lemma": "ίσως",
+  "translation": [
+    "может быть",
+    "возможно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ίσως αύριο να βρέξει.",
+    "ru": "Может быть, завтра пойдёт дождь."
+  },
+  "lemma_key": "ίσωσ",
+  "surfaces": [
+    "ίσως"
+  ],
+  "msg_ids": [
+    125123
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "για καλή μας τύχη",
+  "translation": [
+    "к нашему счастью",
+    "к счастью"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Για καλή μας τύχη, ήρθε νωρίς.",
+    "ru": "К нашему счастью, он пришёл рано."
+  },
+  "lemma_key": "για καλή μασ τύχη",
+  "surfaces": [
+    "για καλή μας τύχη"
+  ],
+  "msg_ids": [
+    125120
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Δημητρό",
+  "translation": [
+    "Димитро"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Γεια σου, Δημητρό!",
+    "ru": "Привет, Димитро!"
+  },
+  "lemma_key": "δημητρό",
+  "surfaces": [
+    "Δημητρό"
+  ],
+  "msg_ids": [
+    125114
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

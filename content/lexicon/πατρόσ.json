@@ -1,0 +1,35 @@
+{
+  "lemma": "πατρός",
+  "translation": [
+    "отца"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος",
+  "forms": {
+    "sg": {
+      "nom": "ο πατέρας",
+      "gen": "του πατρός",
+      "acc": "τον πατέρα"
+    },
+    "pl": {
+      "nom": "οι πατέρες",
+      "gen": "των πατέρων",
+      "acc": "τους πατέρες"
+    }
+  },
+  "example": {
+    "el": "Η αγάπη του πατρός είναι μεγάλη.",
+    "ru": "Любовь отца велика."
+  },
+  "lemma_key": "πατρόσ",
+  "surfaces": [
+    "πατΟСС"
+  ],
+  "msg_ids": [
+    125119
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "σορτς",
+  "translation": [
+    "шорты"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "άκλιτο",
+  "forms": {
+    "sg": {
+      "nom": "το σορτς",
+      "gen": "του σορτς",
+      "acc": "το σορτς"
+    },
+    "pl": {
+      "nom": "τα σορτς",
+      "gen": "των σορτς",
+      "acc": "τα σορτς"
+    }
+  },
+  "example": {
+    "el": "Φοράω ένα μπλε σορτς.",
+    "ru": "Я ношу синие шорты."
+  },
+  "lemma_key": "σορτσ",
+  "surfaces": [
+    "σορτς"
+  ],
+  "msg_ids": [
+    125124
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Σπύρος",
+  "translation": [
+    "Спирос"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Σπύρος είναι καλός φίλος.",
+    "ru": "Спирос - хороший друг."
+  },
+  "lemma_key": "σπύροσ",
+  "surfaces": [
+    "Σπύρο"
+  ],
+  "msg_ids": [
+    125113
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

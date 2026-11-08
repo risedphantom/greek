@@ -1,0 +1,35 @@
+{
+  "lemma": "μελάνι",
+  "translation": [
+    "чернила"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το μελάνι",
+      "gen": "του μελανιού",
+      "acc": "το μελάνι"
+    },
+    "pl": {
+      "nom": "τα μελάνια",
+      "gen": "των μελανιών",
+      "acc": "τα μελάνια"
+    }
+  },
+  "example": {
+    "el": "Το μελάνι είναι μαύρο.",
+    "ru": "Чернила черные."
+  },
+  "lemma_key": "μελάνι",
+  "surfaces": [
+    "μελάνι"
+  ],
+  "msg_ids": [
+    125154
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

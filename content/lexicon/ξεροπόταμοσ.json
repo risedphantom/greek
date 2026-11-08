@@ -1,0 +1,25 @@
+{
+  "lemma": "Ξεροπόταμος",
+  "translation": [
+    "Ксеропотамос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στο Ξεροπόταμο.",
+    "ru": "Я живу в Ксеропотамосе."
+  },
+  "lemma_key": "ξεροπόταμοσ",
+  "surfaces": [
+    "Ξεροπόταμος",
+    "Ξεροπόταμου"
+  ],
+  "msg_ids": [
+    125113
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

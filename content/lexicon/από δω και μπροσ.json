@@ -1,0 +1,25 @@
+{
+  "lemma": "από δω και μπρος",
+  "translation": [
+    "с этого момента",
+    "дальше"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Από δω και μπρος θα είμαι συνεπής.",
+    "ru": "С этого момента я буду последователен."
+  },
+  "lemma_key": "από δω και μπροσ",
+  "surfaces": [
+    "από δω και μπρος"
+  ],
+  "msg_ids": [
+    125120
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

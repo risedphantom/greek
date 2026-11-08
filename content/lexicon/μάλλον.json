@@ -1,0 +1,27 @@
+{
+  "lemma": "μάλλον",
+  "translation": [
+    "скорее",
+    "вероятно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Μάλλον θα βρέξει.",
+    "ru": "Вероятно, пойдет дождь."
+  },
+  "lemma_key": "μάλλον",
+  "surfaces": [
+    "Μάλλον",
+    "μάλλον"
+  ],
+  "msg_ids": [
+    125123,
+    125125
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

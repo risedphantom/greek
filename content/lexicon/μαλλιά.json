@@ -1,0 +1,35 @@
+{
+  "lemma": "μαλλιά",
+  "translation": [
+    "волосы"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το μαλλί",
+      "gen": "του μαλλιού",
+      "acc": "το μαλλί"
+    },
+    "pl": {
+      "nom": "τα μαλλιά",
+      "gen": "των μαλλιών",
+      "acc": "τα μαλλιά"
+    }
+  },
+  "example": {
+    "el": "Έχει μακριά μαλλιά.",
+    "ru": "У нее длинные волосы."
+  },
+  "lemma_key": "μαλλιά",
+  "surfaces": [
+    "μαλλιά"
+  ],
+  "msg_ids": [
+    125125
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "Θόδωρος",
+  "translation": [
+    "Федор"
+  ],
+  "pos": "other",
+  "gender": "m",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Θόδωρος είναι φίλος μου.",
+    "ru": "Федор мой друг."
+  },
+  "lemma_key": "θόδωροσ",
+  "surfaces": [
+    "Θόδωρος",
+    "Θόδωρου"
+  ],
+  "msg_ids": [
+    125113
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

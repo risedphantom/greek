@@ -1,0 +1,25 @@
+{
+  "lemma": "Ξενόπουλος",
+  "translation": [
+    "Ксенопулос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Ξενόπουλος ήταν συγγραφέας.",
+    "ru": "Ксенопулос был писателем."
+  },
+  "lemma_key": "ξενόπουλοσ",
+  "surfaces": [
+    "Ξενόπουλος",
+    "Ξενόπουλου"
+  ],
+  "msg_ids": [
+    125113
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

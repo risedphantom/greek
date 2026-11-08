@@ -1,0 +1,24 @@
+{
+  "lemma": "από πού",
+  "translation": [
+    "откуда"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Από πού είσαι;",
+    "ru": "Откуда ты?"
+  },
+  "lemma_key": "από πού",
+  "surfaces": [
+    "από πού"
+  ],
+  "msg_ids": [
+    125118
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

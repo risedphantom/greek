@@ -1,0 +1,25 @@
+{
+  "lemma": "επιπλέον",
+  "translation": [
+    "кроме того",
+    "дополнительно"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Επιπλέον, έχω πολλή δουλειά.",
+    "ru": "Кроме того, у меня много работы."
+  },
+  "lemma_key": "επιπλέον",
+  "surfaces": [
+    "Επιπλέον"
+  ],
+  "msg_ids": [
+    125123
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

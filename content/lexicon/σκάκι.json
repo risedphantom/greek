@@ -1,0 +1,35 @@
+{
+  "lemma": "σκάκι",
+  "translation": [
+    "шахматы"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το σκάκι",
+      "gen": "του σκακιού",
+      "acc": "το σκάκι"
+    },
+    "pl": {
+      "nom": "τα σκακιά",
+      "gen": "των σκακιών",
+      "acc": "τα σκακιά"
+    }
+  },
+  "example": {
+    "el": "Παίζω σκάκι κάθε Τρίτη.",
+    "ru": "Я играю в шахматы каждый вторник."
+  },
+  "lemma_key": "σκάκι",
+  "surfaces": [
+    "σκάκι"
+  ],
+  "msg_ids": [
+    125124
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,11 @@
+{
+  "msg_id": 125155,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационное",
+  "body_md": "Добавила задание, Антону мало показалось😊",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

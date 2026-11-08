@@ -1,0 +1,25 @@
+{
+  "lemma": "όπως και να 'ναι",
+  "translation": [
+    "как бы то ни было",
+    "в любом случае"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Όπως και να 'ναι, θα έρθω.",
+    "ru": "Как бы то ни было, я приду."
+  },
+  "lemma_key": "όπωσ και να ναι",
+  "surfaces": [
+    "όπως και να 'ναι"
+  ],
+  "msg_ids": [
+    125120
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
