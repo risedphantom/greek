@@ -1,0 +1,24 @@
+{
+  "lemma": "διακόσια",
+  "translation": [
+    "двести"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "διακόσια",
+    "ru": "двести"
+  },
+  "lemma_key": "διακόσια",
+  "surfaces": [
+    "διακόσια"
+  ],
+  "msg_ids": [
+    125117
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

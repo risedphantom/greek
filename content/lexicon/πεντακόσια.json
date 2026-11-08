@@ -1,0 +1,24 @@
+{
+  "lemma": "πεντακόσια",
+  "translation": [
+    "пятьсот"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "πεντακόσια",
+    "ru": "пятьсот"
+  },
+  "lemma_key": "πεντακόσια",
+  "surfaces": [
+    "πεντακόσια"
+  ],
+  "msg_ids": [
+    125117
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
