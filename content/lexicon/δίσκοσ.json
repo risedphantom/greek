@@ -1,0 +1,35 @@
+{
+  "lemma": "δίσκος",
+  "translation": [
+    "диск"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο δίσκος",
+      "gen": "του δίσκου",
+      "acc": "τον δίσκο"
+    },
+    "pl": {
+      "nom": "οι δίσκοι",
+      "gen": "των δίσκων",
+      "acc": "τους δίσκους"
+    }
+  },
+  "example": {
+    "el": "Αγόρασα έναν δίσκο.",
+    "ru": "Я купил диск."
+  },
+  "lemma_key": "δίσκοσ",
+  "surfaces": [
+    "δίσκος"
+  ],
+  "msg_ids": [
+    125211
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

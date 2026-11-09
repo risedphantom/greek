@@ -1,0 +1,35 @@
+{
+  "lemma": "πόδι",
+  "translation": [
+    "нога"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το πόδι",
+      "gen": "του ποδιού",
+      "acc": "το πόδι"
+    },
+    "pl": {
+      "nom": "τα πόδια",
+      "gen": "των ποδιών",
+      "acc": "τα πόδια"
+    }
+  },
+  "example": {
+    "el": "Το πόδι μου πονάει.",
+    "ru": "Моя нога болит."
+  },
+  "lemma_key": "πόδι",
+  "surfaces": [
+    "πόδι"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

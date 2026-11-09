@@ -1,0 +1,35 @@
+{
+  "lemma": "καφενείο",
+  "translation": [
+    "кафе"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το καφενείο",
+      "gen": "του καφενείου",
+      "acc": "το καφενείο"
+    },
+    "pl": {
+      "nom": "τα καφενεία",
+      "gen": "των καφενείων",
+      "acc": "τα καφενεία"
+    }
+  },
+  "example": {
+    "el": "Το καφενείο είναι γεμάτο.",
+    "ru": "Кафе полно."
+  },
+  "lemma_key": "καφενείο",
+  "surfaces": [
+    "καφενείο"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

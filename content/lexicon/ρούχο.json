@@ -1,0 +1,37 @@
+{
+  "lemma": "ρούχο",
+  "translation": [
+    "одежда",
+    "вещь"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το ρούχο",
+      "gen": "του ρούχου",
+      "acc": "το ρούχο"
+    },
+    "pl": {
+      "nom": "τα ρούχα",
+      "gen": "των ρούχων",
+      "acc": "τα ρούχα"
+    }
+  },
+  "example": {
+    "el": "Αγοράζω καινούργια ρούχα.",
+    "ru": "Я покупаю новую одежду."
+  },
+  "lemma_key": "ρούχο",
+  "surfaces": [
+    "ρούχα"
+  ],
+  "msg_ids": [
+    125204,
+    125210
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "λαός",
+  "translation": [
+    "народ"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο λαός",
+      "gen": "του λαού",
+      "acc": "το λαό"
+    },
+    "pl": {
+      "nom": "οι λαοί",
+      "gen": "των λαών",
+      "acc": "τους λαούς"
+    }
+  },
+  "example": {
+    "el": "Ο λαός ψήφισε.",
+    "ru": "Народ проголосовал."
+  },
+  "lemma_key": "λαόσ",
+  "surfaces": [
+    "λαός"
+  ],
+  "msg_ids": [
+    125211
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "παραλία",
+  "translation": [
+    "пляж"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ία/-ίες",
+  "forms": {
+    "sg": {
+      "nom": "η παραλία",
+      "gen": "της παραλίας",
+      "acc": "την παραλία"
+    },
+    "pl": {
+      "nom": "οι παραλίες",
+      "gen": "των παραλιών",
+      "acc": "τις παραλίες"
+    }
+  },
+  "example": {
+    "el": "Πήγαμε στην παραλία.",
+    "ru": "Мы пошли на пляж."
+  },
+  "lemma_key": "παραλία",
+  "surfaces": [
+    "παραλία"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "γιορτή",
+  "translation": [
+    "праздник"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η γιορτή",
+      "gen": "της γιορτής",
+      "acc": "τη γιορτή"
+    },
+    "pl": {
+      "nom": "οι γιορτές",
+      "gen": "των γιορτών",
+      "acc": "τις γιορτές"
+    }
+  },
+  "example": {
+    "el": "Σήμερα είναι γιορτή.",
+    "ru": "Сегодня праздник."
+  },
+  "lemma_key": "γιορτή",
+  "surfaces": [
+    "γιορτή"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

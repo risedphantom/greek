@@ -1,0 +1,36 @@
+{
+  "lemma": "κρεβάτι",
+  "translation": [
+    "кровать"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το κρεβάτι",
+      "gen": "του κρεβατιού",
+      "acc": "το κρεβάτι"
+    },
+    "pl": {
+      "nom": "τα κρεβάτια",
+      "gen": "των κρεβατιών",
+      "acc": "τα κρεβάτια"
+    }
+  },
+  "example": {
+    "el": "Το κρεβάτι είναι άνετο.",
+    "ru": "Кровать удобная."
+  },
+  "lemma_key": "κρεβάτι",
+  "surfaces": [
+    "κρεβάτι"
+  ],
+  "msg_ids": [
+    125205,
+    125210
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

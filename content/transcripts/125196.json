@@ -1,0 +1,54 @@
+{
+  "msg_id": 125196,
+  "source": "photo",
+  "kind": "vocab",
+  "title": "Утренняя рутина",
+  "body_md": "## πρωινή ρουτίνα\n\n* ντύνομαι — одеваюсь\n* πίνω καφέ — пью кофе\n* τρώω πρωινό — завтракаю",
+  "greek_words": [
+    {
+      "lemma": "πρωινή ρουτίνα",
+      "pos": "phrase",
+      "surface": [
+        "πρωινή ρουτίνα"
+      ]
+    },
+    {
+      "lemma": "ντύνομαι",
+      "pos": "verb",
+      "surface": [
+        "ντύνομαι"
+      ]
+    },
+    {
+      "lemma": "πίνω",
+      "pos": "verb",
+      "surface": [
+        "πίνω"
+      ]
+    },
+    {
+      "lemma": "καφές",
+      "pos": "noun",
+      "surface": [
+        "καφέ"
+      ]
+    },
+    {
+      "lemma": "τρώω",
+      "pos": "verb",
+      "surface": [
+        "τρώω"
+      ]
+    },
+    {
+      "lemma": "πρωινό",
+      "pos": "noun",
+      "surface": [
+        "πρωινό"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: утренняя рутина",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

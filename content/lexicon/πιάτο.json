@@ -1,0 +1,37 @@
+{
+  "lemma": "πιάτο",
+  "translation": [
+    "тарелка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πιάτο",
+      "gen": "του πιάτου",
+      "acc": "το πιάτο"
+    },
+    "pl": {
+      "nom": "τα πιάτα",
+      "gen": "των πιάτων",
+      "acc": "τα πιάτα"
+    }
+  },
+  "example": {
+    "el": "Το πιάτο είναι καθαρό.",
+    "ru": "Тарелка чистая."
+  },
+  "lemma_key": "πιάτο",
+  "surfaces": [
+    "πιάτα"
+  ],
+  "msg_ids": [
+    125200,
+    125207,
+    125209
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

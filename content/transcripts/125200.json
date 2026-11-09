@@ -1,0 +1,47 @@
+{
+  "msg_id": 125200,
+  "source": "photo",
+  "kind": "vocab",
+  "title": "Глаголы на тему «Домашние дела»",
+  "body_md": "γυρίζω στο σπίτι\nвозвращаюсь домой\n\nμαγειρεύω\nготовлю\n\nπλένω τα πιάτα\nмою посуду",
+  "greek_words": [
+    {
+      "lemma": "γυρίζω",
+      "pos": "verb",
+      "surface": [
+        "γυρίζω"
+      ]
+    },
+    {
+      "lemma": "σπίτι",
+      "pos": "noun",
+      "surface": [
+        "σπίτι"
+      ]
+    },
+    {
+      "lemma": "μαγειρεύω",
+      "pos": "verb",
+      "surface": [
+        "μαγειρεύω"
+      ]
+    },
+    {
+      "lemma": "πλένω",
+      "pos": "verb",
+      "surface": [
+        "πλένω"
+      ]
+    },
+    {
+      "lemma": "πιάτο",
+      "pos": "noun",
+      "surface": [
+        "πιάτα"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: домашние дела",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

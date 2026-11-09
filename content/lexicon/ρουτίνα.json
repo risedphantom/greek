@@ -1,0 +1,35 @@
+{
+  "lemma": "ρουτίνα",
+  "translation": [
+    "рутина"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ρουτίνα",
+      "gen": "της ρουτίνας",
+      "acc": "τη ρουτίνα"
+    },
+    "pl": {
+      "nom": "οι ρουτίνες",
+      "gen": "των ρουτινών",
+      "acc": "τις ρουτίνες"
+    }
+  },
+  "example": {
+    "el": "Έχω πολλή ρουτίνα.",
+    "ru": "У меня много рутины."
+  },
+  "lemma_key": "ρουτίνα",
+  "surfaces": [
+    "ρουτίνα"
+  ],
+  "msg_ids": [
+    125201
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

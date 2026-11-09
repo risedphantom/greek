@@ -1,0 +1,24 @@
+{
+  "lemma": "πρωινή ρουτίνα",
+  "translation": [
+    "утренняя рутина"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η πρωινή ρουτίνα μου.",
+    "ru": "Моя утренняя рутина."
+  },
+  "lemma_key": "πρωινή ρουτίνα",
+  "surfaces": [
+    "πρωινή ρουτίνα"
+  ],
+  "msg_ids": [
+    125196
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

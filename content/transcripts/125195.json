@@ -1,0 +1,47 @@
+{
+  "msg_id": 125195,
+  "source": "photo",
+  "kind": "vocab",
+  "title": "Что я делаю утром",
+  "body_md": "## Το πρωί\n\nΞυπνάω\nпросыпаюсь\n\nΠλένω το πρόσωπό μου\nумываюсь\n\nΠλένω τα δόντια\nчищу зубы",
+  "greek_words": [
+    {
+      "lemma": "πρωί",
+      "pos": "adv",
+      "surface": [
+        "πρωί"
+      ]
+    },
+    {
+      "lemma": "ξυπνάω",
+      "pos": "verb",
+      "surface": [
+        "Ξυπνάω"
+      ]
+    },
+    {
+      "lemma": "πλένω",
+      "pos": "verb",
+      "surface": [
+        "Πλένω"
+      ]
+    },
+    {
+      "lemma": "πρόσωπο",
+      "pos": "noun",
+      "surface": [
+        "πρόσωπό"
+      ]
+    },
+    {
+      "lemma": "δόντι",
+      "pos": "noun",
+      "surface": [
+        "δόντια"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: Утренняя рутина",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

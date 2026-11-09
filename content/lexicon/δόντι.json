@@ -1,0 +1,35 @@
+{
+  "lemma": "δόντι",
+  "translation": [
+    "зуб"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το δόντι",
+      "gen": "του δοντιού",
+      "acc": "το δόντι"
+    },
+    "pl": {
+      "nom": "τα δόντια",
+      "gen": "των δοντιών",
+      "acc": "τα δόντια"
+    }
+  },
+  "example": {
+    "el": "Έχω ένα άσπρο δόντι.",
+    "ru": "У меня один белый зуб."
+  },
+  "lemma_key": "δόντι",
+  "surfaces": [
+    "δόντια"
+  ],
+  "msg_ids": [
+    125195
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

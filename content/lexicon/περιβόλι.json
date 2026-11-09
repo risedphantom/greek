@@ -1,0 +1,36 @@
+{
+  "lemma": "περιβόλι",
+  "translation": [
+    "сад",
+    "огород"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το περιβόλι",
+      "gen": "του περιβολιού",
+      "acc": "το περιβόλι"
+    },
+    "pl": {
+      "nom": "τα περιβόλια",
+      "gen": "των περιβολιών",
+      "acc": "τα περιβόλια"
+    }
+  },
+  "example": {
+    "el": "Έχει ένα όμορφο περιβόλι.",
+    "ru": "У него красивый сад."
+  },
+  "lemma_key": "περιβόλι",
+  "surfaces": [
+    "περιβόλι"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

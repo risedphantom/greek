@@ -1,0 +1,35 @@
+{
+  "lemma": "βοηθός",
+  "translation": [
+    "помощник"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο βοηθός",
+      "gen": "του βοηθού",
+      "acc": "τον βοηθό"
+    },
+    "pl": {
+      "nom": "οι βοηθοί",
+      "gen": "των βοηθών",
+      "acc": "τους βοηθούς"
+    }
+  },
+  "example": {
+    "el": "Είναι ο βοηθός μου.",
+    "ru": "Он мой помощник."
+  },
+  "lemma_key": "βοηθόσ",
+  "surfaces": [
+    "βοηθός"
+  ],
+  "msg_ids": [
+    125211
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

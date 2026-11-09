@@ -1,0 +1,35 @@
+{
+  "lemma": "χαλί",
+  "translation": [
+    "ковёр"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το χαλί",
+      "gen": "του χαλιού",
+      "acc": "το χαλί"
+    },
+    "pl": {
+      "nom": "τα χαλιά",
+      "gen": "των χαλιών",
+      "acc": "τα χαλιά"
+    }
+  },
+  "example": {
+    "el": "Το χαλί είναι μεγάλο.",
+    "ru": "Ковёр большой."
+  },
+  "lemma_key": "χαλί",
+  "surfaces": [
+    "χαλί"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

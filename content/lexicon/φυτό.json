@@ -1,0 +1,36 @@
+{
+  "lemma": "φυτό",
+  "translation": [
+    "растение"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ό/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το φυτό",
+      "gen": "του φυτού",
+      "acc": "το φυτό"
+    },
+    "pl": {
+      "nom": "τα φυτά",
+      "gen": "των φυτών",
+      "acc": "τα φυτά"
+    }
+  },
+  "example": {
+    "el": "Το φυτό είναι πράσινο.",
+    "ru": "Растение зелёное."
+  },
+  "lemma_key": "φυτό",
+  "surfaces": [
+    "φυτά"
+  ],
+  "msg_ids": [
+    125208,
+    125209
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

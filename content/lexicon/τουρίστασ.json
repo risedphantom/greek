@@ -1,0 +1,35 @@
+{
+  "lemma": "τουρίστας",
+  "translation": [
+    "турист"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ας/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο τουρίστας",
+      "gen": "του τουρίστα",
+      "acc": "τον τουρίστα"
+    },
+    "pl": {
+      "nom": "οι τουρίστες",
+      "gen": "των τουριστών",
+      "acc": "τους τουρίστες"
+    }
+  },
+  "example": {
+    "el": "Είναι ένας ξένος τουρίστας.",
+    "ru": "Это иностранный турист."
+  },
+  "lemma_key": "τουρίστασ",
+  "surfaces": [
+    "τουρίστας"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

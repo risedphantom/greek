@@ -1,0 +1,36 @@
+{
+  "lemma": "χάρτης",
+  "translation": [
+    "карта"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο χάρτης",
+      "gen": "του χάρτη",
+      "acc": "τον χάρτη"
+    },
+    "pl": {
+      "nom": "οι χάρτες",
+      "gen": "των χαρτών",
+      "acc": "τους χάρτες"
+    }
+  },
+  "example": {
+    "el": "Δείξε μου τον χάρτη.",
+    "ru": "Покажи мне карту."
+  },
+  "lemma_key": "χάρτησ",
+  "surfaces": [
+    "χάρτης"
+  ],
+  "msg_ids": [
+    125211,
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

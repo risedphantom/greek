@@ -1,0 +1,35 @@
+{
+  "lemma": "λεκές",
+  "translation": [
+    "пятно"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ές/-έδες",
+  "forms": {
+    "sg": {
+      "nom": "ο λεκές",
+      "gen": "του λεκέ",
+      "acc": "το λεκέ"
+    },
+    "pl": {
+      "nom": "οι λεκέδες",
+      "gen": "των λεκέδων",
+      "acc": "τους λεκέδες"
+    }
+  },
+  "example": {
+    "el": "Υπάρχει ένας λεκές στο πουκάμισό μου.",
+    "ru": "На моей рубашке пятно."
+  },
+  "lemma_key": "λεκέσ",
+  "surfaces": [
+    "λεκέ"
+  ],
+  "msg_ids": [
+    125208
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

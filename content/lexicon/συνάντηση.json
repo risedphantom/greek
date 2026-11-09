@@ -1,0 +1,35 @@
+{
+  "lemma": "συνάντηση",
+  "translation": [
+    "встреча"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η συνάντηση",
+      "gen": "της συνάντησης",
+      "acc": "τη συνάντηση"
+    },
+    "pl": {
+      "nom": "οι συναντήσεις",
+      "gen": "των συναντήσεων",
+      "acc": "τις συναντήσεις"
+    }
+  },
+  "example": {
+    "el": "Έχουμε μια συνάντηση.",
+    "ru": "У нас есть встреча."
+  },
+  "lemma_key": "συνάντηση",
+  "surfaces": [
+    "συνάντηση"
+  ],
+  "msg_ids": [
+    125199
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

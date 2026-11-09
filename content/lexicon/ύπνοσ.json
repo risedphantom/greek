@@ -1,0 +1,35 @@
+{
+  "lemma": "ύπνος",
+  "translation": [
+    "сон"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο ύπνος",
+      "gen": "του ύπνου",
+      "acc": "τον ύπνο"
+    },
+    "pl": {
+      "nom": "οι ύπνοι",
+      "gen": "των ύπνων",
+      "acc": "τους ύπνους"
+    }
+  },
+  "example": {
+    "el": "Έχω πολύ ύπνο.",
+    "ru": "Мне хочется спать."
+  },
+  "lemma_key": "ύπνοσ",
+  "surfaces": [
+    "ύπνο"
+  ],
+  "msg_ids": [
+    125202
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

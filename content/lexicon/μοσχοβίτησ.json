@@ -1,0 +1,35 @@
+{
+  "lemma": "Μοσχοβίτης",
+  "translation": [
+    "москвич"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ης/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο Μοσχοβίτης",
+      "gen": "του Μοσχοβίτη",
+      "acc": "το Μοσχοβίτη"
+    },
+    "pl": {
+      "nom": "οι Μοσχοβίτες",
+      "gen": "των Μοσχοβιτών",
+      "acc": "τους Μοσχοβίτες"
+    }
+  },
+  "example": {
+    "el": "Είναι Μοσχοβίτης.",
+    "ru": "Он москвич."
+  },
+  "lemma_key": "μοσχοβίτησ",
+  "surfaces": [
+    "Μοσχοβίτης"
+  ],
+  "msg_ids": [
+    125211
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

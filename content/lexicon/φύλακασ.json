@@ -1,0 +1,36 @@
+{
+  "lemma": "φύλακας",
+  "translation": [
+    "охранник",
+    "сторож"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ας/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο φύλακας",
+      "gen": "του φύλακα",
+      "acc": "τον φύλακα"
+    },
+    "pl": {
+      "nom": "οι φύλακες",
+      "gen": "των φυλάκων",
+      "acc": "τους φύλακες"
+    }
+  },
+  "example": {
+    "el": "Ο φύλακας κοιμάται.",
+    "ru": "Охранник спит."
+  },
+  "lemma_key": "φύλακασ",
+  "surfaces": [
+    "φύλακας"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

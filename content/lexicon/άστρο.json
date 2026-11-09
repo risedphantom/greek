@@ -1,0 +1,35 @@
+{
+  "lemma": "άστρο",
+  "translation": [
+    "звезда"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το άστρο",
+      "gen": "του άστρου",
+      "acc": "το άστρο"
+    },
+    "pl": {
+      "nom": "τα άστρα",
+      "gen": "των άστρων",
+      "acc": "τα άστρα"
+    }
+  },
+  "example": {
+    "el": "Το άστρο λάμπει.",
+    "ru": "Звезда сияет."
+  },
+  "lemma_key": "άστρο",
+  "surfaces": [
+    "άστρο"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

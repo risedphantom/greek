@@ -1,0 +1,35 @@
+{
+  "lemma": "λαχανικό",
+  "translation": [
+    "овощ"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ί/-ιά",
+  "forms": {
+    "sg": {
+      "nom": "το λαχανικό",
+      "gen": "του λαχανικού",
+      "acc": "το λαχανικό"
+    },
+    "pl": {
+      "nom": "τα λαχανικά",
+      "gen": "των λαχανικών",
+      "acc": "τα λαχανικά"
+    }
+  },
+  "example": {
+    "el": "Τρώω πολλά λαχανικά.",
+    "ru": "Я ем много овощей."
+  },
+  "lemma_key": "λαχανικό",
+  "surfaces": [
+    "λαχανικά"
+  ],
+  "msg_ids": [
+    125199
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

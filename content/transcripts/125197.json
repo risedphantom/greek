@@ -1,0 +1,47 @@
+{
+  "msg_id": 125197,
+  "source": "photo",
+  "kind": "vocab",
+  "title": "Ежедневные действия",
+  "body_md": "φεύγω από το σπίτι\nвыхожу из дома\n\nπηγαίνω στη δουλειά\nиду на работу\n\nδουλεύω\nработаю",
+  "greek_words": [
+    {
+      "lemma": "φεύγω",
+      "pos": "verb",
+      "surface": [
+        "φεύγω"
+      ]
+    },
+    {
+      "lemma": "σπίτι",
+      "pos": "noun",
+      "surface": [
+        "σπίτι"
+      ]
+    },
+    {
+      "lemma": "πηγαίνω",
+      "pos": "verb",
+      "surface": [
+        "πηγαίνω"
+      ]
+    },
+    {
+      "lemma": "δουλειά",
+      "pos": "noun",
+      "surface": [
+        "δουλειά"
+      ]
+    },
+    {
+      "lemma": "δουλεύω",
+      "pos": "verb",
+      "surface": [
+        "δουλεύω"
+      ]
+    }
+  ],
+  "topic_hint": "Лексика: Ежедневные действия",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

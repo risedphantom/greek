@@ -1,0 +1,35 @@
+{
+  "lemma": "δέμα",
+  "translation": [
+    "посылка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-α",
+  "forms": {
+    "sg": {
+      "nom": "το δέμα",
+      "gen": "του δέματος",
+      "acc": "το δέμα"
+    },
+    "pl": {
+      "nom": "τα δέματα",
+      "gen": "των δεμάτων",
+      "acc": "τα δέματα"
+    }
+  },
+  "example": {
+    "el": "Πήρα ένα δέμα.",
+    "ru": "Я получил посылку."
+  },
+  "lemma_key": "δέμα",
+  "surfaces": [
+    "δέμα"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

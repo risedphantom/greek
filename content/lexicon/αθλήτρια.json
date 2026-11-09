@@ -1,0 +1,35 @@
+{
+  "lemma": "αθλήτρια",
+  "translation": [
+    "спортсменка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η αθλήτρια",
+      "gen": "της αθλήτριας",
+      "acc": "την αθλήτρια"
+    },
+    "pl": {
+      "nom": "οι αθλήτριες",
+      "gen": "των αθλητριών",
+      "acc": "τις αθλήτριες"
+    }
+  },
+  "example": {
+    "el": "Η αθλήτρια κερδίζει.",
+    "ru": "Спортсменка побеждает."
+  },
+  "lemma_key": "αθλήτρια",
+  "surfaces": [
+    "αθλήτρια"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

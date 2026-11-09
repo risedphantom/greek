@@ -1,0 +1,35 @@
+{
+  "lemma": "φόρεμα",
+  "translation": [
+    "платье"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "το φόρεμα",
+      "gen": "του φορέματος",
+      "acc": "το φόρεμα"
+    },
+    "pl": {
+      "nom": "τα φορέματα",
+      "gen": "των φορεμάτων",
+      "acc": "τα φορέματα"
+    }
+  },
+  "example": {
+    "el": "Φοράω ένα φόρεμα.",
+    "ru": "Я надеваю платье."
+  },
+  "lemma_key": "φόρεμα",
+  "surfaces": [
+    "φόρεμα"
+  ],
+  "msg_ids": [
+    125212
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
