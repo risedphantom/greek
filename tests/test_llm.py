@@ -188,3 +188,12 @@ def test_408_is_transient(respx_mock, client):
     route = respx_mock.post("/chat/completions").mock(side_effect=[httpx.Response(408), ok("{}")])
     assert call(client) == {}
     assert route.call_count == 2
+
+
+def test_concatenated_json_objects_are_merged():
+    from greekpipe.llm import _loads_concatenated
+    text = '{"entries": [{"lemma": "α"}]}\n{"entries": [{"lemma": "β"}], "x": 1}'
+    assert _loads_concatenated(text) == {"entries": [{"lemma": "α"}, {"lemma": "β"}], "x": 1}
+    assert _loads_concatenated('{"a": 1}') == {"a": 1}
+    with pytest.raises(json.JSONDecodeError):
+        _loads_concatenated('{"a": 1} [2]')

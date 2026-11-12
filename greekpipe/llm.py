@@ -92,7 +92,7 @@ class LLMClient:
         if not isinstance(content, str):
             raise LLMBadOutput(f"{schema_name}: empty or non-text content")
         try:
-            parsed = json.loads(_strip_fences(content))
+            parsed = _loads_concatenated(_strip_fences(content))
         except json.JSONDecodeError as e:
             raise LLMBadOutput(f"{schema_name}: reply is not valid JSON ({e})") from e
         if not isinstance(parsed, dict):
@@ -143,3 +143,29 @@ class LLMClient:
             if attempt < self.max_retries:
                 self.sleep(max(2 ** (attempt + 1), retry_after))
         raise LLMTransient(f"{schema_name}: gave up after {self.max_retries + 1} attempts ({reason})")
+
+
+def _loads_concatenated(text: str):
+    """Parse a reply; models sometimes emit several JSON objects back to back
+    (e.g. a lexicon batch split into two {"entries": [...]}). Merge them:
+    list values are concatenated, other keys keep their first value."""
+    decoder = json.JSONDecoder()
+    text = text.strip()
+    values, pos = [], 0
+    while pos < len(text):
+        value, pos = decoder.raw_decode(text, pos)
+        values.append(value)
+        while pos < len(text) and text[pos].isspace():
+            pos += 1
+    if len(values) == 1 or not all(isinstance(v, dict) for v in values):
+        if len(values) != 1:
+            raise json.JSONDecodeError("Extra data", text, 0)
+        return values[0]
+    merged: dict = {}
+    for value in values:
+        for key, item in value.items():
+            if isinstance(merged.get(key), list) and isinstance(item, list):
+                merged[key] = merged[key] + item
+            else:
+                merged.setdefault(key, item)
+    return merged
