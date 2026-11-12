@@ -1,0 +1,24 @@
+{
+  "lemma": "δημοτική βιβλιοθήκη",
+  "translation": [
+    "публичная библиотека"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η δημοτική βιβλιοθήκη είναι ανοιχτή.",
+    "ru": "Публичная библиотека открыта."
+  },
+  "lemma_key": "δημοτική βιβλιοθήκη",
+  "surfaces": [
+    "δημοτική βιβλιοθήκη"
+  ],
+  "msg_ids": [
+    125340
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

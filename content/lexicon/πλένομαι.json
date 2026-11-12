@@ -51,10 +51,12 @@
   },
   "lemma_key": "πλένομαι",
   "surfaces": [
+    "Πλενόμαστε",
     "πλένομαι"
   ],
   "msg_ids": [
-    124420
+    124420,
+    125337
   ],
   "model": "google/gemini-2.5-flash-lite",
   "proper_name": false,

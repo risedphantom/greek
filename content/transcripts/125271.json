@@ -1,0 +1,11 @@
+{
+  "msg_id": 125271,
+  "source": "text",
+  "kind": "chat",
+  "title": "",
+  "body_md": "Свет так и не появился, как всегда пропал и интернет, не могу написать даже",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

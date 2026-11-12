@@ -1,0 +1,24 @@
+{
+  "lemma": "Πετρόφ",
+  "translation": [
+    "Петров"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι το σπίτι του Πετρόφ.",
+    "ru": "Это дом Петрова."
+  },
+  "lemma_key": "πετρόφ",
+  "surfaces": [
+    "Πετρόφ"
+  ],
+  "msg_ids": [
+    125336
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "σκύλος",
+  "translation": [
+    "собака"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο σκύλος",
+      "gen": "του σκύλου",
+      "acc": "τον σκύλο"
+    },
+    "pl": {
+      "nom": "οι σκύλοι",
+      "gen": "των σκύλων",
+      "acc": "τους σκύλους"
+    }
+  },
+  "example": {
+    "el": "Ο σκύλος είναι φίλος.",
+    "ru": "Собака — друг."
+  },
+  "lemma_key": "σκύλοσ",
+  "surfaces": [
+    "σκύλος"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

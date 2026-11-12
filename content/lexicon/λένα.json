@@ -1,0 +1,25 @@
+{
+  "lemma": "Λένα",
+  "translation": [
+    "Лена"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Λένα είναι φίλη μου.",
+    "ru": "Лена - моя подруга."
+  },
+  "lemma_key": "λένα",
+  "surfaces": [
+    "Λένα"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

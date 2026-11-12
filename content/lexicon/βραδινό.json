@@ -1,0 +1,36 @@
+{
+  "lemma": "βραδινό",
+  "translation": [
+    "ужин"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "το βραδινό",
+      "gen": "του βραδινού",
+      "acc": "το βραδινό"
+    },
+    "pl": {
+      "nom": "τα βραδινά",
+      "gen": "των βραδινών",
+      "acc": "τα βραδινά"
+    }
+  },
+  "example": {
+    "el": "Τι θα φάμε για βραδινό;",
+    "ru": "Что мы будем есть на ужин?"
+  },
+  "lemma_key": "βραδινό",
+  "surfaces": [
+    "βραδινό"
+  ],
+  "msg_ids": [
+    125262,
+    125306
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

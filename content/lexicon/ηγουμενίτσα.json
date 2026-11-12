@@ -1,0 +1,25 @@
+{
+  "lemma": "Ηγουμενίτσα",
+  "translation": [
+    "Игуменица"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ηγουμενίτσα",
+    "ru": "Игуменица"
+  },
+  "lemma_key": "ηγουμενίτσα",
+  "surfaces": [
+    "Ηγουμενίτσα"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

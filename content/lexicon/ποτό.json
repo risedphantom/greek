@@ -1,0 +1,37 @@
+{
+  "lemma": "ποτό",
+  "translation": [
+    "напиток",
+    "питьё"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το ποτό",
+      "gen": "του ποτού",
+      "acc": "το ποτό"
+    },
+    "pl": {
+      "nom": "τα ποτά",
+      "gen": "των ποτών",
+      "acc": "τα ποτά"
+    }
+  },
+  "example": {
+    "el": "Θέλω ένα ποτό.",
+    "ru": "Я хочу напиток."
+  },
+  "lemma_key": "ποτό",
+  "surfaces": [
+    "ποτό"
+  ],
+  "msg_ids": [
+    125262,
+    125306
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

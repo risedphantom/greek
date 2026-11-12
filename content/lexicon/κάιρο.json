@@ -1,0 +1,25 @@
+{
+  "lemma": "Κάιρο",
+  "translation": [
+    "Каир"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Κάιρο",
+    "ru": "Каир"
+  },
+  "lemma_key": "κάιρο",
+  "surfaces": [
+    "Κάιρο"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

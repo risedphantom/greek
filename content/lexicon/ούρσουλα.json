@@ -1,0 +1,25 @@
+{
+  "lemma": "Ούρσουλα",
+  "translation": [
+    "Урсула"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Ούρσουλα είναι εδώ.",
+    "ru": "Урсула здесь."
+  },
+  "lemma_key": "ούρσουλα",
+  "surfaces": [
+    "Ούρσουλα"
+  ],
+  "msg_ids": [
+    125261,
+    125342
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

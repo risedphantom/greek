@@ -1,0 +1,24 @@
+{
+  "lemma": "δημοτικό σχολείο",
+  "translation": [
+    "начальная школа"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το δημοτικό σχολείο είναι κοντά.",
+    "ru": "Начальная школа находится рядом."
+  },
+  "lemma_key": "δημοτικό σχολείο",
+  "surfaces": [
+    "δημοτικό σχολείο"
+  ],
+  "msg_ids": [
+    125340
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

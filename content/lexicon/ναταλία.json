@@ -1,0 +1,24 @@
+{
+  "lemma": "Ναταλία",
+  "translation": [
+    "Наталья"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ναταλία",
+    "ru": "Наталья"
+  },
+  "lemma_key": "ναταλία",
+  "surfaces": [
+    "Ναταλία"
+  ],
+  "msg_ids": [
+    125307
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

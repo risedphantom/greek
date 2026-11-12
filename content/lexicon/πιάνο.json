@@ -1,0 +1,35 @@
+{
+  "lemma": "πιάνο",
+  "translation": [
+    "пианино"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πιάνο",
+      "gen": "του πιάνου",
+      "acc": "το πιάνο"
+    },
+    "pl": {
+      "nom": "τα πιάνα",
+      "gen": "των πιάνων",
+      "acc": "τα πιάνα"
+    }
+  },
+  "example": {
+    "el": "Το πιάνο είναι μεγάλο.",
+    "ru": "Пианино большое."
+  },
+  "lemma_key": "πιάνο",
+  "surfaces": [
+    "πιάνο"
+  ],
+  "msg_ids": [
+    125337
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

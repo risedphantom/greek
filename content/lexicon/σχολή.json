@@ -1,0 +1,36 @@
+{
+  "lemma": "Σχολή",
+  "translation": [
+    "школа",
+    "факультет"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η Σχολή",
+      "gen": "της Σχολής",
+      "acc": "τη Σχολή"
+    },
+    "pl": {
+      "nom": "οι Σχολές",
+      "gen": "των Σχολών",
+      "acc": "τις Σχολές"
+    }
+  },
+  "example": {
+    "el": "Αυτή είναι η Σχολή.",
+    "ru": "Это школа."
+  },
+  "lemma_key": "σχολή",
+  "surfaces": [
+    "Σχολής"
+  ],
+  "msg_ids": [
+    125337
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

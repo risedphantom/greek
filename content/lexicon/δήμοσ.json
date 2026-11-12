@@ -1,0 +1,39 @@
+{
+  "lemma": "δήμος",
+  "translation": [
+    "муниципалитет",
+    "район",
+    "народ"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο δήμος",
+      "gen": "του δήμου",
+      "acc": "τον δήμο"
+    },
+    "pl": {
+      "nom": "οι δήμοι",
+      "gen": "των δήμων",
+      "acc": "τους δήμους"
+    }
+  },
+  "example": {
+    "el": "Ζω στον δήμο.",
+    "ru": "Я живу в районе."
+  },
+  "lemma_key": "δήμοσ",
+  "surfaces": [
+    "δήμο",
+    "δήμου"
+  ],
+  "msg_ids": [
+    125339,
+    125340
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

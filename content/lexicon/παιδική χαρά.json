@@ -1,0 +1,24 @@
+{
+  "lemma": "παιδική χαρά",
+  "translation": [
+    "детская площадка"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Τα παιδιά παίζουν στην παιδική χαρά.",
+    "ru": "Дети играют на детской площадке."
+  },
+  "lemma_key": "παιδική χαρά",
+  "surfaces": [
+    "παιδική χαρά"
+  ],
+  "msg_ids": [
+    125340
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

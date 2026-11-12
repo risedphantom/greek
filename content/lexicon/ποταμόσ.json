@@ -1,0 +1,35 @@
+{
+  "lemma": "ποταμός",
+  "translation": [
+    "река"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο ποταμός",
+      "gen": "του ποταμού",
+      "acc": "τον ποταμό"
+    },
+    "pl": {
+      "nom": "οι ποταμοί",
+      "gen": "των ποταμών",
+      "acc": "τους ποταμούς"
+    }
+  },
+  "example": {
+    "el": "Ο ποταμός είναι μεγάλος.",
+    "ru": "Река большая."
+  },
+  "lemma_key": "ποταμόσ",
+  "surfaces": [
+    "ποταμό"
+  ],
+  "msg_ids": [
+    125337
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

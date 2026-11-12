@@ -1,0 +1,24 @@
+{
+  "lemma": "είκοσι εφτά",
+  "translation": [
+    "двадцать семь"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είκοσι εφτά.",
+    "ru": "Двадцать семь."
+  },
+  "lemma_key": "είκοσι εφτά",
+  "surfaces": [
+    "είκοσι εφτά"
+  ],
+  "msg_ids": [
+    125305
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "είκοσι τρεις",
+  "translation": [
+    "двадцать три"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Είκοσι τρεις.",
+    "ru": "Двадцать три."
+  },
+  "lemma_key": "είκοσι τρεισ",
+  "surfaces": [
+    "είκοσι τρεις"
+  ],
+  "msg_ids": [
+    125305
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

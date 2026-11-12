@@ -36,7 +36,9 @@
     123952,
     123959,
     124171,
-    124268
+    124268,
+    125307,
+    125339
   ],
   "model": "google/gemini-2.5-flash-lite",
   "proper_name": false,

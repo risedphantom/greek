@@ -1,0 +1,38 @@
+{
+  "lemma": "ημέρα",
+  "translation": [
+    "день"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ημέρα",
+      "gen": "της ημέρας",
+      "acc": "την ημέρα"
+    },
+    "pl": {
+      "nom": "οι ημέρες",
+      "gen": "των ημερών",
+      "acc": "τις ημέρες"
+    }
+  },
+  "example": {
+    "el": "Σήμερα είναι μια ωραία ημέρα.",
+    "ru": "Сегодня прекрасный день."
+  },
+  "lemma_key": "ημέρα",
+  "surfaces": [
+    "ημέρα",
+    "ημέρας",
+    "μέρα"
+  ],
+  "msg_ids": [
+    125337,
+    125339
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

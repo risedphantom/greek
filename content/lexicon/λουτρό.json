@@ -1,0 +1,37 @@
+{
+  "lemma": "λουτρό",
+  "translation": [
+    "ванна",
+    "баня"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ό/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το λουτρό",
+      "gen": "του λουτρού",
+      "acc": "το λουτρό"
+    },
+    "pl": {
+      "nom": "τα λουτρά",
+      "gen": "των λουτρών",
+      "acc": "τα λουτρά"
+    }
+  },
+  "example": {
+    "el": "Πήρα ένα ζεστό λουτρό.",
+    "ru": "Я принял тёплую ванну."
+  },
+  "lemma_key": "λουτρό",
+  "surfaces": [
+    "λουτρό"
+  ],
+  "msg_ids": [
+    125336,
+    125339
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

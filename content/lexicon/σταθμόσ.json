@@ -1,0 +1,37 @@
+{
+  "lemma": "σταθμός",
+  "translation": [
+    "станция",
+    "вокзал",
+    "остановка"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο σταθμός",
+      "gen": "του σταθμού",
+      "acc": "τον σταθμό"
+    },
+    "pl": {
+      "nom": "οι σταθμοί",
+      "gen": "των σταθμών",
+      "acc": "τους σταθμούς"
+    }
+  },
+  "example": {
+    "el": "Ο σταθμός είναι κοντά.",
+    "ru": "Станция близко."
+  },
+  "lemma_key": "σταθμόσ",
+  "surfaces": [
+    "σταθμό"
+  ],
+  "msg_ids": [
+    125339
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

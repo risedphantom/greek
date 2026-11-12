@@ -1,0 +1,25 @@
+{
+  "lemma": "Πύργος",
+  "translation": [
+    "Пиргос"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ζω στον Πύργο.",
+    "ru": "Я живу в Пиргосе."
+  },
+  "lemma_key": "πύργοσ",
+  "surfaces": [
+    "Πύργος"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

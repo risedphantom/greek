@@ -1,0 +1,25 @@
+{
+  "lemma": "διαβάζω για το σχολείο",
+  "translation": [
+    "учиться в школе",
+    "готовить уроки"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Διαβάζω για το σχολείο.",
+    "ru": "Я делаю уроки."
+  },
+  "lemma_key": "διαβάζω για το σχολείο",
+  "surfaces": [
+    "διαβάζω για το σχολείο"
+  ],
+  "msg_ids": [
+    125340
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

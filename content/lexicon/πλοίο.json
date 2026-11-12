@@ -1,0 +1,37 @@
+{
+  "lemma": "πλοίο",
+  "translation": [
+    "корабль",
+    "судно"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ο/-α",
+  "forms": {
+    "sg": {
+      "nom": "το πλοίο",
+      "gen": "του πλοίου",
+      "acc": "το πλοίο"
+    },
+    "pl": {
+      "nom": "τα πλοία",
+      "gen": "των πλοίων",
+      "acc": "τα πλοία"
+    }
+  },
+  "example": {
+    "el": "Το πλοίο φεύγει αύριο.",
+    "ru": "Корабль уходит завтра."
+  },
+  "lemma_key": "πλοίο",
+  "surfaces": [
+    "πλοίο"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "Μαρίζα",
+  "translation": [
+    "Мариза"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Μαρίζα είναι φίλη μου.",
+    "ru": "Мариза — моя подруга."
+  },
+  "lemma_key": "μαρίζα",
+  "surfaces": [
+    "Μαρίζα"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "συνοικία",
+  "translation": [
+    "район",
+    "квартал"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η συνοικία",
+      "gen": "της συνοικίας",
+      "acc": "τη συνοικία"
+    },
+    "pl": {
+      "nom": "οι συνοικίες",
+      "gen": "των συνοικιών",
+      "acc": "τις συνοικίες"
+    }
+  },
+  "example": {
+    "el": "Η συνοικία είναι ήσυχη.",
+    "ru": "Район тихий."
+  },
+  "lemma_key": "συνοικία",
+  "surfaces": [
+    "συνοικίες"
+  ],
+  "msg_ids": [
+    125339
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

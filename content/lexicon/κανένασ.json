@@ -1,0 +1,25 @@
+{
+  "lemma": "κανένας",
+  "translation": [
+    "никакой, ни один (κανένας, καμία/καμιά, κανένα)",
+    "какой-нибудь"
+  ],
+  "pos": "other",
+  "gender": "f",
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Δεν πήγα καμιά μέρα.",
+    "ru": "Я не ходил ни одного дня."
+  },
+  "lemma_key": "κανένασ",
+  "surfaces": [
+    "Καμιά"
+  ],
+  "msg_ids": [
+    125306
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

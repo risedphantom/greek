@@ -1,0 +1,36 @@
+{
+  "lemma": "τρόλεϊ",
+  "translation": [
+    "троллейбус"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": null,
+  "forms": {
+    "sg": {
+      "nom": "το τρόλεϊ",
+      "gen": "του τρόλεϊ",
+      "acc": "το τρόλεϊ"
+    },
+    "pl": {
+      "nom": "τα τρόλεϊ",
+      "gen": "των τρόλεϊ",
+      "acc": "τα τρόλεϊ"
+    }
+  },
+  "example": {
+    "el": "Το τρόλεϊ έρχεται.",
+    "ru": "Троллейбус приезжает."
+  },
+  "lemma_key": "τρόλεϊ",
+  "surfaces": [
+    "τρόλεϊ"
+  ],
+  "msg_ids": [
+    125261,
+    125342
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

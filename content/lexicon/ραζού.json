@@ -1,0 +1,25 @@
+{
+  "lemma": "Ραζού",
+  "translation": [
+    "Разу"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Αυτό είναι το σπίτι του Ραζού.",
+    "ru": "Это дом Разу."
+  },
+  "lemma_key": "ραζού",
+  "surfaces": [
+    "Ραζού"
+  ],
+  "msg_ids": [
+    125260,
+    125341
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}
