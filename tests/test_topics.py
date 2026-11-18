@@ -52,7 +52,7 @@ def test_short_hint_does_not_substring_match(taxonomy):
 
 
 def test_substring_matches_whole_words_only(taxonomy):
-    assert taxonomy.resolve("Прошедшее время глаголов")[0] == "new"
+    assert taxonomy.resolve("Сослагательное наклонение глаголов")[0] == "new"
     assert taxonomy.resolve("Модальные глаголы")[0] == "new"
     assert taxonomy.resolve("Сообщение другу")[0] == "new"
 
