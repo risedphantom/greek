@@ -1,0 +1,35 @@
+{
+  "lemma": "κινητό",
+  "translation": [
+    "мобильный телефон"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ό/-ά",
+  "forms": {
+    "sg": {
+      "nom": "το κινητό",
+      "gen": "του κινητού",
+      "acc": "το κινητό"
+    },
+    "pl": {
+      "nom": "τα κινητά",
+      "gen": "των κινητών",
+      "acc": "τα κινητά"
+    }
+  },
+  "example": {
+    "el": "Το κινητό μου είναι καινούριο.",
+    "ru": "Мой мобильный — новый."
+  },
+  "lemma_key": "κινητό",
+  "surfaces": [
+    "κινητό"
+  ],
+  "msg_ids": [
+    125479
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

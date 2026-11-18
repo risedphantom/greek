@@ -1,0 +1,35 @@
+{
+  "lemma": "Αλβανή",
+  "translation": [
+    "албанка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η Αλβανή",
+      "gen": "της Αλβανής",
+      "acc": "την Αλβανή"
+    },
+    "pl": {
+      "nom": "οι Αλβανές",
+      "gen": "των Αλβανών",
+      "acc": "τις Αλβανές"
+    }
+  },
+  "example": {
+    "el": "Η Μαρία είναι Αλβανή.",
+    "ru": "Мария — албанка."
+  },
+  "lemma_key": "αλβανή",
+  "surfaces": [
+    "Αλβανή"
+  ],
+  "msg_ids": [
+    125480
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

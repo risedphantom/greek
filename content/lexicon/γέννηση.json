@@ -1,0 +1,35 @@
+{
+  "lemma": "γέννηση",
+  "translation": [
+    "рождение"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η γέννηση",
+      "gen": "της γέννησης",
+      "acc": "τη γέννηση"
+    },
+    "pl": {
+      "nom": "οι γεννήσεις",
+      "gen": "των γεννήσεων",
+      "acc": "τις γεννήσεις"
+    }
+  },
+  "example": {
+    "el": "Η γέννηση του παιδιού.",
+    "ru": "Рождение ребенка."
+  },
+  "lemma_key": "γέννηση",
+  "surfaces": [
+    "γέννησης"
+  ],
+  "msg_ids": [
+    125465
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

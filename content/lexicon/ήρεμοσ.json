@@ -1,0 +1,37 @@
+{
+  "lemma": "ήρεμος",
+  "translation": [
+    "спокойный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "ήρεμος",
+      "pl": "ήρεμοι"
+    },
+    "f": {
+      "sg": "ήρεμη",
+      "pl": "ήρεμες"
+    },
+    "n": {
+      "sg": "ήρεμο",
+      "pl": "ήρεμα"
+    }
+  },
+  "example": {
+    "el": "Είναι ήρεμος.",
+    "ru": "Он спокоен."
+  },
+  "lemma_key": "ήρεμοσ",
+  "surfaces": [
+    "ήρεμη"
+  ],
+  "msg_ids": [
+    125513
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

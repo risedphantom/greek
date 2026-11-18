@@ -1,0 +1,35 @@
+{
+  "lemma": "Πολωνή",
+  "translation": [
+    "полька"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η Πολωνή",
+      "gen": "της Πολωνής",
+      "acc": "την Πολωνή"
+    },
+    "pl": {
+      "nom": "οι Πολωνές",
+      "gen": "των Πολωνών",
+      "acc": "τις Πολωνές"
+    }
+  },
+  "example": {
+    "el": "Η Άννα είναι Πολωνή.",
+    "ru": "Анна — полька."
+  },
+  "lemma_key": "πολωνή",
+  "surfaces": [
+    "Πολωνή"
+  ],
+  "msg_ids": [
+    125480
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

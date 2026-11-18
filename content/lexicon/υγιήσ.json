@@ -1,0 +1,38 @@
+{
+  "lemma": "υγιής",
+  "translation": [
+    "здоровый",
+    "крепкий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ής, ής, ές",
+  "forms": {
+    "m": {
+      "sg": "υγιής",
+      "pl": "υγιείς"
+    },
+    "f": {
+      "sg": "υγιής",
+      "pl": "υγιείς"
+    },
+    "n": {
+      "sg": "υγιές",
+      "pl": "υγιή"
+    }
+  },
+  "example": {
+    "el": "Είναι υγιής.",
+    "ru": "Он здоров."
+  },
+  "lemma_key": "υγιήσ",
+  "surfaces": [
+    "υγιής"
+  ],
+  "msg_ids": [
+    125474
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "lemma": "κοντινός",
+  "translation": [
+    "близкий",
+    "ближайший"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ός, -ή, -ό",
+  "forms": {
+    "m": {
+      "sg": "κοντινός",
+      "pl": "κοντινοί"
+    },
+    "f": {
+      "sg": "κοντινή",
+      "pl": "κοντινές"
+    },
+    "n": {
+      "sg": "κοντινό",
+      "pl": "κοντινά"
+    }
+  },
+  "example": {
+    "el": "Ένα κοντινό χωριό.",
+    "ru": "Близкая деревня."
+  },
+  "lemma_key": "κοντινόσ",
+  "surfaces": [
+    "κοντινός"
+  ],
+  "msg_ids": [
+    125473
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

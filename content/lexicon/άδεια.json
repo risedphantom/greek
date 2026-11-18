@@ -1,0 +1,37 @@
+{
+  "lemma": "άδεια",
+  "translation": [
+    "разрешение",
+    "отпуск",
+    "пустой"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η άδεια",
+      "gen": "της άδειας",
+      "acc": "την άδεια"
+    },
+    "pl": {
+      "nom": "οι άδειες",
+      "gen": "των αδειών",
+      "acc": "τις άδειες"
+    }
+  },
+  "example": {
+    "el": "Έχει άδεια από τη δουλειά.",
+    "ru": "У него отпуск на работе."
+  },
+  "lemma_key": "άδεια",
+  "surfaces": [
+    "Άδεια"
+  ],
+  "msg_ids": [
+    125465
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

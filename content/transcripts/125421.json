@@ -1,0 +1,11 @@
+{
+  "msg_id": 125421,
+  "source": "text",
+  "kind": "chat",
+  "title": "Организационное сообщение",
+  "body_md": "Свет моргнул\nНадеюсь сейчас всё восстановится",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

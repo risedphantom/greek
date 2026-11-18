@@ -1,0 +1,24 @@
+{
+  "lemma": "πάω βόλτα",
+  "translation": [
+    "пойти погулять"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πάμε βόλτα στην παραλία.",
+    "ru": "Пойдём погуляем на пляж."
+  },
+  "lemma_key": "πάω βόλτα",
+  "surfaces": [
+    "πάμε βόλτα"
+  ],
+  "msg_ids": [
+    125420
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

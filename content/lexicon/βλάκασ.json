@@ -1,0 +1,36 @@
+{
+  "lemma": "βλάκας",
+  "translation": [
+    "дурак",
+    "дурачок"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ας/-ες",
+  "forms": {
+    "sg": {
+      "nom": "ο βλάκας",
+      "gen": "του βλάκα",
+      "acc": "τον βλάκα"
+    },
+    "pl": {
+      "nom": "οι βλάκες",
+      "gen": "των βλάκων",
+      "acc": "τους βλάκες"
+    }
+  },
+  "example": {
+    "el": "Είσαι βλάκας.",
+    "ru": "Ты дурак."
+  },
+  "lemma_key": "βλάκασ",
+  "surfaces": [
+    "βλάκας"
+  ],
+  "msg_ids": [
+    125463
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

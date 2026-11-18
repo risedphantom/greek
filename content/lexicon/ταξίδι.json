@@ -1,0 +1,36 @@
+{
+  "lemma": "ταξίδι",
+  "translation": [
+    "путешествие",
+    "поездка"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το ταξίδι",
+      "gen": "του ταξιδιού",
+      "acc": "το ταξίδι"
+    },
+    "pl": {
+      "nom": "τα ταξίδια",
+      "gen": "των ταξιδιών",
+      "acc": "τα ταξίδια"
+    }
+  },
+  "example": {
+    "el": "Ήταν ένα ωραίο ταξίδι.",
+    "ru": "Это было приятное путешествие."
+  },
+  "lemma_key": "ταξίδι",
+  "surfaces": [
+    "ταξίδι"
+  ],
+  "msg_ids": [
+    125511
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,25 @@
+{
+  "lemma": "πραγματικά",
+  "translation": [
+    "действительно",
+    "реально"
+  ],
+  "pos": "adv",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Πραγματικά, αυτό είναι αλήθεια.",
+    "ru": "Действительно, это правда."
+  },
+  "lemma_key": "πραγματικά",
+  "surfaces": [
+    "Πραγματικά"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

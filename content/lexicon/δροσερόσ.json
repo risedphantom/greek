@@ -1,0 +1,37 @@
+{
+  "lemma": "δροσερός",
+  "translation": [
+    "прохладный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ός, -ή, -ό",
+  "forms": {
+    "m": {
+      "sg": "δροσερός",
+      "pl": "δροσεροί"
+    },
+    "f": {
+      "sg": "δροσερή",
+      "pl": "δροσερές"
+    },
+    "n": {
+      "sg": "δροσερό",
+      "pl": "δροσερά"
+    }
+  },
+  "example": {
+    "el": "Ο αέρας είναι δροσερός.",
+    "ru": "Воздух прохладный."
+  },
+  "lemma_key": "δροσερόσ",
+  "surfaces": [
+    "δροσερό"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

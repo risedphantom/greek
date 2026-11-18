@@ -1,0 +1,38 @@
+{
+  "lemma": "κοντός",
+  "translation": [
+    "короткий",
+    "низкий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ός, -ή, -ό",
+  "forms": {
+    "m": {
+      "sg": "κοντός",
+      "pl": "κοντοί"
+    },
+    "f": {
+      "sg": "κοντή",
+      "pl": "κοντές"
+    },
+    "n": {
+      "sg": "κοντό",
+      "pl": "κοντά"
+    }
+  },
+  "example": {
+    "el": "Ο δρόμος είναι κοντός.",
+    "ru": "Дорога короткая."
+  },
+  "lemma_key": "κοντόσ",
+  "surfaces": [
+    "κοντός"
+  ],
+  "msg_ids": [
+    125475
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "lemma": "γνώμη",
+  "translation": [
+    "мнение"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-η/-εις",
+  "forms": {
+    "sg": {
+      "nom": "η γνώμη",
+      "gen": "της γνώμης",
+      "acc": "τη γνώμη"
+    },
+    "pl": {
+      "nom": "οι γνώμες",
+      "gen": "των γνώμων",
+      "acc": "τις γνώμες"
+    }
+  },
+  "example": {
+    "el": "Έχω μια γνώμη.",
+    "ru": "У меня есть мнение."
+  },
+  "lemma_key": "γνώμη",
+  "surfaces": [
+    "γνώμη"
+  ],
+  "msg_ids": [
+    125513
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

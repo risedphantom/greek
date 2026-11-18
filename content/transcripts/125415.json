@@ -1,0 +1,11 @@
+{
+  "msg_id": 125415,
+  "source": "text",
+  "kind": "chat",
+  "title": "Перенос занятия",
+  "body_md": "Я попробую сейчас других перенести на 18, а вам тогда на 19\nНапишу позже",
+  "greek_words": [],
+  "topic_hint": "",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash-lite"
+}

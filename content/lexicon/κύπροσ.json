@@ -1,0 +1,26 @@
+{
+  "lemma": "Κύπρος",
+  "translation": [
+    "Кипр"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Κύπρος είναι ένα νησί.",
+    "ru": "Кипр — остров."
+  },
+  "lemma_key": "κύπροσ",
+  "surfaces": [
+    "Κύπρο",
+    "Κύπρου"
+  ],
+  "msg_ids": [
+    125479,
+    125513
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

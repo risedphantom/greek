@@ -1,0 +1,36 @@
+{
+  "lemma": "αλλαγή",
+  "translation": [
+    "изменение",
+    "перемена"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η αλλαγή",
+      "gen": "της αλλαγής",
+      "acc": "την αλλαγή"
+    },
+    "pl": {
+      "nom": "οι αλλαγές",
+      "gen": "των αλλαγών",
+      "acc": "τις αλλαγές"
+    }
+  },
+  "example": {
+    "el": "Θέλω αλλαγή.",
+    "ru": "Я хочу перемен."
+  },
+  "lemma_key": "αλλαγή",
+  "surfaces": [
+    "αλλαγές"
+  ],
+  "msg_ids": [
+    125511
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

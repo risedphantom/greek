@@ -1,0 +1,35 @@
+{
+  "lemma": "ηλικία",
+  "translation": [
+    "возраст"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η ηλικία",
+      "gen": "της ηλικίας",
+      "acc": "την ηλικία"
+    },
+    "pl": {
+      "nom": "οι ηλικίες",
+      "gen": "των ηλικιών",
+      "acc": "τις ηλικίες"
+    }
+  },
+  "example": {
+    "el": "Ποια είναι η ηλικία σου;",
+    "ru": "Какой твой возраст?"
+  },
+  "lemma_key": "ηλικία",
+  "surfaces": [
+    "ηλικία"
+  ],
+  "msg_ids": [
+    125475
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

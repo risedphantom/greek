@@ -1,0 +1,38 @@
+{
+  "lemma": "εποχή",
+  "translation": [
+    "эпоха",
+    "время",
+    "сезон"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η εποχή",
+      "gen": "της εποχής",
+      "acc": "την εποχή"
+    },
+    "pl": {
+      "nom": "οι εποχές",
+      "gen": "των εποχών",
+      "acc": "τις εποχές"
+    }
+  },
+  "example": {
+    "el": "Αυτή είναι η εποχή των φρούτων.",
+    "ru": "Это сезон фруктов."
+  },
+  "lemma_key": "εποχή",
+  "surfaces": [
+    "εποχές",
+    "εποχή"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

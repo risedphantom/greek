@@ -1,0 +1,38 @@
+{
+  "lemma": "παχύς",
+  "translation": [
+    "толстый",
+    "густой"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, -ιά, -ύ",
+  "forms": {
+    "m": {
+      "sg": "παχύς",
+      "pl": "παχοί"
+    },
+    "f": {
+      "sg": "παχιά",
+      "pl": "παχιές"
+    },
+    "n": {
+      "sg": "παχύ",
+      "pl": "παχιά"
+    }
+  },
+  "example": {
+    "el": "Ένα παχύ βιβλίο.",
+    "ru": "Толстая книга."
+  },
+  "lemma_key": "παχύσ",
+  "surfaces": [
+    "παχύς"
+  ],
+  "msg_ids": [
+    125475
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

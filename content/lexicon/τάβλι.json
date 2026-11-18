@@ -1,0 +1,36 @@
+{
+  "lemma": "τάβλι",
+  "translation": [
+    "тавла",
+    "нарды"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "ι/-ια",
+  "forms": {
+    "sg": {
+      "nom": "το τάβλι",
+      "gen": "του ταβλιού",
+      "acc": "το τάβλι"
+    },
+    "pl": {
+      "nom": "τα ταύλια",
+      "gen": "των ταυλιών",
+      "acc": "τα ταύλια"
+    }
+  },
+  "example": {
+    "el": "Παίζω τάβλι.",
+    "ru": "Я играю в нарды."
+  },
+  "lemma_key": "τάβλι",
+  "surfaces": [
+    "τάβλι"
+  ],
+  "msg_ids": [
+    125467
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

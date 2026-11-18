@@ -1,0 +1,24 @@
+{
+  "lemma": "Λευκωσία",
+  "translation": [
+    "Никосия"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Λευκωσία είναι η πρωτεύουσα της Κύπρου.",
+    "ru": "Никосия — столица Кипра."
+  },
+  "lemma_key": "λευκωσία",
+  "surfaces": [
+    "Λευκωσία"
+  ],
+  "msg_ids": [
+    125510
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

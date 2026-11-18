@@ -1,0 +1,35 @@
+{
+  "lemma": "Νοέμβριος",
+  "translation": [
+    "ноябрь"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο Νοέμβριος",
+      "gen": "του Νοεμβρίου",
+      "acc": "τον Νοέμβριο"
+    },
+    "pl": {
+      "nom": "οι Νοέμβριοι",
+      "gen": "των Νοεμβρίου",
+      "acc": "τους Νοεμβρίου"
+    }
+  },
+  "example": {
+    "el": "Τον Νοέμβριο έχει κρύο.",
+    "ru": "В ноябре холодно."
+  },
+  "lemma_key": "νοέμβριοσ",
+  "surfaces": [
+    "Νοεμβρίου"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

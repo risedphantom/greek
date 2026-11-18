@@ -1,0 +1,35 @@
+{
+  "lemma": "δροσιά",
+  "translation": [
+    "прохлада"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ιά/-ιές",
+  "forms": {
+    "sg": {
+      "nom": "η δροσιά",
+      "gen": "της δροσιάς",
+      "acc": "τη δροσιά"
+    },
+    "pl": {
+      "nom": "οι δροσίες",
+      "gen": "των δροσιών",
+      "acc": "τις δροσίες"
+    }
+  },
+  "example": {
+    "el": "Μας αρέσει η δροσιά.",
+    "ru": "Нам нравится прохлада."
+  },
+  "lemma_key": "δροσιά",
+  "surfaces": [
+    "δροσιά"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

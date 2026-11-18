@@ -1,0 +1,35 @@
+{
+  "lemma": "κιθάρα",
+  "translation": [
+    "гитара"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-α/-ες",
+  "forms": {
+    "sg": {
+      "nom": "η κιθάρα",
+      "gen": "της κιθάρας",
+      "acc": "την κιθάρα"
+    },
+    "pl": {
+      "nom": "οι κιθάρες",
+      "gen": "των κιθαρών",
+      "acc": "τις κιθάρες"
+    }
+  },
+  "example": {
+    "el": "Παίζω κιθάρα.",
+    "ru": "Я играю на гитаре."
+  },
+  "lemma_key": "κιθάρα",
+  "surfaces": [
+    "κιθάρα"
+  ],
+  "msg_ids": [
+    125467
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

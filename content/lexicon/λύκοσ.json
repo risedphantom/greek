@@ -1,0 +1,35 @@
+{
+  "lemma": "λύκος",
+  "translation": [
+    "волк"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ος/-οι",
+  "forms": {
+    "sg": {
+      "nom": "ο λύκος",
+      "gen": "του λύκου",
+      "acc": "τον λύκο"
+    },
+    "pl": {
+      "nom": "οι λύκοι",
+      "gen": "των λύκων",
+      "acc": "τους λύκους"
+    }
+  },
+  "example": {
+    "el": "Ο λύκος είναι στο δάσος.",
+    "ru": "Волк в лесу."
+  },
+  "lemma_key": "λύκοσ",
+  "surfaces": [
+    "λύκος"
+  ],
+  "msg_ids": [
+    125463
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

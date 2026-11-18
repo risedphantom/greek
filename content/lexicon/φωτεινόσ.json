@@ -1,0 +1,38 @@
+{
+  "lemma": "φωτεινός",
+  "translation": [
+    "светлый",
+    "яркий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ός, ή, ό",
+  "forms": {
+    "m": {
+      "sg": "φωτεινός",
+      "pl": "φωτεινοί"
+    },
+    "f": {
+      "sg": "φωτεινή",
+      "pl": "φωτεινές"
+    },
+    "n": {
+      "sg": "φωτεινό",
+      "pl": "φωτεινά"
+    }
+  },
+  "example": {
+    "el": "Ένα φωτεινό δωμάτιο.",
+    "ru": "Светлая комната."
+  },
+  "lemma_key": "φωτεινόσ",
+  "surfaces": [
+    "φωτεινό"
+  ],
+  "msg_ids": [
+    125514
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

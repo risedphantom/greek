@@ -1,0 +1,33 @@
+{
+  "msg_id": 125463,
+  "source": "photo",
+  "kind": "grammar",
+  "title": "Сравнения с предлогом σαν",
+  "body_md": "## В сравнениях\n\nΣαν πουλάκι — как птичка\n\nΣαν λύκος — как волк\n\nΣαν βλάκας — как дурак\n\nМодель:\n\nσαν + существительное БЕЗ артикля",
+  "greek_words": [
+    {
+      "lemma": "πουλάκι",
+      "pos": "noun",
+      "surface": [
+        "πουλάκι"
+      ]
+    },
+    {
+      "lemma": "λύκος",
+      "pos": "noun",
+      "surface": [
+        "λύκος"
+      ]
+    },
+    {
+      "lemma": "βλάκας",
+      "pos": "noun",
+      "surface": [
+        "βλάκας"
+      ]
+    }
+  ],
+  "topic_hint": "Предлог σαν",
+  "confidence": 1.0,
+  "model": "google/gemini-2.5-flash"
+}

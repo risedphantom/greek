@@ -1,0 +1,25 @@
+{
+  "lemma": "σιγά σιγά",
+  "translation": [
+    "медленно",
+    "постепенно"
+  ],
+  "pos": "phrase",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Προχωράμε σιγά σιγά.",
+    "ru": "Мы движемся медленно."
+  },
+  "lemma_key": "σιγά σιγά",
+  "surfaces": [
+    "σιγά σιγά"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

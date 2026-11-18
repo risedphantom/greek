@@ -1,0 +1,24 @@
+{
+  "lemma": "Λαφάου",
+  "translation": [
+    "Лафау"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Ο Λαφάου ζει στην Αθήνα.",
+    "ru": "Лафау живёт в Афинах."
+  },
+  "lemma_key": "λαφάου",
+  "surfaces": [
+    "Λαφάου"
+  ],
+  "msg_ids": [
+    125480
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

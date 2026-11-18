@@ -1,0 +1,35 @@
+{
+  "lemma": "κρέας",
+  "translation": [
+    "мясо"
+  ],
+  "pos": "noun",
+  "gender": "n",
+  "class": "-ος/-η",
+  "forms": {
+    "sg": {
+      "nom": "το κρέας",
+      "gen": "του κρέατος",
+      "acc": "το κρέας"
+    },
+    "pl": {
+      "nom": "τα κρέατα",
+      "gen": "των κρεάτων",
+      "acc": "τα κρέατα"
+    }
+  },
+  "example": {
+    "el": "Το κρέας είναι νόστιμο.",
+    "ru": "Мясо вкусное."
+  },
+  "lemma_key": "κρέασ",
+  "surfaces": [
+    "κρέας"
+  ],
+  "msg_ids": [
+    125470
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

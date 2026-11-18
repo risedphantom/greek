@@ -1,0 +1,24 @@
+{
+  "lemma": "Νικολάου",
+  "translation": [
+    "Николау"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Το όνομά του είναι Γιάννης Νικολάου.",
+    "ru": "Его зовут Яннис Николау."
+  },
+  "lemma_key": "νικολάου",
+  "surfaces": [
+    "Νικολάου"
+  ],
+  "msg_ids": [
+    125479
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "lemma": "Χρύσα",
+  "translation": [
+    "Хриса"
+  ],
+  "pos": "other",
+  "gender": null,
+  "class": null,
+  "forms": {},
+  "example": {
+    "el": "Η Χρύσα είναι φίλη μου.",
+    "ru": "Хриса - моя подруга."
+  },
+  "lemma_key": "χρύσα",
+  "surfaces": [
+    "Χρύσα"
+  ],
+  "msg_ids": [
+    125479
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": true,
+  "needs_review": false
+}

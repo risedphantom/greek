@@ -1,0 +1,38 @@
+{
+  "lemma": "μαύρος",
+  "translation": [
+    "чёрный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "ος, η, ο",
+  "forms": {
+    "m": {
+      "sg": "μαύρος",
+      "pl": "μαύροι"
+    },
+    "f": {
+      "sg": "μαύρη",
+      "pl": "μαύρες"
+    },
+    "n": {
+      "sg": "μαύρο",
+      "pl": "μαύρα"
+    }
+  },
+  "example": {
+    "el": "Έχω ένα μαύρο αυτοκίνητο.",
+    "ru": "У меня чёрная машина."
+  },
+  "lemma_key": "μαύροσ",
+  "surfaces": [
+    "μαύρο"
+  ],
+  "msg_ids": [
+    125470,
+    125471
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

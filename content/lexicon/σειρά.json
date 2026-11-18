@@ -1,0 +1,37 @@
+{
+  "lemma": "σειρά",
+  "translation": [
+    "очередь",
+    "ряд",
+    "серия"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ά/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η σειρά",
+      "gen": "της σειράς",
+      "acc": "τη σειρά"
+    },
+    "pl": {
+      "nom": "οι σειρές",
+      "gen": "των σειρών",
+      "acc": "τις σειρές"
+    }
+  },
+  "example": {
+    "el": "Η σειρά σου.",
+    "ru": "Твоя очередь."
+  },
+  "lemma_key": "σειρά",
+  "surfaces": [
+    "σειρά"
+  ],
+  "msg_ids": [
+    125479
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "lemma": "Ουκρανή",
+  "translation": [
+    "украинка"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ή/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η Ουκρανή",
+      "gen": "της Ουκρανής",
+      "acc": "την Ουκρανή"
+    },
+    "pl": {
+      "nom": "οι Ουκρανές",
+      "gen": "των Ουκρανών",
+      "acc": "τις Ουκρανές"
+    }
+  },
+  "example": {
+    "el": "Η Όλγα είναι Ουκρανή.",
+    "ru": "Ольга — украинка."
+  },
+  "lemma_key": "ουκρανή",
+  "surfaces": [
+    "Ουκρανή",
+    "ουκρανικά"
+  ],
+  "msg_ids": [
+    125480
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "lemma": "γαλανός",
+  "translation": [
+    "голубой",
+    "синий"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ός, -ή, -ό",
+  "forms": {
+    "m": {
+      "sg": "γαλανός",
+      "pl": "γαλανοί"
+    },
+    "f": {
+      "sg": "γαλανή",
+      "pl": "γαλανές"
+    },
+    "n": {
+      "sg": "γαλανό",
+      "pl": "γαλανά"
+    }
+  },
+  "example": {
+    "el": "Ο ουρανός είναι γαλανός.",
+    "ru": "Небо голубое."
+  },
+  "lemma_key": "γαλανόσ",
+  "surfaces": [
+    "γαλανό"
+  ],
+  "msg_ids": [
+    125482
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

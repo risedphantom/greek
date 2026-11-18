@@ -1,0 +1,37 @@
+{
+  "lemma": "βρώμικος",
+  "translation": [
+    "грязный"
+  ],
+  "pos": "adj",
+  "gender": null,
+  "class": "-ος, -η, -ο",
+  "forms": {
+    "m": {
+      "sg": "βρώμικος",
+      "pl": "βρώμικοι"
+    },
+    "f": {
+      "sg": "βρώμικη",
+      "pl": "βρώμικες"
+    },
+    "n": {
+      "sg": "βρώμικο",
+      "pl": "βρώμικα"
+    }
+  },
+  "example": {
+    "el": "Το πάτωμα είναι βρώμικο.",
+    "ru": "Пол грязный."
+  },
+  "lemma_key": "βρώμικοσ",
+  "surfaces": [
+    "βρώμικος"
+  ],
+  "msg_ids": [
+    125473
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

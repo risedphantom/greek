@@ -1,0 +1,35 @@
+{
+  "lemma": "Πολωνός",
+  "translation": [
+    "поляк"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "class": "-ός/-οί",
+  "forms": {
+    "sg": {
+      "nom": "ο Πολωνός",
+      "gen": "του Πολωνού",
+      "acc": "τον Πολωνό"
+    },
+    "pl": {
+      "nom": "οι Πολωνοί",
+      "gen": "των Πολωνών",
+      "acc": "τους Πολωνούς"
+    }
+  },
+  "example": {
+    "el": "Ο Κώστας είναι Πολωνός.",
+    "ru": "Костас — поляк."
+  },
+  "lemma_key": "πολωνόσ",
+  "surfaces": [
+    "Πολωνός"
+  ],
+  "msg_ids": [
+    125480
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}

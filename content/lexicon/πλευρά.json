@@ -1,0 +1,36 @@
+{
+  "lemma": "πλευρά",
+  "translation": [
+    "сторона",
+    "бок"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "class": "-ά/-ές",
+  "forms": {
+    "sg": {
+      "nom": "η πλευρά",
+      "gen": "της πλευράς",
+      "acc": "την πλευρά"
+    },
+    "pl": {
+      "nom": "οι πλευρές",
+      "gen": "των πλευρών",
+      "acc": "τις πλευρές"
+    }
+  },
+  "example": {
+    "el": "Η αριστερή πλευρά.",
+    "ru": "Левая сторона."
+  },
+  "lemma_key": "πλευρά",
+  "surfaces": [
+    "πλευρά"
+  ],
+  "msg_ids": [
+    125513
+  ],
+  "model": "google/gemini-2.5-flash-lite",
+  "proper_name": false,
+  "needs_review": false
+}
